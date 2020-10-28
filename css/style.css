@@ -33,6 +33,7 @@ body {
     height: 100%;
 }
 
+<<<<<<< HEAD
 .fadeout {
     animation: fadeout 0.2s linear;  
     animation-fill-mode: forwards;
@@ -69,6 +70,8 @@ body {
     animation-fill-mode: forwards;  
     animation-delay: 0.5s;
 }
+=======
+>>>>>>> b891455b0cb129bfec543fb39a7059a8bdeba440
 
 
 /* couleurs principales de la page */
@@ -211,8 +214,13 @@ body {
 }
 
 .footer {
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
+=======
+    display: grid;
+    grid-template-columns: auto auto auto;
+>>>>>>> b891455b0cb129bfec543fb39a7059a8bdeba440
     color: white;
     font-family: "bahnschrift";
     font-size: 0.85rem;
@@ -228,7 +236,10 @@ body {
     margin-bottom: auto;
     text-align: left;
     float: left;
+<<<<<<< HEAD
     width: 75%;
+=======
+>>>>>>> b891455b0cb129bfec543fb39a7059a8bdeba440
 }
 
 .contacts{
@@ -258,8 +269,13 @@ body {
     clip-path: inset(0 0 0 50%);
 
 
+<<<<<<< HEAD
     left: 8%;
     top: 26%;
+=======
+    left: 32%;
+    top: 30%;
+>>>>>>> b891455b0cb129bfec543fb39a7059a8bdeba440
 
     z-index: -1;
 
@@ -357,12 +373,16 @@ body {
     left: -45%;
     top: 57%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b891455b0cb129bfec543fb39a7059a8bdeba440
 #container-etudiants-actuels{
     left: 62.25%;
     top: 78.5%;
 }
 
+<<<<<<< HEAD
 #container-etudiants-fullscreen{
     width: 90%;
     height: 70%;
@@ -386,6 +406,8 @@ body {
     }
 }
 
+=======
+>>>>>>> b891455b0cb129bfec543fb39a7059a8bdeba440
 .separateur-etudiants{
     background-color: #FCFCFC;
     height: 10px;
@@ -403,6 +425,7 @@ body {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 #et-menu-title{
     color: #FCFCFC;
     font-size: 42px;
@@ -433,6 +456,8 @@ body {
     height: 75%;
 }
 
+=======
+>>>>>>> b891455b0cb129bfec543fb39a7059a8bdeba440
 .button {
     border: none;
     font-family: "bahnschrift";
@@ -444,6 +469,7 @@ body {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 #et-liensutiles-liste{
     display: flex;
     justify-content: center;
@@ -456,6 +482,8 @@ body {
     margin-top: 1.5%;
 }
 
+=======
+>>>>>>> b891455b0cb129bfec543fb39a7059a8bdeba440
 /* Formes d'arrière plan anglés */
 
 #background-shapes{
