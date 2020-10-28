@@ -1,0 +1,121 @@
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: rgb(42,52,57);
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr 0.6fr 1.4fr;
+  grid-template-rows: 0.1fr 0.5fr 1.5fr;
+  grid-template-areas:
+    ". titre-cours titre-cours ."
+    ". description . details-cours"
+    ". categories . .";
+}
+
+#nom-cours {
+    border-bottom: solid black 5px;
+}
+
+#entete nav {
+    margin-left: 175px;
+}
+
+#entete nav a {
+    background-color: black;
+    padding: 5px;
+}
+
+.btn-accueil {
+    position: relative;
+    bottom: -100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+}
+
+.btn-accueil a {
+    
+}
+
+
+#titre-cours {
+    grid-area: titre-cours;
+}
+
+#titre-cours .retour {
+    float: left;
+}
+
+
+
+#description {
+    grid-area: description;
+}
+
+#titre-cours .retour {
+    font-weight: bold;
+    font-size: 50pt;
+}
+
+#details-cours {
+    grid-area: details-cours;
+}
+
+#details-cours ul {
+    list-style: none;
+}
+
+#details-cours li {
+    padding-top: 5px;
+}
+
+
+#categories {
+    grid-area: categories; 
+    display: flex;
+/*    border: 1px black solid;*/
+}
+
+.icone-categories {
+}
+
+.nomCat {
+    text-align: center;
+}
+
+.cercle {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: inline-block;
+}
+
+
+footer {
+    background-color: rgb(100, 100, 100);
+    font-size: 12pt;
+    margin-top: 10px;
+    border-top: solid black 2px;
+    overflow: hidden;
+    height: 100px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+#gauche {
+    float: left;
+}
+
+#droite {
+    text-align: right;
+    float: right
+}

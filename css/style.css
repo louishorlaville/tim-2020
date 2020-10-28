@@ -1,0 +1,489 @@
+@font-face {
+    font-family: "bahnschrift";
+    src: href("/fonts/BAHNSCHRIFT.TTF");
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    font-family: Arial;
+    background-color: #FCFCFC;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#contenu-principal{
+    width: 100%;
+    height: 100%;
+}
+
+.fadeout {
+    animation: fadeout 0.2s linear;  
+    animation-fill-mode: forwards;
+}
+
+.fadein {
+    animation: fadein 0.2s linear;  
+    animation-fill-mode: forwards;  
+}
+
+@keyframes fadeout{
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#container-etudiants-contenu{
+    opacity: 0;
+    animation: fadein 0.2s linear;  
+    animation-fill-mode: forwards;  
+    animation-delay: 0.5s;
+}
+
+
+/* couleurs principales de la page */
+
+.color-bg{
+    background-color: #FCFCFC;
+}
+
+.color-bg-2{
+    background: #E0DBD5;
+}
+
+.color-bars{
+    background-color: #1A1A1A;
+}
+
+.color-1{
+    background-color: #BA222D;
+}
+
+.color-2{
+    background-color: #296FA6;
+}
+
+.color-3{
+    background-color: #DC7E25;
+}
+
+
+
+/* Éléments d'arrière plan animés */
+
+.animation-area{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    font-size: 5rem;
+    z-index: -2;
+}
+
+.box-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    animation: animate 10s linear infinite;  
+}
+
+/* todo with javascript */
+
+.box-area li:nth-child(1){
+    left: 200px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 0s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.box-area li:nth-child(2){
+    left: 650px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 6s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.box-area li:nth-child(3){
+    left: 100px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 3s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.box-area li:nth-child(4){
+    left: 700px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.box-area li:nth-child(5){
+    left: 550px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 8s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.box-area li:nth-child(6){
+    left: 400px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 4s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+@keyframes animate{
+    from {
+        transform: translateX(0) translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(800px) translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* end of todo */
+
+#title{
+    height:100%;
+    width: 50%;
+    position: absolute; /* or absolute */
+    left: 28%;
+}
+
+.logo {
+    height: 75%;
+    margin: auto;
+    margin-top:8%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "bahnschrift";
+    font-size: 0.85rem;
+
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+}
+
+.credits{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    float: left;
+    width: 75%;
+}
+
+.contacts{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: right;
+    float: right;
+}
+
+/* Formes géométriques de la page */
+
+.cercle-n{
+    margin: auto;
+    margin-top: 0.25rem;
+    border-radius:50%;
+
+    width: 6rem;
+    height: 6rem;
+}
+
+.cercle-n-border{
+    position: absolute;
+    border: black;
+    border-style: dashed;
+    border-radius:50%;
+
+    clip-path: inset(0 0 0 50%);
+
+
+    left: 8%;
+    top: 26%;
+
+    z-index: -1;
+
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+
+.logo-cercle{
+    margin: auto;
+    margin-top: 0.5rem;
+    border-radius:50%;
+
+    width: 15rem;
+    height: 15rem;
+}
+
+.logo-cercle-border{
+    position: absolute;
+    border: black;
+    border-style: dashed;
+    border-radius:50%;
+
+    left: 65%;
+    top: 20%;
+
+    z-index: -1;
+
+    width: 16rem;
+    height: 16rem;
+
+    animation-name: spin;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+/* Cercles qui apparaissent dans le logo */
+.cercle-cap-logo{
+    position: absolute;
+    border-radius: 100%;
+    border-color: #1A1A1A;
+    border-width: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+    border-style: solid;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+#cercle-cap-N{
+    left: 11.4%;
+    top: 4.75%;
+}
+
+#cercle-cap-T{
+    left: 114%;
+    top: 35%;
+}
+
+#cercle-cap-I{
+    left: 59%;
+    top: 83.25%;
+}
+
+
+/* Sections étudiants */
+
+.container-etudiants{
+    position: absolute;
+    font-size: 24px;
+    text-align: center;
+    width: 45%;
+}
+
+.container-etudiants-animate{
+    position: absolute;
+    width: 9999%;
+    height: 9999%;
+    z-index: -1;
+}
+
+#container-etudiants-nouveaux{
+    left: -45%;
+    top: 57%;
+}
+
+#container-etudiants-actuels{
+    left: 62.25%;
+    top: 78.5%;
+}
+
+#container-etudiants-fullscreen{
+    width: 90%;
+    height: 70%;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    animation: etudiants-fill 1s;  
+    animation-fill-mode: forwards;  
+}
+
+@keyframes etudiants-fill{
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 70%;
+    }
+}
+
+.separateur-etudiants{
+    background-color: #FCFCFC;
+    height: 10px;
+}
+
+#et-nouveaux-title{
+    color: #FCFCFC;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#et-actuels-title{
+    color: #FCFCFC;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#et-menu-title{
+    color: #FCFCFC;
+    font-size: 42px;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#et-menu-desc{
+    color: #FCFCFC;
+    font-size: 24px;
+    text-align: left;
+    width: 60%;
+    margin: 5%;
+}
+
+#et-menu-image{
+    width: 380px;
+    height: 380px;
+    margin: 5%;
+    margin-right: 50px;
+    margin-bottom: 15%;
+}
+
+#et-menu-contenu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 75%;
+}
+
+.button {
+    border: none;
+    font-family: "bahnschrift";
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16pt;
+    cursor: pointer;
+}
+
+#et-liensutiles-liste{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#et-liensutiles-liste > li{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1.5%;
+}
+
+/* Formes d'arrière plan anglés */
+
+#background-shapes{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    overflow: hidden;
+    z-index: -3;
+}
+
+.background-shape{
+    height: 100%;
+    position:absolute;
+}
+
+#background-shape-left {
+    width: 30%;
+	transform: skew(-20deg);
+    left: -20%;
+}
+
+#background-shape-right {
+    width: 60%;
+	transform: skew(-45deg);
+    margin-left: 72%;
+}
+
+.invisible{
+    display: none;
+}
+
