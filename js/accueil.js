@@ -4,7 +4,6 @@
     let title = document.querySelector("#title");
     let logo = document.querySelector(".logo");
 
-<<<<<<< HEAD
     let etNouvListe=`
         <li><a href="pages/grilleCheminement.html" class="button">COURS</a></li>
         <li><a href="#" class="button">ENSEIGNANTS</a></li>
@@ -55,16 +54,4 @@
         `; 
     }
 
-=======
-    btnMenuNvEtud.addEventListener("click", function(){
-        this.classList.add("container-etudiants-animate");
-        title.classList.add("invisible");
-    });
-
-    btnMenuEtudActu.addEventListener("click", function(){
-        this.classList.add("container-etudiants-animate");
-        title.classList.add("invisible");
-    });
-
->>>>>>> b891455b0cb129bfec543fb39a7059a8bdeba440
 }());
