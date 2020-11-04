@@ -1,0 +1,93 @@
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: rgb(42,52,57);
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr 0.6fr 1.4fr;
+  grid-template-rows: 0.1fr 0.5fr 1.5fr;
+  grid-template-areas:
+    ". titre-cours titre-cours titre-cours"
+    ". photo photo texte-prof"
+    ". . . .";
+}
+
+#nom-cours {
+    border-bottom: double yellow 10px;
+}
+
+.btn-accueil {
+/*
+    position: relative;
+    bottom: -100px;
+*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+}
+
+.btn-accueil a {
+    
+}
+
+
+#titre-cours {
+    grid-area: titre-cours;
+}
+
+#titre-cours .retour {
+    float: left;
+    font-weight: bold;
+    font-size: 50pt;
+}
+
+#titre-cours #nom-cours {
+    padding-bottom: 5px;
+    font-size: 2em;
+}
+
+#image-prof{
+    grid-area: photo;
+    border: 3px solid black;
+}
+
+.cercle {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: inline-block;
+}
+
+
+footer {
+    background-color: rgb(50, 50, 60);
+    font-size: 12pt;
+    margin-top: 10px;
+    border-top: solid black 2px;
+    overflow: hidden;
+    height: 100px;
+    margin-top: 150px;
+    width: 100%;
+}
+
+#gauche {
+    float: left;
+}
+
+#droite {
+    text-align: right;
+    float: right
+}
