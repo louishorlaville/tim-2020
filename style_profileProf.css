@@ -25,15 +25,6 @@ a {
     border-bottom: double yellow 10px;
 }
 
-#entete nav {
-    margin-left: 175px;
-}
-
-#entete nav a {
-    background-color: black;
-    padding: 5px;
-}
-
 .btn-accueil {
 /*
     position: relative;
@@ -68,6 +59,7 @@ a {
 
 #image-prof{
     grid-area: photo;
+    border: 3px solid black;
 }
 
 .cercle {
