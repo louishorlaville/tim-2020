@@ -503,22 +503,48 @@ body {
 /* Sections étudiants */
 .position-container-etudiants{
     position: absolute;
-    transform-origin: 0 0;
     width: 45%;
+    
 }
-#position-container-etudiants-nouveaux{
-    top:57%;
-    left:0;
-}à
 
 #position-container-etudiants-nouveaux{
+    transform: translate(-100%,0);
+    top:60%;
+    left:0;
+}
+
+#position-container-etudiants-actuels{
     left:55%;
-    top: 86.5%;
+    top: 89%;
+}
+
+.separateur-etudiants{
+    background-color: #1A1A1A; 
 }
 
 .container-etudiants{
     font-size: 24px;
     text-align: center;
+}
+
+#container-etudiants-nouveaux{
+    margin-left: 3%;
+}
+
+#container-etudiants-actuels{
+    margin-right: 3%;
+}
+
+.mask-ligne-etudiants-nouveaux{
+    clip-path: polygon(
+        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 55%, 0 55%, 0 50%, 101% 50%,101% 45%, 0 45%, 0 0 
+     );
+}
+
+.mask-ligne-etudiants-actuels{
+    clip-path: polygon(
+        0 0, 0 100%, 100% 100%, 100% 60%, 0 60%, 0 55%, 120% 55%, 120% 50%, 0 50%, 0 45%, 100% 45%,100% 0, 0 0 
+     );
 }
 
 .mask-etudiant{
@@ -532,10 +558,6 @@ body {
     width: 9999%;
     height: 9999%;
     z-index: -1;
-}
-
-#container-etudiants-nouveaux{
-    transform: translate(-100%,0);
 }
 
 #container-etudiants-fullscreen{
@@ -561,11 +583,7 @@ body {
     }
 }
 
-.separateur-etudiants{
-     background-color: #FCFCFC; 
 
-    height: 10px;
-}
 
 #et-nouveaux-title{
     color: #FCFCFC;
@@ -618,6 +636,8 @@ body {
     display: inline-block;
     font-size: 16pt;
     cursor: pointer;
+    margin-top: 3%;
+
 }
 
 #et-liensutiles-liste{
