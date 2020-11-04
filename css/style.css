@@ -71,6 +71,15 @@ body {
 }
 
 
+/* Éléments à placer (boutons,etc.)*/
+.button-back{
+    float: left;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+
 /* couleurs principales de la page */
 
 .color-bg{
@@ -200,14 +209,17 @@ body {
 #title{
     height:100%;
     width: 50%;
+    min-width: 50%;
+    min-height: 100%;
     position: absolute; /* or absolute */
     left: 28%;
 }
 
-.logo {
+.containerLogo {
     height: 75%;
     margin: auto;
-    margin-top:8%;
+    margin-top:13%;
+    position: relative;
 }
 
 .footer {
@@ -244,16 +256,15 @@ body {
     margin: auto;
     margin-top: 0.25rem;
     border-radius:50%;
-
     width: 6rem;
     height: 6rem;
 }
 
 .cercle-n-border{
     position: absolute;
-    border: black;
-    border-style: dashed;
-    border-radius:50%;
+    /* border: black; */
+    /* border-style: dashed; */
+    /* border-radius:50%; */
 
     clip-path: inset(0 0 0 50%);
 
@@ -283,8 +294,8 @@ body {
     border-style: dashed;
     border-radius:50%;
 
-    left: 65%;
-    top: 20%;
+    /* left: 65%; */
+    /* top: 20%; */
 
     z-index: -1;
 
@@ -319,21 +330,24 @@ body {
     text-align: center;
     font-weight: bolder;
     font-size: 3rem;
+    transform-origin: 0 0;
 }
 
+
+
 #cercle-cap-N{
-    left: 11.4%;
-    top: 4.75%;
+    left: 0;
+    top: 0;
 }
 
 #cercle-cap-T{
-    left: 114%;
-    top: 35%;
+    left: 0;
+    top: 0;
 }
 
 #cercle-cap-I{
-    left: 59%;
-    top: 83.25%;
+    left: 0;
+    top: 0;
 }
 
 
@@ -344,6 +358,7 @@ body {
     font-size: 24px;
     text-align: center;
     width: 45%;
+    transform-origin: 0 0;
 }
 
 .container-etudiants-animate{
@@ -354,12 +369,13 @@ body {
 }
 
 #container-etudiants-nouveaux{
-    left: -45%;
-    top: 57%;
+    transform: translate(-100%,0);
+    top:57%;
+    left:0;
 }
 #container-etudiants-actuels{
-    left: 62.25%;
-    top: 78.5%;
+    left:55%;
+    top: 86.5%;
 }
 
 #container-etudiants-fullscreen{
