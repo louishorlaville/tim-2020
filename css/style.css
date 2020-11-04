@@ -209,6 +209,8 @@ body {
 #title{
     height:100%;
     width: 50%;
+    min-width: 50%;
+    min-height: 100%;
     position: absolute; /* or absolute */
     left: 28%;
 }
@@ -260,9 +262,9 @@ body {
 
 .cercle-n-border{
     position: absolute;
-    border: black;
-    border-style: dashed;
-    border-radius:50%;
+    /* border: black; */
+    /* border-style: dashed; */
+    /* border-radius:50%; */
 
     clip-path: inset(0 0 0 50%);
 
@@ -292,8 +294,8 @@ body {
     border-style: dashed;
     border-radius:50%;
 
-    left: 65%;
-    top: 20%;
+    /* left: 65%; */
+    /* top: 20%; */
 
     z-index: -1;
 

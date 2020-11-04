@@ -3,16 +3,20 @@
     let btnMenuEtudActu = document.querySelector("#container-etudiants-actuels");
     let title = document.querySelector("#title");
     let logo = document.querySelector(".logo");
-    let cercles=[[document.querySelector("#cercle-cap-N"),0.1,-0.05],[document.querySelector("#cercle-cap-T"),1.01,0.36],[document.querySelector("#cercle-cap-I"),0.52,1.01]]
-    let boites =[[btnMenuNvEtud,0,0.65],[btnMenuEtudActu,0.55,0.98]]
+    let cercles=[[document.querySelector("#cercle-cap-N"),0.1,-0.05],[document.querySelector("#cercle-cap-T"),1.01,0.36],[document.querySelector("#cercle-cap-I"),0.52,1.01]];
+    let boites =[[btnMenuNvEtud,0,0.65],[btnMenuEtudActu,0.55,0.98]];
+    let cerclesDesign = [[document.querySelector(".logo-cercle-border"),0.62,0.05],[document.querySelector(".cercle-n-border"),0.065,0.21]];                       
 
     //Placer les cercles et boites au chargement de la page
     window.addEventListener("load",function(){
-        cercles.forEach(element => {
-            placerAbsolueAccueil(element[0],element[1],element[2]);
+        cercles.forEach(elt => {
+            placerAbsolueAccueil(elt[0],elt[1],elt[2]);
         });
-        boites.forEach(element => {
-            placerAbsolueAccueil(element[0],element[1],element[2]);
+        boites.forEach(elt => {
+            placerAbsolueAccueil(elt[0],elt[1],elt[2]);
+        });
+        cerclesDesign.forEach(elt => {
+            placerAbsolueAccueil(elt[0],elt[1],elt[2]);
         });
     })
 
@@ -23,6 +27,9 @@
         });
         boites.forEach(element => {
             placerAbsolueAccueil(element[0],element[1],element[2]);
+        });
+        cerclesDesign.forEach(elt => {
+            placerAbsolueAccueil(elt[0],elt[1],elt[2]);
         });
     }
 
@@ -78,6 +85,7 @@
     function placerAbsolueAccueil(element, width, height){
         element.style.left=logo.clientWidth*width+"px";
         element.style.top=logo.clientHeight*height+"px";
+        
     }
 
 }());
