@@ -278,6 +278,46 @@ body {
     height: 6.5rem;
 }
 
+.cercle-i{
+    margin: auto;
+    margin-top: 0.25rem;
+    border-radius:50%;
+
+    width: 6rem;
+    height: 6rem;
+}
+
+.cercle-i-border{
+    position: absolute;
+    border: black;
+    border-style: dashed;
+    border-radius:50%;
+
+    clip-path: inset(0 0 0 -50%);
+
+
+    left: 54.5%;
+    top: 60%;
+
+    z-index: -1;
+
+    width: 6.5rem;
+    height: 6.5rem;
+    animation-name: spin2;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin2 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
+
 
 .logo-cercle{
     margin: auto;
@@ -293,7 +333,6 @@ body {
     border: black;
     border-style: dashed;
     border-radius:50%;
-
     /* left: 65%; */
     /* top: 20%; */
 
