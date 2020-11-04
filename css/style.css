@@ -146,6 +146,116 @@ body {
     animation-duration: 10s;
     animation-timing-function: linear;
 }
+.prog {
+    border: none;
+    font-family: "bahnschrift";
+    color:red ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 62pt;
+    cursor: pointer;
+    position: absolute;
+}
+
+.prog:active {
+   text-shadow: salmon 3px 3px,
+   salmon -3px 3px,
+   salmon -3px -3px,
+   salmon 3px -3px ; 
+
+}
+.design {
+    border: none;
+    font-family: "bahnschrift";
+    color:teal ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 62pt;
+    cursor: pointer;
+    position: absolute;
+}
+.design:active {
+    text-shadow:turquoise 3px 3px,
+   turquoise -3px 3px,
+   turquoise -3px -3px,
+   turquoise 3px -3px ; 
+ 
+ }
+
+#camille{
+    left: 50%;
+    bottom: 42%;
+}
+
+#martin{
+    left: 64%;
+    bottom: 64%;
+}
+
+#denis{
+    left: 53%;
+    bottom: 14%;
+}
+#dominic{
+    left: 22%;
+    bottom: 65%;
+}
+
+#vahik{
+    left: 44%;
+    bottom: 79%;
+}
+
+#gregory{
+    left: 68%;
+    bottom: 43%;
+}
+
+#david{
+    left: 40%;
+    bottom: 22%;
+}
+
+#mathieu{
+    left: 84%;
+    bottom: 17%;
+}
+
+#manon{
+    left: 83%;
+    bottom: 74%;
+}
+#vincent{
+    left: 50%;
+    bottom: 42%;
+}
+
+#johanne{
+    left: 15%;
+    bottom: 23%;
+}
+
+#eddy{
+    left: 23%;
+    bottom: 84%;
+}
+
+#caroline{
+    left: 63%;
+    bottom: 16%;
+}
+
+#ahmed{
+    left: 94%;
+    bottom: 54%;
+}
+
+
+
+
+
 
 @keyframes animate{
     from {
