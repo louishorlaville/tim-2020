@@ -17,8 +17,8 @@ a {
   grid-template-rows: 0.1fr 0.5fr 1.5fr;
   grid-template-areas:
     ". titre-cours titre-cours titre-cours"
-    ". description . details-cours"
-    ". categories . .";
+    ". photo photo texte-prof"
+    ". . . .";
 }
 
 #nom-cours {
@@ -66,42 +66,8 @@ a {
     font-size: 2em;
 }
 
-
-
-#description{
-    grid-area: description;
-}
-
-#details-cours {
-    grid-area: details-cours;
-}
-
-#details-cours ul {
-    list-style: none;
-}
-
-#details-cours li {
-    padding-top: 5px;
-}
-
-#details-cours li:nth-child(even) {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-
-#categories {
-    grid-area: categories; 
-    display: flex;
-/*    border: 1px black solid;*/
-}
-
-.icone-categorie {
-    margin-top: 20px;
-}
-
-.nomCat {
-    text-align: center;
+#image-prof{
+    grid-area: photo;
 }
 
 .cercle {
