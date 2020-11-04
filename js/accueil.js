@@ -34,15 +34,13 @@
     }
 
     let etNouvListe=`
-        <li><a href="pages/grilleCheminement.html" class="button">COURS</a></li>
-        <li><a href="#" class="button">ENSEIGNANTS</a></li>
+        <li><a href="#" class="button">STAGES</a></li>
         <li><a href="#" class="button">VIE ÉTUDIANTE</a></li>
     `;
 
     let etActuListe=`
-        <li><a href="pages/grilleCheminement.html" class="button">COURS</a></li>
-        <li><a href="#" class="button">ENSEIGNANTS</a></li>
-        <li><a href="#" class="button">STAGE</a></li>
+        <li><a href="pages/grilleCheminement.html" class="button">GRILLE DE CHEMINEMENTS</a></li>
+        <li><a href="pages/grilleDesProfs.html" class="button">ENSEIGNANTS</a></li>
     `;
 
     btnMenuNvEtud.addEventListener("click", function(){

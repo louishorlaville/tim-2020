@@ -501,13 +501,30 @@ body {
 
 
 /* Sections étudiants */
+.position-container-etudiants{
+    position: absolute;
+    transform-origin: 0 0;
+    width: 45%;
+}
+#position-container-etudiants-nouveaux{
+    top:57%;
+    left:0;
+}à
+
+#position-container-etudiants-nouveaux{
+    left:55%;
+    top: 86.5%;
+}
 
 .container-etudiants{
-    position: absolute;
     font-size: 24px;
     text-align: center;
-    width: 45%;
-    transform-origin: 0 0;
+}
+
+.mask-etudiant{
+    clip-path: polygon(
+        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 45%, 0 45%, 0 0 
+     );
 }
 
 .container-etudiants-animate{
@@ -519,12 +536,6 @@ body {
 
 #container-etudiants-nouveaux{
     transform: translate(-100%,0);
-    top:57%;
-    left:0;
-}
-#container-etudiants-actuels{
-    left:55%;
-    top: 86.5%;
 }
 
 #container-etudiants-fullscreen{
@@ -551,7 +562,8 @@ body {
 }
 
 .separateur-etudiants{
-    background-color: #FCFCFC;
+     background-color: #FCFCFC; 
+
     height: 10px;
 }
 
