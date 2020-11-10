@@ -322,7 +322,7 @@ body {
     min-width: 50%;
     min-height: 100%;
     position: absolute; /* or absolute */
-    left: 28%;
+    left: 30%;
 }
 
 .containerLogo {
@@ -515,7 +515,7 @@ body {
 
 #position-container-etudiants-actuels{
     left:55%;
-    top: 89%;
+    bottom: 0;
 }
 
 .separateur-etudiants{
@@ -568,7 +568,8 @@ body {
     margin-right: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
-
+    padding-top: 0.3em;
+    clip-path: polygon(0 0, 100% 0, 100% 13%, 0 13%, 0 15%,100% 15%, 100% 100%, 0 100%, 0 0);
     animation: etudiants-fill 1s;  
     animation-fill-mode: forwards;  
 }
@@ -610,21 +611,24 @@ body {
     font-size: 24px;
     text-align: left;
     width: 60%;
-    margin: 5%;
+    margin: 5% 5% 0 5%;
 }
 
 #et-menu-image{
     width: 380px;
     height: 380px;
-    margin: 5%;
+    margin: 8%;
     margin-right: 50px;
     margin-bottom: 15%;
+}
+#et-menu-contenu-container{
+    display: relative
 }
 
 #et-menu-contenu{
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 75%;
+    height: 60%;
 }
 
 .button {
@@ -640,16 +644,34 @@ body {
 
 }
 
+/* NAV MENU ETUDIANTS ACCUEIL */
+.et-nav{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 40%;
+}
+
+.metro-nav{
+    width: 100%;
+    margin-left: 5%;
+}
+
 #et-liensutiles-liste{
     display: flex;
     justify-content: center;
     list-style-type: none;
+    
 }
 
 #et-liensutiles-liste > li{
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 5%;
     margin-top: 1.5%;
+}
+
+.listCircle{
+    width: 2em;
 }
 
 /* Formes d'arrière plan anglés */
