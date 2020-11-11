@@ -1,15 +1,12 @@
-
-html, body {
-    margin: 0;
-    height: 100%;
-    background-color: rgb(42,52,57);
-    color: whitesmoke;
-    font-family: sans-serif;
+main{
+    font-family: "bahnschrift";
 }
 
+
 .grid-container {
+  padding-top: 8%;
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr 0.6fr 1.4fr;
+  grid-template-columns: 0.9fr 1.1fr 0.6fr 0.4fr 1fr;
   grid-template-rows: 0.1fr 0.5fr 1.5fr;
   grid-template-areas:
     ". titre-cours titre-cours ."
@@ -19,38 +16,21 @@ html, body {
 
 #nom-cours {
     border-bottom: solid black 5px;
-}
-
-#entete nav {
-    margin-left: 175px;
-}
-
-#entete nav a {
-    background-color: black;
-    padding: 5px;
-}
-
-.btn-accueil {
-    position: relative;
-    bottom: -100px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: black;
-    text-align: center;
-}
-
-.btn-accueil a {
-    
+    padding-bottom: 10px;
 }
 
 
 #titre-cours {
     grid-area: titre-cours;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    grid-column: 2 / 5;
 }
 
 #titre-cours .retour {
+    position: relative;
     float: left;
+    text-decoration: none;
 }
 
 
@@ -59,13 +39,21 @@ html, body {
     grid-area: description;
 }
 
+#description > p{
+    font-size: 1.3em;
+    margin-bottom: 32px;
+}
+
+
 #titre-cours .retour {
     font-weight: bold;
     font-size: 50pt;
+    bottom: 6px;
 }
 
 #details-cours {
     grid-area: details-cours;
+    font-size: 1.3em;
 }
 
 #details-cours ul {
@@ -83,7 +71,14 @@ html, body {
 /*    border: 1px black solid;*/
 }
 
-.icone-categories {
+.icone-categorie {
+    margin-right: 8px;
+    list-style-type: none;
+}
+
+
+.subtitle-1 {
+    font-weight: bold;
 }
 
 .nomCat {
@@ -93,22 +88,9 @@ html, body {
 .cercle {
     height: 25px;
     width: 25px;
-    background-color: #bbb;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid  #1A1A1A;
     display: inline-block;
-}
-
-
-footer {
-    background-color: rgb(100, 100, 100);
-    font-size: 12pt;
-    margin-top: 10px;
-    border-top: solid black 2px;
-    overflow: hidden;
-    height: 100px;
-    margin-top: 100px;
-    width: 100%;
 }
 
 #gauche {
