@@ -106,6 +106,18 @@ body {
     background-color: #DC7E25;
 }
 
+.color-4{
+    background-color: #8abdff;
+}
+
+.color-5{
+    background-color: #eebd38;
+}
+
+.color-text-1{
+    color: #1A1A1A;
+}
+
 
 
 /* Éléments d'arrière plan animés */
@@ -322,7 +334,7 @@ body {
     min-width: 50%;
     min-height: 100%;
     position: absolute; /* or absolute */
-    left: 28%;
+    left: 30%;
 }
 
 .containerLogo {
@@ -501,13 +513,56 @@ body {
 
 
 /* Sections étudiants */
+.position-container-etudiants{
+    position: absolute;
+    width: 45%;
+    
+}
+
+#position-container-etudiants-nouveaux{
+    transform: translate(-100%,0);
+    top:60%;
+    left:0;
+}
+
+#position-container-etudiants-actuels{
+    left:55%;
+    bottom: 0;
+}
+
+.separateur-etudiants{
+    background-color: #1A1A1A; 
+}
 
 .container-etudiants{
-    position: absolute;
     font-size: 24px;
     text-align: center;
-    width: 45%;
-    transform-origin: 0 0;
+}
+
+#container-etudiants-nouveaux{
+    margin-left: 3%;
+}
+
+#container-etudiants-actuels{
+    margin-right: 3%;
+}
+
+.mask-ligne-etudiants-nouveaux{
+    clip-path: polygon(
+        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 55%, 0 55%, 0 50%, 101% 50%,101% 45%, 0 45%, 0 0 
+     );
+}
+
+.mask-ligne-etudiants-actuels{
+    clip-path: polygon(
+        0 0, 0 100%, 100% 100%, 100% 60%, 0 60%, 0 55%, 120% 55%, 120% 50%, 0 50%, 0 45%, 100% 45%,100% 0, 0 0 
+     );
+}
+
+.mask-etudiant{
+    clip-path: polygon(
+        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 45%, 0 45%, 0 0 
+     );
 }
 
 .container-etudiants-animate{
@@ -515,16 +570,6 @@ body {
     width: 9999%;
     height: 9999%;
     z-index: -1;
-}
-
-#container-etudiants-nouveaux{
-    transform: translate(-100%,0);
-    top:57%;
-    left:0;
-}
-#container-etudiants-actuels{
-    left:55%;
-    top: 86.5%;
 }
 
 #container-etudiants-fullscreen{
@@ -535,7 +580,8 @@ body {
     margin-right: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
-
+    padding-top: 0.3em;
+    clip-path: polygon(0 0, 100% 0, 100% 13%, 0 13%, 0 15%,100% 15%, 100% 100%, 0 100%, 0 0);
     animation: etudiants-fill 1s;  
     animation-fill-mode: forwards;  
 }
@@ -550,10 +596,7 @@ body {
     }
 }
 
-.separateur-etudiants{
-    background-color: #FCFCFC;
-    height: 10px;
-}
+
 
 #et-nouveaux-title{
     color: #FCFCFC;
@@ -580,45 +623,114 @@ body {
     font-size: 24px;
     text-align: left;
     width: 60%;
-    margin: 5%;
+    margin: 5% 5% 0 5%;
 }
 
 #et-menu-image{
     width: 380px;
     height: 380px;
-    margin: 5%;
+    margin: 8%;
     margin-right: 50px;
     margin-bottom: 15%;
+}
+#et-menu-contenu-container{
+    position: relative;
 }
 
 #et-menu-contenu{
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 75%;
+    height: 60%;
 }
 
 .button {
     border: none;
     font-family: "bahnschrift";
     color: white;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16pt;
     cursor: pointer;
+    font-size: 0.8em;
+    padding: 1%;
+
+
+}
+
+/* NAV MENU ETUDIANTS ACCUEIL */
+.et-nav-container{
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    width: 100%;
+    text-align: left;
+
+}
+
+.et-nav{
+    position: relative;
+}
+
+.metro-nav-container{
+    position: relative;
+}
+
+.croix-nav{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    width: 3%;
+    transform-origin: center right;
+}
+
+.metro-nav{
+    width: 50%;
+    margin-left: 5%;
 }
 
 #et-liensutiles-liste{
-    display: flex;
-    justify-content: center;
+    margin-left: 10%;
     list-style-type: none;
+    flex-direction: row;    
 }
 
 #et-liensutiles-liste > li{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 1.5%;
+    position: absolute;
+    width: 20%;
+    height: 10%;
 }
+
+#et-liensutiles-liste > li:nth-child(1){
+    left:11.5%;
+}
+
+#et-liensutiles-liste > li:nth-child(2){
+    left:33%;
+}
+
+.position-bouton-menu-et{
+    position: relative;
+}
+
+.button-menu-et{
+    position: absolute;
+    top:28%;
+    left: 18%;
+
+    border: none;
+    font-family: "bahnschrift";
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8em;
+ 
+}
+
+.list-circle{
+    width: 2em;
+}
+
+
 
 /* Formes d'arrière plan anglés */
 
