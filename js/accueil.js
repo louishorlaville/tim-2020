@@ -48,13 +48,13 @@
   };
 
   let etNouvListe = `
-        <li><img class="listCircle" src="./images/white-circle.svg" /><a href="#" class="button">STAGES</a></li>
-        <li><img class="listCircle" src="./images/white-circle.svg" /><a href="#" class="button">VIE ÉTUDIANTE</a></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/white-circle.svg" /><a href="#" class="button-menu-et">STAGES</a></div></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/white-circle.svg" /><a href="#" class="button-menu-et">VIE ÉTUDIANTE</a></div></li>
     `;
 
   let etActuListe = `
-        <li><img class="listCircle" src="./images/white-circle.svg" /><a href="pages/grilleCheminement.html" class="button">GRILLE DE CHEMINEMENTS</a></li>
-        <li><img class="listCircle" src="./images/white-circle.svg" /><a href="pages/grilleDesProfs.html" class="button">ENSEIGNANTS</a></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/white-circle.svg" /><a href="pages/grilleCheminement.html" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/white-circle.svg" /><a href="pages/grilleDesProfs.html" class="button-menu-et">ENSEIGNANTS</a></div></li>
     `;
 
   btnMenuNvEtud.addEventListener("click", function () {
@@ -92,13 +92,18 @@
                         <div id="et-menu-desc"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
                         <div id="et-menu-image" class="color-bg"><img src="" alt=""></div>
                     </div>
-                    <div class="et-nav">
-                        <img class="metro-nav" src="./images/ligne-metro-menu_1.svg"/>
-                        <ul id="et-liensutiles-liste">
-                        ` +
+                    <div class="et-nav-container">
+                        <div class="et-nav">
+                            <div class="metro-nav-container">
+                                <img class="croix-nav" src="./images/white-plus.svg"/>
+                                <img class="metro-nav" src="./images/ligne-metro-menu_1.svg"/>
+                            </div>
+                            <ul id="et-liensutiles-liste">
+                            ` +
       listType +
       `
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

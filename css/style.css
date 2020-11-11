@@ -622,7 +622,7 @@ body {
     margin-bottom: 15%;
 }
 #et-menu-contenu-container{
-    display: relative
+    position: relative;
 }
 
 #et-menu-contenu{
@@ -635,44 +635,90 @@ body {
     border: none;
     font-family: "bahnschrift";
     color: white;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16pt;
     cursor: pointer;
-    margin-top: 3%;
+    font-size: 0.8em;
+    padding: 1%;
+
 
 }
 
 /* NAV MENU ETUDIANTS ACCUEIL */
-.et-nav{
+.et-nav-container{
     position: absolute;
     top: 70%;
-    left: 10%;
-    width: 40%;
+    left: 2%;
+    width: 100%;
+    text-align: left;
+
+}
+
+.et-nav{
+    position: relative;
+}
+
+.metro-nav-container{
+    position: relative;
+}
+
+.croix-nav{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    width: 3%;
+    transform-origin: center right;
 }
 
 .metro-nav{
-    width: 100%;
+    width: 50%;
     margin-left: 5%;
 }
 
 #et-liensutiles-liste{
-    display: flex;
-    justify-content: center;
+    margin-left: 10%;
     list-style-type: none;
-    
+    flex-direction: row;    
 }
 
 #et-liensutiles-liste > li{
-    margin-left: 10%;
-    margin-right: 5%;
-    margin-top: 1.5%;
+    position: absolute;
+    width: 20%;
+    height: 10%;
 }
 
-.listCircle{
+#et-liensutiles-liste > li:nth-child(1){
+    left:11.5%;
+}
+
+#et-liensutiles-liste > li:nth-child(2){
+    left:33%;
+}
+
+.position-bouton-menu-et{
+    position: relative;
+}
+
+.button-menu-et{
+    position: absolute;
+    top:28%;
+    left: 18%;
+
+    border: none;
+    font-family: "bahnschrift";
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8em;
+ 
+}
+
+.list-circle{
     width: 2em;
 }
+
+
 
 /* Formes d'arrière plan anglés */
 
