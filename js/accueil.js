@@ -48,13 +48,13 @@
   };
 
   let etNouvListe = `
-        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/white-circle.svg" /><a href="#" class="button-menu-et">STAGES</a></div></li>
-        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/white-circle.svg" /><a href="#" class="button-menu-et">VIE ÉTUDIANTE</a></div></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-et">STAGES</a></div></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-et">VIE ÉTUDIANTE</a></div></li>
     `;
 
   let etActuListe = `
-        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/white-circle.svg" /><a href="pages/grilleCheminement.html" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
-        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/white-circle.svg" /><a href="pages/grilleDesProfs.html" class="button-menu-et">ENSEIGNANTS</a></div></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.html" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleDesProfs.html" class="button-menu-et">ENSEIGNANTS</a></div></li>
     `;
 
   btnMenuNvEtud.addEventListener("click", function () {
@@ -95,8 +95,8 @@
                     <div class="et-nav-container">
                         <div class="et-nav">
                             <div class="metro-nav-container">
-                                <img class="croix-nav" src="./images/white-plus.svg"/>
-                                <img class="metro-nav" src="./images/ligne-metro-menu_1.svg"/>
+                                <img class="croix-nav" src="./images/svg/whitePlus.svg"/>
+                                <img class="metro-nav" src="./images/svg/ligneMetroMenu_1.svg"/>
                             </div>
                             <ul id="et-liensutiles-liste">
                             ` +
