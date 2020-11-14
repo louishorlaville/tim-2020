@@ -1,33 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8" user-scalable=no>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-</head>
-<body>
-<div id="background-shapes">
-    <div class="background-shape color-bg-2" id="background-shape-left"></div>
-    <div class="background-shape color-bg-2" id="background-shape-right"></div>
+<?php 
+    $page = "accueil";
+    require("inclusions/hautDePage.php");
+?>
+
 </div>
-
-<div class="animation-area">
-    <ul class="box-area">
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-
-    </ul>
-</div>
-
-<div class="header color-bars">
-</div>
-
 <div id="contenu-principal">
     <div id="title">
         <div class="containerLogo">

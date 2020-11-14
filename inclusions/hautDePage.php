@@ -48,23 +48,32 @@
 
     </ul>
 </div>
-<?php
-if($page!="accueil")
-?>
-    <div class="headerContainer">
+
+    
+<div class="headerContainer">
+    <?php
+    if($page!="accueil"):
+        print($page);
+    ?>
+        <div class="header color-bars">
+    <?php 
+        else:
+    ?>
+    <div class="displayRow">
         <div id="logoMenuAccueilContainer">
-            <img src="./images/svg/header/logoMenuHeder.svg" alt="Logo retour accueil" id="logoMenuAccueil">
+            <img src="./images/svg/header/logoMenuHeader.svg" alt="Logo retour accueil" id="logoMenuAccueil">
         </div>
         <div id="menuHeaderContainer">
-            <div id="menuHeaderNouvEtud" class="eltMenuHeader">
+            <a href="#" id="menuHeaderNouvEtud" class="eltMenuHeader">
                 <img src="./images/svg/header/underlineHeader1.svg" alt="" id="menuHeaderUnderline1" class="underLineHeader">
                 Nouveaux Étudiants
-            </div>
-            <div id="menuHeaderActuEtud" class="eltMenuHeader">
-            <img src="./images/svg/header/underlineHeader2.svg" alt="" id="menuHeaderUnderline2" class="underlineHeader">
+            </a>
+            <a href="#" id="menuHeaderActuEtud" class="eltMenuHeader">
+                <img src="./images/svg/header/underlineHeader2.svg" alt="" id="menuHeaderUnderline2" class="underLineHeader">
                 Étudiants Actuels
-            </div>
+            </a>
         </div>
     </div>
+</div>
 <?php endif; ?>
 

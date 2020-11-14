@@ -28,6 +28,11 @@ body {
     font-size: 30px;
 }
 
+.displayRow{
+    display: flex;
+    flex-direction: row;
+}
+
 #contenu-principal{
     width: 100%;
     height: 100%;
@@ -117,6 +122,63 @@ body {
 .color-text-1{
     color: #1A1A1A;
 }
+
+/*////// STYLE HEADER ///////// */
+.headerContainer{
+    padding: 1em;
+}
+
+#logoMenuAccueilContainer{
+    width: 5%;
+    margin-right: 2%;
+}
+
+#logoMenuAccueilContainer>img{
+    transition: all 0.3s cubic-bezier( 0.94, 0.38, .48, 1.2 );
+    cursor: pointer;
+}
+
+#logoMenuAccueilContainer>img:hover{
+    transform: rotate(45deg);
+}
+
+@keyframes animationCercleHeader{
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+#menuHeaderContainer{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    font-size: 1.5em;
+}
+
+.eltMenuHeader{
+    position: relative;
+    margin-left: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+.underLineHeader{
+    position: absolute;
+    left: -5%;
+}
+
+.underLineHeader:nth-child(1){
+    top: 5%;
+}
+#menuHeaderUnderline2{
+    top: 22.5%;
+    width: 130%;
+}
+
 
 
 
