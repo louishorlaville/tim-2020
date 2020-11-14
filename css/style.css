@@ -28,10 +28,7 @@ body {
     font-size: 30px;
 }
 
-.displayRow{
-    display: flex;
-    flex-direction: row;
-}
+
 
 #contenu-principal{
     width: 100%;
@@ -125,6 +122,11 @@ body {
 
 /*////// STYLE HEADER ///////// */
 .headerContainer{
+}
+
+.displayRowHeader{
+    display: flex;
+    flex-direction: row;
     padding: 1em;
 }
 
@@ -157,6 +159,7 @@ body {
     flex-direction: row;
     width: 75%;
     font-size: 1.5em;
+    margin-top: 1%;
 }
 
 .eltMenuHeader{
@@ -171,11 +174,11 @@ body {
     left: -5%;
 }
 
-.underLineHeader:nth-child(1){
+#menuHeaderUnderline1{
     top: 5%;
 }
 #menuHeaderUnderline2{
-    top: 22.5%;
+    top: 19px;
     width: 130%;
 }
 

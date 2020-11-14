@@ -52,8 +52,7 @@
     
 <div class="headerContainer">
     <?php
-    if($page!="accueil"):
-        print($page);
+    if($page=="accueil"):
     ?>
         <div class="header color-bars">
     <?php 
