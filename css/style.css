@@ -16,7 +16,8 @@ body {
     position: relative;
     font-family: Arial;
     background-color: #FCFCFC;
-    height: auto;
+    height: 100%;
+    overflow: hidden;
 }
 
 .header {
@@ -119,10 +120,6 @@ body {
 }
 
 /*////// STYLE HEADER ///////// */
-.headerContainer{
-
-}
-
 .displayRowHeader{
     display: flex;
     flex-direction: row;
@@ -403,7 +400,7 @@ body {
 .containerLogo {
     height: 75%;
     margin: auto;
-    margin-top:13%;
+    margin-top:10%;
     position: relative;
 }
 
@@ -414,9 +411,11 @@ body {
     font-family: "bahnschrift";
     font-size: 0.85rem;
     position: absolute;
+    transform-origin: 0 0;
     bottom: 0;
     width:100%;
     height:8%;   /* Height of the footer */
+    overflow:hidden;
 }
 
 .credits{
@@ -706,6 +705,11 @@ body {
     height: 60%;
 }
 
+.titreDivEtud{
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+}
+
 .button {
     border: none;
     font-family: "bahnschrift";
@@ -715,9 +719,13 @@ body {
     font-size: 16pt;
     cursor: pointer;
     font-size: 0.8em;
-    padding: 1%;
 
 
+}
+
+.cliqueAccueil{
+    padding-top: 3%;
+    padding-bottom: 1%;
 }
 
 /* NAV MENU ETUDIANTS ACCUEIL */

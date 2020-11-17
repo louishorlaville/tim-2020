@@ -12,13 +12,13 @@
             <div id="cercle-cap-N" class="cercle-cap-logo"></div>
             <div id="cercle-cap-T" class="cercle-cap-logo"></div>
             <div id="cercle-cap-I" class="cercle-cap-logo"></div>
-            <div class="position-container-etudiants" id="position-container-etudiants-nouveaux"><div class="separateur-etudiants mask-ligne-etudiants-nouveaux"><div id="container-etudiants-nouveaux" class="container-etudiants color-1 mask-etudiant"> <div class="color-1"></div> <div id="et-nouveaux-title">NOUVEAUX ÉTUDIANTS</div><a href="#" class="button">CLIQUEZ-ICI!</a></div></div></div>
-            <div class="position-container-etudiants" id="position-container-etudiants-actuels"><div class="separateur-etudiants mask-ligne-etudiants-actuels"><div id="container-etudiants-actuels" class="container-etudiants color-2 mask-etudiant"> <div class="color-2"></div> <div id="et-actuels-title">ÉTUDIANTS ACTUELS</div><a href="#" class="button">CLIQUEZ-ICI!</a></div></div></div>
+            <div class="position-container-etudiants" id="position-container-etudiants-nouveaux"><div class="separateur-etudiants mask-ligne-etudiants-nouveaux"><div id="container-etudiants-nouveaux" class="container-etudiants color-1 mask-etudiant"> <div class="color-1"></div> <div class="titreDivEtud" id="et-nouveaux-title">NOUVEAUX ÉTUDIANTS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div>
+            <div class="position-container-etudiants" id="position-container-etudiants-actuels"><div class="separateur-etudiants mask-ligne-etudiants-actuels"><div id="container-etudiants-actuels" class="container-etudiants color-2 mask-etudiant"> <div class="color-2"></div> <div class="titreDivEtud" id="et-actuels-title">ÉTUDIANTS ACTUELS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div>
         </div>
     </div>
 </div>
 
-</body>
+
 
 <footer class="footer color-bars">
     <div class="credits" >
@@ -31,7 +31,7 @@
         <p>Copyright © 2020 -  <a href="https://www.cmaisonneuve.qc.ca/">Collège de Maisonneuve.</a>  Tous droits réservés.</p>
     </div>
 </footer>
-
+</body>
 <script src="js/accueil.js" type="text/javascript"></script> 
 
 </html> 
