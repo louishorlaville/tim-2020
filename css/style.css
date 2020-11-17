@@ -16,13 +16,11 @@ body {
     position: relative;
     font-family: Arial;
     background-color: #FCFCFC;
-    margin: 0;
-    height: 100%;
-    min-height: 100%;
+    height: auto;
 }
 
 .header {
-    padding: 20px;
+    padding: 1%;
     text-align: center;
     color: white;
     font-size: 30px;
@@ -190,7 +188,7 @@ body {
 
 .animation-area{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position:absolute;
     font-size: 5rem;
     z-index: -2;
@@ -399,8 +397,7 @@ body {
     width: 50%;
     min-width: 50%;
     min-height: 100%;
-    position: absolute; /* or absolute */
-    left: 30%;
+    margin-left: 30%;
 }
 
 .containerLogo {
@@ -416,11 +413,10 @@ body {
     color: white;
     font-family: "bahnschrift";
     font-size: 0.85rem;
-
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
     width:100%;
-    height:60px;   /* Height of the footer */
+    height:8%;   /* Height of the footer */
 }
 
 .credits{
@@ -803,7 +799,7 @@ body {
 
 #background-shapes{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position:absolute;
     overflow: hidden;
     z-index: -3;
