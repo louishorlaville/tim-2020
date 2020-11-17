@@ -19,13 +19,15 @@
             "titre" =>  "Évènements | TIM"
         ],
     ]
+    // ($page!="accueil")? '<link rel="stylesheet" href="./css/'.$page.'.css">' : "";
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
     <title><?= $meta[$page]["titre"]; ?></title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="<?=($page=="accueil")? "css/style.css" :"../css/style.css" ?>">
+    <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
     <meta charset="UTF-8" user-scalable=no>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
@@ -54,21 +56,21 @@
     <?php
     if($page=="accueil"):
     ?>
-        <div class="header color-bars">
+        <div class="header color-bars"> </div>
     <?php 
         else:
     ?>
-    <div class="displayRow">
+    <div class="displayRowHeader">
         <div id="logoMenuAccueilContainer">
-            <img src="./images/svg/header/logoMenuHeader.svg" alt="Logo retour accueil" id="logoMenuAccueil">
+        <a href="../index.php"><img src="../images/svg/header/logoMenuHeader.svg" alt="Logo retour accueil" id="logoMenuAccueil" href="../index.php">
         </div>
         <div id="menuHeaderContainer">
             <a href="#" id="menuHeaderNouvEtud" class="eltMenuHeader">
-                <img src="./images/svg/header/underlineHeader1.svg" alt="" id="menuHeaderUnderline1" class="underLineHeader">
+                <img src="../images/svg/header/underlineHeader1.svg" alt="" id="menuHeaderUnderline1" class="underLineHeader">
                 Nouveaux Étudiants
             </a>
             <a href="#" id="menuHeaderActuEtud" class="eltMenuHeader">
-                <img src="./images/svg/header/underlineHeader2.svg" alt="" id="menuHeaderUnderline2" class="underLineHeader">
+                <img src="../images/svg/header/underlineHeader2.svg" alt="" id="menuHeaderUnderline2" class="underLineHeader">
                 Étudiants Actuels
             </a>
         </div>

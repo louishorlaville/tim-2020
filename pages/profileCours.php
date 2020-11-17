@@ -1,43 +1,13 @@
-<!DOCTYPE html>
-<html>
+<?php 
+    $page = "profileCours";
+    require("../inclusions/hautDePage.php");
+?>
 
-<head>
-	<meta charset="utf-8">
-	<title>Tim-2020-Cours</title>
-    <link rel="stylesheet" href="../css/profileCours.css">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-
-<body>
-
-    <div id="background-shapes">
-        <div class="background-shape color-bg-2" id="background-shape-left"></div>
-        <div class="background-shape color-bg-2" id="background-shape-right"></div>
-    </div>
-    
-    <div class="animation-area">
-        <ul class="box-area">
-            <li>+</li>
-            <li>+</li>
-            <li>+</li>
-            <li>+</li>
-            <li>+</li>
-            <li>+</li>
-            <li>+</li>
-            <li>+</li>
-    
-        </ul>
-    </div>
-
-
-	<header>
-    </header>
-    
     
     <!-- Fin Header -->
 	<main class="grid-container">
 	    <section id="titre-cours" class="color-text-1">
-            <a href="" class="retour color-text-1">&lt;</a>
+            <a href="../index.php" class="retour color-text-1">&lt;</a>
 	        <h3 id="code-cours">TIM-404</h3>
 	        <h1 id="nom-cours">Cours d'introduction à la programmation</h1>
 	    </section>

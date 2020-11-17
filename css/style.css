@@ -122,6 +122,7 @@ body {
 
 /*////// STYLE HEADER ///////// */
 .headerContainer{
+
 }
 
 .displayRowHeader{
@@ -131,7 +132,7 @@ body {
 }
 
 #logoMenuAccueilContainer{
-    width: 5%;
+    width: 8%;
     margin-right: 2%;
 }
 
@@ -175,7 +176,7 @@ body {
 }
 
 #menuHeaderUnderline1{
-    top: 5%;
+    top: 2px;
 }
 #menuHeaderUnderline2{
     top: 19px;
@@ -581,6 +582,7 @@ body {
 .position-container-etudiants{
     position: absolute;
     width: 45%;
+    min-width: 340px;
     
 }
 
@@ -591,7 +593,7 @@ body {
 }
 
 #position-container-etudiants-actuels{
-    left:55%;
+    left:60%;
     bottom: 0;
 }
 
