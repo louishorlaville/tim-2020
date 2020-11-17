@@ -1,6 +1,3 @@
-<?php 
-?>
-
 <footer class="footer color-bars">
     <div class="credits" >
         <p>Site Web crée par:</p>
@@ -14,9 +11,9 @@
 </footer>
 </body>
 
-<?= if($page=="accueil"): ?>
+<?php if($page=="accueil"): ?>
     <script src="js/accueil.js" type="text/javascript"></script> 
-<?=endif?>
+<?php endif;?>
 
 </html> 
 
