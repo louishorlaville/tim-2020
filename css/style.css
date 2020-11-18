@@ -246,18 +246,42 @@ body {
     bottom: 42%;
 }
 
+#camilleNom{
+    font-size: 75%;
+    left: 50%;
+    bottom: 44.5%;
+}
+
 #martin{
     left: 64%;
     bottom: 64%;
+}
+
+#martinNom{
+    font-size: 75%;
+    left: 64.2%;
+    bottom: 65.5%;
 }
 
 #denis{
     left: 53%;
     bottom: 14%;
 }
+#denisNom{
+    font-size: 75%;
+    left: 53.4%;
+    bottom: 15.5%;
+}
+
 #dominic{
     left: 22%;
     bottom: 65%;
+}
+
+#dominicNom{
+    font-size: 75%;
+    left: 22%;
+    bottom: 66%;
 }
 
 #vahik{
@@ -265,9 +289,21 @@ body {
     bottom: 79%;
 }
 
+#vahikNom{
+    font-size: 75%;
+    left: 44.4%;
+    bottom: 82%;
+}
+
 #gregory{
     left: 68%;
     bottom: 43%;
+}
+
+#gregoryNom{
+    font-size: 75%;
+    left: 68%;
+    bottom: 44.5%;
 }
 
 #david{
@@ -275,18 +311,41 @@ body {
     bottom: 22%;
 }
 
+#davidNom{
+    font-size: 75%;
+    left: 40.3%;
+    bottom: 23.5%;
+}
+
 #mathieu{
     left: 84%;
     bottom: 17%;
+}
+#mathieuNom{
+    font-size: 75%;
+    left: 84%;
+    bottom: 18.5%;
 }
 
 #manon{
     left: 83%;
     bottom: 74%;
 }
+
+#manonNom{
+    font-size: 75%;
+    left: 83.2%;
+    bottom: 75.5%;
+}
+
 #vincent{
-    left: 50%;
-    bottom: 42%;
+    left: 38%;
+    bottom: 60%;
+}
+#vincentNom{
+    font-size: 75%;
+    left: 38%;
+    bottom: 62%;
 }
 
 #johanne{
@@ -294,14 +353,33 @@ body {
     bottom: 23%;
 }
 
+#johanneNom{
+    font-size:75%;
+    left: 15%;
+    bottom: 25.5%;
+}
+
 #eddy{
     left: 23%;
     bottom: 84%;
 }
 
+#eddyNom{
+    font-size:75%;
+    left: 23.5%;
+    bottom: 86.5%;
+}
+
+
 #caroline{
     left: 63%;
     bottom: 16%;
+}
+
+#carolineNom{
+    font-size: 75%;
+    left: 63%;
+    bottom: 18.5%;
 }
 
 #ahmed{
@@ -309,6 +387,11 @@ body {
     bottom: 54%;
 }
 
+#ahmedNom{
+    font-size: 75%;
+    left: 94%;
+    bottom: 57%;
+}
 
 
 
