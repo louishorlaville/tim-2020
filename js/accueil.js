@@ -14,11 +14,11 @@
   ];
   let boites = [
     [btnMenuNvEtud, 0, 0.65],
-    [btnMenuEtudActu, 0.55, 0.98],
+    [btnMenuEtudActu, 0.56, 0.98],
   ];
   let cerclesDesign = [
     [document.querySelector(".logo-cercle-border"), 0.62, 0.05],
-    [document.querySelector(".cercle-n-border"), 0.065, 0.21],
+    [document.querySelector(".cercle-n-border"), 0.062, 0.15],
   ];
 
   //Placer les cercles et boites au chargement de la page
@@ -84,7 +84,7 @@
       menuType +
       `"> 
             <div id="container-etudiants-contenu">
-                <div id="et-menu-title"><a class="button-back" href="index.html"><</a>` +
+                <div id="et-menu-title"><a class="button-back" href="index.php"><</a>` +
       menuTitle +
       `</div> 
                 <div id="et-menu-contenu-container">

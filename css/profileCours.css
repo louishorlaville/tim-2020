@@ -4,7 +4,6 @@ main{
 
 
 .grid-container {
-  padding-top: 8%;
   display: grid;
   grid-template-columns: 0.9fr 1.1fr 0.6fr 0.4fr 1fr;
   grid-template-rows: 0.1fr 0.5fr 1.5fr;
@@ -15,15 +14,15 @@ main{
 }
 
 #nom-cours {
-    border-bottom: solid black 5px;
-    padding-bottom: 10px;
 }
 
 
 #titre-cours {
+    border-bottom: solid black 5px;
+
     grid-area: titre-cours;
     font-size: 1.3em;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     grid-column: 2 / 5;
 }
 
@@ -33,7 +32,9 @@ main{
     text-decoration: none;
 }
 
-
+#code-cours, #nom-cours{
+    margin-left: 50px;
+}
 
 #description {
     grid-area: description;
