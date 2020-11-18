@@ -31,7 +31,6 @@
     display: grid;
     grid-gap: 1rem;
     margin-left: 7rem;
-    margin-top: 8rem;
     grid-template-columns:  repeat(7, 13%);
     grid-template-rows: repeat(5, 100px);
   }

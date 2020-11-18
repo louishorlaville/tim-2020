@@ -3,7 +3,7 @@
         "accueil" =>  [
             "titre" =>  "Accueil | TIM"
         ],
-        "grilleCheminement" =>  [
+        "cheminement" =>  [
             "titre" =>  "Grille de chemninement | TIM"
         ],
         "profileCours" =>  [
@@ -26,8 +26,8 @@
 <html>
 <head>
     <title><?= $meta[$page]["titre"]; ?></title>
-    <link rel="stylesheet" href="<?=($page=="accueil")? "css/style.css" :"../css/style.css" ?>">
     <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
+    <link rel="stylesheet" href="<?=($page=="accueil")? "css/style.css" :"../css/style.css" ?>">
     <meta charset="UTF-8" user-scalable=no>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
