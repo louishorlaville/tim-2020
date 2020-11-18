@@ -16,17 +16,18 @@ body {
     position: relative;
     font-family: Arial;
     background-color: #FCFCFC;
-    margin: 0;
     height: 100%;
-    min-height: 100%;
+    overflow: hidden;
 }
 
 .header {
-    padding: 20px;
+    padding: 1%;
     text-align: center;
     color: white;
     font-size: 30px;
 }
+
+
 
 #contenu-principal{
     width: 100%;
@@ -68,6 +69,15 @@ body {
     animation: fadein 0.2s linear;  
     animation-fill-mode: forwards;  
     animation-delay: 0.5s;
+}
+
+
+/* Éléments à placer (boutons,etc.)*/
+.button-back{
+    float: left;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
 }
 
 
@@ -113,13 +123,73 @@ body {
     color: #1A1A1A;
 }
 
+/*////// STYLE HEADER ///////// */
+.displayRowHeader{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+
+#logoMenuAccueilContainer{
+    width: 8%;
+    margin-right: 2%;
+}
+
+#logoMenuAccueilContainer>img{
+    transition: all 0.3s cubic-bezier( 0.94, 0.38, .48, 1.2 );
+    cursor: pointer;
+}
+
+#logoMenuAccueilContainer>img:hover{
+    transform: rotate(45deg);
+}
+
+@keyframes animationCercleHeader{
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+#menuHeaderContainer{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    font-size: 1.5em;
+    margin-top: 1%;
+}
+
+.eltMenuHeader{
+    position: relative;
+    margin-left: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+.underLineHeader{
+    position: absolute;
+    left: -5%;
+}
+
+#menuHeaderUnderline1{
+    top: 2px;
+}
+#menuHeaderUnderline2{
+    top: 19px;
+    width: 130%;
+}
+
+
 
 
 /* Éléments d'arrière plan animés */
 
 .animation-area{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position:absolute;
     font-size: 5rem;
     z-index: -2;
@@ -198,6 +268,199 @@ body {
     animation-duration: 10s;
     animation-timing-function: linear;
 }
+.prog {
+    border: none;
+    font-family: "bahnschrift";
+    color:red ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 62pt;
+    cursor: pointer;
+    position: absolute;
+}
+
+.prog:active {
+   text-shadow: salmon 3px 3px,
+   salmon -3px 3px,
+   salmon -3px -3px,
+   salmon 3px -3px ; 
+
+}
+.design {
+    border: none;
+    font-family: "bahnschrift";
+    color:teal ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 62pt;
+    cursor: pointer;
+    position: absolute;
+}
+.design:active {
+    text-shadow:turquoise 3px 3px,
+   turquoise -3px 3px,
+   turquoise -3px -3px,
+   turquoise 3px -3px ; 
+ 
+ }
+
+#camille{
+    left: 50%;
+    bottom: 42%;
+}
+
+#camilleNom{
+    font-size: 75%;
+    left: 50%;
+    bottom: 44.5%;
+}
+
+#martin{
+    left: 64%;
+    bottom: 64%;
+}
+
+#martinNom{
+    font-size: 75%;
+    left: 64.2%;
+    bottom: 65.5%;
+}
+
+#denis{
+    left: 53%;
+    bottom: 14%;
+}
+#denisNom{
+    font-size: 75%;
+    left: 53.4%;
+    bottom: 15.5%;
+}
+
+#dominic{
+    left: 22%;
+    bottom: 65%;
+}
+
+#dominicNom{
+    font-size: 75%;
+    left: 22%;
+    bottom: 66%;
+}
+
+#vahik{
+    left: 44%;
+    bottom: 79%;
+}
+
+#vahikNom{
+    font-size: 75%;
+    left: 44.4%;
+    bottom: 82%;
+}
+
+#gregory{
+    left: 68%;
+    bottom: 43%;
+}
+
+#gregoryNom{
+    font-size: 75%;
+    left: 68%;
+    bottom: 44.5%;
+}
+
+#david{
+    left: 40%;
+    bottom: 22%;
+}
+
+#davidNom{
+    font-size: 75%;
+    left: 40.3%;
+    bottom: 23.5%;
+}
+
+#mathieu{
+    left: 84%;
+    bottom: 17%;
+}
+#mathieuNom{
+    font-size: 75%;
+    left: 84%;
+    bottom: 18.5%;
+}
+
+#manon{
+    left: 83%;
+    bottom: 74%;
+}
+
+#manonNom{
+    font-size: 75%;
+    left: 83.2%;
+    bottom: 75.5%;
+}
+
+#vincent{
+    left: 38%;
+    bottom: 60%;
+}
+#vincentNom{
+    font-size: 75%;
+    left: 38%;
+    bottom: 62%;
+}
+
+#johanne{
+    left: 15%;
+    bottom: 23%;
+}
+
+#johanneNom{
+    font-size:75%;
+    left: 15%;
+    bottom: 25.5%;
+}
+
+#eddy{
+    left: 23%;
+    bottom: 84%;
+}
+
+#eddyNom{
+    font-size:75%;
+    left: 23.5%;
+    bottom: 86.5%;
+}
+
+
+#caroline{
+    left: 63%;
+    bottom: 16%;
+}
+
+#carolineNom{
+    font-size: 75%;
+    left: 63%;
+    bottom: 18.5%;
+}
+
+#ahmed{
+    left: 94%;
+    bottom: 54%;
+}
+
+#ahmedNom{
+    font-size: 75%;
+    left: 94%;
+    bottom: 57%;
+}
+
+
+
+
 
 @keyframes animate{
     from {
@@ -216,14 +479,16 @@ body {
 #title{
     height:100%;
     width: 50%;
-    position: absolute; /* or absolute */
-    left: 28%;
+    min-width: 50%;
+    min-height: 100%;
+    margin-left: 30%;
 }
 
-.logo {
+.containerLogo {
     height: 75%;
     margin: auto;
-    margin-top:8%;
+    margin-top:10%;
+    position: relative;
 }
 
 .footer {
@@ -232,11 +497,12 @@ body {
     color: white;
     font-family: "bahnschrift";
     font-size: 0.85rem;
-
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    transform-origin: 0 0;
+    bottom: 0;
     width:100%;
-    height:60px;   /* Height of the footer */
+    height:8%;   /* Height of the footer */
+    overflow:hidden;
 }
 
 .credits{
@@ -260,16 +526,15 @@ body {
     margin: auto;
     margin-top: 0.25rem;
     border-radius:50%;
-
     width: 6rem;
     height: 6rem;
 }
 
 .cercle-n-border{
     position: absolute;
-    border: black;
-    border-style: dashed;
-    border-radius:50%;
+    /* border: black; */
+    /* border-style: dashed; */
+    /* border-radius:50%; */
 
     clip-path: inset(0 0 0 50%);
 
@@ -338,9 +603,8 @@ body {
     border: black;
     border-style: dashed;
     border-radius:50%;
-
-    left: 72%;
-    top: 20%;
+    /* left: 65%; */
+    /* top: 20%; */
 
     z-index: -1;
 
@@ -375,31 +639,79 @@ body {
     text-align: center;
     font-weight: bolder;
     font-size: 3rem;
+    transform-origin: 0 0;
 }
 
+
+
 #cercle-cap-N{
-    left: 11.4%;
-    top: 4.75%;
+    left: 0;
+    top: 0;
 }
 
 #cercle-cap-T{
-    left: 114%;
-    top: 35%;
+    left: 0;
+    top: 0;
 }
 
 #cercle-cap-I{
-    left: 59%;
-    top: 83.25%;
+    left: 0;
+    top: 0;
 }
 
 
 /* Sections étudiants */
+.position-container-etudiants{
+    position: absolute;
+    width: 45%;
+    min-width: 340px;
+    
+}
+
+#position-container-etudiants-nouveaux{
+    transform: translate(-100%,0);
+    top:60%;
+    left:0;
+}
+
+#position-container-etudiants-actuels{
+    left:60%;
+    bottom: 0;
+}
+
+.separateur-etudiants{
+    background-color: #1A1A1A; 
+}
 
 .container-etudiants{
-    position: absolute;
     font-size: 24px;
     text-align: center;
-    width: 45%;
+}
+
+#container-etudiants-nouveaux{
+    margin-left: 3%;
+}
+
+#container-etudiants-actuels{
+    margin-right: 3%;
+}
+
+.mask-ligne-etudiants-nouveaux{
+    clip-path: polygon(
+        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 55%, 0 55%, 0 50%, 101% 50%,101% 45%, 0 45%, 0 0 
+     );
+}
+
+.mask-ligne-etudiants-actuels{
+    clip-path: polygon(
+        0 0, 0 100%, 100% 100%, 100% 60%, 0 60%, 0 55%, 120% 55%, 120% 50%, 0 50%, 0 45%, 100% 45%,100% 0, 0 0 
+     );
+}
+
+.mask-etudiant{
+    clip-path: polygon(
+        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 45%, 0 45%, 0 0 
+     );
 }
 
 .container-etudiants-animate{
@@ -407,15 +719,6 @@ body {
     width: 9999%;
     height: 9999%;
     z-index: -1;
-}
-
-#container-etudiants-nouveaux{
-    left: -45%;
-    top: 57%;
-}
-#container-etudiants-actuels{
-    left: 62.25%;
-    top: 78.5%;
 }
 
 #container-etudiants-fullscreen{
@@ -426,7 +729,8 @@ body {
     margin-right: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
-
+    padding-top: 0.3em;
+    clip-path: polygon(0 0, 100% 0, 100% 13%, 0 13%, 0 15%,100% 15%, 100% 100%, 0 100%, 0 0);
     animation: etudiants-fill 1s;  
     animation-fill-mode: forwards;  
 }
@@ -441,10 +745,7 @@ body {
     }
 }
 
-.separateur-etudiants{
-    background-color: #FCFCFC;
-    height: 10px;
-}
+
 
 #et-nouveaux-title{
     color: #FCFCFC;
@@ -471,51 +772,129 @@ body {
     font-size: 24px;
     text-align: left;
     width: 60%;
-    margin: 5%;
+    margin: 5% 5% 0 5%;
 }
 
 #et-menu-image{
     width: 380px;
     height: 380px;
-    margin: 5%;
+    margin: 8%;
     margin-right: 50px;
     margin-bottom: 15%;
+}
+#et-menu-contenu-container{
+    position: relative;
 }
 
 #et-menu-contenu{
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 75%;
+    height: 60%;
+}
+
+.titreDivEtud{
+    padding-top: 1.5%;
+    padding-bottom: 1%;
 }
 
 .button {
     border: none;
     font-family: "bahnschrift";
     color: white;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16pt;
     cursor: pointer;
+    font-size: 0.8em;
+
+
+}
+
+.cliqueAccueil{
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+/* NAV MENU ETUDIANTS ACCUEIL */
+.et-nav-container{
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    width: 100%;
+    text-align: left;
+
+}
+
+.et-nav{
+    position: relative;
+}
+
+.metro-nav-container{
+    position: relative;
+}
+
+.croix-nav{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    width: 3%;
+    transform-origin: center right;
+}
+
+.metro-nav{
+    width: 50%;
+    margin-left: 5%;
 }
 
 #et-liensutiles-liste{
-    display: flex;
-    justify-content: center;
+    margin-left: 10%;
     list-style-type: none;
+    flex-direction: row;    
 }
 
 #et-liensutiles-liste > li{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 1.5%;
+    position: absolute;
+    width: 20%;
+    height: 10%;
 }
+
+#et-liensutiles-liste > li:nth-child(1){
+    left:11.5%;
+}
+
+#et-liensutiles-liste > li:nth-child(2){
+    left:33%;
+}
+
+.position-bouton-menu-et{
+    position: relative;
+}
+
+.button-menu-et{
+    position: absolute;
+    top:28%;
+    left: 18%;
+
+    border: none;
+    font-family: "bahnschrift";
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8em;
+ 
+}
+
+.list-circle{
+    width: 2em;
+}
+
+
 
 /* Formes d'arrière plan anglés */
 
 #background-shapes{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position:absolute;
     overflow: hidden;
     z-index: -3;
