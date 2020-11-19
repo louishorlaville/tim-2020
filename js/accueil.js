@@ -53,8 +53,8 @@
     `;
 
   let etActuListe = `
-        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.html" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
-        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleDesProfs.html" class="button-menu-et">ENSEIGNANTS</a></div></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleDesProfs.php" class="button-menu-et">ENSEIGNANTS</a></div></li>
     `;
 
   btnMenuNvEtud.addEventListener("click", function () {
