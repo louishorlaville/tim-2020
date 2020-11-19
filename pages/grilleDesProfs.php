@@ -1,47 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+<?php 
+    $page = "profs";
+    require("../inclusions/hautDePage.php");
+?>
 
-<div id="background-shapes">
-    <div class="background-shape color-bg-2" id="background-shape-left"></div>
-    <div class="background-shape color-bg-2" id="background-shape-right"></div>
-</div>
-
-
-
-<div class="header color-bars">
-</div>
 <div id="contenu-principal">
+    <div id="contenu-titre-profs">
+        <div class="titre-page" id="titre-profs">NOS ENSEIGNANTS</div>
+    </div>
     <div id="contenu-profs">
         <div class="profProg prof" id="martin">
-            <div class="signe-prof">o</div>
+            <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">Martin</div> 
         </div>
         <div class="profProg prof" id="dominic">
-            <div class="signe-prof">o</div>
+            <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">dominic</div>
         </div>
         <div class="profProg prof" id="manon">
-            <div class="signe-prof">o</div>
+            <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">manon</div>
         </div>
         <div class="profProg prof" id="mathieu">
-            <div class="signe-prof">o</div>
+            <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">mathieu</div>
         </div>
         <div class="profProg prof" id="david">
-            <div class="signe-prof">o</div>
+            <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">david</div>
         </div>
         <div class="profProg prof" id="denis">
-            <div class="signe-prof">o</div>
+            <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">denis</div>
         </div>
         <div class="profProg prof" id="gregory">
-            <div class="signe-prof">o</div>
+            <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">gregory</div>
         </div>
         <div class="profDesign prof" id="camille">

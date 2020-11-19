@@ -9,7 +9,7 @@
         "profileCours" =>  [
             "titre" =>  "Profile de cours | TIM"
         ],
-        "tableauProf" =>  [
+        "profs" =>  [
             "titre" =>  "Professeurs | TIM"
         ],
         "stages" =>  [

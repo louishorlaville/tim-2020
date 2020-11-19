@@ -3,7 +3,7 @@
     require("../inclusions/hautDePage.php");
 ?>
 <div id="contenu-principal">
-  <h1>⠀</h1>
+  <h1> GRILLE DE CHEMINENEMT⠀</h1>
 
   <div class="grid-container">
 
