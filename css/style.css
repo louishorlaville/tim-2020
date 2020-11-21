@@ -20,14 +20,7 @@ body {
     overflow: hidden;
 }
 
-.header {
-    padding: 1%;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}
-
-
+/* ///////// STYLE ACCUEIL //////////// */
 
 #contenu-principal{
     width: 100%;
@@ -122,8 +115,290 @@ body {
 .color-text-1{
     color: #1A1A1A;
 }
+/* Logo et formes */
+#title{
+    height:100%;
+    width: 50%;
+    min-width: 50%;
+    min-height: 100%;
+    margin-left: 30%;
+}
+
+.containerLogo {
+    height: 75%;
+    margin: auto;
+    margin-top:10%;
+    position: relative;
+}
+
+/* Cercles qui apparaissent dans le logo */
+.cercle-cap-logo{
+    position: absolute;
+    border-radius: 100%;
+    border-color: #1A1A1A;
+    border-width: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+    border-style: solid;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+    transform-origin: 0 0;
+}
+
+#cercle-cap-N{
+    left: 0;
+    top: 0;
+}
+
+#cercle-cap-T{
+    left: 0;
+    top: 0;
+}
+
+#cercle-cap-I{
+    left: 0;
+    top: 0;
+}
+/* SECTIONS ETUDIANTS */
+.position-container-etudiants{
+    position: absolute;
+    width: 45%;
+    min-width: 340px;
+    
+}
+
+#position-container-etudiants-nouveaux{
+    transform: translate(-100%,0);
+    top:60%;
+    left:0;
+}
+
+#position-container-etudiants-actuels{
+    left:60%;
+    bottom: 0;
+}
+
+.separateur-etudiants{
+    background-color: #1A1A1A; 
+}
+
+.container-etudiants{
+    font-size: 24px;
+    text-align: center;
+}
+
+#container-etudiants-nouveaux{
+    margin-left: 3%;
+}
+
+#container-etudiants-actuels{
+    margin-right: 3%;
+}
+
+.mask-ligne-etudiants-nouveaux{
+    clip-path: polygon(
+        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 55%, 0 55%, 0 50%, 101% 50%,101% 45%, 0 45%, 0 0 
+     );
+}
+
+.mask-ligne-etudiants-actuels{
+    clip-path: polygon(
+        0 0, 0 100%, 100% 100%, 100% 60%, 0 60%, 0 55%, 120% 55%, 120% 50%, 0 50%, 0 45%, 100% 45%,100% 0, 0 0 
+     );
+}
+
+.mask-etudiant{
+    clip-path: polygon(
+        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 45%, 0 45%, 0 0 
+     );
+}
+
+.container-etudiants-animate{
+    position: absolute;
+    width: 9999%;
+    height: 9999%;
+    z-index: -1;
+}
+
+#container-etudiants-fullscreen{
+    width: 90%;
+    height: 70%;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 0.3em;
+    clip-path: polygon(0 0, 100% 0, 100% 13%, 0 13%, 0 15%,100% 15%, 100% 100%, 0 100%, 0 0);
+    animation: etudiants-fill 1s;  
+    animation-fill-mode: forwards;  
+}
+
+@keyframes etudiants-fill{
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 70%;
+    }
+}
+
+
+
+#et-nouveaux-title{
+    color: #FCFCFC;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#et-actuels-title{
+    color: #FCFCFC;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#et-menu-title{
+    color: #FCFCFC;
+    font-size: 42px;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#et-menu-desc{
+    color: #FCFCFC;
+    font-size: 24px;
+    text-align: left;
+    width: 60%;
+    margin: 5% 5% 0 5%;
+}
+
+#et-menu-image{
+    width: 380px;
+    height: 380px;
+    margin: 8%;
+    margin-right: 50px;
+    margin-bottom: 15%;
+}
+#et-menu-contenu-container{
+    position: relative;
+}
+
+#et-menu-contenu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 60%;
+}
+
+.titreDivEtud{
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+}
+
+.button {
+    border: none;
+    font-family: "bahnschrift";
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16pt;
+    cursor: pointer;
+    font-size: 0.8em;
+
+
+}
+
+.cliqueAccueil{
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+/* NAV MENU ETUDIANTS ACCUEIL */
+.et-nav-container{
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    width: 100%;
+    text-align: left;
+
+}
+
+.et-nav{
+    position: relative;
+}
+
+.metro-nav-container{
+    position: relative;
+}
+
+.croix-nav{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    width: 3%;
+    transform-origin: center right;
+}
+
+.metro-nav{
+    width: 50%;
+    margin-left: 5%;
+}
+
+#et-liensutiles-liste{
+    margin-left: 10%;
+    list-style-type: none;
+    flex-direction: row;    
+}
+
+#et-liensutiles-liste > li{
+    position: absolute;
+    width: 20%;
+    height: 10%;
+}
+
+#et-liensutiles-liste > li:nth-child(1){
+    left:11.5%;
+}
+
+#et-liensutiles-liste > li:nth-child(2){
+    left:33%;
+}
+
+#et-liensutiles-liste > li:nth-child(3){
+    left:54%;
+}
+.position-bouton-menu-et{
+    position: relative;
+}
+
+.button-menu-et{
+    position: absolute;
+    top:28%;
+    left: 18%;
+
+    border: none;
+    font-family: "bahnschrift";
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8em;
+ 
+}
+
+.list-circle{
+    width: 2em;
+}
 
 /*////// STYLE HEADER ///////// */
+.header {
+    padding: 1%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
 .displayRowHeader{
     display: flex;
     flex-direction: row;
@@ -135,12 +410,12 @@ body {
     margin-right: 2%;
 }
 
-#logoMenuAccueilContainer>img{
+#logoMenuAccueilContainer{
     transition: all 0.3s cubic-bezier( 0.94, 0.38, .48, 1.2 );
     cursor: pointer;
 }
 
-#logoMenuAccueilContainer>img:hover{
+#logoMenuAccueilContainer:hover{
     transform: rotate(45deg);
 }
 
@@ -185,7 +460,7 @@ body {
 
 
 
-/* Éléments d'arrière plan animés */
+/* ARRIÈRE-PLAN ANIMÉ */
 
 .animation-area{
     width: 100%;
@@ -213,7 +488,34 @@ body {
     animation: animate 10s linear infinite;  
 }
 
-/* todo with javascript */
+/* Formes d'arrière plan anglés */
+
+#background-shapes{
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    overflow: hidden;
+    z-index: -3;
+}
+
+.background-shape{
+    height: 100%;
+    position:absolute;
+}
+
+#background-shape-left {
+    width: 30%;
+	transform: skew(-20deg);
+    left: -20%;
+}
+
+#background-shape-right {
+    width: 60%;
+	transform: skew(-45deg);
+    margin-left: 72%;
+}
+
+/* TODO with javascript */
 
 .box-area li:nth-child(1){
     left: 200px;
@@ -476,21 +778,8 @@ body {
 
 /* end of todo */
 
-#title{
-    height:100%;
-    width: 50%;
-    min-width: 50%;
-    min-height: 100%;
-    margin-left: 30%;
-}
 
-.containerLogo {
-    height: 75%;
-    margin: auto;
-    margin-top:10%;
-    position: relative;
-}
-
+/* /////////FOOTER//////////// */
 .footer {
     display: flex;
     justify-content: center;
@@ -627,295 +916,16 @@ body {
 }
 
 
-/* Cercles qui apparaissent dans le logo */
-.cercle-cap-logo{
-    position: absolute;
-    border-radius: 100%;
-    border-color: #1A1A1A;
-    border-width: 0.3rem;
-    width: 1rem;
-    height: 1rem;
-    border-style: solid;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3rem;
-    transform-origin: 0 0;
-}
 
 
 
-#cercle-cap-N{
-    left: 0;
-    top: 0;
-}
-
-#cercle-cap-T{
-    left: 0;
-    top: 0;
-}
-
-#cercle-cap-I{
-    left: 0;
-    top: 0;
-}
-
-
-/* Sections étudiants */
-.position-container-etudiants{
-    position: absolute;
-    width: 45%;
-    min-width: 340px;
-    
-}
-
-#position-container-etudiants-nouveaux{
-    transform: translate(-100%,0);
-    top:60%;
-    left:0;
-}
-
-#position-container-etudiants-actuels{
-    left:60%;
-    bottom: 0;
-}
-
-.separateur-etudiants{
-    background-color: #1A1A1A; 
-}
-
-.container-etudiants{
-    font-size: 24px;
-    text-align: center;
-}
-
-#container-etudiants-nouveaux{
-    margin-left: 3%;
-}
-
-#container-etudiants-actuels{
-    margin-right: 3%;
-}
-
-.mask-ligne-etudiants-nouveaux{
-    clip-path: polygon(
-        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 55%, 0 55%, 0 50%, 101% 50%,101% 45%, 0 45%, 0 0 
-     );
-}
-
-.mask-ligne-etudiants-actuels{
-    clip-path: polygon(
-        0 0, 0 100%, 100% 100%, 100% 60%, 0 60%, 0 55%, 120% 55%, 120% 50%, 0 50%, 0 45%, 100% 45%,100% 0, 0 0 
-     );
-}
-
-.mask-etudiant{
-    clip-path: polygon(
-        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 45%, 0 45%, 0 0 
-     );
-}
-
-.container-etudiants-animate{
-    position: absolute;
-    width: 9999%;
-    height: 9999%;
-    z-index: -1;
-}
-
-#container-etudiants-fullscreen{
-    width: 90%;
-    height: 70%;
-    display: block;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-top: 0.3em;
-    clip-path: polygon(0 0, 100% 0, 100% 13%, 0 13%, 0 15%,100% 15%, 100% 100%, 0 100%, 0 0);
-    animation: etudiants-fill 1s;  
-    animation-fill-mode: forwards;  
-}
-
-@keyframes etudiants-fill{
-    from {
-        height: 0%;
-    }
-
-    to {
-        height: 70%;
-    }
-}
 
 
 
-#et-nouveaux-title{
-    color: #FCFCFC;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#et-actuels-title{
-    color: #FCFCFC;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#et-menu-title{
-    color: #FCFCFC;
-    font-size: 42px;
-    font-weight: bold;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-#et-menu-desc{
-    color: #FCFCFC;
-    font-size: 24px;
-    text-align: left;
-    width: 60%;
-    margin: 5% 5% 0 5%;
-}
-
-#et-menu-image{
-    width: 380px;
-    height: 380px;
-    margin: 8%;
-    margin-right: 50px;
-    margin-bottom: 15%;
-}
-#et-menu-contenu-container{
-    position: relative;
-}
-
-#et-menu-contenu{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    height: 60%;
-}
-
-.titreDivEtud{
-    padding-top: 1.5%;
-    padding-bottom: 1%;
-}
-
-.button {
-    border: none;
-    font-family: "bahnschrift";
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16pt;
-    cursor: pointer;
-    font-size: 0.8em;
-
-
-}
-
-.cliqueAccueil{
-    padding-top: 3%;
-    padding-bottom: 1%;
-}
-
-/* NAV MENU ETUDIANTS ACCUEIL */
-.et-nav-container{
-    position: absolute;
-    top: 70%;
-    left: 2%;
-    width: 100%;
-    text-align: left;
-
-}
-
-.et-nav{
-    position: relative;
-}
-
-.metro-nav-container{
-    position: relative;
-}
-
-.croix-nav{
-    position: absolute;
-    top: -40%;
-    left: 0;
-    width: 3%;
-    transform-origin: center right;
-}
-
-.metro-nav{
-    width: 50%;
-    margin-left: 5%;
-}
-
-#et-liensutiles-liste{
-    margin-left: 10%;
-    list-style-type: none;
-    flex-direction: row;    
-}
-
-#et-liensutiles-liste > li{
-    position: absolute;
-    width: 20%;
-    height: 10%;
-}
-
-#et-liensutiles-liste > li:nth-child(1){
-    left:11.5%;
-}
-
-#et-liensutiles-liste > li:nth-child(2){
-    left:33%;
-}
-
-.position-bouton-menu-et{
-    position: relative;
-}
-
-.button-menu-et{
-    position: absolute;
-    top:28%;
-    left: 18%;
-
-    border: none;
-    font-family: "bahnschrift";
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 0.8em;
- 
-}
-
-.list-circle{
-    width: 2em;
-}
 
 
 
-/* Formes d'arrière plan anglés */
 
-#background-shapes{
-    width: 100%;
-    height: 100vh;
-    position:absolute;
-    overflow: hidden;
-    z-index: -3;
-}
-
-.background-shape{
-    height: 100%;
-    position:absolute;
-}
-
-#background-shape-left {
-    width: 30%;
-	transform: skew(-20deg);
-    left: -20%;
-}
-
-#background-shape-right {
-    width: 60%;
-	transform: skew(-45deg);
-    margin-left: 72%;
-}
 
 .invisible{
     display: none;
