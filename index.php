@@ -25,9 +25,9 @@
                     <div class="container-menu-etudiant-mobile">
                     <div class="titre-menu-etudiant-mobile"><p class="texte-titre-menu-etudiant-mobile">Menu</p></div>
                         <ul class="liste-menu-etudiant-mobile">
-                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
-                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-et">VIE ÉTUDIANTE</a></div></li>
-                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-et">STAGES</a></div></li>
+                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-etudiant-mobile">GRILLE DE CHEMINEMENTS</a></div></li>
+                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-etudiant-mobile">VIE ÉTUDIANTE</a></div></li>
+                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-etudiant-mobile">STAGES</a></div></li>
                         </ul>
                     </div>
                 </div>
@@ -36,8 +36,9 @@
                     <div class="container-menu-etudiant-mobile">
                     <div class="titre-menu-etudiant-mobile"><p class="texte-titre-menu-etudiant-mobile">Menu</p></div>
                         <ul class="liste-menu-etudiant-mobile">
-                        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
-                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-et">ENSEIGNANTS</a></div></li>
+                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-etudiant-mobile">GRILLE DE CHEMINEMENTS</a></div></li>
+                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-etudiant-mobile">ENSEIGNANTS</a></div></li>
+                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="" /><a href="pages/grilleCheminement.php" class="button-menu-etudiant-mobile"></a></div></li>
                         </ul>
                     </div>
                 </div>

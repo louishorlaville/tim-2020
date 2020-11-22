@@ -1007,7 +1007,7 @@ body {
         font-family: "bahnschrift";
         padding: 1em;
         font-size: .8rem;
-        height: 100px;
+        height: 110px;
         margin-bottom: 30px;
     }
 
@@ -1059,20 +1059,27 @@ body {
     }
 
     .liste-menu-etudiant-mobile>li{
-        width: 33%;
-        margin-left: 8%;
-        padding-left: 2em;
+        margin-right: 40px;
+        width:100%;
+    }
+    
+    .button-menu-etudiant-mobile{
+        border: none;
+        font-family: "bahnschrift";
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 0.8em;    
     }
 
     .liste-menu-etudiant-mobile>li:nth-child(1){
-       margin-right: 10px;
-       margin-left: 5%;
+       margin-left: 15%;
     }
 
     .list-circle{
         width: 1.3em;
         position: absolute;
-        left: -1px;
+        left: -20px;
         vertical-align: middle;
     }
 
