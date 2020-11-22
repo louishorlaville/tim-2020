@@ -352,27 +352,27 @@ body {
     margin-left: 5%;
 }
 
-#et-liensutiles-liste{
+.et-liensutiles-liste{
     margin-left: 10%;
     list-style-type: none;
     flex-direction: row;    
 }
 
-#et-liensutiles-liste > li{
+.et-liensutiles-liste > li{
     position: absolute;
     width: 20%;
     height: 10%;
 }
 
-#et-liensutiles-liste > li:nth-child(1){
+.et-liensutiles-liste > li:nth-child(1){
     left:11.5%;
 }
 
-#et-liensutiles-liste > li:nth-child(2){
+.et-liensutiles-liste > li:nth-child(2){
     left:33%;
 }
 
-#et-liensutiles-liste > li:nth-child(3){
+.et-liensutiles-liste > li:nth-child(3){
     left:54%;
 }
 .position-bouton-menu-et{
@@ -926,6 +926,9 @@ body {
 /* ////// PHONE ADAPTIVE ///////////// */
 
 @media screen and (max-width: 600px) {
+    body{
+        overflow: auto;
+    }
     /* ACCUEIL - LOGO */
     #title{
         margin:30% 0 30% 0;  
@@ -952,7 +955,7 @@ body {
         height: 7rem;
     }
     .logo-cercle-border{
-        left: 45%; 
+        left: 50%; 
         top: -20%;
 
         width: 7.5rem;
@@ -993,16 +996,51 @@ body {
     }
 
     /*////BOITES ETUDIANTES////*/
+    .container-boites-menu-etudiants-mobile{
+        margin: 30% 5% 0 5%;
+    }
     .container-etudiant-mobile{
         background-color: #BA222D;
         color: white;
         font-family: "bahnschrift";
         padding: 1em;
-        margin: 10% 5% 0 5%;
         font-size: .8rem;
+        height: 100px;
+        margin-bottom: 30px;
     }
+
     .titre-etudiant-mobile{
         font-size: 1.5rem;
+    }
+
+    /*Menu */
+    .container-menu-etudiant-mobile{
+        margin-top: 8%;
+        margin-left: -5%;
+    }
+
+    .liste-menu-etudiant-mobile{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+
+    .liste-menu-etudiant-mobile>li{
+        width: 30%;
+        margin-left: 8%;
+        padding-left: 2em;
+    }
+
+    .liste-menu-etudiant-mobile>li:nth-child(1){
+       margin-right: 10px;
+       margin-left: 5%;
+    }
+
+    .list-circle{
+        width: 1.3em;
+        position: absolute;
+        left: -20px;
+        vertical-align: middle;
     }
 }
 

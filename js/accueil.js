@@ -87,7 +87,7 @@
                                 <img class="croix-nav" src="./images/svg/whitePlus.svg"/>
                                 <img class="metro-nav" src="./images/svg/ligneMetroMenu_1.svg"/>
                             </div>
-                            <ul id="et-liensutiles-liste">
+                            <ul class="et-liensutiles-liste">
                             ` +
       listType +
       `
