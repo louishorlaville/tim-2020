@@ -5,8 +5,8 @@
     </div>
 
     <div class="contacts" >
-        <p>3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131</p>
-        <p>Copyright © 2020 -  <a href="https://www.cmaisonneuve.qc.ca/">Collège de Maisonneuve.</a>  Tous droits réservés.</p>
+        <p>3 800, rue Sherbrooke Est Montréal (Québec)</p><p> H1X 2A2 | 514 254-7131 - Copyright © 2020 -</p>
+        <p>Techniques d'Intégration Mutlimédia,</p><p><a id="liens-college-footer" href="https://www.cmaisonneuve.qc.ca/" >Collège de Maisonneuve.</a>  Tous droits réservés.</p>
     </div>
 </footer>
 </body>

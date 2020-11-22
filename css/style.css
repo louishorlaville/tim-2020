@@ -810,6 +810,10 @@ body {
     float: right;
 }
 
+#liens-college-footer{
+    color: white;
+}
+
 /* Formes géométriques de la page */
 
 .cercle-n{
@@ -1000,7 +1004,7 @@ body {
 
     /*////BOITES ETUDIANTES////*/
     .container-boites-menu-etudiants-mobile{
-        margin: 30% 5% 0 5%;
+        margin: 25% 5% 0 5%;
     }
     .container-etudiant-mobile{
         color: white;
@@ -1100,12 +1104,24 @@ body {
         background-color: #1A1A1A;
         margin-top: 10px;
         margin-left: 5px;
-        margin-right: -10px;
+        margin-right: -6px;
 
     }
 
+
+    /* ///// FOOTER ///// */
     .footer{
         position: static;
+        font-size: 0.6em;
+        padding: 25px 3px 10px 3px;
+    }
+
+    .credits{
+        width: 45%;
+    }
+
+    .contacts>a{
+        color: white;
     }
 }
 
