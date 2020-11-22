@@ -1008,7 +1008,6 @@ body {
         padding: 1em;
         font-size: .8rem;
         height: 110px;
-        margin-bottom: 30px;
     }
 
     #container-etudiant-mobile-nouveaux{
@@ -1081,6 +1080,28 @@ body {
         position: absolute;
         left: -20px;
         vertical-align: middle;
+    }
+
+    /* separateur menu etudiants */
+    .container-separateur-etudiant-mobile{
+        display: flex;
+        flex-direction: row;
+        margin:0px 0 0px -13px;
+    }
+    
+    #plus-separateur-etudiant-mobile{
+        filter: invert(0%) sepia(4%) saturate(646%) hue-rotate(342deg) brightness(99%) contrast(80%);
+        width: 7%;
+    }
+
+    #ligne-separateur-etudiant-mobile{
+        width: 100%;
+        height: 5px;
+        background-color: #1A1A1A;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: -10px;
+
     }
 
     .footer{

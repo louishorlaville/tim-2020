@@ -18,7 +18,7 @@
             
             <div class="position-container-etudiants" id="position-container-etudiants-nouveaux"><div class="separateur-etudiants mask-ligne-etudiants-nouveaux"><div id="container-etudiants-nouveaux" class="container-etudiants color-1 mask-etudiant"> <div class="color-1"></div> <div class="titreDivEtud" id="et-nouveaux-title">NOUVEAUX ÉTUDIANTS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div>
             <div class="position-container-etudiants" id="position-container-etudiants-actuels"><div class="separateur-etudiants mask-ligne-etudiants-actuels"><div id="container-etudiants-actuels" class="container-etudiants color-2 mask-etudiant"> <div class="color-2"></div> <div class="titreDivEtud" id="et-actuels-title">ÉTUDIANTS ACTUELS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div>
-            
+            <!-- ÉTUDIANTS MOBILE -->
             <div class="container-boites-menu-etudiants-mobile">
                 <div class="container-etudiant-mobile" id="container-etudiant-mobile-nouveaux">
                     <div class="titre-etudiant-mobile"><div class="texte-titre-etudiant-mobile"><a class="bigger-titre-menu-etudiant-mobile">NOUVEAUX</a> ÉTUDIANTS</div></div>
@@ -30,6 +30,10 @@
                             <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-etudiant-mobile">STAGES</a></div></li>
                         </ul>
                     </div>
+                </div>
+                <div class="container-separateur-etudiant-mobile">
+                    <img src="images/svg/blackPlus.svg" id="plus-separateur-etudiant-mobile" alt="">
+                    <div id="ligne-separateur-etudiant-mobile">&#10240;</div>
                 </div>
                 <div class="container-etudiant-mobile" id="container-etudiant-mobile-actuel">
                     <div class="titre-etudiant-mobile"><div class="texte-titre-etudiant-mobile">ÉTUDIANTS <a class="bigger-titre-menu-etudiant-mobile">ACTUELS</a> </div></div>
@@ -43,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            
+            <!-- FIN ETUDIANTS MOBILE -->
         </div>
     </div>
 </div>
