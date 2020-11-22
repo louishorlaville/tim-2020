@@ -23,27 +23,15 @@
 
   //Placer les cercles et boites au chargement de la page
   window.addEventListener("load", function () {
-    cercles.forEach((elt) => {
-      placerAbsolueAccueil(elt[0], elt[1], elt[2]);
-    });
     boites.forEach((elt) => {
-      placerAbsolueAccueil(elt[0], elt[1], elt[2]);
-    });
-    cerclesDesign.forEach((elt) => {
       placerAbsolueAccueil(elt[0], elt[1], elt[2]);
     });
   });
 
   //Les replacer aux bons endroits au cas ou la page change de taille
   window.onresize = function () {
-    cercles.forEach((element) => {
-      placerAbsolueAccueil(element[0], element[1], element[2]);
-    });
     boites.forEach((element) => {
       placerAbsolueAccueil(element[0], element[1], element[2]);
-    });
-    cerclesDesign.forEach((elt) => {
-      placerAbsolueAccueil(elt[0], elt[1], elt[2]);
     });
   };
 
