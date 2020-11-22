@@ -53,14 +53,20 @@
 
     
 <div class="headerContainer">
+    <div class="container-header-mobile">
+        <div id="logo-header-mobile">
+            <a href="./index.php"><img src="./images/img/logoTim.png" alt="Logo Tim">
+        </div>
+        <div class="menu-burger"></div>
+    </div>
     <?php
     if($page=="accueil"):
     ?>
-        <div class="header color-bars"> </div>
+        <div class="header-desktop header color-bars"> </div>
     <?php 
         else:
     ?>
-    <div class="displayRowHeader">
+    <div class="header-desktop displayRowHeader">
         <div id="logoMenuAccueilContainer">
         <a href="../index.php"><img src="../images/svg/header/logoMenuHeader.svg" alt="Logo retour accueil" id="logoMenuAccueil" href="../index.php">
         </div>
