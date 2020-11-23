@@ -2,7 +2,6 @@
     $page = "accueil";
     require("inclusions/hautDePage.php");
 ?>
-</div>
 <div id="contenu-principal">
     <div id="title">
         <div class="containerLogoContent">

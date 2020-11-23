@@ -2,14 +2,17 @@
   let btnMenuNvEtud = document.querySelector(
     "#position-container-etudiants-nouveaux"
   );
+
   let btnMenuEtudActu = document.querySelector(
     "#position-container-etudiants-actuels"
   );
+
   let logo = document.querySelector(".logo");
   let boites = [
     [btnMenuNvEtud, 0, 0.65],
     [btnMenuEtudActu, 0.56, 0.98],
   ];
+
   let burgerIcon = document.querySelector(".hamburger");
   let burgerMenu = document.querySelector(".box-container-menu-burger");
   let burgerText = document.querySelector(".container-menu-burger");
@@ -101,11 +104,11 @@
     if (button.classList.contains("is-active")) {
       button.classList.remove("is-active");
       burgerMenu.classList.remove("burger-active");
-      burgerText.classList.add("invisible");
+      burgerText.classList.remove("menu-appear");
     } else {
       button.classList.add("is-active");
       burgerMenu.classList.add("burger-active");
-      burgerText.classList.remove("invisible");
+      burgerText.classList.add("menu-appear");
     }
   }
 

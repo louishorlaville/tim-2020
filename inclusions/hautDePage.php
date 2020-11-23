@@ -27,15 +27,14 @@
 <head>
     <title><?= $meta[$page]["titre"]; ?></title>
     <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
-    <link href="hamburger/dist/hamburgers.css" rel="stylesheet">
+    <?=($page=="accueil")? '<link rel="stylesheet" href="hamburger/dist/hamburgers.css">' : "../hamburger/dist/hamburgers.css" ?>
     <link rel="stylesheet" href="<?=($page=="accueil")? "css/style.css" :"../css/style.css" ?>">
     <meta charset="UTF-8" user-scalable=no>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
 <div id="background-shapes">
-    <div class="background-shape color-bg-2" id="background-shape-left"></div>
-    <div class="background-shape color-bg-2" id="background-shape-right"></div>
+    <div class="background-shape color-bg" id="background-shape-left"></div>
 </div>
 
 <div class="animation-area">
@@ -65,8 +64,8 @@
                 </span>
             </button>
         </div>
-        <div class="box-container-menu-burger burger-active">
-            <div class="box-border-menu-burger">
+        <div class="box-container-menu-burger hide-burger">
+            <div class="box-border-menu-burger ">
                 <div class="container-menu-burger">
                     <div class="elt-menu-burger" id="burger-etudiant-nouveau"><a href="./index.php#container-etudiant-mobile-actuel">Nouveau étudiants <div class="arrow-burger">&#8250;</div></a></div>
                     <div class="elt-menu-burger" id="burger-etudiant-actuel"><a href="./index.php#container-etudiant-mobile-nouveaux">Étudiants actuels <div class="arrow-burger">&#8250;</div></a></div>
