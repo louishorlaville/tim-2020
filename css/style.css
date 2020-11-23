@@ -955,11 +955,36 @@ body {
     /* Logo tim */
     #logo-header-mobile{
         margin-top: 3px;
-        width:20%;
+        width:10%;
     }
 
-    #logo-header-mobile>a>img{
-        width:100%;
+    #logo-header-mobile>a{
+        display: block;
+        width: 80px;
+    }
+
+    #img-logo-header-mobile{
+        display: block;
+        width: 100%;
+    }
+
+
+    /* Burger Menu */
+    .container-menu-burger{
+        margin-left: 70%;
+        color: white;
+    }
+
+    .hamburger{
+        padding-top: 10px;
+    }
+
+    .hamburger:focus{
+        outline: unset;
+    }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
+        background-color: white;
     }
     
     /* ACCUEIL - LOGO */

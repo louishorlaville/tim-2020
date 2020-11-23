@@ -5,21 +5,12 @@
   let btnMenuEtudActu = document.querySelector(
     "#position-container-etudiants-actuels"
   );
-  let title = document.querySelector("#title");
   let logo = document.querySelector(".logo");
-  let cercles = [
-    [document.querySelector("#cercle-cap-N"), 0.1, -0.05],
-    [document.querySelector("#cercle-cap-T"), 1.01, 0.36],
-    [document.querySelector("#cercle-cap-I"), 0.52, 1.01],
-  ];
   let boites = [
     [btnMenuNvEtud, 0, 0.65],
     [btnMenuEtudActu, 0.56, 0.98],
   ];
-  let cerclesDesign = [
-    [document.querySelector(".logo-cercle-border"), 0.62, 0.05],
-    [document.querySelector(".cercle-n-border"), 0.062, 0.15],
-  ];
+  let burgerMenu = document.querySelector(".hamburger");
 
   //Placer les cercles et boites au chargement de la page
   window.addEventListener("load", function () {
@@ -34,6 +25,10 @@
       placerAbsolueAccueil(element[0], element[1], element[2]);
     });
   };
+
+  burgerMenu.addEventListener("click", function () {
+    toggleBurgerClass(burgerMenu);
+  });
 
   let etNouvListe = `
         <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
@@ -98,6 +93,14 @@
             </div>
         </div>
         `;
+  }
+
+  function toggleBurgerClass(button) {
+    if (button.classList.contains("is-active")) {
+      button.classList.remove("is-active");
+    } else {
+      button.classList.add("is-active");
+    }
   }
 
   function placerAbsolueAccueil(element, width, height) {

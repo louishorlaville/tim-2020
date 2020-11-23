@@ -27,6 +27,7 @@
 <head>
     <title><?= $meta[$page]["titre"]; ?></title>
     <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
+    <link href="hamburger/dist/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="<?=($page=="accueil")? "css/style.css" :"../css/style.css" ?>">
     <meta charset="UTF-8" user-scalable=no>
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -55,9 +56,15 @@
 <div class="headerContainer">
     <div class="container-header-mobile">
         <div id="logo-header-mobile">
-            <a href="./index.php"><img src="./images/img/logoTim.png" alt="Logo Tim">
+            <a href="./index.php"><img id="img-logo-header-mobile" src="./images/img/logoTim.png" alt="Logo Tim"/></a>
         </div>
-        <div class="menu-burger"></div>
+        <div class="container-menu-burger">
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
     </div>
     <?php
     if($page=="accueil"):
