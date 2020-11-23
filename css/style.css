@@ -996,6 +996,8 @@ body {
         z-index: 5;
         padding: 1%;
         background-color: white;
+        transition: all 0.2s ease-in;
+        overflow: hidden;
     }
 
     .box-border-menu-burger{
@@ -1008,13 +1010,42 @@ body {
         height: 100px;
     }
 
+    .container-menu-burger{
+        padding: 13px 10px 10px 15px;
+        font-size: 1.5em;
+    }
+
+    .elt-menu-burger{
+        padding-left: 5px;
+        width: 70%;
+        position: relative;
+    }
+
+    #burger-etudiant-nouveau{
+        border-bottom: 2.5px solid black;
+        padding-bottom: 5px;
+        margin-bottom: 6px;
+    }
+
     .elt-menu-burger>a{
         list-style-type: none;
         text-decoration: none;
         font-family: "bahnschrift";
-        font-weight: 300;
+        font-weight: 400;
         color:black;
     }
+
+    .arrow-burger{
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: right 0.5s ease-in-out;
+    }
+
+    .elt-menu-burger:hover .arrow-burger{
+        right: -2%;
+    }
+
 
     
     /* ACCUEIL - LOGO */
@@ -1109,7 +1140,6 @@ body {
     #container-etudiant-mobile-actuel{
         background-color: #296FA6;
         clip-path: polygon(0 7%, 5% 7%, 5% 0, 100% 0, 100% 100%, 0 100%, 0 7%);
-
     }
 
     .titre-etudiant-mobile{
@@ -1121,6 +1151,7 @@ body {
         font-size: 1.2rem;
         padding-left: 0.3em;
     }
+    
     .bigger-titre-menu-etudiant-mobile{
         font-size: 1.28em;
     }

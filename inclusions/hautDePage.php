@@ -68,8 +68,8 @@
         <div class="box-container-menu-burger burger-active">
             <div class="box-border-menu-burger">
                 <div class="container-menu-burger">
-                    <div class="elt-menu-burger" id="burger-etudiant-nouveau"><a href="./index.php#container-etudiant-mobile-actuel">Nouveau étudiants</a></div>
-                    <div class="elt-menu-burger" id="burger-etudiant-actuel"><a href="./index.php#container-etudiant-mobile-nouveaux">Étudiants actuels</a></div>
+                    <div class="elt-menu-burger" id="burger-etudiant-nouveau"><a href="./index.php#container-etudiant-mobile-actuel">Nouveau étudiants <div class="arrow-burger">&#8250;</div></a></div>
+                    <div class="elt-menu-burger" id="burger-etudiant-actuel"><a href="./index.php#container-etudiant-mobile-nouveaux">Étudiants actuels <div class="arrow-burger">&#8250;</div></a></div>
                 </div>
             </div>
         </div>

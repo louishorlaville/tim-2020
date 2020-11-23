@@ -10,7 +10,9 @@
     [btnMenuNvEtud, 0, 0.65],
     [btnMenuEtudActu, 0.56, 0.98],
   ];
-  let burgerMenu = document.querySelector(".hamburger");
+  let burgerIcon = document.querySelector(".hamburger");
+  let burgerMenu = document.querySelector(".box-container-menu-burger");
+  let burgerText = document.querySelector(".container-menu-burger");
 
   //Placer les cercles et boites au chargement de la page
   window.addEventListener("load", function () {
@@ -26,8 +28,8 @@
     });
   };
 
-  burgerMenu.addEventListener("click", function () {
-    toggleBurgerClass(burgerMenu);
+  burgerIcon.addEventListener("click", function () {
+    toggleBurgerClass(burgerIcon);
   });
 
   let etNouvListe = `
@@ -98,8 +100,12 @@
   function toggleBurgerClass(button) {
     if (button.classList.contains("is-active")) {
       button.classList.remove("is-active");
+      burgerMenu.classList.remove("burger-active");
+      burgerText.classList.add("invisible");
     } else {
       button.classList.add("is-active");
+      burgerMenu.classList.add("burger-active");
+      burgerText.classList.remove("invisible");
     }
   }
 
