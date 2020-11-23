@@ -948,13 +948,15 @@ body {
         height: 40px;
         display: flex;
         flex-direction: row;
-        width: 100%;
-        padding: .5em;
+        width: 100vw;
+        padding: .5em 0 .5em 0;
+        position: relative;
     }
 
     /* Logo tim */
     #logo-header-mobile{
         margin-top: 3px;
+        margin-left: 8px;
         width:10%;
     }
 
@@ -968,10 +970,9 @@ body {
         width: 100%;
     }
 
-
     /* Burger Menu */
-    .container-menu-burger{
-        margin-left: 70%;
+    .container-icon-burger{
+        margin-left: 70vw;
         color: white;
     }
 
@@ -986,6 +987,35 @@ body {
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
         background-color: white;
     }
+
+    .box-container-menu-burger{
+        position: absolute;
+        width: 98%;
+        top: 100%;
+        height: 0px;
+        z-index: 5;
+        padding: 1%;
+        background-color: white;
+    }
+
+    .box-border-menu-burger{
+        width: 100%;
+        height:100%;
+        background-color: #EFCA56;
+    }
+
+    .burger-active{
+        height: 100px;
+    }
+
+    .elt-menu-burger>a{
+        list-style-type: none;
+        text-decoration: none;
+        font-family: "bahnschrift";
+        font-weight: 300;
+        color:black;
+    }
+
     
     /* ACCUEIL - LOGO */
     #title{

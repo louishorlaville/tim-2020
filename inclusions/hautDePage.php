@@ -58,12 +58,20 @@
         <div id="logo-header-mobile">
             <a href="./index.php"><img id="img-logo-header-mobile" src="./images/img/logoTim.png" alt="Logo Tim"/></a>
         </div>
-        <div class="container-menu-burger">
+        <div class="container-icon-burger">
             <button class="hamburger hamburger--collapse" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
+        </div>
+        <div class="box-container-menu-burger burger-active">
+            <div class="box-border-menu-burger">
+                <div class="container-menu-burger">
+                    <div class="elt-menu-burger" id="burger-etudiant-nouveau"><a href="./index.php#container-etudiant-mobile-actuel">Nouveau étudiants</a></div>
+                    <div class="elt-menu-burger" id="burger-etudiant-actuel"><a href="./index.php#container-etudiant-mobile-nouveaux">Étudiants actuels</a></div>
+                </div>
+            </div>
         </div>
     </div>
     <?php
