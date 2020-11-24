@@ -974,7 +974,7 @@ body {
 
     .logo-cercle-border{
         left: 60%; 
-        top: -13%;
+        top: -10%;
 
         width: 6.5rem;
         height: 6.5rem; 
@@ -1150,7 +1150,11 @@ body {
     }
 
     /* ///// SOCIALS ///// */
-
+    .container-socials{
+        position: static;
+        margin-left: 25%;
+        margin-bottom: 4px;
+    }
 
     /* ///// FOOTER ///// */
     .footer{
