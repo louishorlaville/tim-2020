@@ -252,8 +252,8 @@ body {
     border: black;
     border-style: dashed;
     border-radius:50%;
-    left: 60%; 
-    top: -3%;
+    left: 65%; 
+    top: 5%;
 
     z-index: -1;
 
@@ -1084,7 +1084,7 @@ body {
     
     /* ACCUEIL - LOGO */
     #title{
-        margin:30% 0 30% 0;  
+        margin:25% 0 30% 0;  
         width: 100%;   
         overflow: hidden;
 
@@ -1137,6 +1137,34 @@ body {
         height: 20%;
     }
 
+    /*Demi cercle jaune*/
+    .cercle-i{
+        margin: auto;
+        margin-top: 0.25rem;
+        border-radius:50%;
+        width: 80%;
+        height: 80%;
+    }
+    
+    .cercle-i-border{
+        left: 61%;
+        top: 60%;
+    
+        width: 17%;
+        height: 20%;
+    }
+
+    /*Formes dans le logo*/
+    #logo-o{
+        left: 75.5%;
+        width: 2.8%;
+    }
+
+    #logo-u{
+        left: 33.6%;
+        top: 49.8%;
+        width: 3.8%;
+    }
     /*Petits cercles*/
     #cercle-cap-N{
         left: 10.3%;
