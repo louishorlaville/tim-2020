@@ -13,8 +13,8 @@
                 <div class="logo-cercle-border"><div class="logo-cercle color-1"></div></div>
                 <div class="cercle-n-border"><div class="cercle-n color-2"></div></div>   
                 <div class="cercle-i-border"><div class="cercle-i color-5"></div></div>
-                <img src="images/svg/logo/OInsideLogo.svg" alt="" id="logo-o">   
-                <img src="images/svg/logo/UInsideLogo.svg" alt="" id="logo-o">   
+                <img src="images/svg/logo/OInsideLogo.svg" alt="" class="color-svg-6" id="logo-o">   
+                <img src="images/svg/logo/UInsideLogo.svg" alt="" class="color-svg-6" id="logo-u">   
             </div>
            
             

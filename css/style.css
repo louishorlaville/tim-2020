@@ -94,7 +94,7 @@ body {
 }
 
 
-/* couleurs principales de la page */
+/* couleurs principales de la page - IMG */
 
 .color-bg{
     background-color: #FCFCFC;
@@ -125,7 +125,7 @@ body {
 }
 
 .color-5{
-    background-color: #eebd38;
+    background-color: #EFCA56;
 }
 
 .color-6{
@@ -135,6 +135,13 @@ body {
 .color-text-1{
     color: #1A1A1A;
 }
+
+
+/* COULEURS SVG*/
+.color-svg-6{
+    filter: invert(80%) sepia(45%) saturate(690%) hue-rotate(340deg) brightness(108%) contrast(87%);
+}
+
 /* Logo et formes */
 #title{
     height:100%;
@@ -162,7 +169,113 @@ body {
     transform-origin: 50% 50%;
 
 }
-/* Cercles qui apparaissent dans le logo */
+
+/* FORME GÉOMETRIQUES DE LA PAGE */
+/*Forme inside logo o*/
+#logo-o{
+    position: absolute;
+    top: 39.8%;
+    left: 57.2%;
+
+    width: 2.5%;
+    z-index: -1;
+}
+
+#logo-u{
+    position: absolute;
+    top: 50.3%;
+    left: 25.5%;
+
+    width: 3.2%;
+    z-index: -1;
+}
+
+/*Demi cercle bleu*/
+.cercle-n{
+    margin: auto;
+    margin-top: 0.25rem;
+    border-radius:50%;
+    width: 80%;
+    height: 80%;
+}
+
+.cercle-n-border{
+    position: absolute;
+    clip-path: inset(0 0 0 50%);
+    left: 5.5%;
+    top: 20%;
+    z-index: -1;
+    width: 13.5%;
+    height: 20%;
+}
+
+/*Demi cercle jaune*/
+.cercle-i{
+    margin: auto;
+    margin-top: 0.25rem;
+    border-radius:50%;
+    width: 80%;
+    height: 80%;
+}
+
+.cercle-i-border{
+    position: absolute;
+    clip-path: inset(0 50% 0 0);
+    left: 46%;
+    bottom: 15%;
+    z-index: -1;
+    width: 13.5%;
+    height: 20%;
+}
+
+@keyframes spin2 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
+
+/*Gros cercle rouge*/
+.logo-cercle{
+    margin: auto;
+    margin-top: 0.5rem;
+    border-radius:50%;
+
+    width: 15rem;
+    height: 15rem;
+}
+
+.logo-cercle-border{
+    position: absolute;
+    border: black;
+    border-style: dashed;
+    border-radius:50%;
+    left: 60%; 
+    top: -3%;
+
+    z-index: -1;
+
+    width: 16rem;
+    height: 16rem;
+
+    animation-name: spin;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* Cercles qui autours dans le logo */
 .cercle-cap-logo{
     position: absolute;
     border-radius: 100%;
@@ -191,6 +304,8 @@ body {
     left: 52.6%;
     bottom: -5%;
 }
+
+
 /*////////// SECTIONS ETUDIANTS ///////*/
 .container-boites-menu-etudiants-mobile{
     display: none;
@@ -824,91 +939,7 @@ body {
     color: white;
 }
 
-/* Formes géométriques de la page */
 
-/*Demi cercle bleu*/
-.cercle-n{
-    margin: auto;
-    margin-top: 0.25rem;
-    border-radius:50%;
-    width: 80%;
-    height: 80%;
-}
-
-.cercle-n-border{
-    position: absolute;
-    clip-path: inset(0 0 0 50%);
-    left: 5.5%;
-    top: 20%;
-    z-index: -1;
-    width: 13.5%;
-    height: 20%;
-}
-
-.cercle-i{
-    margin: auto;
-    margin-top: 0.25rem;
-    border-radius:50%;
-    width: 80%;
-    height: 80%;
-}
-
-.cercle-i-border{
-    position: absolute;
-    clip-path: inset(0 50% 0 0);
-    left: 46%;
-    bottom: 15%;
-    z-index: -1;
-    width: 13.5%;
-    height: 20%;
-}
-
-@keyframes spin2 {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(-360deg);
-    }
-}
-
-
-.logo-cercle{
-    margin: auto;
-    margin-top: 0.5rem;
-    border-radius:50%;
-
-    width: 15rem;
-    height: 15rem;
-}
-
-.logo-cercle-border{
-    position: absolute;
-    border: black;
-    border-style: dashed;
-    border-radius:50%;
-    left: 60%; 
-    top: -3%;
-
-    z-index: -1;
-
-    width: 16rem;
-    height: 16rem;
-
-    animation-name: spin;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
 
 
 
