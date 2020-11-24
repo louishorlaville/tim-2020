@@ -55,10 +55,10 @@
 <div class="headerContainer">
     <div class="container-header-mobile">
         <div id="logo-header-mobile">
-            <a href="./index.php"><img id="img-logo-header-mobile" src="./images/img/logoTim.png" alt="Logo Tim"/></a>
+            <a href=<?=($page=="accueil")?"./index.php":"../index.php"?>><img id="img-logo-header-mobile" src="./images/img/logoTim.png" alt="Logo Tim"/></a>
         </div>
         <div class="container-icon-burger">
-            <button class="hamburger hamburger--collapse" type="button">
+            <button id="bouton-burger" class="hamburger hamburger--collapse" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
@@ -67,8 +67,18 @@
         <div class="box-container-menu-burger hide-burger">
             <div class="box-border-menu-burger ">
                 <div class="container-menu-burger">
-                    <div class="elt-menu-burger" id="burger-etudiant-nouveau"><a href="./index.php#container-etudiant-mobile-actuel">Nouveau étudiants <div class="arrow-burger">&#8250;</div></a></div>
-                    <div class="elt-menu-burger" id="burger-etudiant-actuel"><a href="./index.php#container-etudiant-mobile-nouveaux">Étudiants actuels <div class="arrow-burger">&#8250;</div></a></div>
+                    <div class="elt-menu-burger" id="burger-etudiant-nouveau">
+                        <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-actuel":"../index.php#container-etudiant-mobile-actuel"?>>
+                            Nouveau étudiants 
+                            <div class="arrow-burger">&#8250;</div>
+                        </a>
+                    </div>
+                    <div class="elt-menu-burger" id="burger-etudiant-actuel">
+                        <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-nouveaux":"../index.php#container-etudiant-mobile-nouveaux"?>>
+                            Étudiants actuels 
+                            <div class="arrow-burger">&#8250;</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

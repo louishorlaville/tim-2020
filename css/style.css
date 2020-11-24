@@ -149,13 +149,18 @@ body {
     margin: auto;
     margin-top:10%;
     position: relative;
+    transform-origin: 50% 50%;
 }
 .containerLogo{
     position: relative;
+    transform-origin: 50% 50%;
+
 }
 
 .logo{
     position: relative;
+    transform-origin: 50% 50%;
+
 }
 /* Cercles qui apparaissent dans le logo */
 .cercle-cap-logo{
@@ -844,31 +849,18 @@ body {
     margin: auto;
     margin-top: 0.25rem;
     border-radius:50%;
-
-    width: 6rem;
-    height: 6rem;
+    width: 80%;
+    height: 80%;
 }
 
 .cercle-i-border{
     position: absolute;
-    border: black;
-    border-style: dashed;
-    border-radius:50%;
-
-    clip-path: inset(0 0 0 -50%);
-
-
-    left: 54.5%;
-    top: 60%;
-
+    clip-path: inset(0 50% 0 0);
+    left: 46%;
+    bottom: 15%;
     z-index: -1;
-
-    width: 6.5rem;
-    height: 6.5rem;
-    animation-name: spin2;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    width: 13.5%;
+    height: 20%;
 }
 
 @keyframes spin2 {
@@ -1013,9 +1005,8 @@ body {
     .container-menu-burger{
         padding: 13px 10px 10px 15px;
         font-size: 1.5em;
-        /* margin-left: -500%; */
-        transition: margin 0.1s ease-in;
-        transition-delay: .3s;
+        margin-left: -1000%;
+        transition: margin 1s cubic-bezier(.61,.57,.67,1.14);
     }
 
     .menu-appear{
@@ -1026,6 +1017,11 @@ body {
         padding-left: 5px;
         width: 70%;
         position: relative;
+    }
+
+    .elt-menu-burger>a{
+        display: block;
+        width: 120%;
     }
 
     #burger-etudiant-nouveau{
@@ -1168,7 +1164,7 @@ body {
     .container-menu-etudiant-mobile{
         margin-top: 5%;
         margin-left: 3%;
-        font-weight: 100;
+        font-weight: 200;
     }
 
     .titre-menu-etudiant-mobile{
