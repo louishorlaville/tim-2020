@@ -55,6 +55,19 @@
     </div>
 </div>
 
+<!-- SOCIALS ACCUEIL-->
+<div class="container-socials">
+    <div class="social-elt" id="social-link-instagram">
+        <a href="#"><img src="./images/svg/socials/logoInstagram.svg" alt="Page Instagram du programme" class="social-icon .color-svg-1"></a>
+    </div>
+    <div class="social-elt" id="social-link-facebook">
+        <a href="#"><img src="./images/svg/socials/logoFacebook.svg" alt="Page Facebook du programme" class="social-icon .color-svg-1"></a>
+    </div>
+    <div class="social-elt" id="social-link-discord">
+        <a href="#"><img src="./images/svg/socials/logoDiscord.svg" alt="Serveur discord du programme" class="social-icon .color-svg-1"></a>
+    </div>
+</div>
+
 <?php 
     require("inclusions/piedDePage.php");
 ?>
