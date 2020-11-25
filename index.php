@@ -71,5 +71,3 @@
 <?php 
     require("inclusions/piedDePage.php");
 ?>
-
-

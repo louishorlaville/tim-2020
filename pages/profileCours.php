@@ -7,7 +7,7 @@
     <!-- Fin Header -->
 	<main class="grid-container">
 	    <section id="titre-cours" class="color-text-1">
-            <a href="../index.php" class="retour color-text-1">&lt;</a>
+          <a href="../index.php" class="retour color-text-1">&lt;</a>
 	        <h3 id="code-cours">TIM-404</h3>
 	        <h1 id="nom-cours">Cours d'introduction à la programmation</h1>
 	    </section>
@@ -50,7 +50,6 @@
 	 
 	</main>
 </body>
-
 <?php 
     require("../inclusions/piedDePage.php");
 ?>
