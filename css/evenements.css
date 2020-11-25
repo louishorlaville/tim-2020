@@ -1,0 +1,70 @@
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+#titrePage {
+    margin-left: 150px;
+}
+
+#baseStade {
+    height: 100%;
+    width: 100%;
+}
+
+.casesStade {
+    height: 10%;
+    width: 10%;
+}
+
+/* Boite Info événement */
+
+#infoEvenement {
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    height:60%;
+    width:55%;
+    margin-right: 100px;
+    padding: 25px 25px 10px 25px;
+}
+
+#infoEvenement h1 {
+    margin-bottom: 10px;
+}
+
+#infoEvenement h5 {
+    margin-bottom: 15px;
+}
+
+#infoEvenement p {
+    margin-bottom: 10px;
+}
+
+#carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#cadreImage {
+    width: 90%;
+    border: 1px solid pink;
+    margin: 0 auto;
+}
+
+#cadreImage img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#carousel span {
+    color: gray;
+    font-size: 2em;
+    margin: 0px 10px ;
+}
