@@ -48,23 +48,71 @@ body {
     position: fixed;
     z-index: -3;
     width: 20px;
+    transform-origin: 50% 50%;
+}
+
+.background-plus{
+    width: 23px;
 }
 
 #bck-shape-1{
-    top: 10%;
+    top: 15%;
     left: 25%;
+    width:30px;
+    animation: animRond 10s ease-in-out  infinite forwards;
 }
 #bck-shape-2{
     top: 57%;
     left: 75%;
+    animation: animRond 9s ease-in-out 2s infinite forwards;
 }
 #bck-shape-3{
     top: 25%;
     left: 58%;
+    transform: rotate(20deg);
+    animation: animPlus 2s cubic-bezier(.85,.14,.21,.76) infinite 2s;
 }
 #bck-shape-4{
     top: 68%;
     left: 36%;
+    transform: rotate(85deg) scaleX(0.8) scaleY(0.8);
+    animation: animPlus2 5s linear infinite ;
+}
+
+@keyframes animRond{
+    from{
+        transform: scaleX(1) scaleY(1);
+    }
+    10%{
+        transform: scaleX(1) scaleY(1);
+    }
+    45%{
+        transform: scaleX(2) scaleY(2);
+    }
+    85%{
+        transform: scaleX(1) scaleY(1);
+    }
+    to{
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes animPlus{
+    from{
+        transform: rotate(20deg);
+    }
+    to{
+        transform: rotate(380deg);
+    }
+}
+@keyframes animPlus2{
+    from{
+        transform: rotate(85deg);
+    }
+
+    to{
+        transform: rotate(-275deg);
+    }
 }
 
 
@@ -195,7 +243,7 @@ body {
 .containerLogoContent {
     height: 75%;
     margin: auto;
-    margin-top:8%;
+    margin-top:10vh;
     position: relative;
     transform-origin: 50% 50%;
 }
@@ -284,8 +332,8 @@ body {
     margin-top: 0.5rem;
     border-radius:50%;
 
-    width: 15rem;
-    height: 15rem;
+    width: 90%;
+    height: 90%;
 }
 
 .logo-cercle-border{
