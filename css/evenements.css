@@ -23,8 +23,8 @@ main {
 
 #infoEvenement {
     background-color: black;
+    border: solid white 10px;
     color: white;
-    border-radius: 10%;
     height:60%;
     width:55%;
     margin-right: 100px;
