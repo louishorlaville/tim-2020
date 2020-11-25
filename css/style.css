@@ -25,7 +25,7 @@ body {
 #background-shapes{
     width: 100%;
     height: 100%;
-    position:fixed;
+    position: relative;;
     bottom: 0;
     z-index: -3;
     overflow: hidden;
@@ -34,10 +34,38 @@ body {
 .background-shape{
     height: 100%;
     width: 100%;
-    position:absolute;
+    position:fixed;
     clip-path: polygon(0 95%, 0 100%, 35% 100%,100% 0, 25% 0, 0 95% );
 }
 
+#background-shape-left{
+    z-index: -4;
+}
+.container-background-smallshapes{
+    position: relative;
+}
+.background-smallshape{
+    position: fixed;
+    z-index: -3;
+    width: 20px;
+}
+
+#bck-shape-1{
+    top: 10%;
+    left: 25%;
+}
+#bck-shape-2{
+    top: 57%;
+    left: 75%;
+}
+#bck-shape-3{
+    top: 25%;
+    left: 58%;
+}
+#bck-shape-4{
+    top: 68%;
+    left: 36%;
+}
 
 
 /* ///////// STYLE ACCUEIL //////////// */
@@ -138,12 +166,21 @@ body {
 
 
 /* COULEURS SVG*/
-.color-svg-1{
+/*noir/gris*/
+.color-svg-0{
     filter: invert(0%) sepia(1%) saturate(3608%) hue-rotate(6deg) brightness(109%) contrast(80%);
-
 }
-.color-svg-6{
-    filter: invert(80%) sepia(45%) saturate(690%) hue-rotate(340deg) brightness(108%) contrast(87%);
+/*Rouge light*/
+.color-svg-1{
+    filter: invert(14%) sepia(100%) saturate(3975%) hue-rotate(348deg) brightness(82%) contrast(83%);
+}
+/*Blue Light*/
+.color-svg-2{
+    filter: invert(37%) sepia(24%) saturate(1473%) hue-rotate(164deg) brightness(97%) contrast(88%);
+}
+/*Jaune light version*/
+.color-svg-3{
+    filter: invert(64%) sepia(15%) saturate(7049%) hue-rotate(349deg) brightness(93%) contrast(84%);
 }
 
 /* Logo et formes */
@@ -285,18 +322,27 @@ body {
     border-radius: 100%;
     border-color: #1A1A1A;
     border-width: 0.3rem;
-    width: 1rem;
-    height: 1rem;
+    width: 0.9vw;
+    height: 0.9vw;
     border-style: solid;
     text-align: center;
     font-weight: bolder;
     font-size: 3rem;
     transform-origin: 0 0;
 }
+.plus-cap-logo{
+    position: absolute;
+    width: 3%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+    transform-origin: 0 0;
+}
+
 
 #cercle-cap-N{
     left: 9.7%;
-    top: -5%;
+    top: -10%;
 }
 
 #cercle-cap-T{
@@ -314,224 +360,6 @@ body {
 .container-boites-menu-etudiants-mobile{
     display: none;
 }
-.position-container-etudiants{
-    position: absolute;
-    width: 45%;
-    min-width: 340px;
-    
-}
-
-#position-container-etudiants-nouveaux{
-    transform: translate(-100%,0);
-    top:60%;
-    left:0;
-}
-
-#position-container-etudiants-actuels{
-    left:60%;
-    bottom: 0;
-}
-
-
-@keyframes animate{
-    from {
-        transform: translateX(0) translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateX(800px) translateY(-800px) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-/* end of todo */
-
-#title{
-    height:100%;
-    width: 50%;
-    min-width: 50%;
-    min-height: 100%;
-    margin-left: 30%;
-}
-
-.containerLogo {
-    height: 75%;
-    margin: auto;
-    margin-top:10%;
-    position: relative;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: "bahnschrift";
-    font-size: 0.85rem;
-    position: absolute;
-    transform-origin: 0 0;
-    bottom: 0;
-    width:100%;
-    height:8%;   /* Height of the footer */
-    overflow:hidden;
-}
-
-.credits{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: left;
-    float: left;
-    width: 75%;
-}
-
-.contacts{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: right;
-    float: right;
-}
-
-/* Formes géométriques de la page */
-
-.cercle-n{
-    margin: auto;
-    margin-top: 0.25rem;
-    border-radius:50%;
-    width: 6rem;
-    height: 6rem;
-}
-
-.cercle-n-border{
-    position: absolute;
-    /* border: black; */
-    /* border-style: dashed; */
-    /* border-radius:50%; */
-
-    clip-path: inset(0 0 0 50%);
-
-
-    left: 8%;
-    top: 26%;
-
-    z-index: -1;
-
-    width: 6.5rem;
-    height: 6.5rem;
-}
-
-.cercle-i{
-    margin: auto;
-    margin-top: 0.25rem;
-    border-radius:50%;
-
-    width: 6rem;
-    height: 6rem;
-}
-
-.cercle-i-border{
-    position: absolute;
-    border: black;
-    border-style: dashed;
-    border-radius:50%;
-
-    clip-path: inset(0 0 0 -50%);
-
-
-    left: 54.5%;
-    top: 60%;
-
-    z-index: -1;
-
-    width: 6.5rem;
-    height: 6.5rem;
-    animation-name: spin2;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-}
-
-@keyframes spin2 {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(-360deg);
-    }
-}
-
-
-.logo-cercle{
-    margin: auto;
-    margin-top: 0.5rem;
-    border-radius:50%;
-
-    width: 15rem;
-    height: 15rem;
-}
-
-.logo-cercle-border{
-    position: absolute;
-    border: black;
-    border-style: dashed;
-    border-radius:50%;
-    /* left: 65%; */
-    /* top: 20%; */
-
-    z-index: -1;
-
-    width: 16rem;
-    height: 16rem;
-
-    animation-name: spin;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-
-
-/* Cercles qui apparaissent dans le logo */
-.cercle-cap-logo{
-    position: absolute;
-    border-radius: 100%;
-    border-color: #1A1A1A;
-    border-width: 0.3rem;
-    width: 1rem;
-    height: 1rem;
-    border-style: solid;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3rem;
-    transform-origin: 0 0;
-}
-
-
-
-#cercle-cap-N{
-    left: 0;
-    top: 0;
-}
-
-#cercle-cap-T{
-    left: 0;
-    top: 0;
-}
-
-#cercle-cap-I{
-    left: 0;
-    top: 0;
-}
-
-
-/* Sections étudiants */
 .position-container-etudiants{
     position: absolute;
     width: 45%;
@@ -1309,6 +1137,7 @@ body {
         margin-right: 80%;
         margin-bottom: 1em;
     }
+
     .texte-titre-menu-etudiant-mobile{
         padding-left: 10%;
     }

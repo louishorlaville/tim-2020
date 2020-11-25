@@ -7,14 +7,14 @@
         <div class="containerLogoContent">
             <div class="containerLogo">
                 <img class="logo" src="images/svg/logo.svg" alt="logo">
-                <div id="cercle-cap-N" class="cercle-cap-logo"></div>
+                <div id="cercle-cap-N" class="plus-cap-logo"><img src="./images/svg/blackPlus.svg" alt=""></div>
                 <div id="cercle-cap-T" class="cercle-cap-logo"></div>
                 <div id="cercle-cap-I" class="cercle-cap-logo"></div> 
                 <div class="logo-cercle-border"><div class="logo-cercle color-1"></div></div>
                 <div class="cercle-n-border"><div class="cercle-n color-2"></div></div>   
-                <div class="cercle-i-border"><div class="cercle-i color-5"></div></div>
-                <img src="images/svg/logo/OInsideLogo.svg" alt="" class="color-svg-6" id="logo-o">   
-                <img src="images/svg/logo/UInsideLogo.svg" alt="" class="color-svg-6" id="logo-u">   
+                <div class="cercle-i-border"><div class="cercle-i color-3"></div></div>
+                <img src="images/svg/logo/OInsideLogo.svg" alt="" class="color-svg-3" id="logo-o">   
+                <img src="images/svg/logo/UInsideLogo.svg" alt="" class="color-svg-3" id="logo-u">   
             </div>
            
             

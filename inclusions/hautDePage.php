@@ -27,7 +27,7 @@
 <head>
     <title><?= $meta[$page]["titre"]; ?></title>
     <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
-    <?=($page=="accueil")? '<link rel="stylesheet" href="hamburger/dist/hamburgers.css">' : "../hamburger/dist/hamburgers.css" ?>
+    <?=($page=="accueil")? '<link rel="stylesheet" href="   hamburger/dist/hamburgers.css">' : '<link rel="stylesheet" href="../hamburger/dist/hamburgers.css">'?>
     <link rel="stylesheet" href="<?=($page=="accueil")? "css/style.css" :"../css/style.css" ?>">
     <meta charset="UTF-8" user-scalable=no>
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -35,10 +35,14 @@
 <body>
 <div id="background-shapes">
     <div class="background-shape color-bg" id="background-shape-left"></div>
+    <img id="bck-shape-1" src="./images/svg/blackCircle.svg" alt="" class="background-smallshape background-circle color-svg-2">
+    <img id="bck-shape-2" src="./images/svg/blackCircle.svg" alt="" class="background-smallshape background-circle color-svg-2">
+    <img id="bck-shape-3" src="./images/svg/blackPlus.svg" alt="" class="background-smallshape background-plus color-svg-1">
+    <img id="bck-shape-4" src="./images/svg/blackPlus.svg" alt="" class="background-smallshape background-plus color-svg-1">
 </div>
 
 <div class="animation-area">
-    <ul class="box-area">
+    <!-- <ul class="box-area">
         <li>+</li>
         <li>+</li>
         <li>+</li>
@@ -47,11 +51,9 @@
         <li>+</li>
         <li>+</li>
         <li>+</li>
-
-    </ul>
+    </ul> -->
 </div>
 
-    
 <div class="headerContainer">
     <div class="container-header-mobile">
         <div id="logo-header-mobile">
