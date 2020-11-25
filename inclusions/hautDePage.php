@@ -27,14 +27,14 @@
 <head>
     <title><?= $meta[$page]["titre"]; ?></title>
     <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
+    <?=($page=="accueil")? '<link rel="stylesheet" href="hamburger/dist/hamburgers.css">' : "../hamburger/dist/hamburgers.css" ?>
     <link rel="stylesheet" href="<?=($page=="accueil")? "css/style.css" :"../css/style.css" ?>">
     <meta charset="UTF-8" user-scalable=no>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
 <div id="background-shapes">
-    <div class="background-shape color-bg-2" id="background-shape-left"></div>
-    <div class="background-shape color-bg-2" id="background-shape-right"></div>
+    <div class="background-shape color-bg" id="background-shape-left"></div>
 </div>
 
 <div class="animation-area">
@@ -53,14 +53,44 @@
 
     
 <div class="headerContainer">
+    <div class="container-header-mobile">
+        <div id="logo-header-mobile">
+            <a href=<?=($page=="accueil")?"./index.php":"../index.php"?>><img id="img-logo-header-mobile" src="./images/img/logoTim.png" alt="Logo Tim"/></a>
+        </div>
+        <div class="container-icon-burger">
+            <button id="bouton-burger" class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <div class="box-container-menu-burger hide-burger">
+            <div class="box-border-menu-burger ">
+                <div class="container-menu-burger">
+                    <div class="elt-menu-burger" id="burger-etudiant-nouveau">
+                        <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-actuel":"../index.php#container-etudiant-mobile-actuel"?>>
+                            Nouveau étudiants 
+                            <div class="arrow-burger">&#8250;</div>
+                        </a>
+                    </div>
+                    <div class="elt-menu-burger" id="burger-etudiant-actuel">
+                        <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-nouveaux":"../index.php#container-etudiant-mobile-nouveaux"?>>
+                            Étudiants actuels 
+                            <div class="arrow-burger">&#8250;</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <?php
     if($page=="accueil"):
     ?>
-        <div class="header color-bars"> </div>
+        <div class="header-desktop header color-bars"> </div>
     <?php 
         else:
     ?>
-    <div class="displayRowHeader">
+    <div class="header-desktop displayRowHeader">
         <div id="logoMenuAccueilContainer">
         <a href="../index.php"><img src="../images/svg/header/logoMenuHeader.svg" alt="Logo retour accueil" id="logoMenuAccueil" href="../index.php">
         </div>

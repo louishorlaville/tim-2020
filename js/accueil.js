@@ -2,54 +2,43 @@
   let btnMenuNvEtud = document.querySelector(
     "#position-container-etudiants-nouveaux"
   );
+
   let btnMenuEtudActu = document.querySelector(
     "#position-container-etudiants-actuels"
   );
-  let title = document.querySelector("#title");
+
   let logo = document.querySelector(".logo");
-  let cercles = [
-    [document.querySelector("#cercle-cap-N"), 0.1, -0.05],
-    [document.querySelector("#cercle-cap-T"), 1.01, 0.36],
-    [document.querySelector("#cercle-cap-I"), 0.52, 1.01],
-  ];
   let boites = [
     [btnMenuNvEtud, 0, 0.65],
     [btnMenuEtudActu, 0.56, 0.98],
   ];
-  let cerclesDesign = [
-    [document.querySelector(".logo-cercle-border"), 0.62, 0.05],
-    [document.querySelector(".cercle-n-border"), 0.062, 0.15],
-  ];
+
+  let burgerIcon = document.querySelector(".hamburger");
+  let burgerMenu = document.querySelector(".box-container-menu-burger");
+  let burgerText = document.querySelector(".container-menu-burger");
 
   //Placer les cercles et boites au chargement de la page
   window.addEventListener("load", function () {
-    cercles.forEach((elt) => {
-      placerAbsolueAccueil(elt[0], elt[1], elt[2]);
-    });
     boites.forEach((elt) => {
-      placerAbsolueAccueil(elt[0], elt[1], elt[2]);
-    });
-    cerclesDesign.forEach((elt) => {
       placerAbsolueAccueil(elt[0], elt[1], elt[2]);
     });
   });
 
   //Les replacer aux bons endroits au cas ou la page change de taille
   window.onresize = function () {
-    cercles.forEach((element) => {
-      placerAbsolueAccueil(element[0], element[1], element[2]);
-    });
     boites.forEach((element) => {
       placerAbsolueAccueil(element[0], element[1], element[2]);
     });
-    cerclesDesign.forEach((elt) => {
-      placerAbsolueAccueil(elt[0], elt[1], elt[2]);
-    });
   };
 
+  burgerIcon.addEventListener("click", function () {
+    toggleBurgerClass(burgerIcon);
+  });
+
   let etNouvListe = `
-        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-et">STAGES</a></div></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
         <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-et">VIE ÉTUDIANTE</a></div></li>
+        <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-et">STAGES</a></div></li>
     `;
 
   let etActuListe = `
@@ -98,7 +87,7 @@
                                 <img class="croix-nav" src="./images/svg/whitePlus.svg"/>
                                 <img class="metro-nav" src="./images/svg/ligneMetroMenu_1.svg"/>
                             </div>
-                            <ul id="et-liensutiles-liste">
+                            <ul class="et-liensutiles-liste">
                             ` +
       listType +
       `
@@ -109,6 +98,18 @@
             </div>
         </div>
         `;
+  }
+
+  function toggleBurgerClass(button) {
+    if (button.classList.contains("is-active")) {
+      button.classList.remove("is-active");
+      burgerMenu.classList.remove("burger-active");
+      burgerText.classList.remove("menu-appear");
+    } else {
+      button.classList.add("is-active");
+      burgerMenu.classList.add("burger-active");
+      burgerText.classList.add("menu-appear");
+    }
   }
 
   function placerAbsolueAccueil(element, width, height) {
