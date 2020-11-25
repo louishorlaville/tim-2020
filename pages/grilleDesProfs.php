@@ -8,59 +8,59 @@
         <div class="titre-page" id="titre-profs">NOS ENSEIGNANTS</div>
     </div>
     <div id="contenu-profs">
-        <div class="profProg prof" id="martin">
+        <div class="prof-prog prof" id="martin">
             <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">Martin</div> 
         </div>
-        <div class="profProg prof" id="dominic">
+        <div class="prof-prog prof" id="dominic">
             <div class="signe-prof signe-prog">+</div>
-            <div class="nom-prof">dominic</div>
+            <div class="nom-prof">Dominic</div>
         </div>
-        <div class="profProg prof" id="manon">
+        <div class="prof-prog prof" id="manon">
             <div class="signe-prof signe-prog">+</div>
-            <div class="nom-prof">manon</div>
+            <div class="nom-prof">Manon</div>
         </div>
-        <div class="profProg prof" id="mathieu">
+        <div class="prof-prog prof" id="mathieu">
             <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">mathieu</div>
         </div>
-        <div class="profProg prof" id="david">
+        <div class="prof-prog prof" id="david">
             <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">david</div>
         </div>
-        <div class="profProg prof" id="denis">
+        <div class="prof-prog prof" id="denis">
             <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">denis</div>
         </div>
-        <div class="profProg prof" id="gregory">
+        <div class="prof-prog prof" id="gregory">
             <div class="signe-prof signe-prog">+</div>
             <div class="nom-prof">gregory</div>
         </div>
-        <div class="profDesign prof" id="camille">
+        <div class="prof-design prof" id="camille">
             <div class="signe-prof">x</div>
             <div class="nom-prof">camille</div>
         </div>
-        <div class="profDesign prof" id="vahik">
+        <div class="prof-design prof" id="vahik">
             <div class="signe-prof">x</div>
             <div class="nom-prof">vahik</div>
         </div>
-        <div class="profDesign prof" id="vincent">
+        <div class="prof-design prof" id="vincent">
             <div class="signe-prof">x</div>
             <div class="nom-prof">vincent</div>
         </div>
-        <div class="profDesign prof" id="johanne">
+        <div class="prof-design prof" id="johanne">
             <div class="signe-prof">x</div>
             <div class="nom-prof">Johanne</div>
         </div>
-        <div class="profDesign prof" id="eddy">
+        <div class="prof-design prof" id="eddy">
             <div class="signe-prof">x</div>
             <div class="nom-prof">Eddy</div>
         </div>
-        <div class="profDesign prof" id="caroline">
+        <div class="prof-design prof" id="caroline">
             <div class="signe-prof">x</div>
             <div class="nom-prof">Caroline</div>
         </div>
-        <div class="profDesign prof" id="ahmed">
+        <div class="prof-design prof" id="ahmed">
             <div class="signe-prof">x</div>
             <div class="nom-prof">ahmed</div>
         </div>
