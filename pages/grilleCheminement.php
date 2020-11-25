@@ -1,33 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/cheminement.css">
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
 
-<div id="background-shapes">
-    <div class="background-shape color-bg-2" id="background-shape-left"></div>
-    <div class="background-shape color-bg-2" id="background-shape-right"></div>
-</div>
-
-<div class="animation-area">
-    <ul class="box-area">
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-        <li>+</li>
-
-    </ul>
-</div>
-
+<?php 
+    $page = "cheminement";
+    require("../inclusions/hautDePage.php");
+?>
 <div id="contenu-principal">
-  <h1>⠀</h1>
+  <h1> GRILLE DE CHEMINENEMT⠀</h1>
 
   <div class="grid-container">
 
@@ -97,7 +74,6 @@
     <div class="grid-item chem-cell-top color-3">0000-0000<div class="color-bars chem-cell"><div class = "chem-cell-header color-3" ></div><a class="chem-lien" href="profileCours.html">Création de jeu en équipe</a></div></div>  
     <div class="grid-item chem-cell-top color-3">0000-0000<div class="color-bars chem-cell"><div class = "chem-cell-header color-3" ></div><a class="chem-lien" href="profileCours.html">expérimentation en jeu: volet création</a></div></div>
     <div class="grid-item chem-cell-top color-3">0000-0000<div class="color-bars chem-cell"><div class = "chem-cell-header color-3" ></div><a class="chem-lien" href="profileCours.html">expérimentation en jeu: volet prog.</a></div></div>
-    
   </div>
 </div>
 

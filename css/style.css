@@ -8,25 +8,39 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-}
 
 body {
     position: relative;
     font-family: Arial;
     background-color: #FCFCFC;
-    margin: 0;
     height: 100%;
-    min-height: 100%;
+    overflow: hidden;
+    background-color: #E0DBD5;
+
 }
 
-.header {
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-size: 30px;
+/*/////////// BACKGROUND SHAPES ////////*/
+/* Formes d'arrière plan anglés */
+
+#background-shapes{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    bottom: 0;
+    z-index: -3;
+    overflow: hidden;
 }
+
+.background-shape{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    clip-path: polygon(0 95%, 0 100%, 35% 100%,100% 0, 25% 0, 0 95% );
+}
+
+
+
+/* ///////// STYLE ACCUEIL //////////// */
 
 #contenu-principal{
     width: 100%;
@@ -71,7 +85,16 @@ body {
 }
 
 
-/* couleurs principales de la page */
+/* Éléments à placer (boutons,etc.)*/
+.button-back{
+    float: left;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+
+/* couleurs principales de la page - IMG */
 
 .color-bg{
     background-color: #FCFCFC;
@@ -102,7 +125,7 @@ body {
 }
 
 .color-5{
-    background-color: #eebd38;
+    background-color: #EFCA56;
 }
 
 .color-6{
@@ -114,90 +137,201 @@ body {
 }
 
 
+/* COULEURS SVG*/
+.color-svg-1{
+    filter: invert(0%) sepia(1%) saturate(3608%) hue-rotate(6deg) brightness(109%) contrast(80%);
 
-/* Éléments d'arrière plan animés */
-
-.animation-area{
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    font-size: 5rem;
-    z-index: -2;
+}
+.color-svg-6{
+    filter: invert(80%) sepia(45%) saturate(690%) hue-rotate(340deg) brightness(108%) contrast(87%);
 }
 
-.box-area{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
+/* Logo et formes */
+#title{
     height:100%;
-    overflow: hidden;
+    width: 50%;
+    min-width: 50%;
+    min-height: 100%;
+    margin-left: 30%;
 }
 
-.box-area li{
+.containerLogoContent {
+    height: 75%;
+    margin: auto;
+    margin-top:8%;
+    position: relative;
+    transform-origin: 50% 50%;
+}
+.containerLogo{
+    position: relative;
+    transform-origin: 50% 50%;
+
+}
+
+.logo{
+    position: relative;
+    transform-origin: 50% 50%;
+
+}
+
+/* FORME GÉOMETRIQUES DE LA PAGE */
+/*Forme inside logo o*/
+#logo-o{
     position: absolute;
-    display: block;
-    list-style: none;
-    width: 25px;
-    height: 25px;
-    animation: animate 10s linear infinite;  
+    top: 39.8%;
+    left: 57.2%;
+
+    width: 2.5%;
+    z-index: -1;
 }
 
-/* todo with javascript */
+#logo-u{
+    position: absolute;
+    top: 50.3%;
+    left: 25.5%;
 
-.box-area li:nth-child(1){
-    left: 200px;
-    top: 100%;
-    animation-name: animate;
-    animation-delay: 0s;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+    width: 3.2%;
+    z-index: -1;
 }
 
-.box-area li:nth-child(2){
-    left: 650px;
-    top: 100%;
-    animation-name: animate;
-    animation-delay: 6s;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+/*Demi cercle bleu*/
+.cercle-n{
+    margin: auto;
+    margin-top: 0.25rem;
+    border-radius:50%;
+    width: 80%;
+    height: 80%;
 }
 
-.box-area li:nth-child(3){
-    left: 100px;
-    top: 100%;
-    animation-name: animate;
-    animation-delay: 3s;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+.cercle-n-border{
+    position: absolute;
+    clip-path: inset(0 0 0 50%);
+    left: 5.5%;
+    top: 20%;
+    z-index: -1;
+    width: 13.5%;
+    height: 20%;
 }
 
-.box-area li:nth-child(4){
-    left: 700px;
-    top: 100%;
-    animation-name: animate;
-    animation-delay: 1s;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+/*Demi cercle jaune*/
+.cercle-i{
+    margin: auto;
+    margin-top: 0.25rem;
+    border-radius:50%;
+    width: 80%;
+    height: 80%;
 }
 
-.box-area li:nth-child(5){
-    left: 550px;
-    top: 100%;
-    animation-name: animate;
-    animation-delay: 8s;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+.cercle-i-border{
+    position: absolute;
+    clip-path: inset(0 50% 0 0);
+    left: 46%;
+    bottom: 15%;
+    z-index: -1;
+    width: 13.5%;
+    height: 20%;
 }
 
-.box-area li:nth-child(6){
-    left: 400px;
-    top: 100%;
-    animation-name: animate;
-    animation-delay: 4s;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+@keyframes spin2 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
 }
+
+/*Gros cercle rouge*/
+.logo-cercle{
+    margin: auto;
+    margin-top: 0.5rem;
+    border-radius:50%;
+
+    width: 15rem;
+    height: 15rem;
+}
+
+.logo-cercle-border{
+    position: absolute;
+    border: black;
+    border-style: dashed;
+    border-radius:50%;
+    left: 65%; 
+    top: 5%;
+
+    z-index: -1;
+
+    width: 16rem;
+    height: 16rem;
+
+    animation-name: spin;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* Cercles qui autours dans le logo */
+.cercle-cap-logo{
+    position: absolute;
+    border-radius: 100%;
+    border-color: #1A1A1A;
+    border-width: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+    border-style: solid;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+    transform-origin: 0 0;
+}
+
+#cercle-cap-N{
+    left: 9.7%;
+    top: -5%;
+}
+
+#cercle-cap-T{
+    left: 101%;
+    top: 35.5%;
+}
+
+#cercle-cap-I{
+    left: 52.6%;
+    bottom: -5%;
+}
+
+
+/*////////// SECTIONS ETUDIANTS ///////*/
+.container-boites-menu-etudiants-mobile{
+    display: none;
+}
+.position-container-etudiants{
+    position: absolute;
+    width: 45%;
+    min-width: 340px;
+    
+}
+
+#position-container-etudiants-nouveaux{
+    transform: translate(-100%,0);
+    top:60%;
+    left:0;
+}
+
+#position-container-etudiants-actuels{
+    left:60%;
+    bottom: 0;
+}
+
 
 @keyframes animate{
     from {
@@ -216,14 +350,16 @@ body {
 #title{
     height:100%;
     width: 50%;
-    position: absolute; /* or absolute */
-    left: 28%;
+    min-width: 50%;
+    min-height: 100%;
+    margin-left: 30%;
 }
 
-.logo {
+.containerLogo {
     height: 75%;
     margin: auto;
-    margin-top:8%;
+    margin-top:10%;
+    position: relative;
 }
 
 .footer {
@@ -232,11 +368,12 @@ body {
     color: white;
     font-family: "bahnschrift";
     font-size: 0.85rem;
-
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    transform-origin: 0 0;
+    bottom: 0;
     width:100%;
-    height:60px;   /* Height of the footer */
+    height:8%;   /* Height of the footer */
+    overflow:hidden;
 }
 
 .credits{
@@ -260,16 +397,15 @@ body {
     margin: auto;
     margin-top: 0.25rem;
     border-radius:50%;
-
     width: 6rem;
     height: 6rem;
 }
 
 .cercle-n-border{
     position: absolute;
-    border: black;
-    border-style: dashed;
-    border-radius:50%;
+    /* border: black; */
+    /* border-style: dashed; */
+    /* border-radius:50%; */
 
     clip-path: inset(0 0 0 50%);
 
@@ -338,9 +474,8 @@ body {
     border: black;
     border-style: dashed;
     border-radius:50%;
-
-    left: 72%;
-    top: 20%;
+    /* left: 65%; */
+    /* top: 20%; */
 
     z-index: -1;
 
@@ -375,31 +510,79 @@ body {
     text-align: center;
     font-weight: bolder;
     font-size: 3rem;
+    transform-origin: 0 0;
 }
 
+
+
 #cercle-cap-N{
-    left: 11.4%;
-    top: 4.75%;
+    left: 0;
+    top: 0;
 }
 
 #cercle-cap-T{
-    left: 114%;
-    top: 35%;
+    left: 0;
+    top: 0;
 }
 
 #cercle-cap-I{
-    left: 59%;
-    top: 83.25%;
+    left: 0;
+    top: 0;
 }
 
 
 /* Sections étudiants */
+.position-container-etudiants{
+    position: absolute;
+    width: 45%;
+    min-width: 340px;
+    
+}
+
+#position-container-etudiants-nouveaux{
+    transform: translate(-100%,0);
+    top:60%;
+    left:0;
+}
+
+#position-container-etudiants-actuels{
+    left:60%;
+    bottom: 0;
+}
+
+.separateur-etudiants{
+    background-color: #1A1A1A; 
+}
 
 .container-etudiants{
-    position: absolute;
     font-size: 24px;
     text-align: center;
-    width: 45%;
+}
+
+#container-etudiants-nouveaux{
+    margin-left: 3%;
+}
+
+#container-etudiants-actuels{
+    margin-right: 3%;
+}
+
+.mask-ligne-etudiants-nouveaux{
+    clip-path: polygon(
+        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 55%, 0 55%, 0 50%, 101% 50%,101% 45%, 0 45%, 0 0 
+     );
+}
+
+.mask-ligne-etudiants-actuels{
+    clip-path: polygon(
+        0 0, 0 100%, 100% 100%, 100% 60%, 0 60%, 0 55%, 120% 55%, 120% 50%, 0 50%, 0 45%, 100% 45%,100% 0, 0 0 
+     );
+}
+
+.mask-etudiant{
+    clip-path: polygon(
+        0 0, 102% 0, 102% 100%, 0 100%, 0 60%, 101% 60%, 101% 45%, 0 45%, 0 0 
+     );
 }
 
 .container-etudiants-animate{
@@ -407,15 +590,6 @@ body {
     width: 9999%;
     height: 9999%;
     z-index: -1;
-}
-
-#container-etudiants-nouveaux{
-    left: -45%;
-    top: 57%;
-}
-#container-etudiants-actuels{
-    left: 62.25%;
-    top: 78.5%;
 }
 
 #container-etudiants-fullscreen{
@@ -426,7 +600,8 @@ body {
     margin-right: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
-
+    padding-top: 0.3em;
+    clip-path: polygon(0 0, 100% 0, 100% 13%, 0 13%, 0 15%,100% 15%, 100% 100%, 0 100%, 0 0);
     animation: etudiants-fill 1s;  
     animation-fill-mode: forwards;  
 }
@@ -441,10 +616,7 @@ body {
     }
 }
 
-.separateur-etudiants{
-    background-color: #FCFCFC;
-    height: 10px;
-}
+
 
 #et-nouveaux-title{
     color: #FCFCFC;
@@ -471,72 +643,764 @@ body {
     font-size: 24px;
     text-align: left;
     width: 60%;
-    margin: 5%;
+    margin: 5% 5% 0 5%;
 }
 
 #et-menu-image{
     width: 380px;
     height: 380px;
-    margin: 5%;
+    margin: 8%;
     margin-right: 50px;
     margin-bottom: 15%;
+}
+#et-menu-contenu-container{
+    position: relative;
 }
 
 #et-menu-contenu{
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 75%;
+    height: 60%;
+}
+
+.titreDivEtud{
+    padding-top: 1.5%;
+    padding-bottom: 1%;
 }
 
 .button {
     border: none;
     font-family: "bahnschrift";
     color: white;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16pt;
     cursor: pointer;
+    font-size: 0.8em;
+
+
 }
 
-#et-liensutiles-liste{
+.cliqueAccueil{
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+/* NAV MENU ETUDIANTS ACCUEIL */
+.et-nav-container{
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    width: 100%;
+    text-align: left;
+
+}
+
+.et-nav{
+    position: relative;
+}
+
+.metro-nav-container{
+    position: relative;
+}
+
+.croix-nav{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    width: 3%;
+    transform-origin: center right;
+}
+
+.metro-nav{
+    width: 50%;
+    margin-left: 5%;
+}
+
+.et-liensutiles-liste{
+    margin-left: 10%;
+    list-style-type: none;
+    flex-direction: row;    
+}
+
+.et-liensutiles-liste > li{
+    position: absolute;
+    width: 20%;
+    height: 10%;
+}
+
+.et-liensutiles-liste > li:nth-child(1){
+    left:11.5%;
+}
+
+.et-liensutiles-liste > li:nth-child(2){
+    left:33%;
+}
+
+.et-liensutiles-liste > li:nth-child(3){
+    left:54%;
+}
+.position-bouton-menu-et{
+    position: relative;
+}
+
+.button-menu-et{
+    position: absolute;
+    top:28%;
+    left: 18%;
+
+    border: none;
+    font-family: "bahnschrift";
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8em;
+ 
+}
+
+.list-circle{
+    width: 2em;
+}
+
+/*////// STYLE HEADER ///////// */
+.container-header-mobile{
+    display: none;
+}
+.header {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.displayRowHeader{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+
+#logoMenuAccueilContainer{
+    width: 8%;
+    margin-right: 2%;
+}
+
+#logoMenuAccueilContainer{
+    transition: all 0.3s cubic-bezier( 0.94, 0.38, .48, 1.2 );
+    cursor: pointer;
+}
+
+#logoMenuAccueilContainer:hover{
+    transform: rotate(45deg);
+}
+
+@keyframes animationCercleHeader{
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+#menuHeaderContainer{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    font-size: 1.5em;
+    margin-top: 1%;
+}
+
+.eltMenuHeader{
+    position: relative;
+    margin-left: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+.underLineHeader{
+    position: absolute;
+    left: -5%;
+}
+
+#menuHeaderUnderline1{
+    top: 2px;
+}
+#menuHeaderUnderline2{
+    top: 19px;
+    width: 130%;
+}
+
+
+
+
+/* ARRIÈRE-PLAN ANIMÉ */
+
+.animation-area{
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    font-size: 5rem;
+    z-index: -2;
+}
+
+.box-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    animation: animate 10s linear infinite;  
+}
+
+
+/* TODO with javascript */
+
+.box-area li:nth-child(1){
+    left: 200px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 0s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.box-area li:nth-child(2){
+    left: 650px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 6s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.box-area li:nth-child(3){
+    left: 100px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 3s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.box-area li:nth-child(4){
+    left: 700px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.box-area li:nth-child(5){
+    left: 550px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 8s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.box-area li:nth-child(6){
+    left: 400px;
+    top: 100%;
+    animation-name: animate;
+    animation-delay: 4s;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+.prog {
+    border: none;
+    font-family: "bahnschrift";
+    color:red ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 62pt;
+    cursor: pointer;
+    position: absolute;
+}
+
+.prog:active {
+   text-shadow: salmon 3px 3px,
+   salmon -3px 3px,
+   salmon -3px -3px,
+   salmon 3px -3px ; 
+
+}
+.design {
+    border: none;
+    font-family: "bahnschrift";
+    color:teal ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 62pt;
+    cursor: pointer;
+    position: absolute;
+}
+.design:active {
+    text-shadow:turquoise 3px 3px,
+   turquoise -3px 3px,
+   turquoise -3px -3px,
+   turquoise 3px -3px ; 
+ 
+ }
+
+@keyframes animate{
+    from {
+        transform: translateX(0) translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(800px) translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* end of todo */
+
+/* /////////SOCIALS//////////// */
+.container-socials{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    position: fixed;
+    bottom:10%;
+    left: 3%;
+}
+.social-icon{
+    width: 50%;
+}
+
+/* /////////FOOTER//////////// */
+.footer {
     display: flex;
     justify-content: center;
-    list-style-type: none;
+    color: white;
+    font-family: "bahnschrift";
+    font-size: 0.85rem;
+    position: fixed;
+    transform-origin: 0 0;
+    bottom: 0;
+    width:100%;
+    height:8%;   /* Height of the footer */
+    overflow:hidden;
 }
 
-#et-liensutiles-liste > li{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 1.5%;
+.credits{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    float: left;
+    width: 75%;
 }
 
-/* Formes d'arrière plan anglés */
-
-#background-shapes{
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    overflow: hidden;
-    z-index: -3;
+.contacts{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: right;
+    float: right;
 }
 
-.background-shape{
-    height: 100%;
-    position:absolute;
+#liens-college-footer{
+    color: white;
 }
 
-#background-shape-left {
-    width: 30%;
-	transform: skew(-20deg);
-    left: -20%;
+
+
+
+
+/* ////// PHONE ADAPTIVE ///////////// */
+
+@media screen and (max-width: 600px) {
+    body{
+        overflow: auto;
+        height: 100%;
+    }
+    /* BACKGROUND SHAPES */
+    .background-shape{
+        clip-path: polygon(0 95%, 0 100%, 35% 100%, 100% 10%,100% 0, 25% 0, 0 95% );
+    }
+    /* HEADER */
+    .header-desktop{
+        display: none;
+    }
+
+    .container-header-mobile{
+        display: block;
+        background-color: #1A1A1A;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        padding: .5em 0 .5em 0;
+        position: relative;
+    }
+
+    /* Logo tim */
+    #logo-header-mobile{
+        margin-top: 3px;
+        margin-left: 8px;
+        width:10%;
+    }
+
+    #logo-header-mobile>a{
+        display: block;
+        width: 80px;
+    }
+
+    #img-logo-header-mobile{
+        display: block;
+        width: 100%;
+    }
+
+    /* Burger Menu */
+    .container-icon-burger{
+        margin-left: 65vw;
+        color: white;
+    }
+
+    .hamburger{
+        padding-top: 10px;
+    }
+
+    .hamburger:focus{
+        outline: unset;
+    }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
+        background-color: white;
+    }
+
+    .box-container-menu-burger{
+        position: absolute;
+        width: 98%;
+        top: 100%;
+        height: 0px;
+        z-index: 5;
+        padding: 1%;
+        background-color: white;
+        transition: all 0.2s ease-in;
+        overflow: hidden;
+    }
+
+    .box-border-menu-burger{
+        width: 100%;
+        height:100%;
+        background-color: #EFCA56;
+    }
+
+    .burger-active{
+        height: 100px;
+    }
+
+    .hide-burger{
+        height: 0;
+        padding: 0;
+        width:100%;
+    }
+
+    .container-menu-burger{
+        padding: 13px 10px 10px 15px;
+        font-size: 1.5em;
+        margin-left: -1000%;
+        transition: margin 1s cubic-bezier(.61,.57,.67,1.14);
+    }
+
+    .menu-appear{
+        margin-left: 0;
+    }
+
+    .elt-menu-burger{
+        padding-left: 5px;
+        width: 70%;
+        position: relative;
+    }
+
+    .elt-menu-burger>a{
+        display: block;
+        width: 120%;
+    }
+
+    #burger-etudiant-nouveau{
+        border-bottom: 2.5px solid black;
+        padding-bottom: 5px;
+        margin-bottom: 6px;
+    }
+
+    .elt-menu-burger>a{
+        list-style-type: none;
+        text-decoration: none;
+        font-family: "bahnschrift";
+        font-weight: 400;
+        color:black;
+    }
+
+    .arrow-burger{
+        position: absolute;
+        right: -3%;
+        top: 0;
+        transition: right 0.5s ease-in-out;
+    }
+
+    .elt-menu-burger:hover .arrow-burger{
+        right: -5%;
+    }
+
+
+    
+    /* ACCUEIL - LOGO */
+    #title{
+        margin:25% 0 30% 0;  
+        width: 100%;   
+        overflow: hidden;
+
+    }
+   
+    .containerLogo{
+        margin: 0 12% 0 12%;
+    }
+
+    .logo{
+        width: 100vw;
+        clip-path: polygon(0 0, 75% 0, 75% 100%, 0 100%, 0 0);
+    }
+
+    .position-container-etudiants{
+        display: none;
+    }
+
+    /* Cercles qui apparaissent dans le logo */
+    /*Gros cercle rouge*/
+    .logo-cercle{
+        border-radius:50%;
+        margin: .25rem 0 0 .25rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .logo-cercle-border{
+        left: 60%; 
+        top: -10%;
+
+        width: 6.5rem;
+        height: 6.5rem; 
+    }
+
+    /*Demi cercle bleu*/
+    .cercle-n{
+        margin: auto;
+        margin-top: 0.25rem;
+        border-radius:50%;
+        width: 80%;
+        height: 80%;
+    }
+    
+    .cercle-n-border{
+        left: 7%;
+        top: 15%;
+    
+        width: 17%;
+        height: 20%;
+    }
+
+    /*Demi cercle jaune*/
+    .cercle-i{
+        margin: auto;
+        margin-top: 0.25rem;
+        border-radius:50%;
+        width: 80%;
+        height: 80%;
+    }
+    
+    .cercle-i-border{
+        left: 61%;
+        top: 60%;
+    
+        width: 17%;
+        height: 20%;
+    }
+
+    /*Formes dans le logo*/
+    #logo-o{
+        left: 75.5%;
+        width: 2.8%;
+    }
+
+    #logo-u{
+        left: 33.6%;
+        top: 49.8%;
+        width: 3.8%;
+    }
+    /*Petits cercles*/
+    #cercle-cap-N{
+        left: 10.3%;
+        top: -12%;
+    }
+    
+    #cercle-cap-T{
+        left: 101%;
+        top: 33.5%;
+    }
+    
+    #cercle-cap-I{
+        left: 66.5%;
+        bottom: -10%;
+    }
+
+    /*////BOITES ETUDIANTES////*/
+    
+    .container-boites-menu-etudiants-mobile{
+        display: block;
+        margin: 25% 5% 0 5%;
+    }
+    .container-etudiant-mobile{
+        color: white;
+        font-family: "bahnschrift";
+        padding: 1em;
+        font-size: .8rem;
+        height: 110px;
+    }
+
+    #container-etudiant-mobile-nouveaux{
+        background-color: #BA222D;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 5% 93%, 0 93%, 0 0);
+    }
+
+    #container-etudiant-mobile-actuel{
+        background-color: #296FA6;
+        clip-path: polygon(0 7%, 5% 7%, 5% 0, 100% 0, 100% 100%, 0 100%, 0 7%);
+    }
+
+    .titre-etudiant-mobile{
+        width: 100%;
+        border-bottom: solid white;
+    }
+    
+    .texte-titre-etudiant-mobile{
+        font-size: 1.2rem;
+        padding-left: 0.3em;
+    }
+
+    .bigger-titre-menu-etudiant-mobile{
+        font-size: 1.28em;
+    }
+
+    /*Menu */
+    .container-menu-etudiant-mobile{
+        margin-top: 5%;
+        margin-left: 3%;
+        font-weight: 200;
+    }
+
+    .titre-menu-etudiant-mobile{
+        border-bottom: 2px solid white;
+        margin-right: 80%;
+        margin-bottom: 1em;
+    }
+    .texte-titre-menu-etudiant-mobile{
+        padding-left: 10%;
+    }
+
+    .liste-menu-etudiant-mobile{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin-left: -7%;
+    }
+
+    .liste-menu-etudiant-mobile>li{
+        margin-right: 40px;
+        width:100%;
+    }
+    
+    .button-menu-etudiant-mobile{
+        border: none;
+        font-family: "bahnschrift";
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 0.8em;    
+    }
+
+    .liste-menu-etudiant-mobile>li:nth-child(1){
+       margin-left: 15%;
+    }
+
+    .list-circle{
+        width: 1.3em;
+        position: absolute;
+        left: -20px;
+        vertical-align: middle;
+    }
+
+    /* separateur menu etudiants */
+    .container-separateur-etudiant-mobile{
+        display: flex;
+        flex-direction: row;
+        margin:0px 0 0px -13px;
+    }
+    
+    #plus-separateur-etudiant-mobile{
+        filter: invert(0%) sepia(4%) saturate(646%) hue-rotate(342deg) brightness(99%) contrast(80%);
+        width: 7%;
+    }
+
+    #ligne-separateur-etudiant-mobile{
+        width: 100%;
+        height: 5px;
+        background-color: #1A1A1A;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: -6px;
+
+    }
+
+    /* ///// SOCIALS ///// */
+    .container-socials{
+        position: static;
+        margin-left: 25%;
+        margin-bottom: 4px;
+    }
+
+    /* ///// FOOTER ///// */
+    .footer{
+        max-width: 100vw;
+        position: static;
+        font-size: 0.55em;
+        padding: 25px 0 10px 0;
+    }
+
+    .credits{
+        width: 45%;
+        padding-left: 3px;
+    }
+    .credits>p:nth-child(2){
+        width: 80%;
+    }
+
+    .contacts>a{
+        color: white;
+        padding-right: 3px;
+    }
 }
 
-#background-shape-right {
-    width: 60%;
-	transform: skew(-45deg);
-    margin-left: 72%;
-}
+
+
+
+
+
 
 .invisible{
     display: none;

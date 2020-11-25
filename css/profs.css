@@ -1,0 +1,19 @@
+#contenu-titre-profs{
+    font-family: "bahnschrift";
+    font-weight: 100;
+    font-size: 3em;
+    margin-left: 10%;
+}
+
+#contenu-profs{
+    position: relative;
+}
+
+.signe-prog{
+    font-size: 5rem;
+    font-weight: bolder;
+    color: red;
+}
+
+.prof{
+}
