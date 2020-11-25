@@ -309,6 +309,8 @@ body {
 #camille{
     left: 50%;
     bottom: 42%;
+    font-size: 78pt;
+    transform: rotate(40deg);
 }
 
 #camilleNom{
@@ -320,6 +322,8 @@ body {
 #martin{
     left: 64%;
     bottom: 64%;
+    font-size: 56pt;
+    transform: rotate(-20deg);
 }
 
 #martinNom{
@@ -329,8 +333,10 @@ body {
 }
 
 #denis{
-    left: 53%;
-    bottom: 14%;
+    left: 51%;
+    bottom: 12%;
+    font-size: 88pt;
+    transform: rotate(-70deg);
 }
 #denisNom{
     font-size: 75%;
@@ -341,6 +347,8 @@ body {
 #dominic{
     left: 22%;
     bottom: 65%;
+    font-size: 78pt;
+    transform: rotate(40deg);
 }
 
 #dominicNom{
@@ -350,8 +358,10 @@ body {
 }
 
 #vahik{
-    left: 44%;
-    bottom: 79%;
+    left: 42%;
+    bottom: 77%;
+    font-size: 98pt;
+    transform: rotate(-40deg);
 }
 
 #vahikNom{
@@ -361,8 +371,10 @@ body {
 }
 
 #gregory{
-    left: 68%;
-    bottom: 43%;
+    left: 69%;
+    bottom: 44%;
+    font-size: 52pt;
+    transform: rotate(25deg);
 }
 
 #gregoryNom{
@@ -373,7 +385,9 @@ body {
 
 #david{
     left: 40%;
-    bottom: 22%;
+    bottom: 23%;
+    font-size: 42pt;
+
 }
 
 #davidNom{
@@ -384,7 +398,9 @@ body {
 
 #mathieu{
     left: 84%;
-    bottom: 17%;
+    bottom: 15%;
+    font-size: 85pt;
+    transform: rotate(90deg);
 }
 #mathieuNom{
     font-size: 75%;
@@ -395,6 +411,8 @@ body {
 #manon{
     left: 83%;
     bottom: 74%;
+    font-size: 86pt;
+   
 }
 
 #manonNom{
@@ -406,6 +424,8 @@ body {
 #vincent{
     left: 38%;
     bottom: 60%;
+    font-size: 66pt;
+    transform: rotate(45deg);
 }
 #vincentNom{
     font-size: 75%;
@@ -414,8 +434,10 @@ body {
 }
 
 #johanne{
-    left: 15%;
-    bottom: 23%;
+    left: 14%;
+    bottom: 20%;
+    font-size: 99pt;
+
 }
 
 #johanneNom{
