@@ -331,7 +331,7 @@ body {
     left: 65%; 
     top: -5%;
 
-    z-index: 1;
+    z-index: 3;
 
     width: 15vw;
     height: 15vw;
@@ -343,6 +343,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 
 .logo-cercle{
@@ -366,13 +367,13 @@ body {
 
 .logo-cercle-border{
     position: absolute;
-    top: -3%;
-    left: -3% ;
+    top: -3.5%;
+    left: -3.5% ;
     border: black;
     border-style: dashed;
     border-radius:50%;
-    width: 103.5%;
-    height: 103.5%;
+    width: 103.9%;
+    height: 103.9%;
     animation-name: spin;
     animation-duration: 25s;
     animation-iteration-count: infinite;
@@ -382,14 +383,14 @@ body {
 
 @keyframes spin {
     from {
-        transform:rotate(0deg);
+        transform:rotate(0deg) scaleX(1.05) scaleY(1.05);
     }
     to {
-        transform:rotate(360deg);
+        transform:rotate(360deg) scaleX(1.05) scaleY(1.05);
     }
 }
 
-/* Cercles qui autours dans le logo */
+/* Formes qui sont autours du logo */
 .cercle-cap-logo{
     position: absolute;
     border-radius: 100%;
@@ -434,17 +435,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
     position: absolute;
     width: 40%;
     height: 80px;
+
+}
+
+#container-menu-accueil-1{
+    align-items: flex-start;
     bottom: -10%;
     left: 57%;
+}
+#container-menu-accueil-2{
+    align-items: flex-end;
+    top: 66%;
+    left: -1.5%;
+    transform: translateX(-100%);
 }
 
 .container-menu-accueil>a{
     text-decoration: none;
     width: 100%;
+    cursor: pointer;
 }
 
 .boite-bouton-menu{
@@ -453,6 +465,10 @@ body {
     align-items: center;
     width: 100%;    
     height: 30px;
+}
+
+#container-menu-accueil-2>a>.boite-bouton-menu{
+    flex-direction: row-reverse;
 }
 
 .separateur-menu-accueil{
@@ -465,14 +481,19 @@ body {
     font-size: 1.1vw;
     font-weight: 500;
     text-decoration: none;
-    padding-left: 5%;
+    padding: 0 5% 0 5%;
 }
 
 .hover-menu-accueil{
-    height: 2px;
-    width: 20%;
-    margin-left: 3%;
+    height: 3px;
+    width: 0%;
+    transition: all .3s cubic-bezier(.7,.02,.53,1.27);
 }
+
+.container-menu-accueil>a:hover .hover-menu-accueil{
+    width:20%
+}
+
 .container-boites-menu-etudiants-mobile{
     display: none;
 }
@@ -1127,19 +1148,31 @@ body {
 
     /* Cercles qui apparaissent dans le logo */
     /*Gros cercle rouge*/
-    .logo-cercle{
-        border-radius:50%;
-        margin: .25rem 0 0 .25rem;
-        width: 6rem;
-        height: 6rem;
-    }
-
+    /*Gros cercle rouge*/
     .logo-cercle-container{
-        left: 60%; 
+        position: absolute;
+        
+        left: 65%; 
         top: -10%;
 
-        width: 6.5rem;
-        height: 6.5rem; 
+        z-index: 3;
+
+        width: 25vw;
+        height: 25vw;
+
+        
+    }
+    .logo-cercle-border{
+        position: absolute;
+        top: -4%;
+        left: -4.25%;
+        transform-origin: 50% 50%;
+        border: 2px dashed black;
+        border-radius:50%;
+        animation-name: spin;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 
     /*Demi cercle bleu*/

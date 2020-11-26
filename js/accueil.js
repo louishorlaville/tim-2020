@@ -7,34 +7,6 @@
     "#position-container-etudiants-actuels"
   );
 
-  let logo = document.querySelector(".logo");
-  let boites = [
-    [btnMenuNvEtud, 0, 0.65],
-    [btnMenuEtudActu, 0.56, 0.98],
-  ];
-
-  let burgerIcon = document.querySelector(".hamburger");
-  let burgerMenu = document.querySelector(".box-container-menu-burger");
-  let burgerText = document.querySelector(".container-menu-burger");
-
-  //Placer les cercles et boites au chargement de la page
-  window.addEventListener("load", function () {
-    boites.forEach((elt) => {
-      placerAbsolueAccueil(elt[0], elt[1], elt[2]);
-    });
-  });
-
-  //Les replacer aux bons endroits au cas ou la page change de taille
-  window.onresize = function () {
-    boites.forEach((element) => {
-      placerAbsolueAccueil(element[0], element[1], element[2]);
-    });
-  };
-
-  burgerIcon.addEventListener("click", function () {
-    toggleBurgerClass(burgerIcon);
-  });
-
   let etNouvListe = `
         <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
         <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-et">VIE ÉTUDIANTE</a></div></li>
@@ -45,20 +17,6 @@
         <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
         <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleDesProfs.php" class="button-menu-et">ENSEIGNANTS</a></div></li>
     `;
-
-  btnMenuNvEtud.addEventListener("click", function () {
-    fondu();
-    setTimeout(function () {
-      ajouterMenuEtudiant("NOUVEAUX ÉTUDIANTS", "color-1", etNouvListe);
-    }, 0500);
-  });
-
-  btnMenuEtudActu.addEventListener("click", function () {
-    fondu();
-    setTimeout(function () {
-      ajouterMenuEtudiant("ÉTUDIANTS ACTUELS", "color-2", etActuListe);
-    }, 0500);
-  });
 
   function fondu() {
     document.querySelector("#contenu-principal").classList.remove("fadein");
@@ -98,22 +56,5 @@
             </div>
         </div>
         `;
-  }
-
-  function toggleBurgerClass(button) {
-    if (button.classList.contains("is-active")) {
-      button.classList.remove("is-active");
-      burgerMenu.classList.remove("burger-active");
-      burgerText.classList.remove("menu-appear");
-    } else {
-      button.classList.add("is-active");
-      burgerMenu.classList.add("burger-active");
-      burgerText.classList.add("menu-appear");
-    }
-  }
-
-  function placerAbsolueAccueil(element, width, height) {
-    element.style.left = logo.clientWidth * width + "px";
-    element.style.top = logo.clientHeight * height + "px";
   }
 })();

@@ -24,7 +24,22 @@
                 <img src="images/svg/logo/UInsideLogo.svg" alt="" class="color-svg-3" id="logo-u">   
             </div>
            
-            <div class="container-menu-accueil">
+            <div class="container-menu-accueil" id="container-menu-accueil-1">
+                <a href="pages/grilleCheminement.php">
+                    <div class="boite-bouton-menu color-2" id="bouton-menu-cours">
+                        <p>COURS</p>
+                        <div class="hover-menu-accueil color-bg"></div>
+                    </div>
+                </a>
+                <div class="separateur-menu-accueil color-bars"></div>
+                <a href="pages/grilleCheminement.php">
+                    <div class="boite-bouton-menu color-2" id="bouton-menu-cours">
+                        <p>PROFESSEURS</p>
+                        <div class="hover-menu-accueil color-bg"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="container-menu-accueil" id="container-menu-accueil-2">
                 <a href="pages/grilleCheminement.php">
                     <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
                         <p>COURS</p>
@@ -32,10 +47,13 @@
                     </div>
                 </a>
                 <div class="separateur-menu-accueil color-bars"></div>
-                <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
-                    <a href="pages/grilleDesProfs.php">PROFESSEURS</a>
-                </div>
-            </div>
+                <a href="pages/grilleCheminement.php">
+                    <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
+                        <p>PROFESSEURS</p>
+                        <div class="hover-menu-accueil color-bg"></div>
+                    </div>
+                </a>
+            </div>            
             <!-- <div class="position-container-etudiants" id="position-container-etudiants-nouveaux"><div class="separateur-etudiants mask-ligne-etudiants-nouveaux"><div id="container-etudiants-nouveaux" class="container-etudiants color-1 mask-etudiant"> <div class="color-1"></div> <div class="titreDivEtud" id="et-nouveaux-title">NOUVEAUX ÉTUDIANTS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div>
             <div class="position-container-etudiants" id="position-container-etudiants-actuels"><div class="separateur-etudiants mask-ligne-etudiants-actuels"><div id="container-etudiants-actuels" class="container-etudiants color-2 mask-etudiant"> <div class="color-2"></div> <div class="titreDivEtud" id="et-actuels-title">ÉTUDIANTS ACTUELS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div> -->
             
