@@ -27,7 +27,7 @@ body {
     height: 100%;
     position: relative;;
     bottom: 0;
-    z-index: -3;
+    z-index: -50;
     overflow: hidden;
 }
 
@@ -59,7 +59,7 @@ body {
     top: 15%;
     left: 25%;
     width:30px;
-    animation: animRond 10s ease-in-out  infinite forwards;
+    animation: animRond 5s cubic-bezier(1,-1.18,.69,1.92)  infinite forwards;
 }
 #bck-shape-2{
     top: 57%;
@@ -70,7 +70,7 @@ body {
     top: 25%;
     left: 58%;
     transform: rotate(20deg);
-    animation: animPlus 2s cubic-bezier(.85,.14,.21,.76) infinite 2s;
+    animation: animPlus 1s cubic-bezier(1,-1.18,.69,1.92) infinite 2s;
 }
 #bck-shape-4{
     top: 68%;
@@ -89,12 +89,10 @@ body {
     45%{
         transform: scaleX(2) scaleY(2);
     }
-    85%{
+    to%{
         transform: scaleX(1) scaleY(1);
     }
-    to{
-        transform: scaleX(1) scaleY(1);
-    }
+
 }
 
 @keyframes animPlus{
@@ -256,7 +254,7 @@ body {
 .logo{
     position: relative;
     transform-origin: 50% 50%;
-
+    z-index: 2;
 }
 
 /* FORME GÉOMETRIQUES DE LA PAGE */
@@ -267,7 +265,7 @@ body {
     left: 57.2%;
 
     width: 2.5%;
-    z-index: -1;
+    z-index: 1;
 }
 
 #logo-u{
@@ -276,7 +274,7 @@ body {
     left: 25.5%;
 
     width: 3.2%;
-    z-index: -1;
+    z-index: 1;
 }
 
 /*Demi cercle bleu*/
@@ -293,7 +291,7 @@ body {
     clip-path: inset(0 0 0 50%);
     left: 5.5%;
     top: 20%;
-    z-index: -1;
+    z-index: 1;
     width: 13.5%;
     height: 20%;
 }
@@ -312,7 +310,7 @@ body {
     clip-path: inset(0 50% 0 0);
     left: 46%;
     bottom: 15%;
-    z-index: -1;
+    z-index: 1;
     width: 13.5%;
     height: 20%;
 }
@@ -327,33 +325,60 @@ body {
 }
 
 /*Gros cercle rouge*/
+.logo-cercle-container{
+    position: absolute;
+    
+    left: 65%; 
+    top: -5%;
+
+    z-index: 1;
+
+    width: 15vw;
+    height: 15vw;
+
+     
+}
+
+.logo-cercle-container-border{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .logo-cercle{
     margin: auto;
     margin-top: 0.5rem;
     border-radius:50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 0 20%, 100% 70%, 100% 53%,0 3%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+}
 
-    width: 90%;
-    height: 90%;
+#logo-svg-cercle{
+    position: absolute;
+    top: 46%;
+    left: 4%;
+    width: 69%;
+    transform: rotate(7deg);
+    opacity: 0.7;
 }
 
 .logo-cercle-border{
     position: absolute;
+    top: -3%;
+    left: -3% ;
     border: black;
     border-style: dashed;
     border-radius:50%;
-    left: 65%; 
-    top: 5%;
-
-    z-index: -1;
-
-    width: 16rem;
-    height: 16rem;
-
+    width: 103.5%;
+    height: 103.5%;
     animation-name: spin;
     animation-duration: 25s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation-timing-function: linear;
 }
+
 
 @keyframes spin {
     from {
@@ -1066,7 +1091,7 @@ body {
         height: 6rem;
     }
 
-    .logo-cercle-border{
+    .logo-cercle-container{
         left: 60%; 
         top: -10%;
 

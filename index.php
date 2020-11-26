@@ -10,7 +10,14 @@
                 <div id="cercle-cap-N" class="plus-cap-logo"><img src="./images/svg/blackPlus.svg" alt=""></div>
                 <div id="cercle-cap-T" class="cercle-cap-logo"></div>
                 <div id="cercle-cap-I" class="cercle-cap-logo"></div> 
-                <div class="logo-cercle-border"><div class="logo-cercle color-1"></div></div>
+                <div class="logo-cercle-container">
+                    <div class="logo-cercle-container-border">
+                        <div class="logo-cercle color-1">
+                            <img id="logo-svg-cercle" src="images/svg/logoTim.svg" alt="Logo Départemental">
+                        </div>
+                        <div class="logo-cercle-border"></div>
+                    </div>
+                </div>
                 <div class="cercle-n-border"><div class="cercle-n color-2"></div></div>   
                 <div class="cercle-i-border"><div class="cercle-i color-3"></div></div>
                 <img src="images/svg/logo/OInsideLogo.svg" alt="" class="color-svg-3" id="logo-o">   
