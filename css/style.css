@@ -430,6 +430,49 @@ body {
 
 
 /*////////// SECTIONS ETUDIANTS ///////*/
+.container-menu-accueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: absolute;
+    width: 40%;
+    height: 80px;
+    bottom: -10%;
+    left: 57%;
+}
+
+.container-menu-accueil>a{
+    text-decoration: none;
+    width: 100%;
+}
+
+.boite-bouton-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;    
+    height: 30px;
+}
+
+.separateur-menu-accueil{
+    padding: 2px;
+    width: 105%;
+}
+
+.boite-bouton-menu>p{
+    color: #FCFCFC;
+    font-size: 1.1vw;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 5%;
+}
+
+.hover-menu-accueil{
+    height: 2px;
+    width: 20%;
+    margin-left: 3%;
+}
 .container-boites-menu-etudiants-mobile{
     display: none;
 }

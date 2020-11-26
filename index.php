@@ -24,9 +24,20 @@
                 <img src="images/svg/logo/UInsideLogo.svg" alt="" class="color-svg-3" id="logo-u">   
             </div>
            
-            
-            <div class="position-container-etudiants" id="position-container-etudiants-nouveaux"><div class="separateur-etudiants mask-ligne-etudiants-nouveaux"><div id="container-etudiants-nouveaux" class="container-etudiants color-1 mask-etudiant"> <div class="color-1"></div> <div class="titreDivEtud" id="et-nouveaux-title">NOUVEAUX ÉTUDIANTS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div>
-            <div class="position-container-etudiants" id="position-container-etudiants-actuels"><div class="separateur-etudiants mask-ligne-etudiants-actuels"><div id="container-etudiants-actuels" class="container-etudiants color-2 mask-etudiant"> <div class="color-2"></div> <div class="titreDivEtud" id="et-actuels-title">ÉTUDIANTS ACTUELS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div>
+            <div class="container-menu-accueil">
+                <a href="pages/grilleCheminement.php">
+                    <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
+                        <p>COURS</p>
+                        <div class="hover-menu-accueil color-bg"></div>
+                    </div>
+                </a>
+                <div class="separateur-menu-accueil color-bars"></div>
+                <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
+                    <a href="pages/grilleDesProfs.php">PROFESSEURS</a>
+                </div>
+            </div>
+            <!-- <div class="position-container-etudiants" id="position-container-etudiants-nouveaux"><div class="separateur-etudiants mask-ligne-etudiants-nouveaux"><div id="container-etudiants-nouveaux" class="container-etudiants color-1 mask-etudiant"> <div class="color-1"></div> <div class="titreDivEtud" id="et-nouveaux-title">NOUVEAUX ÉTUDIANTS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div>
+            <div class="position-container-etudiants" id="position-container-etudiants-actuels"><div class="separateur-etudiants mask-ligne-etudiants-actuels"><div id="container-etudiants-actuels" class="container-etudiants color-2 mask-etudiant"> <div class="color-2"></div> <div class="titreDivEtud" id="et-actuels-title">ÉTUDIANTS ACTUELS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div> -->
             
             <!-- ÉTUDIANTS MOBILE -->
             <div class="container-boites-menu-etudiants-mobile">
