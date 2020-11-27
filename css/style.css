@@ -241,7 +241,7 @@ body {
 .containerLogoContent {
     height: 75%;
     margin: auto;
-    margin-top:10vh;
+    margin-top:5vw;
     position: relative;
     transform-origin: 50% 50%;
 }
@@ -393,30 +393,25 @@ body {
 /* Formes qui sont autours du logo */
 .cercle-cap-logo{
     position: absolute;
-    border-radius: 100%;
-    border-color: #1A1A1A;
-    border-width: 0.3rem;
-    width: 0.9vw;
-    height: 0.9vw;
-    border-style: solid;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3rem;
+    width: 3%;
+
     transform-origin: 0 0;
 }
 .plus-cap-logo{
     position: absolute;
     width: 3%;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3rem;
     transform-origin: 0 0;
 }
 
 
-#cercle-cap-N{
+#plus-cap-N{
     left: 9.7%;
-    top: -10%;
+    top: -7%;
+}
+
+#plus-cap-T{
+    left: -0.5%;
+    top: 70%;
 }
 
 #cercle-cap-T{
@@ -983,8 +978,17 @@ body {
 }
 
 
+@media all and (max-width: 1440px) and (min-width:1025px) {
+    .containerLogoContent{
+        margin-top: 150px;
+    }
+} 
 
-
+@media all and (max-width: 1024px) and (min-width:601px) {
+    .containerLogoContent{
+        margin-top: 200px;
+    }
+} 
 
 /* ////// PHONE ADAPTIVE ///////////// */
 
@@ -997,6 +1001,22 @@ body {
     .background-shape{
         clip-path: polygon(0 95%, 0 100%, 35% 100%, 100% 10%,100% 0, 25% 0, 0 95% );
     }
+
+    #bck-shape-1{
+        left: 10%;
+        top: 10%;
+    }
+
+    #bck-shape-2{
+        top: 50%;
+        left: 85%;
+    }
+    #bck-shape-3{
+        left:39%
+    }
+    #bck-shape-4{
+top: 56%;    }
+    
     /* HEADER */
     .header-desktop{
         display: none;
@@ -1148,12 +1168,11 @@ body {
 
     /* Cercles qui apparaissent dans le logo */
     /*Gros cercle rouge*/
-    /*Gros cercle rouge*/
     .logo-cercle-container{
         position: absolute;
         
         left: 65%; 
-        top: -10%;
+        top: -6%;
 
         z-index: 3;
 
@@ -1221,18 +1240,21 @@ body {
         width: 3.8%;
     }
     /*Petits cercles*/
-    #cercle-cap-N{
-        left: 10.3%;
-        top: -12%;
+    #plus-cap-N{
+        left: 13%;
+        top: -8%;
     }
-    
+    #plus-cap-T{
+        left: -0.5%;
+        top: 69%;
+    }
     #cercle-cap-T{
         left: 101%;
-        top: 33.5%;
+        top: 33.8%;
     }
     
     #cercle-cap-I{
-        left: 66.5%;
+        left: 69.5%;
         bottom: -10%;
     }
 

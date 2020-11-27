@@ -7,9 +7,10 @@
         <div class="containerLogoContent">
             <div class="containerLogo">
                 <img class="logo" src="images/svg/logo.svg" alt="logo">
-                <div id="cercle-cap-N" class="plus-cap-logo"><img src="./images/svg/blackPlus.svg" alt=""></div>
-                <div id="cercle-cap-T" class="cercle-cap-logo"></div>
-                <div id="cercle-cap-I" class="cercle-cap-logo"></div> 
+                <div id="plus-cap-N" class="plus-cap-logo"><img src="./images/svg/blackPlus.svg" alt=""></div>
+                <div id="plus-cap-T" class="plus-cap-logo"><img src="./images/svg/blackPlus.svg" alt=""></div>
+                <div id="cercle-cap-T" class="cercle-cap-logo"><img src="./images/svg/blackCircle.svg" alt=""></div>
+                <div id="cercle-cap-I" class="cercle-cap-logo"><img src="./images/svg/blackCircle.svg" alt=""></div> 
                 <div class="logo-cercle-container">
                     <div class="logo-cercle-container-border">
                         <div class="logo-cercle color-1">
@@ -42,14 +43,14 @@
             <div class="container-menu-accueil" id="container-menu-accueil-2">
                 <a href="pages/grilleCheminement.php">
                     <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
-                        <p>COURS</p>
+                        <p>STAGES</p>
                         <div class="hover-menu-accueil color-bg"></div>
                     </div>
                 </a>
                 <div class="separateur-menu-accueil color-bars"></div>
                 <a href="pages/grilleCheminement.php">
                     <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
-                        <p>PROFESSEURS</p>
+                        <p>VIE ÉTUDIANTE</p>
                         <div class="hover-menu-accueil color-bg"></div>
                     </div>
                 </a>

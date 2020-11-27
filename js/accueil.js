@@ -7,6 +7,8 @@
     "#position-container-etudiants-actuels"
   );
 
+  let logoContainer = document.querySelector(".containerLogoContent");
+
   let etNouvListe = `
         <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-et">GRILLE DE CHEMINEMENTS</a></div></li>
         <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-et">VIE ÉTUDIANTE</a></div></li>
