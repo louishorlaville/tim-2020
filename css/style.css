@@ -436,6 +436,10 @@ body {
 
 }
 
+.container-menu-accueil-mobile-display{
+    display: none;
+}
+
 #container-menu-accueil-1{
     align-items: flex-start;
     bottom: -10%;
@@ -489,9 +493,6 @@ body {
     width:20%
 }
 
-.container-boites-menu-etudiants-mobile{
-    display: none;
-}
 .position-container-etudiants{
     position: absolute;
     width: 45%;
@@ -1001,10 +1002,9 @@ body {
     .background-shape{
         clip-path: polygon(0 95%, 0 100%, 35% 100%, 100% 10%,100% 0, 25% 0, 0 95% );
     }
-
     #bck-shape-1{
-        left: 10%;
-        top: 10%;
+        left: 20%;
+        top: 13%;
     }
 
     #bck-shape-2{
@@ -1012,10 +1012,12 @@ body {
         left: 85%;
     }
     #bck-shape-3{
-        left:39%
+        left:45%
     }
     #bck-shape-4{
-top: 56%;    }
+    top: 56%;
+    left: 10%;    
+}
     
     /* HEADER */
     .header-desktop{
@@ -1087,7 +1089,7 @@ top: 56%;    }
     }
 
     .burger-active{
-        height: 100px;
+        height: 180px;
     }
 
     .hide-burger{
@@ -1118,7 +1120,7 @@ top: 56%;    }
         width: 120%;
     }
 
-    #burger-etudiant-nouveau{
+    #burger-cours, #burger-profs, #burger-stages{
         border-bottom: 2.5px solid black;
         padding-bottom: 5px;
         margin-bottom: 6px;
@@ -1260,111 +1262,47 @@ top: 56%;    }
 
     /*////BOITES ETUDIANTES////*/
     
-    .container-boites-menu-etudiants-mobile{
-        display: block;
-        margin: 25% 5% 0 5%;
-    }
-    .container-etudiant-mobile{
-        color: white;
-        font-family: "bahnschrift";
-        padding: 1em;
-        font-size: .8rem;
-        height: 110px;
-    }
-
-    #container-etudiant-mobile-nouveaux{
-        background-color: #BA222D;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 5% 93%, 0 93%, 0 0);
-    }
-
-    #container-etudiant-mobile-actuel{
-        background-color: #296FA6;
-        clip-path: polygon(0 7%, 5% 7%, 5% 0, 100% 0, 100% 100%, 0 100%, 0 7%);
-    }
-
-    .titre-etudiant-mobile{
-        width: 100%;
-        border-bottom: solid white;
+    .container-menu-accueil{
+        display: none;
     }
     
-    .texte-titre-etudiant-mobile{
-        font-size: 1.2rem;
-        padding-left: 0.3em;
-    }
-
-    .bigger-titre-menu-etudiant-mobile{
-        font-size: 1.28em;
-    }
-
-    /*Menu */
-    .container-menu-etudiant-mobile{
-        margin-top: 5%;
-        margin-left: 3%;
-        font-weight: 200;
-    }
-
-    .titre-menu-etudiant-mobile{
-        border-bottom: 2px solid white;
-        margin-right: 80%;
-        margin-bottom: 1em;
-    }
-
-    .texte-titre-menu-etudiant-mobile{
-        padding-left: 10%;
-    }
-
-    .liste-menu-etudiant-mobile{
+    .container-menu-accueil-mobile-display{
         display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        margin-left: -7%;
+        justify-content: space-between ;
+        flex-direction: column;
+        margin:80px 5% 0 5%;
     }
 
-    .liste-menu-etudiant-mobile>li{
-        margin-right: 40px;
-        width:100%;
+    .container-menu-accueil-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100px;
     }
-    
-    .button-menu-etudiant-mobile{
-        border: none;
-        font-family: "bahnschrift";
-        color: white;
+
+    .container-menu-accueil-mobile:nth-of-type(2){
+        margin-top: 20px;
+    }
+
+    .boite-bouton-menu{
+        height: 40px;
+    }   
+    .separateur-menu-accueil{
+        padding: 2px;
+        width: 102%;
+    }
+    .container-menu-accueil-mobile:nth-of-type(2)>.separateur-menu-accueil{
+        transform: translateX(-3%);
+    }
+
+    .container-menu-accueil-mobile>a{
         text-decoration: none;
-        cursor: pointer;
-        font-size: 0.8em;    
-    }
-
-    .liste-menu-etudiant-mobile>li:nth-child(1){
-       margin-left: 15%;
-    }
-
-    .list-circle{
-        width: 1.3em;
-        position: absolute;
-        left: -20px;
-        vertical-align: middle;
-    }
-
-    /* separateur menu etudiants */
-    .container-separateur-etudiant-mobile{
-        display: flex;
-        flex-direction: row;
-        margin:0px 0 0px -13px;
-    }
-    
-    #plus-separateur-etudiant-mobile{
-        filter: invert(0%) sepia(4%) saturate(646%) hue-rotate(342deg) brightness(99%) contrast(80%);
-        width: 7%;
-    }
-
-    #ligne-separateur-etudiant-mobile{
         width: 100%;
-        height: 5px;
-        background-color: #1A1A1A;
-        margin-top: 10px;
-        margin-left: 5px;
-        margin-right: -6px;
-
+        cursor: pointer;
+    }
+    .boite-bouton-menu>p{
+        font-size: 5vw;
     }
 
     /* ///// SOCIALS ///// */

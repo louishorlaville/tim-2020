@@ -59,33 +59,37 @@
             <div class="position-container-etudiants" id="position-container-etudiants-actuels"><div class="separateur-etudiants mask-ligne-etudiants-actuels"><div id="container-etudiants-actuels" class="container-etudiants color-2 mask-etudiant"> <div class="color-2"></div> <div class="titreDivEtud" id="et-actuels-title">ÉTUDIANTS ACTUELS</div><a href="#" class="button cliqueAccueil">CLIQUEZ-ICI!</a></div></div></div> -->
             
             <!-- ÉTUDIANTS MOBILE -->
-            <div class="container-boites-menu-etudiants-mobile">
-                <div class="container-etudiant-mobile" id="container-etudiant-mobile-nouveaux">
-                    <div class="titre-etudiant-mobile"><div class="texte-titre-etudiant-mobile"><a class="bigger-titre-menu-etudiant-mobile">NOUVEAUX</a> ÉTUDIANTS</div></div>
-                    <div class="container-menu-etudiant-mobile">
-                    <div class="titre-menu-etudiant-mobile"><p class="texte-titre-menu-etudiant-mobile">Menu</p></div>
-                        <ul class="liste-menu-etudiant-mobile">
-                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-etudiant-mobile">GRILLE DE CHEMINEMENTS</a></div></li>
-                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-etudiant-mobile">VIE ÉTUDIANTE</a></div></li>
-                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="#" class="button-menu-etudiant-mobile">STAGES</a></div></li>
-                        </ul>
-                    </div>
+            <div class="container-menu-accueil-mobile-display">
+                <div class="container-menu-accueil-mobile" id="container-menu-accueil-mobile-1">
+                    <a href="pages/grilleCheminement.php">
+                        <div class="boite-bouton-menu color-2" id="bouton-menu-cours">
+                            <p>COURS</p>
+                            <div class="hover-menu-accueil color-bg"></div>
+                        </div>
+                    </a>
+                    <div class="separateur-menu-accueil color-bars"></div>
+                    <a href="pages/grilleCheminement.php">
+                        <div class="boite-bouton-menu color-2" id="bouton-menu-cours">
+                            <p>PROFESSEURS</p>
+                            <div class="hover-menu-accueil color-bg"></div>
+                        </div>
+                    </a>
                 </div>
-                <div class="container-separateur-etudiant-mobile">
-                    <img src="images/svg/blackPlus.svg" id="plus-separateur-etudiant-mobile" alt="">
-                    <div id="ligne-separateur-etudiant-mobile">&#10240;</div>
-                </div>
-                <div class="container-etudiant-mobile" id="container-etudiant-mobile-actuel">
-                    <div class="titre-etudiant-mobile"><div class="texte-titre-etudiant-mobile">ÉTUDIANTS <a class="bigger-titre-menu-etudiant-mobile">ACTUELS</a> </div></div>
-                    <div class="container-menu-etudiant-mobile">
-                    <div class="titre-menu-etudiant-mobile"><p class="texte-titre-menu-etudiant-mobile">Menu</p></div>
-                        <ul class="liste-menu-etudiant-mobile">
-                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-etudiant-mobile">GRILLE DE CHEMINEMENTS</a></div></li>
-                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="./images/svg/whiteCircle.svg" /><a href="pages/grilleCheminement.php" class="button-menu-etudiant-mobile">ENSEIGNANTS</a></div></li>
-                            <li><div class="position-bouton-menu-et"><img class="list-circle" src="" /><a href="pages/grilleCheminement.php" class="button-menu-etudiant-mobile"></a></div></li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="container-menu-accueil-mobile" d="container-menu-accueil-mobile-2">
+                    <a href="pages/grilleCheminement.php">
+                        <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
+                            <p>STAGES</p>
+                            <div class="hover-menu-accueil color-bg"></div>
+                        </div>
+                    </a>
+                    <div class="separateur-menu-accueil color-bars"></div>
+                    <a href="pages/grilleCheminement.php">
+                        <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
+                            <p>VIE ÉTUDIANTE</p>
+                            <div class="hover-menu-accueil color-bg"></div>
+                        </div>
+                    </a>
+                </div> 
             </div>
             <!-- FIN ETUDIANTS MOBILE -->
         </div>

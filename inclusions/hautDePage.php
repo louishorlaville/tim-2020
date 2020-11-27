@@ -69,15 +69,27 @@
         <div class="box-container-menu-burger hide-burger">
             <div class="box-border-menu-burger ">
                 <div class="container-menu-burger">
-                    <div class="elt-menu-burger" id="burger-etudiant-nouveau">
+                    <div class="elt-menu-burger" id="burger-cours">
                         <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-actuel":"../index.php#container-etudiant-mobile-actuel"?>>
-                            Nouveau étudiants 
+                            Cours 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
                     </div>
-                    <div class="elt-menu-burger" id="burger-etudiant-actuel">
+                    <div class="elt-menu-burger" id="burger-profs">
                         <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-nouveaux":"../index.php#container-etudiant-mobile-nouveaux"?>>
-                            Étudiants actuels 
+                            Professeurs 
+                            <div class="arrow-burger">&#8250;</div>
+                        </a>
+                    </div>
+                    <div class="elt-menu-burger" id="burger-stages">
+                        <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-nouveaux":"../index.php#container-etudiant-mobile-nouveaux"?>>
+                            Stages 
+                            <div class="arrow-burger">&#8250;</div>
+                        </a>
+                    </div>
+                    <div class="elt-menu-burger" id="burger-vie">
+                        <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-nouveaux":"../index.php#container-etudiant-mobile-nouveaux"?>>
+                            Vie étudiante 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
                     </div>
