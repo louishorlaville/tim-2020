@@ -89,7 +89,7 @@ body {
     45%{
         transform: scaleX(2) scaleY(2);
     }
-    to%{
+    to{
         transform: scaleX(1) scaleY(1);
     }
 
@@ -940,14 +940,21 @@ body {
     bottom:10%;
     left: 3%;
 }
+
 .social-icon{
     width: 50%;
+    transition: transform 0.3s cubic-bezier(.63,.51,.47,1.74);
+}
+
+.social-elt:hover .social-icon{
+    transform: scaleX(1.5) scaleY(1.5);
 }
 
 /* /////////FOOTER//////////// */
 .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     color: white;
     font-family: "bahnschrift";
     font-size: 0.85rem;
@@ -955,23 +962,37 @@ body {
     transform-origin: 0 0;
     bottom: 0;
     width:100%;
-    height:8%;   /* Height of the footer */
+    height:9%;   /* Height of the footer */
     overflow:hidden;
 }
 
 .credits{
-    margin-top: auto;
-    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    flex-grow: 1;
+    margin: 0.5%;
+}
+.credits>p{
+    align-self: flex-start;
     text-align: left;
     float: left;
-    width: 75%;
+}
+
+.college{
+    flex-grow: 1;
+    display: flex;
+}
+
+.college>p{
+    align-self: center;
+    text-align: center;
+    font-size: 1.5vw;
 }
 
 .contacts{
-    margin-top: auto;
-    margin-bottom: auto;
     text-align: right;
-    float: right;
+    margin: 0.5%;
 }
 
 #liens-college-footer{
@@ -981,7 +1002,7 @@ body {
 
 @media all and (max-width: 1440px) and (min-width:1025px) {
     .containerLogoContent{
-        margin-top: 150px;
+        margin-top: 200px;
     }
 } 
 
