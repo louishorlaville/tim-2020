@@ -980,14 +980,26 @@ body {
 }
 
 .college{
-    flex-grow: 1;
+    flex-grow: 2;
     display: flex;
+    justify-content: center;
 }
 
-.college>p{
+.college>a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-self: center;
-    text-align: center;
-    font-size: 1.5vw;
+}
+
+.college>a>img{
+    margin-right: 5%;
+    width: 20%;
+}
+
+.college>a>p{
+    font-size: 1.5vw;   
+    align-self: center;
 }
 
 .contacts{
@@ -1353,11 +1365,20 @@ body {
     .college{
         order:1;
         flex-shrink: 0;
-        justify-content: center;
+        margin-top: 8px;
         margin-bottom: 10px;
     }
-    .college>p{
-        font-size: 5vw;
+
+    .college{
+        text-align: center;
+    }
+
+    .college>a>img{
+        width: 15%;
+    }
+
+    .college>a>p{
+        font-size: 3vw;
     }
 
     .contacts{
