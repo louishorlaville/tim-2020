@@ -1,0 +1,18 @@
+/* STYLE GÉNÉRAL */
+#contenu-principal{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* STYLE TITRE */
+.container-titre{
+    align-self: flex-end;
+    flex-basis: 100%;
+
+}
+
+/* STYLE BUILDINGS */
+.container-stages{
+    display: flex;
+}

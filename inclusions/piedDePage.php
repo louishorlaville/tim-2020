@@ -22,7 +22,6 @@
 <script src="js/commun.js" type="text/javascript"></script> 
 
 <?php if($page=="accueil"): ?>
-
     <script src="js/accueil.js" type="text/javascript"></script> 
 <?php endif;?>
 
