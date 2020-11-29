@@ -2,17 +2,141 @@
 #contenu-principal{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
+body{
+}
+
 
 /* STYLE TITRE */
 .container-titre{
-    align-self: flex-end;
-    flex-basis: 100%;
-
+    font-size: 2vw;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
 }
+
 
 /* STYLE BUILDINGS */
 .container-stages{
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-basis: 100%;
+    margin: 2% 10% 0 10%;
+}
+
+.building-stages{
+    position: relative;
+}
+
+#building-1>.svg-building{
+    width:165px;
+}
+#building-2>.svg-building{
+    width:100px;
+}
+#building-3>.svg-building{
+    width:90px;
+}
+#building-4>.svg-building{
+    width:110px;
+}
+#building-5>.svg-building{
+    width:130px;
+}
+#building-6>.svg-building{
+    width:110px;
+} 
+
+/*fenetre*/
+
+.window-building{
+    position: absolute;
+    height: 4%;
+    width: 9%; 
+    transition: all 0.1s ease-in;
+}
+
+.window-building:hover{
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+}
+
+/* HORIZONTALEMENT: DES BONS DE 14% À PARTIR DE 20% */
+/* VERTICALAMENT: DES BONS DE 6% À PARTIR DE 20% */
+/*BUILDING 1*/
+#window-1{
+    top: 26%;
+    left: 34%;
+}
+
+#window-2{
+    top: 38%;
+    left: 62%;
+}
+
+#window-3{
+    top: 56%;
+    left: 48%;
+}
+
+/* BUILDING 2 */
+#window-4{
+    top: 32%;
+    left:20%
+}
+
+#window-5{
+    top:56%;
+    left:76%;
+}
+
+/* BUILDING 3 */
+#window-6{
+    top: 20%;
+    left: 20%;
+}
+
+#window-7{
+    top:44%;
+    left: 76%;
+}
+#window-8{
+    top: 56%;
+    left: 62%;
+}
+
+/*BUILDING 4*/
+#window-9{
+    top: 26%;
+    left: 20%;
+}
+
+#window-10{
+    top: 50%;
+    left: 20%;
+}
+
+#window-11{
+    top: 68%;
+    left: 48%;
+}
+
+/* BUILDING 5 */
+#window-12{
+    top: 20%;
+    left: 62%;
+}
+
+#window-13{
+    top: 26%;
+    left: 20%;
+}
+
+#window-14{
+    top: 44%;
+    left: 76%;
 }
