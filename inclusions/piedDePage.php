@@ -7,7 +7,7 @@
     <div class="college">
         <a id="liens-college-footer" href="https://www.cmaisonneuve.qc.ca/" target="_blank" > 
             <?php if($page!="accueil"): ?>
-                <img src="./images/svg/logoTim.svg" alt="Logo TIM">
+                <img src="../images/svg/logoTim.svg" alt="Logo TIM">
             <?php endif; ?>
             <p>Collège de Maisonneuve</p>
         </a>

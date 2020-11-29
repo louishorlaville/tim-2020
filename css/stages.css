@@ -5,17 +5,23 @@
     justify-content: flex-start;
 }
 body{
+    overflow: visible;
 }
 
 
 /* STYLE TITRE */
 .container-titre{
     font-size: 2vw;
-    width: 35%;
+    width: 50%;
+    margin-left: 10%;
+    border-bottom: 2px solid black;
+}
+
+.contenu-titre{
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 10%;
 }
 
 
@@ -25,13 +31,19 @@ body{
     justify-content: space-between;
     align-items: flex-end;
     flex-basis: 100%;
-    margin: 2% 10% 0 10%;
+    margin: 2% 15% 0 15%;
+    /* position: fixed;
+    bottom: 0; */
 }
 
 .building-stages{
     position: relative;
 }
-
+.groupe-building{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
 #building-1>.svg-building{
     width:165px;
 }
@@ -45,7 +57,7 @@ body{
     width:110px;
 }
 #building-5>.svg-building{
-    width:130px;
+    width:120px;
 }
 #building-6>.svg-building{
     width:110px;
