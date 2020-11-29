@@ -40,9 +40,8 @@
         </div>
         <div class="building-stages" id="building-6">
             <img class="svg-building color-svg-0" src="../images/svg/stages/building6.svg" alt="">
+            <img class="window-building color-svg-5" id="window-15" src="../images/svg/stages/window.svg" alt="">
             <img class="window-building color-svg-5" id="window-16" src="../images/svg/stages/window.svg" alt="">
-            <img class="window-building color-svg-5" id="window-17" src="../images/svg/stages/window.svg" alt="">
-            <img class="window-building color-svg-5" id="window-18" src="../images/svg/stages/window.svg" alt="">
         </div>
     </div>
 </div>
