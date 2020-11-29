@@ -5,14 +5,15 @@
     justify-content: flex-start;
 }
 body{
-    overflow: visible;
+    overflow: visible !important;
 }
 
 
 /* STYLE TITRE */
 .container-titre{
-    font-size: 2vw;
+    font-size:2vw;
     width: 50%;
+    min-height: 25px;
     margin-left: 10%;
     border-bottom: 2px solid black;
 }
@@ -30,20 +31,25 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    flex-basis: 100%;
+    flex-basis: 65%;
     margin: 2% 15% 0 15%;
-    /* position: fixed;
-    bottom: 0; */
+    
 }
 
-.building-stages{
-    position: relative;
-}
 .groupe-building{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
+
+.building-stages{
+    position: relative;
+}
+
+#groupe-2>#building-3, #groupe-4>#building-6{
+    margin-left: 10%;
+}
+
 #building-1>.svg-building{
     width:165px;
 }
