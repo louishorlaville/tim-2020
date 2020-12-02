@@ -48,7 +48,7 @@
                     </div>
                 </a>
                 <div class="separateur-menu-accueil color-bars"></div>
-                <a href="pages/grilleCheminement.php">
+                <a href="pages/evenements.php">
                     <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
                         <p>VIE ÉTUDIANTE</p>
                         <div class="hover-menu-accueil color-bg"></div>

@@ -14,7 +14,7 @@ body {
     font-family: Arial;
     background-color: #FCFCFC;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #E0DBD5;
 
 }
@@ -966,7 +966,7 @@ body {
     transform-origin: 0 0;
     bottom: 0;
     width:100%;
-    height:9%;   /* Height of the footer */
+    height:10vh;   /* Height of the footer */
     overflow:hidden;
 }
 
