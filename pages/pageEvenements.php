@@ -9,12 +9,14 @@
 	<main>
 		<section id="stadeContainer">
 			<img src="../images/svg/stade/stadeBase.svg" alt="" id="baseStade">
-			<img src="../images/svg/stade/stadeCase1.svg" alt="" class="casesStade">
-			<img src="../images/svg/stade/stadeCase2.svg" alt="" class="casesStade">
-			<img src="../images/svg/stade/stadeCase3.svg" alt="" class="casesStade">
-			<img src="../images/svg/stade/stadeCase4.svg" alt="" class="casesStade">
-			<img src="../images/svg/stade/stadeCase5.svg" alt="" class="casesStade">
-			<img src="../images/svg/stade/stadeCase6.svg" alt="" class="casesStade">	    
+			<div id="casesContainer">
+				<img src="../images/svg/stade/stadeCase1.svg" alt="" class="casesStade">
+				<img src="../images/svg/stade/stadeCase2.svg" alt="" class="casesStade">
+				<img src="../images/svg/stade/stadeCase3.svg" alt="" class="casesStade">
+				<img src="../images/svg/stade/stadeCase4.svg" alt="" class="casesStade">
+				<img src="../images/svg/stade/stadeCase5.svg" alt="" class="casesStade">
+				<img src="../images/svg/stade/stadeCase6.svg" alt="" class="casesStade">
+			</div>		    
 		</section>
 		<section id="infoEvenement">
 			<h1 id="titreEvenenment">Nom de l'événement</h1>
