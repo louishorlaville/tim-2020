@@ -33,7 +33,7 @@
                     </div>
                 </a>
                 <div class="separateur-menu-accueil color-bars"></div>
-                <a href="pages/grilleCheminement.php">
+                <a href="pages/grilleDesProfs.php">
                     <div class="boite-bouton-menu color-2" id="bouton-menu-cours">
                         <p>PROFESSEURS</p>
                         <div class="hover-menu-accueil color-bg"></div>
@@ -41,7 +41,7 @@
                 </a>
             </div>
             <div class="container-menu-accueil" id="container-menu-accueil-2">
-                <a href="pages/grilleCheminement.php">
+                <a href="pages/stages.php">
                     <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
                         <p>STAGES</p>
                         <div class="hover-menu-accueil color-bg"></div>
