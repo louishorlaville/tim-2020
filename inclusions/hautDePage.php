@@ -118,9 +118,9 @@
         </div>
         <div id="menuHeaderContainer">
             <a href="stages.php" id="stages" class="elt-menu-header <?= ($page=="stages")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Stages</div></a>
-            <a href="grilleCheminement.php" id="cheminement" class="elt-menu-header <?= ($page=="cheminement")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Cours</div></a>
+            <a href="grilleCheminement.php" id="cheminement" class="elt-menu-header <?= ($page=="cheminement" || $page=="profilCours")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Cours</div></a>
             <a href="evenements.php" id="evenements" class="elt-menu-header <?= ($page=="evenements")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Vie étudiante</div></a>
-            <a href="grilleDesProfs.php" id="profs" class="elt-menu-header <?= ($page=="profs"||$page=="profilCours")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Professeurs</div></a>
+            <a href="grilleDesProfs.php" id="profs" class="elt-menu-header <?= ($page=="profs")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Professeurs</div></a>
         </div>
     </div>
 </div>
