@@ -31,7 +31,7 @@
     display: grid;
     grid-gap: 1rem;
     margin-left: 7rem;
-    /* margin-top: 8rem; */
+    margin: 5% 0;
     grid-template-columns:  repeat(7, 13%);
     grid-template-rows: repeat(5, 100px);
   }
@@ -40,9 +40,9 @@
     display: grid;
     grid-row-gap: 1rem;
     margin-left: 5rem;
-    /* margin-top: 8rem; */
+    margin: 5% 0;
     grid-template-columns: repeat(7, 13% [col-cours] 1% [col-sep]);
-    grid-template-rows: repeat(7, 100px);
+    grid-template-rows: repeat(6, 100px);
   }
 
   .chem-legend-circle{
@@ -185,6 +185,10 @@
     margin-top: 15%;
   }
 
+  body{
+    overflow: visible !important;
+  }
+
   .footer{
-    position: block;
+    position: static !important;
   }
