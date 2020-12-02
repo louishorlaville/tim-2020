@@ -114,7 +114,16 @@
     ?>
     <div class="header-desktop displayRowHeader">
         <div id="logoMenuAccueilContainer">
-        <a href="../index.php"><img src="../images/svg/header/logoMenuHeader.svg" alt="Logo retour accueil" id="logoMenuAccueil" href="../index.php">
+            <a href="../index.php">
+                <div class="logo-cercle-container-header">
+                    <div class="logo-cercle-container-border">
+                        <div class="logo-cercle color-1">
+                            <img id="logo-svg-cercle" src="../images/svg/logoTim.svg" alt="Logo Départemental">
+                        </div>
+                        <div class="logo-cercle-border-header"></div>
+                    </div>
+                </div>
+            </a>
         </div>
         <div id="menuHeaderContainer">
             <a href="stages.php" id="stages" class="elt-menu-header <?= ($page=="stages")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Stages</div></a>
