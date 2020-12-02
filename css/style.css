@@ -264,6 +264,11 @@ body {
     width: 16rem;
     height: 16rem;
 
+<<<<<<< HEAD
+
+
+
+=======
     animation-name: spin;
     animation-duration: 25s;
     animation-iteration-count: infinite;
@@ -331,6 +336,7 @@ body {
     left:60%;
     bottom: 0;
 }
+>>>>>>> f65baa015b9c473c092bbc6c9b5f4d18c60e4900
 
 
 @keyframes animate{
