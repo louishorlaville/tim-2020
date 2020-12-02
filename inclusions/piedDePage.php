@@ -14,7 +14,7 @@
     </div>
     <div class="contacts" >
         <p>3 800, rue Sherbrooke Est Montréal (Québec)</p><p> H1X 2A2 | 514 254-7131 - Copyright © 2020 -</p>
-        <p>Techniques d'Intégration Multimédia,</p><p>  Tous droits réservés.</p>
+        <p>Techniques d'Intégration Multimédia.</p>
     </div>
 </footer>
 </body>
