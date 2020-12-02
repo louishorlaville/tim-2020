@@ -75,3 +75,10 @@
     left: 25%;
     top:50%;
 }
+
+#boite{
+    background-color: red;
+
+    height: 80%;
+    width: auto;
+}
