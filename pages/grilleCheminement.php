@@ -110,6 +110,8 @@
 
 
 </body>
+
+<!-- Footer -->
 <footer class="footer color-bars">
 <div class="credits" >
   <p>Site Web crée par:</p>
