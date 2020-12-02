@@ -22,6 +22,11 @@
   }
 
 
+  footer {
+    height: 50px;
+    background-color: black;
+  }
+
   .grid-container-ph{
     display: grid;
     grid-gap: 1rem;
