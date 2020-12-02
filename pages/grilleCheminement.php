@@ -7,6 +7,8 @@
 
  <div class="grid-container">
 
+    <!-- Legende UNUSED -->
+
     <!-- Cours web, cours prérequis, cours video, cours design-->
     <div class="grid-item-legende">
       <div class="grid-item chem-cell-top-legend"><div class="chem-cell">
