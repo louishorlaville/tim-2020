@@ -25,19 +25,93 @@ body {
 #background-shapes{
     width: 100%;
     height: 100%;
-    position:fixed;
+    position: relative;;
     bottom: 0;
-    z-index: -3;
+    z-index: -50;
     overflow: hidden;
 }
 
 .background-shape{
     height: 100%;
     width: 100%;
-    position:absolute;
+    position:fixed;
     clip-path: polygon(0 95%, 0 100%, 35% 100%,100% 0, 25% 0, 0 95% );
 }
 
+#background-shape-left{
+    z-index: -4;
+}
+.container-background-smallshapes{
+    position: relative;
+}
+.background-smallshape{
+    position: fixed;
+    z-index: -3;
+    width: 20px;
+    transform-origin: 50% 50%;
+}
+
+.background-plus{
+    width: 23px;
+}
+
+#bck-shape-1{
+    top: 15%;
+    left: 25%;
+    width:30px;
+    animation: animRond 5s cubic-bezier(1,-1.18,.69,1.92)  infinite forwards;
+}
+#bck-shape-2{
+    top: 57%;
+    left: 75%;
+    animation: animRond 9s ease-in-out 2s infinite forwards;
+}
+#bck-shape-3{
+    top: 25%;
+    left: 58%;
+    transform: rotate(20deg);
+    animation: animPlus 1s cubic-bezier(1,-1.18,.69,1.92) infinite 2s;
+}
+#bck-shape-4{
+    top: 68%;
+    left: 36%;
+    transform: rotate(85deg) scaleX(0.8) scaleY(0.8);
+    animation: animPlus2 5s linear infinite ;
+}
+
+@keyframes animRond{
+    from{
+        transform: scaleX(1) scaleY(1);
+    }
+    10%{
+        transform: scaleX(1) scaleY(1);
+    }
+    45%{
+        transform: scaleX(2) scaleY(2);
+    }
+    to{
+        transform: scaleX(1) scaleY(1);
+    }
+
+}
+
+@keyframes animPlus{
+    from{
+        transform: rotate(20deg);
+    }
+    to{
+        transform: rotate(380deg);
+    }
+}
+@keyframes animPlus2{
+    from{
+        transform: rotate(85deg);
+    }
+
+    to{
+        transform: rotate(-275deg);
+    }
+}
 
 
 /* ///////// STYLE ACCUEIL //////////// */
@@ -138,12 +212,25 @@ body {
 
 
 /* COULEURS SVG*/
-.color-svg-1{
-    filter: invert(0%) sepia(1%) saturate(3608%) hue-rotate(6deg) brightness(109%) contrast(80%);
-
+/*noir/gris*/
+.color-svg-0{
+    filter: invert(0%) sepia(2%) saturate(3512%) hue-rotate(360deg) brightness(98%) contrast(80%);
 }
-.color-svg-6{
-    filter: invert(80%) sepia(45%) saturate(690%) hue-rotate(340deg) brightness(108%) contrast(87%);
+/*Rouge light*/
+.color-svg-1{
+    filter: invert(14%) sepia(100%) saturate(3975%) hue-rotate(348deg) brightness(82%) contrast(83%);
+}
+/*Blue Light*/
+.color-svg-2{
+    filter: invert(37%) sepia(24%) saturate(1473%) hue-rotate(164deg) brightness(97%) contrast(88%);
+}
+/*Jaune light version*/
+.color-svg-3{
+    filter: invert(64%) sepia(15%) saturate(7049%) hue-rotate(349deg) brightness(93%) contrast(84%);
+}
+
+.color-svg-5{
+    filter: invert(85%) sepia(64%) saturate(553%) hue-rotate(329deg) brightness(99%) contrast(89%);
 }
 
 /* Logo et formes */
@@ -158,7 +245,7 @@ body {
 .containerLogoContent {
     height: 75%;
     margin: auto;
-    margin-top:8%;
+    margin-top:5vw;
     position: relative;
     transform-origin: 50% 50%;
 }
@@ -171,7 +258,7 @@ body {
 .logo{
     position: relative;
     transform-origin: 50% 50%;
-
+    z-index: 2;
 }
 
 /* FORME GÉOMETRIQUES DE LA PAGE */
@@ -182,7 +269,7 @@ body {
     left: 57.2%;
 
     width: 2.5%;
-    z-index: -1;
+    z-index: 1;
 }
 
 #logo-u{
@@ -191,7 +278,7 @@ body {
     left: 25.5%;
 
     width: 3.2%;
-    z-index: -1;
+    z-index: 1;
 }
 
 /*Demi cercle bleu*/
@@ -208,7 +295,7 @@ body {
     clip-path: inset(0 0 0 50%);
     left: 5.5%;
     top: 20%;
-    z-index: -1;
+    z-index: 1;
     width: 13.5%;
     height: 20%;
 }
@@ -227,7 +314,7 @@ body {
     clip-path: inset(0 50% 0 0);
     left: 46%;
     bottom: 15%;
-    z-index: -1;
+    z-index: 1;
     width: 13.5%;
     height: 20%;
 }
@@ -242,66 +329,93 @@ body {
 }
 
 /*Gros cercle rouge*/
+.logo-cercle-container{
+    position: absolute;
+    
+    left: 65%; 
+    top: -5%;
+
+    z-index: 3;
+
+    width: 15vw;
+    height: 15vw;
+
+     
+}
+
+.logo-cercle-container-border{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 .logo-cercle{
     margin: auto;
     margin-top: 0.5rem;
     border-radius:50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 0 20%, 100% 70%, 100% 53%,0 3%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+}
 
-    width: 15rem;
-    height: 15rem;
+#logo-svg-cercle{
+    position: absolute;
+    top: 46%;
+    left: 4%;
+    width: 69%;
+    transform: rotate(7deg);
+    opacity: 0.7;
 }
 
 .logo-cercle-border{
     position: absolute;
+    top: -3.5%;
+    left: -3.5% ;
     border: black;
     border-style: dashed;
     border-radius:50%;
-    left: 65%; 
-    top: 5%;
-
-    z-index: -1;
-
-    width: 16rem;
-    height: 16rem;
-
-<<<<<<< HEAD
-
-
-
-=======
+    width: 103.9%;
+    height: 103.9%;
     animation-name: spin;
     animation-duration: 25s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation-timing-function: linear;
 }
+
 
 @keyframes spin {
     from {
-        transform:rotate(0deg);
+        transform:rotate(0deg) scaleX(1.05) scaleY(1.05);
     }
     to {
-        transform:rotate(360deg);
+        transform:rotate(360deg) scaleX(1.05) scaleY(1.05);
     }
 }
 
-/* Cercles qui autours dans le logo */
+/* Formes qui sont autours du logo */
 .cercle-cap-logo{
     position: absolute;
-    border-radius: 100%;
-    border-color: #1A1A1A;
-    border-width: 0.3rem;
-    width: 1rem;
-    height: 1rem;
-    border-style: solid;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3rem;
+    width: 3%;
+
+    transform-origin: 0 0;
+}
+.plus-cap-logo{
+    position: absolute;
+    width: 3%;
     transform-origin: 0 0;
 }
 
-#cercle-cap-N{
+
+#plus-cap-N{
     left: 9.7%;
-    top: -5%;
+    top: -7%;
+}
+
+#plus-cap-T{
+    left: -0.5%;
+    top: 70%;
 }
 
 #cercle-cap-T{
@@ -316,228 +430,73 @@ body {
 
 
 /*////////// SECTIONS ETUDIANTS ///////*/
-.container-boites-menu-etudiants-mobile{
+.container-menu-accueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    width: 40%;
+    height: 80px;
+
+}
+
+.container-menu-accueil-mobile-display{
     display: none;
 }
-.position-container-etudiants{
-    position: absolute;
-    width: 45%;
-    min-width: 340px;
-    
+
+#container-menu-accueil-1{
+    align-items: flex-start;
+    bottom: -10%;
+    left: 57%;
+}
+#container-menu-accueil-2{
+    align-items: flex-end;
+    top: 66%;
+    left: -1.5%;
+    transform: translateX(-100%);
 }
 
-#position-container-etudiants-nouveaux{
-    transform: translate(-100%,0);
-    top:60%;
-    left:0;
+.container-menu-accueil>a{
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
 }
 
-#position-container-etudiants-actuels{
-    left:60%;
-    bottom: 0;
-}
->>>>>>> f65baa015b9c473c092bbc6c9b5f4d18c60e4900
-
-
-@keyframes animate{
-    from {
-        transform: translateX(0) translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateX(800px) translateY(-800px) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-/* end of todo */
-
-#title{
-    height:100%;
-    width: 50%;
-    min-width: 50%;
-    min-height: 100%;
-    margin-left: 30%;
-}
-
-.containerLogo {
-    height: 75%;
-    margin: auto;
-    margin-top:10%;
-    position: relative;
-}
-
-.footer {
+.boite-bouton-menu{
     display: flex;
-    justify-content: center;
-    color: white;
-    font-family: "bahnschrift";
-    font-size: 0.85rem;
-    position: absolute;
-    transform-origin: 0 0;
-    bottom: 0;
-    width:100%;
-    height:8%;   /* Height of the footer */
-    overflow:hidden;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;    
+    height: 30px;
 }
 
-.credits{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: left;
-    float: left;
-    width: 75%;
+#container-menu-accueil-2>a>.boite-bouton-menu{
+    flex-direction: row-reverse;
 }
 
-.contacts{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: right;
-    float: right;
+.separateur-menu-accueil{
+    padding: 2px;
+    width: 105%;
 }
 
-/* Formes géométriques de la page */
-
-.cercle-n{
-    margin: auto;
-    margin-top: 0.25rem;
-    border-radius:50%;
-    width: 6rem;
-    height: 6rem;
+.boite-bouton-menu>p{
+    color: #FCFCFC;
+    font-size: 1.1vw;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 5% 0 5%;
 }
 
-.cercle-n-border{
-    position: absolute;
-    /* border: black; */
-    /* border-style: dashed; */
-    /* border-radius:50%; */
-
-    clip-path: inset(0 0 0 50%);
-
-
-    left: 8%;
-    top: 26%;
-
-    z-index: -1;
-
-    width: 6.5rem;
-    height: 6.5rem;
+.hover-menu-accueil{
+    height: 3px;
+    width: 0%;
+    transition: all .3s cubic-bezier(.7,.02,.53,1.27);
 }
 
-.cercle-i{
-    margin: auto;
-    margin-top: 0.25rem;
-    border-radius:50%;
-
-    width: 6rem;
-    height: 6rem;
+.container-menu-accueil>a:hover .hover-menu-accueil{
+    width:20%
 }
 
-.cercle-i-border{
-    position: absolute;
-    border: black;
-    border-style: dashed;
-    border-radius:50%;
-
-    clip-path: inset(0 0 0 -50%);
-
-
-    left: 54.5%;
-    top: 60%;
-
-    z-index: -1;
-
-    width: 6.5rem;
-    height: 6.5rem;
-    animation-name: spin2;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-}
-
-@keyframes spin2 {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(-360deg);
-    }
-}
-
-
-.logo-cercle{
-    margin: auto;
-    margin-top: 0.5rem;
-    border-radius:50%;
-
-    width: 15rem;
-    height: 15rem;
-}
-
-.logo-cercle-border{
-    position: absolute;
-    border: black;
-    border-style: dashed;
-    border-radius:50%;
-    /* left: 65%; */
-    /* top: 20%; */
-
-    z-index: -1;
-
-    width: 16rem;
-    height: 16rem;
-
-    animation-name: spin;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-}
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-
-
-/* Cercles qui apparaissent dans le logo */
-.cercle-cap-logo{
-    position: absolute;
-    border-radius: 100%;
-    border-color: #1A1A1A;
-    border-width: 0.3rem;
-    width: 1rem;
-    height: 1rem;
-    border-style: solid;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3rem;
-    transform-origin: 0 0;
-}
-
-
-
-#cercle-cap-N{
-    left: 0;
-    top: 0;
-}
-
-#cercle-cap-T{
-    left: 0;
-    top: 0;
-}
-
-#cercle-cap-I{
-    left: 0;
-    top: 0;
-}
-
-
-/* Sections étudiants */
 .position-container-etudiants{
     position: absolute;
     width: 45%;
@@ -786,7 +745,7 @@ body {
 }
 
 #logoMenuAccueilContainer{
-    width: 8%;
+    width: 130px;
     margin-right: 2%;
 }
 
@@ -985,38 +944,70 @@ body {
     bottom:10%;
     left: 3%;
 }
+
 .social-icon{
     width: 50%;
+    transition: transform 0.3s cubic-bezier(.63,.51,.47,1.74);
+}
+
+.social-elt:hover .social-icon{
+    transform: scaleX(1.5) scaleY(1.5);
 }
 
 /* /////////FOOTER//////////// */
 .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     color: white;
     font-family: "bahnschrift";
-    font-size: 0.85rem;
+    font-size: 0.90rem;
     position: fixed;
     transform-origin: 0 0;
     bottom: 0;
     width:100%;
-    height:8%;   /* Height of the footer */
+    height:9%;   /* Height of the footer */
     overflow:hidden;
 }
 
 .credits{
-    margin-top: auto;
-    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 0.5%;
+}
+.credits>p{
+    align-self: flex-start;
     text-align: left;
     float: left;
-    width: 75%;
+}
+
+.college{
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.college>a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+.college>a>img{
+    margin-right: 5%;
+    width: 20%;
+}
+
+.college>a>p{
+    font-size: 1.5vw;   
+    align-self: center;
 }
 
 .contacts{
-    margin-top: auto;
-    margin-bottom: auto;
     text-align: right;
-    float: right;
+    margin: 0.5%;
 }
 
 #liens-college-footer{
@@ -1024,8 +1015,17 @@ body {
 }
 
 
+@media all and (max-width: 1440px) and (min-width:1025px) {
+    .containerLogoContent{
+        margin-top: 200px;
+    }
+} 
 
-
+@media all and (max-width: 1024px) and (min-width:601px) {
+    .containerLogoContent{
+        margin-top: 200px;
+    }
+} 
 
 /* ////// PHONE ADAPTIVE ///////////// */
 
@@ -1038,6 +1038,23 @@ body {
     .background-shape{
         clip-path: polygon(0 95%, 0 100%, 35% 100%, 100% 10%,100% 0, 25% 0, 0 95% );
     }
+    #bck-shape-1{
+        left: 20%;
+        top: 13%;
+    }
+
+    #bck-shape-2{
+        top: 50%;
+        left: 85%;
+    }
+    #bck-shape-3{
+        left:45%
+    }
+    #bck-shape-4{
+    top: 56%;
+    left: 10%;    
+}
+    
     /* HEADER */
     .header-desktop{
         display: none;
@@ -1108,7 +1125,7 @@ body {
     }
 
     .burger-active{
-        height: 100px;
+        height: 180px;
     }
 
     .hide-burger{
@@ -1139,7 +1156,7 @@ body {
         width: 120%;
     }
 
-    #burger-etudiant-nouveau{
+    #burger-cours, #burger-profs, #burger-stages{
         border-bottom: 2.5px solid black;
         padding-bottom: 5px;
         margin-bottom: 6px;
@@ -1189,19 +1206,30 @@ body {
 
     /* Cercles qui apparaissent dans le logo */
     /*Gros cercle rouge*/
-    .logo-cercle{
-        border-radius:50%;
-        margin: .25rem 0 0 .25rem;
-        width: 6rem;
-        height: 6rem;
+    .logo-cercle-container{
+        position: absolute;
+        
+        left: 65%; 
+        top: -6%;
+
+        z-index: 3;
+
+        width: 25vw;
+        height: 25vw;
+
+        
     }
-
     .logo-cercle-border{
-        left: 60%; 
-        top: -10%;
-
-        width: 6.5rem;
-        height: 6.5rem; 
+        position: absolute;
+        top: -4%;
+        left: -4.25%;
+        transform-origin: 50% 50%;
+        border: 2px dashed black;
+        border-radius:50%;
+        animation-name: spin;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
 
     /*Demi cercle bleu*/
@@ -1250,127 +1278,67 @@ body {
         width: 3.8%;
     }
     /*Petits cercles*/
-    #cercle-cap-N{
-        left: 10.3%;
-        top: -12%;
+    #plus-cap-N{
+        left: 13%;
+        top: -8%;
     }
-    
+    #plus-cap-T{
+        left: -0.5%;
+        top: 69%;
+    }
     #cercle-cap-T{
         left: 101%;
-        top: 33.5%;
+        top: 33.8%;
     }
     
     #cercle-cap-I{
-        left: 66.5%;
+        left: 69.5%;
         bottom: -10%;
     }
 
     /*////BOITES ETUDIANTES////*/
     
-    .container-boites-menu-etudiants-mobile{
-        display: block;
-        margin: 25% 5% 0 5%;
-    }
-    .container-etudiant-mobile{
-        color: white;
-        font-family: "bahnschrift";
-        padding: 1em;
-        font-size: .8rem;
-        height: 110px;
-    }
-
-    #container-etudiant-mobile-nouveaux{
-        background-color: #BA222D;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 5% 93%, 0 93%, 0 0);
-    }
-
-    #container-etudiant-mobile-actuel{
-        background-color: #296FA6;
-        clip-path: polygon(0 7%, 5% 7%, 5% 0, 100% 0, 100% 100%, 0 100%, 0 7%);
-    }
-
-    .titre-etudiant-mobile{
-        width: 100%;
-        border-bottom: solid white;
+    .container-menu-accueil{
+        display: none;
     }
     
-    .texte-titre-etudiant-mobile{
-        font-size: 1.2rem;
-        padding-left: 0.3em;
-    }
-
-    .bigger-titre-menu-etudiant-mobile{
-        font-size: 1.28em;
-    }
-
-    /*Menu */
-    .container-menu-etudiant-mobile{
-        margin-top: 5%;
-        margin-left: 3%;
-        font-weight: 200;
-    }
-
-    .titre-menu-etudiant-mobile{
-        border-bottom: 2px solid white;
-        margin-right: 80%;
-        margin-bottom: 1em;
-    }
-    .texte-titre-menu-etudiant-mobile{
-        padding-left: 10%;
-    }
-
-    .liste-menu-etudiant-mobile{
+    .container-menu-accueil-mobile-display{
         display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        margin-left: -7%;
+        justify-content: space-between ;
+        flex-direction: column;
+        margin:80px 5% 0 5%;
     }
 
-    .liste-menu-etudiant-mobile>li{
-        margin-right: 40px;
-        width:100%;
+    .container-menu-accueil-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 100px;
     }
-    
-    .button-menu-etudiant-mobile{
-        border: none;
-        font-family: "bahnschrift";
-        color: white;
+
+    .container-menu-accueil-mobile:nth-of-type(2){
+        margin-top: 20px;
+    }
+
+    .boite-bouton-menu{
+        height: 40px;
+    }   
+    .separateur-menu-accueil{
+        padding: 2px;
+        width: 102%;
+    }
+    .container-menu-accueil-mobile:nth-of-type(2)>.separateur-menu-accueil{
+        transform: translateX(-3%);
+    }
+
+    .container-menu-accueil-mobile>a{
         text-decoration: none;
-        cursor: pointer;
-        font-size: 0.8em;    
-    }
-
-    .liste-menu-etudiant-mobile>li:nth-child(1){
-       margin-left: 15%;
-    }
-
-    .list-circle{
-        width: 1.3em;
-        position: absolute;
-        left: -20px;
-        vertical-align: middle;
-    }
-
-    /* separateur menu etudiants */
-    .container-separateur-etudiant-mobile{
-        display: flex;
-        flex-direction: row;
-        margin:0px 0 0px -13px;
-    }
-    
-    #plus-separateur-etudiant-mobile{
-        filter: invert(0%) sepia(4%) saturate(646%) hue-rotate(342deg) brightness(99%) contrast(80%);
-        width: 7%;
-    }
-
-    #ligne-separateur-etudiant-mobile{
         width: 100%;
-        height: 5px;
-        background-color: #1A1A1A;
-        margin-top: 10px;
-        margin-left: 5px;
-        margin-right: -6px;
-
+        cursor: pointer;
+    }
+    .boite-bouton-menu>p{
+        font-size: 5vw;
     }
 
     /* ///// SOCIALS ///// */
@@ -1384,16 +1352,38 @@ body {
     .footer{
         max-width: 100vw;
         position: static;
-        font-size: 0.55em;
-        padding: 25px 0 10px 0;
+        font-size: 2.5vw;
+        flex-flow: row wrap;
     }
 
     .credits{
         width: 45%;
         padding-left: 3px;
+        flex-shrink: 2;
+        order: 2;
     }
-    .credits>p:nth-child(2){
-        width: 80%;
+
+    .college{
+        order:1;
+        flex-shrink: 0;
+        flex-grow: 3;
+        flex-basis: 100%;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .college>a>img{
+        width: 15%;
+    }
+
+    .college>a>p{
+        font-size: 3vw;
+    }
+
+    .contacts{
+        order: 3;
+        flex-shrink: 2;
     }
 
     .contacts>a{

@@ -1,0 +1,171 @@
+/* STYLE GÉNÉRAL */
+#contenu-principal{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+body{
+    overflow: visible !important;
+}
+
+
+/* STYLE TITRE */
+.container-titre{
+    font-size:2vw;
+    width: 50%;
+    min-height: 25px;
+    margin-left: 10%;
+    border-bottom: 2px solid black;
+}
+
+.contenu-titre{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* STYLE BUILDINGS */
+.container-stages{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-basis: 65%;
+    margin: 2% 15% 0 15%;
+    
+}
+
+.groupe-building{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.building-stages{
+    position: relative;
+}
+
+#groupe-2>#building-3, #groupe-4>#building-6{
+    margin-left: 10%;
+}
+
+#building-1>.svg-building{
+    width:165px;
+}
+#building-2>.svg-building{
+    width:100px;
+}
+#building-3>.svg-building{
+    width:90px;
+}
+#building-4>.svg-building{
+    width:110px;
+}
+#building-5>.svg-building{
+    width:120px;
+}
+#building-6>.svg-building{
+    width:110px;
+} 
+
+/*fenetre*/
+
+.window-building{
+    position: absolute;
+    height: 4%;
+    width: 9%; 
+    transition: all 0.1s ease-in;
+}
+
+.window-building:hover{
+    cursor: pointer;
+    transform: scaleX(1.5) scaleY(1.5);
+}
+
+/* HORIZONTALEMENT: DES BONS DE 14% À PARTIR DE 20% */
+/* VERTICALAMENT: DES BONS DE 6% À PARTIR DE 20% */
+/*BUILDING 1*/
+#window-1{
+    top: 26%;
+    left: 34%;
+}
+
+#window-2{
+    top: 38%;
+    left: 62%;
+}
+
+#window-3{
+    top: 56%;
+    left: 48%;
+}
+
+/* BUILDING 2 */
+#window-4{
+    top: 32%;
+    left:20%
+}
+
+#window-5{
+    top:56%;
+    left:76%;
+}
+
+/* BUILDING 3 */
+#window-6{
+    top: 20%;
+    left: 20%;
+}
+
+#window-7{
+    top:44%;
+    left: 76%;
+}
+#window-8{
+    top: 56%;
+    left: 62%;
+}
+
+/*BUILDING 4*/
+#window-9{
+    top: 26%;
+    left: 20%;
+}
+
+#window-10{
+    top: 50%;
+    left: 20%;
+}
+
+#window-11{
+    top: 68%;
+    left: 48%;
+}
+
+/* BUILDING 5 */
+#window-12{
+    top: 20%;
+    left: 62%;
+}
+
+#window-13{
+    top: 26%;
+    left: 20%;
+}
+
+#window-14{
+    top: 44%;
+    left: 76%;
+}
+
+/* BUILDING 6 */
+#window-15{
+    top: 20%;
+    left: 34%;
+}
+
+#window-16{
+    top: 20%;
+    left: 76%;
+}

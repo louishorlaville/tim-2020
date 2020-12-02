@@ -110,20 +110,7 @@
 
 
 
+<?php 
+    require("../inclusions/piedDePage.php");
+?>
 
-</body>
-
-<!-- Footer -->
-<footer class="footer color-bars">
-<div class="credits" >
-  <p>Site Web crée par:</p>
-  <p>Gabriel Alvarez, Louis Horlaville, Thomas Lorenzo, Kevin Ponce</p>
-</div>
-
-<div class="contacts" >
-  <p>3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131</p>
-  <p>Copyright © 2020 - Collège de Maisonneuve. Tous droits réservés.</p>
-</div>
-</footer>
-
-</html>
