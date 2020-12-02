@@ -762,7 +762,6 @@ body {
     border-style: dashed;
     border-radius:50%;
     transform-origin: center;
-    /* transform:translate(-200px,-200px); */
     width: 125px;
     height: 125px;
     animation-name: spin;
@@ -774,9 +773,11 @@ body {
 #logoMenuAccueilContainer{
     cursor: pointer;
 }
+
 .logo-cercle{
     transition: transform 0.3s cubic-bezier( 0.94, 0.38, .48, 1.2 );
 }
+
 #logoMenuAccueilContainer:hover>a>.logo-cercle-container-header>.logo-cercle-container-border>.logo-cercle{
     transform: rotate(45deg);
 }
@@ -831,8 +832,8 @@ body {
     width: 50%;
     min-height: 25px;
     margin-left: 10%;
-    border-bottom:15px solid #DC7E25;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 92%, 100% 92%, 100% 88%, 0 88%,0 0);
+    border-bottom:5px solid #DC7E25;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 92%, 100% 92%, 100% 88%, 0 88%,0 0); */
 }
 
 .contenu-titre{
@@ -840,17 +841,19 @@ body {
     display: flex;
     flex-direction: row;
     overflow: visible;
+    align-items: center;
 }
 
 .titre-page{
-    margin-left: 5%;
+    margin-left: 20px;
+    padding-top: 10px;
 }
 
 .fleche-page-precedente{
     margin-left: 1%;
     transition: all .5s ease-in-out;
     width: 3%;
-    
+    font-size: 50px;
 }
 
 .fleche-page-precedente:hover{
@@ -1092,11 +1095,25 @@ body {
     .containerLogoContent{
         margin-top: 200px;
     }
+
+    /*HEADER*/
+    .container-titre{
+        font-size: 3vw;
+        width: 75%;
+    }
 } 
 
 @media all and (max-width: 1024px) and (min-width:601px) {
     .containerLogoContent{
         margin-top: 200px;
+    }
+    /*HEADER*/
+    .container-titre{
+        font-size: 4vw;
+        width: 60%;
+    }
+    .contenu-titre{
+        width: 90%;
     }
 } 
 
@@ -1133,6 +1150,15 @@ body {
         display: none;
     }
 
+    .container-titre{
+        margin: 5% 0 0 5%;
+        font-size: 5vw;
+        width: 80%;
+    }
+
+    .fleche-page-precedente{
+        font-size: 30px;
+    }
     .container-header-mobile{
         display: block;
         background-color: #1A1A1A;
