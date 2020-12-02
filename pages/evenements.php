@@ -5,7 +5,6 @@
 
     
 	<!-- Fin Header -->
-	<h1 id="titrePage">La vie étudiante au TIM</h1>
 	<main>
 		<section id="stadeContainer">
 			<img src="../images/svg/stade/stadeBase.svg" alt="" id="baseStade">

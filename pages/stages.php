@@ -3,14 +3,6 @@
     require("../inclusions/hautDePage.php");
 ?>
 
-<div id="contenu-principal">
-    <div class="container-titre">
-        <div class="contenu-titre">
-            <div class="fleche-page-precedente">&#8249;</div>
-            <div class="titre-page" id="titre-page-stages">LES STAGES DE NOS FINISSANTS</div>
-        </div>
-        
-    </div>
     <div class="container-stages">
         <div class="groupe-building" id="groupe-1">
             <div class="building-stages" id="building-1">

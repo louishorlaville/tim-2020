@@ -1,5 +1,5 @@
 <?php 
-    $page = "profileCours";
+    $page = "profilCours";
     require("../inclusions/hautDePage.php");
 ?>
 
@@ -17,37 +17,36 @@
         </section>
     <!--  Find de desc  -->
         <section id="details-cours">
-	    <ul>
-            <li class="subtitle-1">Nombre d'heures</li>
-            <li>60 heures</li>
-            <li class="subtitle-1">Pondération</li>
-            <li>2-3-2</li>
-	    </ul>
+            <ul>
+                <li class="subtitle-1">Nombre d'heures</li>
+                <li>60 heures</li>
+                <li class="subtitle-1">Pondération</li>
+                <li>2-3-2</li>
+            </ul>
 	    </section>
     <!-- fin de details	    -->
-    <section id="categories">
-        <li class="icone-categorie">
-            <span class="cercle color-1"></span>
-            <p class="nomCat"></p>
-        </li>
-        <li class="icone-categorie">
-            <span class="cercle color-2"></span>
-            <p class="nomCat"></p>
-        </li>
-       <li class="icone-categorie">
-           <span class="cercle color-3"></span>
-           <p class="nomCat"></p>
-       </li>
-       <li class="icone-categorie">
-           <span class="cercle color-4"></span>
-           <p class="nomCat"></p>
-       </li>
-       <li class="icone-categorie">
-           <span class="cercle color-5"></span>
-           <p class="nomCat"></p>
-       </li>
-    </section>
-	 
+        <section id="categories">
+            <li class="icone-categorie">
+                <span class="cercle color-1"></span>
+                <p class="nomCat"></p>
+            </li>
+            <li class="icone-categorie">
+                <span class="cercle color-2"></span>
+                <p class="nomCat"></p>
+            </li>
+            <li class="icone-categorie">
+                <span class="cercle color-3"></span>
+                <p class="nomCat"></p>
+            </li>
+            <li class="icone-categorie">
+                <span class="cercle color-4"></span>
+                <p class="nomCat"></p>
+            </li>
+            <li class="icone-categorie">
+                <span class="cercle color-5"></span>
+                <p class="nomCat"></p>
+            </li>
+        </section>
 	</main>
 </body>
 <?php 

@@ -1,31 +1,39 @@
 <?php 
     $meta = [
         "accueil" =>  [
-            "titre" =>  "Accueil | TIM"
+            "title" =>  "Accueil | TIM",
+            "titrePage" => ""
         ],
         "cheminement" =>  [
-            "titre" =>  "Grille de chemninement | TIM"
+            "title" =>  "Grille de chemninement | TIM",
+            "titrePage" => "GRILLE DE CHEMINEMENT"
         ],
-        "profileCours" =>  [
-            "titre" =>  "Profile de cours | TIM"
+        "profilCours" =>  [
+            "title" =>  "Profil de cours | TIM",
+            "titrePage" => ""
         ],
         "profs" =>  [
-            "titre" =>  "Professeurs | TIM"
+            "title" =>  "Professeurs | TIM",
+            "titrePage" => "NOS PROFESSEURS"
         ],
         "stages" =>  [
-            "titre" =>  "Stages | TIM"
+            "title" =>  "Stages | TIM",
+            "titrePage" => "LES STAGES DE NOS FINISSANTS"
         ],
         "evenements" =>  [
-            "titre" =>  "Évènements | TIM"
+            "title" =>  "Évènements | TIM",
+            "titrePage" => "VIE ÉTUDIANTE"
+
         ],
     ]
+    
     // ($page!="accueil")? '<link rel="stylesheet" href="./css/'.$page.'.css">' : "";
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title><?= $meta[$page]["titre"]; ?></title>
+    <title><?= $meta[$page]["title"]; ?></title>
     <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
     <?=($page=="accueil")? '<link rel="stylesheet" href="   hamburger/dist/hamburgers.css">' : '<link rel="stylesheet" href="../hamburger/dist/hamburgers.css">'?>
     <link rel="stylesheet" href="<?=($page=="accueil")? "css/style.css" :"../css/style.css" ?>">
@@ -57,7 +65,7 @@
 <div class="headerContainer">
     <div class="container-header-mobile">
         <div id="logo-header-mobile">
-            <a href=<?=($page=="accueil")?"./index.php":"../index.php"?>><img id="img-logo-header-mobile" src="./images/img/logoTim.png" alt="Logo Tim"/></a>
+            <a href=<?=($page=="accueil")?"./index.php":"../index.php"?>><img id="img-logo-header-mobile" src=<?= ($page=="accueil")?"./images/img/logoTim.png":"../images/img/logoTim.png"?> alt="Logo Tim"/></a>
         </div>
         <div class="container-icon-burger">
             <button id="bouton-burger" class="hamburger hamburger--collapse" type="button">
@@ -109,16 +117,23 @@
         <a href="../index.php"><img src="../images/svg/header/logoMenuHeader.svg" alt="Logo retour accueil" id="logoMenuAccueil" href="../index.php">
         </div>
         <div id="menuHeaderContainer">
-            <a href="#" id="menuHeaderNouvEtud" class="eltMenuHeader">
-                <img src="../images/svg/header/underlineHeader1.svg" alt="" id="menuHeaderUnderline1" class="underLineHeader">
-                Nouveaux Étudiants
-            </a>
-            <a href="#" id="menuHeaderActuEtud" class="eltMenuHeader">
-                <img src="../images/svg/header/underlineHeader2.svg" alt="" id="menuHeaderUnderline2" class="underLineHeader">
-                Étudiants Actuels
-            </a>
+            <a href="stages.php" id="stages" class="elt-menu-header <?= ($page=="stages")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Stages</div></a>
+            <a href="grilleCheminement.php" id="cheminement" class="elt-menu-header <?= ($page=="cheminement" || $page=="profilCours")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Cours</div></a>
+            <a href="evenements.php" id="evenements" class="elt-menu-header <?= ($page=="evenements")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Vie étudiante</div></a>
+            <a href="grilleDesProfs.php" id="profs" class="elt-menu-header <?= ($page=="profs")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Professeurs</div></a>
         </div>
     </div>
 </div>
-<?php endif; ?>
+<?php if($page!="profilCours"): ?>
+<div id="contenu-principal">
+    <div class="container-titre">
+        <div class="contenu-titre">
+            <div class="fleche-page-precedente"><a class="" href="../index.php">&#8249;</a></div>
+            <div class="titre-page" id="titre-page-stages"><?= $meta[$page]["titrePage"];?></div>
+        </div>
+    </div>
+<?php 
+endif;
+endif; 
+?>
 
