@@ -1,0 +1,78 @@
+body{
+    background-color: #333333;
+}
+
+/* COULEURS IMG */
+.color-bg{
+    background-color: #4D4D4D;
+}
+
+.color-bars{
+    background-color: #1A1A1A;
+}
+
+.color-1{
+    background-color: #E56565;
+}
+
+.color-2{
+    background-color: #47B2AC;
+}
+
+.color-3{
+    background-color: #EFCA56;
+}
+
+.color-4{
+    background-color: #8abdff;
+}
+.color-6{
+    background-color: #999895;
+}
+
+/*switch black/white*/
+.color-7{
+    background-color: white;
+}
+
+.color-text-1{
+    color: #FFFFFF;
+}
+
+/* COULEURS SVG*/
+/*noir/gris*/
+.color-svg-0{
+    filter: invert(0%) sepia(2%) saturate(3512%) hue-rotate(360deg) brightness(98%) contrast(80%);
+}
+/*switch black/white*/
+.color-svg-01{
+    filter: invert(100%) sepia(0%) saturate(7482%) hue-rotate(208deg) brightness(111%) contrast(104%);
+}
+/*Rouge nuit*/
+.color-svg-1{
+    filter: invert(76%) sepia(47%) saturate(5272%) hue-rotate(315deg) brightness(89%) contrast(103%);
+}
+/*Blue Light*/
+.color-svg-2{
+    filter: invert(64%) sepia(10%) saturate(2247%) hue-rotate(128deg) brightness(97%) contrast(79%);
+}
+/*Jaune night version*/
+.color-svg-3{
+    filter: invert(98%) sepia(94%) saturate(1150%) hue-rotate(322deg) brightness(96%) contrast(94%);
+}
+
+/*Jaune night version (windows)*/
+.color-svg-5{
+    filter: invert(85%) sepia(64%) saturate(553%) hue-rotate(329deg) brightness(99%) contrast(89%);
+}
+
+
+
+/*BORDERS*/
+.border-1{
+    border-color:white;
+}
+
+.border-2{
+    border-color: #EFCA56;
+}

@@ -36,7 +36,8 @@
     <title><?= $meta[$page]["title"]; ?></title>
     <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
     <?=($page=="accueil")? '<link rel="stylesheet" href="   hamburger/dist/hamburgers.css">' : '<link rel="stylesheet" href="../hamburger/dist/hamburgers.css">'?>
-    <link rel="stylesheet" href="<?=($page=="accueil")? "css/style.css" :"../css/style.css" ?>">
+    <link rel="stylesheet" href="<?=($page=="accueil")? "" :"../" ?>css/style.css">
+    <link rel="stylesheet" href="<?=($page=="accueil")? "" :"../" ?>css/couleursNuit.css"
     <meta charset="UTF-8" user-scalable=no>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
@@ -77,7 +78,7 @@
         <div class="box-container-menu-burger hide-burger">
             <div class="box-border-menu-burger ">
                 <div class="container-menu-burger">
-                    <div class="elt-menu-burger" id="burger-cours">
+                    <div class="elt-menu-burger " id="burger-cours">
                         <a href="<?=($page=="accueil")?"pages/":""?>grilleCheminement.php">
                             Cours 
                             <div class="arrow-burger">&#8250;</div>
@@ -120,24 +121,24 @@
                         <div class="logo-cercle color-1">
                             <img id="logo-svg-cercle" src="../images/svg/logoTim.svg" alt="Logo Départemental">
                         </div>
-                        <div class="logo-cercle-border-header"></div>
+                        <div class="logo-cercle-border-header border-1"></div>
                     </div>
                 </div>
             </a>
         </div>
         <div id="menuHeaderContainer">
-            <a href="stages.php" id="stages" class="elt-menu-header <?= ($page=="stages")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Stages</div></a>
-            <a href="grilleCheminement.php" id="cheminement" class="elt-menu-header <?= ($page=="cheminement" || $page=="profilCours")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Cours</div></a>
-            <a href="evenements.php" id="evenements" class="elt-menu-header <?= ($page=="evenements")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Vie étudiante</div></a>
-            <a href="grilleDesProfs.php" id="profs" class="elt-menu-header <?= ($page=="profs")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header">Professeurs</div></a>
+            <a href="stages.php" id="stages" class="color-text-1 elt-menu-header <?= ($page=="stages")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Stages</div></a>
+            <a href="grilleCheminement.php" id="cheminement" class="color-text-1 elt-menu-header <?= ($page=="cheminement" || $page=="profilCours")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Cours</div></a>
+            <a href="evenements.php" id="evenements" class="color-text-1 elt-menu-header <?= ($page=="evenements")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Vie étudiante</div></a>
+            <a href="grilleDesProfs.php" id="profs" class="color-text-1 elt-menu-header <?= ($page=="profs")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Professeurs</div></a>
         </div>
     </div>
 </div>
 <?php if($page!="profilCours"): ?>
 <div id="contenu-principal">
-    <div class="container-titre">
-        <div class="contenu-titre">
-            <div class="fleche-page-precedente"><a class="" href="../index.php">&#8249;</a></div>
+    <div class="container-titre border-2">
+        <div class="contenu-titre color-text-1">
+            <div class="fleche-page-precedente color-text-1"><a class="color-text-1" href="../index.php">&#8249;</a></div>
             <div class="titre-page" id="titre-page-stages"><?= $meta[$page]["titrePage"];?></div>
         </div>
     </div>

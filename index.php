@@ -6,11 +6,11 @@
     <div id="title">
         <div class="containerLogoContent">
             <div class="containerLogo">
-                <img class="logo" src="images/svg/logo.svg" alt="logo">
-                <div id="plus-cap-N" class="plus-cap-logo"><img src="./images/svg/blackPlus.svg" alt=""></div>
-                <div id="plus-cap-T" class="plus-cap-logo"><img src="./images/svg/blackPlus.svg" alt=""></div>
-                <div id="cercle-cap-T" class="cercle-cap-logo"><img src="./images/svg/blackCircle.svg" alt=""></div>
-                <div id="cercle-cap-I" class="cercle-cap-logo"><img src="./images/svg/blackCircle.svg" alt=""></div> 
+                <img class="logo color-svg-01" src="images/svg/logo.svg" alt="logo">
+                <div id="plus-cap-N" class="plus-cap-logo color-svg-01"><img src="./images/svg/blackPlus.svg" alt=""></div>
+                <div id="plus-cap-T" class="plus-cap-logo color-svg-01"><img src="./images/svg/blackPlus.svg" alt=""></div>
+                <div id="cercle-cap-T" class="cercle-cap-logo color-svg-01"><img src="./images/svg/blackCircle.svg" alt=""></div>
+                <div id="cercle-cap-I" class="cercle-cap-logo color-svg-01"><img src="./images/svg/blackCircle.svg" alt=""></div> 
                 <div class="logo-cercle-container">
                     <div class="logo-cercle-container-border">
                         <div class="logo-cercle color-1">
@@ -32,7 +32,7 @@
                         <div class="hover-menu-accueil color-bg"></div>
                     </div>
                 </a>
-                <div class="separateur-menu-accueil color-bars"></div>
+                <div class="separateur-menu-accueil color-7"></div>
                 <a href="pages/grilleDesProfs.php">
                     <div class="boite-bouton-menu color-2" id="bouton-menu-cours">
                         <p>PROFESSEURS</p>
@@ -47,7 +47,7 @@
                         <div class="hover-menu-accueil color-bg"></div>
                     </div>
                 </a>
-                <div class="separateur-menu-accueil color-bars"></div>
+                <div class="separateur-menu-accueil color-7"></div>
                 <a href="pages/evenements.php">
                     <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
                         <p>VIE ÉTUDIANTE</p>

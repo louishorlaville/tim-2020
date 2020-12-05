@@ -20,17 +20,17 @@
 
 
     <!-- Session séparateurs -->
-    <div class="grid-item chem-cell-separator chem-cell-2 color-bars"></div>
+    <div class="grid-item chem-cell-separator chem-cell-2 color-7"></div>
     <div class="grid-item chem-cell-top color-text-1 chem-session-title">SESSION 1</div>
-    <div class="grid-item chem-cell-separator chem-cell-4 color-bars"></div>
+    <div class="grid-item chem-cell-separator chem-cell-4 color-7"></div>
     <div class="grid-item chem-cell-top color-text-1 chem-session-title">SESSION 2</div>
-    <div class="grid-item chem-cell-separator chem-cell-6 color-bars"></div>
+    <div class="grid-item chem-cell-separator chem-cell-6 color-7"></div>
     <div class="grid-item chem-cell-top color-text-1 chem-session-title">SESSION 3</div>
-    <div class="grid-item chem-cell-separator chem-cell-8 color-bars"></div>
+    <div class="grid-item chem-cell-separator chem-cell-8 color-7"></div>
     <div class="grid-item chem-cell-top color-text-1 chem-session-title">SESSION 4</div>
-    <div class="grid-item chem-cell-separator chem-cell-10 color-bars"></div>
+    <div class="grid-item chem-cell-separator chem-cell-10 color-7"></div>
     <div class="grid-item chem-cell-top color-text-1 chem-session-title">SESSION 5</div>
-    <div class="grid-item chem-cell-separator chem-cell-12 color-bars"></div>
+    <div class="grid-item chem-cell-separator chem-cell-12 color-7"></div>
     <div class="grid-item chem-cell-top color-text-1 chem-session-title">SESSION 6</div>
     <div class="grid-item chem-cell-separator chem-cell-14"></div>
 

@@ -12,10 +12,8 @@
 body {
     position: relative;
     font-family: Arial;
-    background-color: #FCFCFC;
     height: 100%;
     overflow: hidden;
-    background-color: #E0DBD5;
 
 }
 
@@ -167,71 +165,6 @@ body {
     margin-left: 20px;
 }
 
-
-/* couleurs principales de la page - IMG */
-
-.color-bg{
-    background-color: #FCFCFC;
-}
-
-.color-bg-2{
-    background: #E0DBD5;
-}
-
-.color-bars{
-    background-color: #1A1A1A;
-}
-
-.color-1{
-    background-color: #BA222D;
-}
-
-.color-2{
-    background-color: #296FA6;
-}
-
-.color-3{
-    background-color: #DC7E25;
-}
-
-.color-4{
-    background-color: #8abdff;
-}
-
-.color-5{
-    background-color: #EFCA56;
-}
-
-.color-6{
-    background-color: #999895;
-}
-
-.color-text-1{
-    color: #1A1A1A;
-}
-
-
-/* COULEURS SVG*/
-/*noir/gris*/
-.color-svg-0{
-    filter: invert(0%) sepia(2%) saturate(3512%) hue-rotate(360deg) brightness(98%) contrast(80%);
-}
-/*Rouge light*/
-.color-svg-1{
-    filter: invert(14%) sepia(100%) saturate(3975%) hue-rotate(348deg) brightness(82%) contrast(83%);
-}
-/*Blue Light*/
-.color-svg-2{
-    filter: invert(37%) sepia(24%) saturate(1473%) hue-rotate(164deg) brightness(97%) contrast(88%);
-}
-/*Jaune light version*/
-.color-svg-3{
-    filter: invert(64%) sepia(15%) saturate(7049%) hue-rotate(349deg) brightness(93%) contrast(84%);
-}
-
-.color-svg-5{
-    filter: invert(85%) sepia(64%) saturate(553%) hue-rotate(329deg) brightness(99%) contrast(89%);
-}
 
 /* Logo et formes */
 #title{
@@ -758,7 +691,6 @@ body {
     position: absolute;
     top: -5px;
     left: -5px;    
-    border: black;
     border-style: dashed;
     border-radius:50%;
     transform-origin: center;
@@ -802,7 +734,6 @@ body {
 
 .elt-menu-header{
     text-decoration: none;
-    color: black;
     margin-right: 6%;
     flex-shrink: 0;
     height: 50px;
@@ -832,7 +763,7 @@ body {
     width: 50%;
     min-height: 25px;
     margin-left: 8%;
-    border-bottom:5px solid #DC7E25;
+    border-bottom:5px solid;
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 92%, 100% 92%, 100% 88%, 0 88%,0 0); */
 }
 
