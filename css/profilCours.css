@@ -103,20 +103,46 @@ main{
     float: right
 }
 
-@media all and (max-width: 1024px){
+@media all and (max-width: 1024px) and (min-width:601px) {
     .grid-container {
         display: grid;
-        grid-template-columns: 0.9fr 1.1fr 0.6fr 0.4fr 1fr;
+        grid-template-columns: 0.6fr 1.1fr 0.6fr 0.4fr 0.6fr;
         grid-template-rows: 0.1fr 0.5fr 0.5fr 1.5fr;
         grid-template-areas:
           ". titre-cours titre-cours titre-cours ."
           ". description  description  description ."
           ". details-cours  details-cours . ."
           ". categories  . . .";
-      }
-      #details-cours{
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-      }
+    }
+    #details-cours{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #titre-cours {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.3fr 1.1fr 0.6fr 0.4fr 0.3fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 1.5fr;
+        grid-template-areas:
+          ". titre-cours titre-cours titre-cours ."
+          ". description  description  description ."
+          ". details-cours  details-cours . ."
+          ". categories  . . .";
+          margin-top: 60px;
+        }
+    #details-cours{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #titre-cours {
+        font-size: 1em;
+    }
+    .grid-container{
+    }
 }

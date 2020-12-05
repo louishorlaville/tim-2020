@@ -78,25 +78,25 @@
             <div class="box-border-menu-burger ">
                 <div class="container-menu-burger">
                     <div class="elt-menu-burger" id="burger-cours">
-                        <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-actuel":"../index.php#container-etudiant-mobile-actuel"?>>
+                        <a href="<?=($page=="accueil")?"pages/":""?>grilleCheminement.php">
                             Cours 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
                     </div>
                     <div class="elt-menu-burger" id="burger-profs">
-                        <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-nouveaux":"../index.php#container-etudiant-mobile-nouveaux"?>>
+                        <a href="<?=($page=="accueil")?"pages/":""?>grilleDesProfs.php">
                             Professeurs 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
                     </div>
                     <div class="elt-menu-burger" id="burger-stages">
-                        <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-nouveaux":"../index.php#container-etudiant-mobile-nouveaux"?>>
+                        <a href="<?=($page=="accueil")?"pages/":""?>stages.php">
                             Stages 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
                     </div>
                     <div class="elt-menu-burger" id="burger-vie">
-                        <a href=<?=($page=="accueil")?"./index.php#container-etudiant-mobile-nouveaux":"../index.php#container-etudiant-mobile-nouveaux"?>>
+                        <a href="<?=($page=="accueil")?"pages/":""?>evenements.php">
                             Vie étudiante 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
