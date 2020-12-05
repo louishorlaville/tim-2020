@@ -20,6 +20,8 @@
             <ul>
                 <li class="subtitle-1">Nombre d'heures</li>
                 <li>60 heures</li>
+            </ul>
+            <ul>
                 <li class="subtitle-1">Pondération</li>
                 <li>2-3-2</li>
             </ul>

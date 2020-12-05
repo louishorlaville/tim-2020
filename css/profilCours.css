@@ -8,9 +8,9 @@ main{
   grid-template-columns: 0.9fr 1.1fr 0.6fr 0.4fr 1fr;
   grid-template-rows: 0.1fr 0.5fr 1.5fr;
   grid-template-areas:
-    ". titre-cours titre-cours ."
-    ". description . details-cours"
-    ". categories . .";
+    ". titre-cours titre-cours titre-cours ."
+    ". description . details-cours ."
+    ". categories . . .";
 }
 
 #nom-cours {
@@ -101,4 +101,22 @@ main{
 #droite {
     text-align: right;
     float: right
+}
+
+@media all and (max-width: 1024px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr 0.6fr 0.4fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 1.5fr;
+        grid-template-areas:
+          ". titre-cours titre-cours titre-cours ."
+          ". description  description  description ."
+          ". details-cours  details-cours . ."
+          ". categories  . . .";
+      }
+      #details-cours{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
 }

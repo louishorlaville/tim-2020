@@ -831,7 +831,7 @@ body {
     font-size:2vw;
     width: 50%;
     min-height: 25px;
-    margin-left: 10%;
+    margin-left: 8%;
     border-bottom:5px solid #DC7E25;
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 92%, 100% 92%, 100% 88%, 0 88%,0 0); */
 }
