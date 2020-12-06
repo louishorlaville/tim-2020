@@ -2,11 +2,17 @@
   let burgerIcon = document.querySelector("#bouton-burger");
   let burgerMenu = document.querySelector(".box-container-menu-burger");
   let burgerText = document.querySelector(".container-menu-burger");
+  let toggleColor = document.querySelector(".container-toggle-color");
 
+  const currentTheme = localStorage.getItem("theme")
+    ? localStorage.getItem("theme")
+    : null;
   /*Intéraction Menu Burger*/
   if (burgerIcon) {
     burgerIcon.addEventListener("click", toggleBurgerClass);
   }
+
+  toggleColor.addEventListener("click", switchColor);
 
   /*Toggle les class pour faire afficher et enlever le menu Burger*/
   function toggleBurgerClass() {
@@ -22,4 +28,6 @@
       burgerIcon.classList.add("is-active");
     }
   }
+
+  function switchColor() {}
 })();

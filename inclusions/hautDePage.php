@@ -37,7 +37,7 @@
     <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
     <?=($page=="accueil")? '<link rel="stylesheet" href="   hamburger/dist/hamburgers.css">' : '<link rel="stylesheet" href="../hamburger/dist/hamburgers.css">'?>
     <link rel="stylesheet" href="<?=($page=="accueil")? "" :"../" ?>css/style.css">
-    <link rel="stylesheet" href="<?=($page=="accueil")? "" :"../" ?>css/couleursNuit.css"
+    <link rel="stylesheet" href="<?=($page=="accueil")? "" :"../" ?>css/couleursJour.css"
     <meta charset="UTF-8" user-scalable=no>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
@@ -76,28 +76,28 @@
             </button>
         </div>
         <div class="box-container-menu-burger hide-burger">
-            <div class="box-border-menu-burger ">
+            <div class="box-border-menu-burger color-3">
                 <div class="container-menu-burger">
-                    <div class="elt-menu-burger " id="burger-cours">
-                        <a href="<?=($page=="accueil")?"pages/":""?>grilleCheminement.php">
+                    <div class="elt-menu-burger" id="burger-cours">
+                        <a class="color-text-2" href="<?=($page=="accueil")?"pages/":""?>grilleCheminement.php">
                             Cours 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
                     </div>
                     <div class="elt-menu-burger" id="burger-profs">
-                        <a href="<?=($page=="accueil")?"pages/":""?>grilleDesProfs.php">
+                        <a class="color-text-2" href="<?=($page=="accueil")?"pages/":""?>grilleDesProfs.php">
                             Professeurs 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
                     </div>
                     <div class="elt-menu-burger" id="burger-stages">
-                        <a href="<?=($page=="accueil")?"pages/":""?>stages.php">
+                        <a class="color-text-2" href="<?=($page=="accueil")?"pages/":""?>stages.php">
                             Stages 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
                     </div>
                     <div class="elt-menu-burger" id="burger-vie">
-                        <a href="<?=($page=="accueil")?"pages/":""?>evenements.php">
+                        <a class="color-text-2" href="<?=($page=="accueil")?"pages/":""?>evenements.php">
                             Vie étudiante 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
@@ -109,7 +109,14 @@
     <?php
     if($page=="accueil"):
     ?>
-        <div class="header-desktop header color-bars"> </div>
+        <div class="header-desktop header color-bars"> 
+            <div class="container-toggle-color">
+                <div class="toggle-color-btn">
+                    <input class="input-toggle-color" type="checkbox">
+                    <span></span>
+                </div>
+            </div>
+        </div>
     <?php 
         else:
     ?>
