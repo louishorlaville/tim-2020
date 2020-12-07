@@ -863,7 +863,8 @@ input[type="checkbox"]
     width: 50%;
     min-height: 25px;
     margin-left: 8%;
-    border-bottom:5px solid;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 92%, 100% 92%, 100% 88%, 0 88%,0 0); */
 }
 
@@ -1350,7 +1351,8 @@ input[type="checkbox"]
         top: -4%;
         left: -4.25%;
         transform-origin: 50% 50%;
-        border: 2px dashed;
+        border-style: dashed;
+        border-width: 2px;
         border-radius:50%;
         animation-name: spin;
         animation-duration: 25s;

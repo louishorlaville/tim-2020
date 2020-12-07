@@ -30,18 +30,7 @@
     burgerIcon.addEventListener("click", toggleBurgerClass);
   }
 
-  /*window.addEventListener("load", function () {
-    if (currentTheme == null && currentTheme == "jour") {
-      xhttp.open("GET", "theme=jour");
-      xhttp.send();
-    } else {
-      localStorage.setItem("theme", "jour");
-      xhttp.open("GET", "theme=nuit");
-      xhttp.send();
-    }
-  });*/
-
-  toggleColor.addEventListener("click", switchColor);
+  toggleColor.addEventListener("click", toggleTheme);
 
   /*Toggle les class pour faire afficher et enlever le menu Burger*/
   function toggleBurgerClass() {
@@ -58,12 +47,7 @@
     }
   }
 
-  function switchColor() {
-    // if (currentTheme == null && currentTheme == "jour") {
-    //   localStorage.setItem("theme", "nuit");
-    // } else {
-    //   localStorage.setItem("theme", "jour");
-    // }
+  function toggleTheme() {
     let themeChoisi = "";
     if (baliseLinkThemeCSS.href.search(/jour/) > -1) {
       baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(/jour/, "nuit");
