@@ -1,4 +1,22 @@
 (function () {
+  let baliseLinkThemeCSS = document.querySelector(
+    "link[href $= 'Couleurs.css']"
+  );
+
+  let themeDefaut = "jour";
+  let themeEnregistre = localStorage.getItem("theme");
+  // Vérifie s'il n'y a pas la propriété theme dans localStorage
+
+  if (!localStorage.getItem("theme")) {
+    // tu créé la prop avec theme = jour
+    localStorage.setItem("theme", themeDefaut);
+  } else {
+    baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(
+      /(nuit|jour)/,
+      themeEnregistre
+    );
+  }
+
   let burgerIcon = document.querySelector("#bouton-burger");
   let burgerMenu = document.querySelector(".box-container-menu-burger");
   let burgerText = document.querySelector(".container-menu-burger");
@@ -11,6 +29,17 @@
   if (burgerIcon) {
     burgerIcon.addEventListener("click", toggleBurgerClass);
   }
+
+  /*window.addEventListener("load", function () {
+    if (currentTheme == null && currentTheme == "jour") {
+      xhttp.open("GET", "theme=jour");
+      xhttp.send();
+    } else {
+      localStorage.setItem("theme", "jour");
+      xhttp.open("GET", "theme=nuit");
+      xhttp.send();
+    }
+  });*/
 
   toggleColor.addEventListener("click", switchColor);
 
@@ -29,5 +58,20 @@
     }
   }
 
-  function switchColor() {}
+  function switchColor() {
+    // if (currentTheme == null && currentTheme == "jour") {
+    //   localStorage.setItem("theme", "nuit");
+    // } else {
+    //   localStorage.setItem("theme", "jour");
+    // }
+    let themeChoisi = "";
+    if (baliseLinkThemeCSS.href.search(/jour/) > -1) {
+      baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(/jour/, "nuit");
+      themeChoisi = "nuit";
+    } else {
+      baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(/nuit/, "jour");
+      themeChoisi = "jour";
+    }
+    localStorage.setItem("theme", themeChoisi);
+  }
 })();

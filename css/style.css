@@ -306,7 +306,6 @@ body {
     position: absolute;
     top: -3.5%;
     left: -3.5% ;
-    border: black;
     border-style: dashed;
     border-radius:50%;
     width: 103.9%;
@@ -841,7 +840,7 @@ input[type="checkbox"]
 }
 
 .border-elt-menu-header{
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid;
     padding: 0 5px 0 5px;
     transition: clip-path .3s ease-in;
 }
@@ -1018,16 +1017,10 @@ input[type="checkbox"]
  
  }
 
-
-
-
-
-
  /* ///////// STYLES COMMUN AUX PAGES /////////////// */
  .contenu-titre>.fleche-page-precedente>a{
      text-decoration: none;
-     color: black;
- }
+}
 
 @keyframes animate{
     from {
@@ -1357,7 +1350,7 @@ input[type="checkbox"]
         top: -4%;
         left: -4.25%;
         transform-origin: 50% 50%;
-        border: 2px dashed black;
+        border: 2px dashed;
         border-radius:50%;
         animation-name: spin;
         animation-duration: 25s;

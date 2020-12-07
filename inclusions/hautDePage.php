@@ -25,7 +25,9 @@
             "titrePage" => "VIE ÉTUDIANTE"
 
         ],
-    ]
+    ];
+
+    $theme="couleursJour";
     
     // ($page!="accueil")? '<link rel="stylesheet" href="./css/'.$page.'.css">' : "";
 ?>
@@ -34,14 +36,14 @@
 <html>
 <head>
     <title><?= $meta[$page]["title"]; ?></title>
+    <link rel="stylesheet" href="<?=($page=="accueil")? "" :"../" ?>css/jourCouleurs.css">
     <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
     <?=($page=="accueil")? '<link rel="stylesheet" href="   hamburger/dist/hamburgers.css">' : '<link rel="stylesheet" href="../hamburger/dist/hamburgers.css">'?>
     <link rel="stylesheet" href="<?=($page=="accueil")? "" :"../" ?>css/style.css">
-    <link rel="stylesheet" href="<?=($page=="accueil")? "" :"../" ?>css/couleursJour.css"
     <meta charset="UTF-8" user-scalable=no>
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
-<body>
+<body class="">
 <div id="background-shapes">
     <div class="background-shape color-bg" id="background-shape-left"></div>
     <img id="bck-shape-1" src="./images/svg/blackCircle.svg" alt="" class="background-smallshape background-circle color-svg-2">
@@ -62,7 +64,6 @@
         <li>+</li>
     </ul> -->
 </div>
-
 <div class="headerContainer">
     <div class="container-header-mobile">
         <div id="logo-header-mobile">

@@ -12,11 +12,11 @@
 	        <h1 id="nom-cours">Cours d'introduction à la programmation</h1>
 	    </section>
     <!-- Fin de titre-cours	  -->
-	    <section id="description">
+	    <section class ="color-text-1" id="description">
 	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt voluptatem voluptates, aut voluptatum! Nobis accusamus possimus voluptate veniam ratione natus in, cumque dolor earum! Odit ut eaque quas. Doloribus iste natus ipsam at illo quod consequuntur quas quisquam magni.</p>
         </section>
     <!--  Find de desc  -->
-        <section id="details-cours">
+        <section class ="color-text-1" id="details-cours">
             <ul>
                 <li class="subtitle-1">Nombre d'heures</li>
                 <li>60 heures</li>
