@@ -111,10 +111,12 @@
     if($page=="accueil"):
     ?>
         <div class="header-desktop header color-bars"> 
-            <div class="container-toggle-color">
-                <div class="toggle-color-btn">
-                    <input class="input-toggle-color" type="checkbox">
-                    <span></span>
+            <div class="container-toggle-theme">
+                <div class="toggle-theme-btn">
+                    <input class="input-toggle-theme" type="checkbox">
+                    <span class="toggle-theme-before jour"></span>
+                    <span class="toggle-theme-span jour"></span>
+                    <span class="toggle-theme-after jour"></span>
                 </div>
             </div>
         </div>

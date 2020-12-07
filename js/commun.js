@@ -2,25 +2,35 @@
   let baliseLinkThemeCSS = document.querySelector(
     "link[href $= 'Couleurs.css']"
   );
-
+  //Éléments du bouton toggle
+  let spanToggleTheme = [
+    document.querySelector(".toggle-theme-before"),
+    document.querySelector(".toggle-theme-after"),
+    document.querySelector(".toggle-theme-span"),
+  ];
   let themeDefaut = "jour";
   let themeEnregistre = localStorage.getItem("theme");
-  // Vérifie s'il n'y a pas la propriété theme dans localStorage
 
+  // Vérifie s'il n'y a pas la propriété theme dans localStorage
   if (!localStorage.getItem("theme")) {
-    // tu créé la prop avec theme = jour
     localStorage.setItem("theme", themeDefaut);
   } else {
+    //Mettre les couleurs en fonction du theme enregistré
     baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(
       /(nuit|jour)/,
       themeEnregistre
     );
+    //Mettre le style du bouton toggle en fonction du theme enregistré
+    spanToggleTheme.forEach((element) => {
+      element.classList.toggle("nuit", themeEnregistre == "nuit");
+    });
   }
 
+  //Éléments du menu Burger
   let burgerIcon = document.querySelector("#bouton-burger");
   let burgerMenu = document.querySelector(".box-container-menu-burger");
   let burgerText = document.querySelector(".container-menu-burger");
-  let toggleColor = document.querySelector(".container-toggle-color");
+  let toggleColor = document.querySelector(".container-toggle-theme");
 
   const currentTheme = localStorage.getItem("theme")
     ? localStorage.getItem("theme")
@@ -50,9 +60,21 @@
   function toggleTheme() {
     let themeChoisi = "";
     if (baliseLinkThemeCSS.href.search(/jour/) > -1) {
+      // Activer style bouton
+      spanToggleTheme.forEach((element) => {
+        element.classList.add("nuit");
+        element.classList.remove("jour");
+      });
+
       baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(/jour/, "nuit");
       themeChoisi = "nuit";
     } else {
+      // Désactiver style bouton
+      spanToggleTheme.forEach((element) => {
+        element.classList.remove("nuit");
+        element.classList.add("jour");
+      });
+
       baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(/nuit/, "jour");
       themeChoisi = "jour";
     }

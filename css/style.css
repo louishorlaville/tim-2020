@@ -665,19 +665,21 @@ body {
 }
 
 /*TOGGLE DAY NIGHT*/
-.container-toggle-color{
+.container-toggle-theme{
     position: absolute;
     top: 6px;
     right: 10px;
 }
 
-.toggle-color-btn
+.toggle-theme-btn
 {
     position: relative;
     width: 55px;
     height: 24px;
     margin: 0 auto;
     border-radius: 40px;
+    overflow: hidden;
+    /* background-color: white; */
     border: 3px solid white;
 }
 
@@ -696,23 +698,23 @@ input[type="checkbox"]
     z-index: 2;
 }
 
-/* First toggle btn */
-
-.toggle-color-btn span
+.toggle-theme-btn span
 {
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    overflow: hidden;
     opacity: 1;
-    background-color: #fff;
     border-radius: 40px;
+}
+
+.toggle-theme-span{
+    background-color: #fff;
     transition: 0.2s ease background-color, 0.2s ease opacity;
 }
 
-.toggle-color-btn span:before,.toggle-color-btn span:after
+.toggle-theme-before,.toggle-theme-after
 {
     content: '';
     position: absolute;
@@ -723,40 +725,45 @@ input[type="checkbox"]
     transition: 0.5s ease transform, 0.2s ease background-color;
 }
 
-.toggle-color-btn span:before
+.actif:nth-of-type(3){
+    transition: 0.5s ease transform, 0.2s ease background-color;
+
+}
+
+.toggle-theme-before
 {
     background-color: #fff;
-    transform: translate(-78px,0px);
+    transform: translate(-25px,0px);
     z-index: 1;
 }
 
-.toggle-color-btn span:after
+.toggle-theme-after
 {
-    background-color: #000;
-    transform: translate(-25px,0px);
+    background-color: #000 ;
+    transform: translate(3px,2px);
     z-index: 0;
 }
 
-.toggle-color-btn input[type="checkbox"]:checked + span
+.toggle-theme-span.nuit
 {
     background-color: #000;
 }
 
-.toggle-color-btn input[type="checkbox"]:active + span
+.mouse-down-button-toggle-theme
 {
     opacity: 0.5;
 }
 
-.toggle-color-btn input[type="checkbox"]:checked + span:before
+.toggle-theme-after.nuit
 {
     background-color: #000;
     transform: translate(-2px,-6px);
 }
 
-.toggle-color-btn input[type="checkbox"]:checked + span:after
+.toggle-theme-after.nuit
 {
     background-color: #fff;
-    transform: translate(4px,0px);
+    transform: translate(34px,2px);
 }
 
 
@@ -883,7 +890,7 @@ input[type="checkbox"]
 
 .fleche-page-precedente{
     margin-left: 1%;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     width: 3%;
     font-size: 50px;
 }
