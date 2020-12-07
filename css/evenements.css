@@ -13,23 +13,22 @@ main {
 
 /* ////////Placement du stade///////////////// */
 
-#stadeContainer {
-    position: relative;
+#stadeConteneurPrincipale {
     border: 2px dotted magenta;
     width: 50%;
     margin-bottom: 10px;
 }
 
-/* #baseStade {
-    height: 100%;
-    width: 100%;
-} */
+#baseStade {
+    height: 550px;
+    width: 550px;
+}
 
 /* //////// Placement des cases ////////////// */
 
-#casesContainer {
+#casesConteneur {
     border: red solid 1px;
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
     bottom: 0px;
@@ -37,38 +36,38 @@ main {
 
 .casesStade {
     position: absolute;
-    height: 20%;
-    width: 20%;
+    height: 110px;
+    width: 110px;
 }
 
-#casesContainer img:nth-child(1) {
+#casesConteneur img:nth-child(2) {
     left: 1px;
-    bottom: 2px;
+    bottom: 87px;
 }
 
-#stadeContainer img:nth-child(2) {
+#casesConteneur img:nth-child(3) {
     left: 75px;
-    bottom: 1px;
+    bottom: 87px;
 }
 
-#stadeContainer img:nth-child(3) {
+#casesConteneur img:nth-child(4) {
     left: 160px;
-    bottom: 5px;
+    bottom: 87px;
     /* height: 19%;
     width: 19%; */
 }
 
-#stadeContainer img:nth-child(4) {
+#casesConteneur img:nth-child(5) {
     left: 260px;
-    bottom: 5px;
+    bottom: 87px;
 }
 
-#stadeContainer img:nth-child(5) {
+#casesConteneur img:nth-child(6) {
     left: 344px;
     bottom: 1px;
 }
 
-#stadeContainer img:nth-child(6) {
+#casesConteneur img:nth-child(7) {
     left: 415px;
     bottom: 1px;
 }
