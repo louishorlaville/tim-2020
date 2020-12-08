@@ -671,16 +671,22 @@ body {
     right: 10px;
 }
 
+.toggle-theme-pages{
+    top: 20px;
+    right: 15px;
+}
+
 .toggle-theme-btn
 {
     position: relative;
     width: 55px;
     height: 24px;
     margin: 0 auto;
-    border-radius: 40px;
     overflow: hidden;
-    /* background-color: white; */
-    border: 3px solid white;
+    background-color: white;
+    border-radius: 40px;
+    border-width: 3px;
+    border-style: solid;
 }
 
 input[type="checkbox"]
@@ -754,16 +760,16 @@ input[type="checkbox"]
     opacity: 0.5;
 }
 
-.toggle-theme-after.nuit
+.toggle-theme-before.nuit
 {
     background-color: #000;
-    transform: translate(-2px,-6px);
+    transform: translate(25px,-3px);
 }
 
 .toggle-theme-after.nuit
 {
     background-color: #fff;
-    transform: translate(34px,2px);
+    transform: translate(32px,2px);
 }
 
 

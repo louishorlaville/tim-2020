@@ -30,7 +30,7 @@
   let burgerIcon = document.querySelector("#bouton-burger");
   let burgerMenu = document.querySelector(".box-container-menu-burger");
   let burgerText = document.querySelector(".container-menu-burger");
-  let toggleColor = document.querySelector(".container-toggle-theme");
+  let btnToggleColor = document.querySelector(".container-toggle-theme");
 
   const currentTheme = localStorage.getItem("theme")
     ? localStorage.getItem("theme")
@@ -40,7 +40,7 @@
     burgerIcon.addEventListener("click", toggleBurgerClass);
   }
 
-  toggleColor.addEventListener("click", toggleTheme);
+  btnToggleColor.addEventListener("click", toggleTheme);
 
   /*Toggle les class pour faire afficher et enlever le menu Burger*/
   function toggleBurgerClass() {
@@ -57,27 +57,30 @@
     }
   }
 
+  //Aller changer le style du bouton et la source du fichier de couleur css
   function toggleTheme() {
     let themeChoisi = "";
     if (baliseLinkThemeCSS.href.search(/jour/) > -1) {
       // Activer style bouton
+
       spanToggleTheme.forEach((element) => {
         element.classList.add("nuit");
-        element.classList.remove("jour");
       });
 
       baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(/jour/, "nuit");
       themeChoisi = "nuit";
+      btnToggleColor.style.borderColor = "white";
     } else {
       // Désactiver style bouton
       spanToggleTheme.forEach((element) => {
         element.classList.remove("nuit");
-        element.classList.add("jour");
       });
 
       baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(/nuit/, "jour");
       themeChoisi = "jour";
+      btnToggleColor.style.borderColor = "black";
     }
     localStorage.setItem("theme", themeChoisi);
+    console.log(btnToggleColor.style.borderColor);
   }
 })();

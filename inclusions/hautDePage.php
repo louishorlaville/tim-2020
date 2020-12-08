@@ -114,9 +114,9 @@
             <div class="container-toggle-theme">
                 <div class="toggle-theme-btn">
                     <input class="input-toggle-theme" type="checkbox">
-                    <span class="toggle-theme-before jour"></span>
-                    <span class="toggle-theme-span jour"></span>
-                    <span class="toggle-theme-after jour"></span>
+                    <span class="toggle-theme-before"></span>
+                    <span class="toggle-theme-span"></span>
+                    <span class="toggle-theme-after"></span>
                 </div>
             </div>
         </div>
@@ -142,6 +142,14 @@
             <a href="evenements.php" id="evenements" class="color-text-1 elt-menu-header <?= ($page=="evenements")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Vie étudiante</div></a>
             <a href="grilleDesProfs.php" id="profs" class="color-text-1 elt-menu-header <?= ($page=="profs")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Professeurs</div></a>
         </div>
+        <div class="container-toggle-theme toggle-theme-pages ">
+                <div class="toggle-theme-btn border-1">
+                    <input class="input-toggle-theme" type="checkbox">
+                    <span class="toggle-theme-before"></span>
+                    <span class="toggle-theme-span"></span>
+                    <span class="toggle-theme-after"></span>
+                </div>
+            </div>
     </div>
 </div>
 <?php if($page!="profilCours"): ?>
