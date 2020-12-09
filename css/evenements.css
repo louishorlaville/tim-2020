@@ -2,7 +2,7 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: auto;
+    height: 75%;
 }
 
 #titrePage {
@@ -17,11 +17,14 @@ main {
     border: 2px dotted magenta;
     width: 50%;
     margin-bottom: 10px;
+    margin-left: 60px;
 }
 
 #baseStade {
-    height: 550px;
-    width: 550px;
+    position: relative;
+    height: 600px;
+    width: 600px;
+    bottom: 100px;
 }
 
 /* //////// Placement des cases ////////////// */
@@ -36,40 +39,39 @@ main {
 
 .casesStade {
     position: absolute;
-    height: 110px;
-    width: 110px;
+    height: 120px;
+    width: 120px;
 }
 
 #casesConteneur img:nth-child(2) {
     left: 1px;
-    bottom: 87px;
+    bottom: 195px;
 }
 
 #casesConteneur img:nth-child(3) {
     left: 75px;
-    bottom: 87px;
+    bottom: 195px;
 }
 
 #casesConteneur img:nth-child(4) {
-    left: 160px;
-    bottom: 87px;
-    /* height: 19%;
-    width: 19%; */
+    left: 168px;
+    bottom: 199px;
 }
 
 #casesConteneur img:nth-child(5) {
-    left: 260px;
-    bottom: 87px;
+    left: 285px;
+    bottom: 197px;
 }
 
 #casesConteneur img:nth-child(6) {
-    left: 344px;
-    bottom: 1px;
+    left: 385px;
+    bottom: 192px;
+    /* height: 120px; */
 }
 
 #casesConteneur img:nth-child(7) {
-    left: 415px;
-    bottom: 1px;
+    left: 473px;
+    bottom: 192px;
 }
 
 /*//////// Boite Info événement /////// */
@@ -78,11 +80,10 @@ main {
     background-color: black;
     border: solid white 10px;
     color: white;
-    height:50%;
-    width:55%;
-    margin-right: 100px;
-    margin-left: 100px;
-    padding: 25px 25px 10px 25px;
+    height:55%;
+    width:30%;
+    margin: 20px 150px 0px 100px ;
+    padding: 25px 25px 30px 25px;
 }
 
 #infoEvenement h1 {
@@ -94,7 +95,7 @@ main {
 }
 
 #infoEvenement p {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 /*//////// Carousel /////// */
