@@ -19,7 +19,7 @@
 			</div>		    
 		</section>
 		<section id="infoEvenement">
-			<h1 id="titreEvenenment">Nom de l'événement</h1>
+			<h1 id="titreEvenement">Nom de l'événement</h1>
 			<h5 id="dateEvenement">04/11/2019</h5>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, at officiis.
 				 Fugiat officia quas aliquid tempora iste eaque quibusdam cupiditate? 

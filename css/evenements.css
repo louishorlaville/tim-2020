@@ -11,10 +11,10 @@ main {
     width: 50%;
 }
 
-/* ////////Placement du stade///////////////// */
+/* //////// Placement du stade //////////////// */
 
 #stadeConteneurPrincipale {
-    border: 2px dotted magenta;
+    /* border: 2px dotted magenta; */
     width: 50%;
     margin-bottom: 10px;
     margin-left: 60px;
@@ -30,7 +30,7 @@ main {
 /* //////// Placement des cases ////////////// */
 
 #casesConteneur {
-    border: red solid 1px;
+    /* border: red solid 1px; */
     position: relative;
     height: 100%;
     width: 100%;
@@ -98,7 +98,7 @@ main {
     margin-bottom: 50px;
 }
 
-/*//////// Carousel /////// */
+/*///////////// Carousel ////////////// */
 
 #carousel {
     width: 100%;
@@ -112,7 +112,7 @@ main {
 #cadreImage {
     width: 25%;
     height: 10%;
-    border: 3px solid black;
+    border: 3px solid white;
     /* margin: 0 auto; */
 }
 
