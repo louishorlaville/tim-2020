@@ -69,6 +69,14 @@
         <div id="logo-header-mobile">
             <a href=<?=($page=="accueil")?"./index.php":"../index.php"?>><img id="img-logo-header-mobile" src=<?= ($page=="accueil")?"./images/img/logoTim.png":"../images/img/logoTim.png"?> alt="Logo Tim"/></a>
         </div>
+        <div class="container-toggle-theme toggle-theme-pages ">
+            <div class="toggle-theme-btn border-1">
+                <input class="input-toggle-theme" type="checkbox">
+                <span class="toggle-theme-before"></span>
+                <span class="toggle-theme-span"></span>
+                <span class="toggle-theme-after"></span>
+            </div>
+        </div>
         <div class="container-icon-burger">
             <button id="bouton-burger" class="hamburger hamburger--collapse" type="button">
                 <span class="hamburger-box">
@@ -143,13 +151,13 @@
             <a href="grilleDesProfs.php" id="profs" class="color-text-1 elt-menu-header <?= ($page=="profs")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Professeurs</div></a>
         </div>
         <div class="container-toggle-theme toggle-theme-pages ">
-                <div class="toggle-theme-btn border-1">
-                    <input class="input-toggle-theme" type="checkbox">
-                    <span class="toggle-theme-before"></span>
-                    <span class="toggle-theme-span"></span>
-                    <span class="toggle-theme-after"></span>
-                </div>
+            <div class="toggle-theme-btn border-1">
+                <input class="input-toggle-theme" type="checkbox">
+                <span class="toggle-theme-before"></span>
+                <span class="toggle-theme-span"></span>
+                <span class="toggle-theme-after"></span>
             </div>
+        </div>
     </div>
 </div>
 <?php if($page!="profilCours"): ?>
