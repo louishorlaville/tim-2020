@@ -2,7 +2,7 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: auto;
+    height: 75%;
 }
 
 #titrePage {
@@ -11,25 +11,27 @@ main {
     width: 50%;
 }
 
-/* ////////Placement du stade///////////////// */
+/* //////// Placement du stade //////////////// */
 
-#stadeContainer {
-    position: relative;
-    border: 2px dotted magenta;
+#stadeConteneurPrincipale {
+    /* border: 2px dotted magenta; */
     width: 50%;
     margin-bottom: 10px;
+    margin-left: 60px;
 }
 
-/* #baseStade {
-    height: 100%;
-    width: 100%;
-} */
+#baseStade {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    bottom: 100px;
+}
 
 /* //////// Placement des cases ////////////// */
 
-#casesContainer {
-    border: red solid 1px;
-    position: absolute;
+#casesConteneur {
+    /* border: red solid 1px; */
+    position: relative;
     height: 100%;
     width: 100%;
     bottom: 0px;
@@ -37,40 +39,39 @@ main {
 
 .casesStade {
     position: absolute;
-    height: 20%;
-    width: 20%;
+    height: 120px;
+    width: 120px;
 }
 
-#casesContainer img:nth-child(1) {
+#casesConteneur img:nth-child(2) {
     left: 1px;
-    bottom: 2px;
+    bottom: 195px;
 }
 
-#stadeContainer img:nth-child(2) {
+#casesConteneur img:nth-child(3) {
     left: 75px;
-    bottom: 1px;
+    bottom: 195px;
 }
 
-#stadeContainer img:nth-child(3) {
-    left: 160px;
-    bottom: 5px;
-    /* height: 19%;
-    width: 19%; */
+#casesConteneur img:nth-child(4) {
+    left: 168px;
+    bottom: 199px;
 }
 
-#stadeContainer img:nth-child(4) {
-    left: 260px;
-    bottom: 5px;
+#casesConteneur img:nth-child(5) {
+    left: 285px;
+    bottom: 197px;
 }
 
-#stadeContainer img:nth-child(5) {
-    left: 344px;
-    bottom: 1px;
+#casesConteneur img:nth-child(6) {
+    left: 385px;
+    bottom: 192px;
+    /* height: 120px; */
 }
 
-#stadeContainer img:nth-child(6) {
-    left: 415px;
-    bottom: 1px;
+#casesConteneur img:nth-child(7) {
+    left: 473px;
+    bottom: 192px;
 }
 
 /*//////// Boite Info événement /////// */
@@ -79,11 +80,10 @@ main {
     background-color: black;
     border: solid white 10px;
     color: white;
-    height:50%;
-    width:55%;
-    margin-right: 100px;
-    margin-left: 100px;
-    padding: 25px 25px 10px 25px;
+    height:55%;
+    width:30%;
+    margin: 20px 150px 0px 100px ;
+    padding: 25px 25px 30px 25px;
 }
 
 #infoEvenement h1 {
@@ -95,10 +95,10 @@ main {
 }
 
 #infoEvenement p {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
-/*//////// Carousel /////// */
+/*///////////// Carousel ////////////// */
 
 #carousel {
     width: 100%;
@@ -112,7 +112,7 @@ main {
 #cadreImage {
     width: 25%;
     height: 10%;
-    border: 3px solid black;
+    border: 3px solid white;
     /* margin: 0 auto; */
 }
 
