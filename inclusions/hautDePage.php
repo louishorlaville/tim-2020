@@ -69,7 +69,7 @@
         <div id="logo-header-mobile">
             <a href=<?=($page=="accueil")?"./index.php":"../index.php"?>><img id="img-logo-header-mobile" src=<?= ($page=="accueil")?"./images/img/logoTim.png":"../images/img/logoTim.png"?> alt="Logo Tim"/></a>
         </div>
-        <div class="container-toggle-theme toggle-theme-pages ">
+        <div class="container-mobile-toggle-theme toggle-theme-pages ">
             <div class="toggle-theme-btn border-1">
                 <input class="input-toggle-theme" type="checkbox">
                 <span class="toggle-theme-before"></span>
