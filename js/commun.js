@@ -4,10 +4,11 @@
   );
   //Éléments du bouton toggle
   let spanToggleTheme = [
-    document.querySelector(".toggle-theme-before"),
-    document.querySelector(".toggle-theme-after"),
-    document.querySelector(".toggle-theme-span"),
+    document.querySelectorAll(".toggle-theme-before"),
+    document.querySelectorAll(".toggle-theme-after"),
+    document.querySelectorAll(".toggle-theme-span"),
   ];
+
   let themeDefaut = "jour";
   let themeEnregistre = localStorage.getItem("theme");
 
@@ -22,7 +23,8 @@
     );
     //Mettre le style du bouton toggle en fonction du theme enregistré
     spanToggleTheme.forEach((element) => {
-      element.classList.toggle("nuit", themeEnregistre == "nuit");
+      element[0].classList.toggle("nuit", themeEnregistre == "nuit");
+      element[1].classList.toggle("nuit", themeEnregistre == "nuit");
     });
   }
 
@@ -31,6 +33,9 @@
   let burgerMenu = document.querySelector(".box-container-menu-burger");
   let burgerText = document.querySelector(".container-menu-burger");
   let btnToggleColor = document.querySelector(".container-toggle-theme");
+  let btnToggleColorMobile = document.querySelector(
+    ".container-mobile-toggle-theme"
+  );
 
   const currentTheme = localStorage.getItem("theme")
     ? localStorage.getItem("theme")
@@ -40,7 +45,13 @@
     burgerIcon.addEventListener("click", toggleBurgerClass);
   }
 
-  btnToggleColor.addEventListener("click", toggleTheme);
+  /*eventListener pour le bouton mobile et desktop*/
+  btnToggleColorMobile.addEventListener("click", function () {
+    toggleTheme(0);
+  });
+  btnToggleColor.addEventListener("click", function () {
+    toggleTheme(1);
+  });
 
   /*Toggle les class pour faire afficher et enlever le menu Burger*/
   function toggleBurgerClass() {
@@ -58,13 +69,12 @@
   }
 
   //Aller changer le style du bouton et la source du fichier de couleur css
-  function toggleTheme() {
+  function toggleTheme(device) {
     let themeChoisi = "";
     if (baliseLinkThemeCSS.href.search(/jour/) > -1) {
       // Activer style bouton
-
       spanToggleTheme.forEach((element) => {
-        element.classList.add("nuit");
+        element[device].classList.add("nuit");
       });
 
       baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(/jour/, "nuit");
@@ -73,7 +83,7 @@
     } else {
       // Désactiver style bouton
       spanToggleTheme.forEach((element) => {
-        element.classList.remove("nuit");
+        element[device].classList.remove("nuit");
       });
 
       baliseLinkThemeCSS.href = baliseLinkThemeCSS.href.replace(/nuit/, "jour");
@@ -81,6 +91,5 @@
       btnToggleColor.style.borderColor = "black";
     }
     localStorage.setItem("theme", themeChoisi);
-    console.log(btnToggleColor.style.borderColor);
   }
 })();
