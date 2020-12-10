@@ -1217,7 +1217,7 @@ input[type="checkbox"]
     #logo-header-mobile{
         margin-top: 3px;
         margin-left: 8px;
-        width:10%;
+        width:auto;
     }
 
     #logo-header-mobile>a{
@@ -1230,9 +1230,15 @@ input[type="checkbox"]
         width: 100%;
     }
 
+    /*bouton toggle day night*/
+    .container-toggle-theme{
+        position: unset;
+        margin-left: 5%;
+    }
+
     /* Burger Menu */
     .container-icon-burger{
-        margin-left: 65vw;
+        margin-left: 35vw;
         color: white;
     }
 
