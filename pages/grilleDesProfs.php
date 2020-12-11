@@ -3,14 +3,25 @@
     require("../inclusions/hautDePage.php");
 ?>
 
-        <div class="container-boite-apercu">
-            <div class="background-opacite"></div>
-            <div class="boite-apercu color-bars">wesh</div>
-        </div>
+
+<div id="boite">
+    <div id="out"></div>
+    <img id="photo" src="../images/img/profTemp.jpg" alt="prof">
+    <h1 id="nomBoiteProf">nom du prof</h1>
+    <p id="texteProf">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at tortor ut risus imperdiet condimentum. Phasellus cursus tellus vitae nulla ornare, a efficitur quam dictum. Pellentesque tempus enim ex, quis vulputate tellus fermentum sed. Integer ut massa tristique, posuere tellus vel, eleifend massa. Donec accumsan lacus ut urna sagittis, at maximus purus elementum. Cras pellentesque sit amet nisi eu laoreet. Phasellus tincidunt ac tellus et molestie. Nunc non purus tortor. Cras sit amet eleifend massa. Nullam tempus tristique blandit. Donec ligula nibh, tincidunt quis est eu, condimentum pretium nunc. Maecenas scelerisque, ex a suscipit pharetra, nunc eros hendrerit neque, vel gravida massa est at leo.</p>
+    </div>
+
+<div id="contenu-principal">
+    <div id="contenu-titre-profs">
+        <div class="titre-page" id="titre-profs">NOS ENSEIGNANTS</div>
+    </div>
+    
+  
       <div id="container-profs">
-        &#10240;
+        
         <div class="prof-prog prof" id="martin"> 
             <img id="martin0" class="icone-prof" src="../images/svg/cercleProf.svg">
+
             <div class="nom-prof">Martin</div> 
         </div>
         <div class="prof-prog prof" id="dominic">
@@ -73,7 +84,12 @@
 
 
     </div>
+
+</footer>
+<script src="../js/prof.js"></script>
+
 </div>
+
 
 <?php 
     require("../inclusions/piedDePage.php");

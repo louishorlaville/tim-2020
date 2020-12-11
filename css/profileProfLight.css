@@ -37,7 +37,7 @@
 }
 #gregory{
     position: absolute;
-    left: 5%;
+    left: 22%;
     top:12%;
 }
 #camille{
@@ -77,8 +77,55 @@
 }
 
 #boite{
-    background-color: red;
-
-    height: 80%;
-    width: auto;
+    display: none;
+    background-color: rgb(219, 83, 83);
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    z-index: 2;
+    height: 80vh;
+    width: 80vw;
 }
+
+#photo{
+    background-color:blue;
+    position: relative;
+    left: 85%;
+    top: 5%;
+    z-index: 2;
+    height: 20%;
+    width: 1    0%;
+    border:  solid 5px black;
+}
+#nomBoiteProf{
+
+    position: relative;
+    left: 5%;
+bottom: 15%;
+    z-index: 2;
+    font-size: 10vh;
+}
+#texteProf{
+margin: 0 5%;
+line-height: 1.6;
+}
+
+#contenu-profs{
+    height: 80vh;
+    width: 1vw;
+    }
+
+    #out{
+        position: relative;
+        left: 2%;
+        top: 2%;
+        background-color:rgb(0, 0, 0);
+        height: 5%;
+        width: 5%;
+        cursor: pointer;
+        }
+    
+    .prof:hover{
+        cursor: pointer;
+
+    }
