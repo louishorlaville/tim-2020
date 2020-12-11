@@ -1,0 +1,263 @@
+{
+    "sessions":[
+        {
+            "classes":[
+                {
+                    "classID":"582-1M1",
+                    "className":"Création Vidéo",
+                    "classDesc":"",
+                    "classType":"",
+                    "classTags":[
+                        "Environement Professionnel",
+                        "Création de Médias",
+                        "Conception"
+                    ]
+                },
+                {
+                    "classID":"582-1M2",
+                    "className":"Conception graphique et img. matricielle",
+                    "classDesc":"n",
+                    "classType":"",
+                    "classTags":[
+                        "Environement Professionnel",
+                        "Création de Médias",
+                        "Conception"
+                    ]
+                },
+                {
+                    "classID":"582-1W1",
+                    "className":"Mise en page Web",
+                    "classDesc":"",
+                    "classType":"web",
+                    "classTags":[
+                        "Environement Professionnel",
+                        "Intégration"
+                    ]
+                },
+                {
+                    "classID":"582-1J1",
+                    "className":"Animation et interactivité en jeu",
+                    "classDesc":"",
+                    "classType":"jeu",
+                    "classTags":[
+                        "Environement Professionnel",
+                        "Création de Médias",
+                        "Programmation"
+                    ]
+                }
+            ]
+        },
+        {
+            "classes":[
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"web",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"jeu",
+                    "classTags":[
+                    ]
+                }
+            ]
+        },
+        {
+            "classes":[
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"web",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"jeu",
+                    "classTags":[
+                    ]
+                }
+            ]
+        },
+        {
+            "classes":[
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"web",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"jeu",
+                    "classTags":[
+                    ]
+                }
+            ]
+        },
+        {
+            "classes":[
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"web",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"0000-0000",
+                    "className":"Class Name",
+                    "classDesc":"Class Description",
+                    "classType":"jeu",
+                    "classTags":[
+                    ]
+                }
+            ]
+        },
+        {
+            "classes":[
+                {
+                    "classID":"582-6N3",
+                    "className":"Stage",
+                    "classDesc":"",
+                    "classType":"final",
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"582-6N2",
+                    "className":"Projet de fin d'études",
+                    "classDesc":"",
+                    "classType":"final",
+                    "classTags":[
+                    ]
+                }
+            ]
+        }
+    ]
+}

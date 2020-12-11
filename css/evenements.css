@@ -2,59 +2,118 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: auto;
+    height: 75%;
 }
 
 #titrePage {
     margin-left: 150px;
+    border-bottom: 5px solid #efca56 ;
+    width: 50%;
+}
+
+/* //////// Placement du stade //////////////// */
+
+#stadeConteneurPrincipale {
+    /* border: 2px dotted magenta; */
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: 60px;
 }
 
 #baseStade {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    bottom: 100px;
+}
+
+/* //////// Placement des cases ////////////// */
+
+#casesConteneur {
+    /* border: red solid 1px; */
+    position: relative;
     height: 100%;
     width: 100%;
+    bottom: 0px;
 }
 
 .casesStade {
-    height: 10%;
-    width: 10%;
+    position: absolute;
+    height: 120px;
+    width: 120px;
 }
 
-/* Boite Info événement */
+#casesConteneur img:nth-child(2) {
+    left: 1px;
+    bottom: 195px;
+}
+
+#casesConteneur img:nth-child(3) {
+    left: 75px;
+    bottom: 195px;
+}
+
+#casesConteneur img:nth-child(4) {
+    left: 168px;
+    bottom: 199px;
+}
+
+#casesConteneur img:nth-child(5) {
+    left: 285px;
+    bottom: 197px;
+}
+
+#casesConteneur img:nth-child(6) {
+    left: 385px;
+    bottom: 192px;
+    /* height: 120px; */
+}
+
+#casesConteneur img:nth-child(7) {
+    left: 473px;
+    bottom: 192px;
+}
+
+/*//////// Boite Info événement /////// */
 
 #infoEvenement {
     background-color: black;
+    border: solid white 10px;
     color: white;
-    border-radius: 10%;
-    height:60%;
-    width:55%;
-    margin-right: 100px;
-    padding: 25px 25px 10px 25px;
+    height:55%;
+    width:30%;
+    margin: 20px 150px 0px 100px ;
+    padding: 25px 25px 30px 25px;
 }
 
 #infoEvenement h1 {
     margin-bottom: 10px;
 }
 
-#infoEvenement h5 {
-    margin-bottom: 15px;
+#infoEvenement #dateEvenement {
+    margin-bottom: 30px;
 }
 
 #infoEvenement p {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
+
+/*///////////// Carousel ////////////// */
 
 #carousel {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
 }
 
 #cadreImage {
-    width: 90%;
-    border: 1px solid pink;
-    margin: 0 auto;
+    width: 25%;
+    height: 10%;
+    border: 3px solid white;
+    /* margin: 0 auto; */
 }
 
 #cadreImage img {
@@ -66,5 +125,5 @@ main {
 #carousel span {
     color: gray;
     font-size: 2em;
-    margin: 0px 10px ;
+    margin: 0px 5px ;
 }
