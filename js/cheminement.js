@@ -38,8 +38,8 @@ function getClasses(session) {
     if (classList[currentClass] != null) {
       let headerColor = "color-1";
 
-      switch (classList[currentClass].classType) {
-        case "stage":
+      switch (classList[i].classType) {
+        case "final":
           headerColor = "color-5";
           break;
         case "web":
@@ -105,9 +105,9 @@ function getClasses(session) {
       `s"><span class="class-header-mobile ` +
       headerColor +
       `">` +
-      clastList[i].classID +
+      classList[i].classID +
       `</span><div class="class-content-mobile color-bars">` +
-      clastList[i].className +
+      classList[i].className +
       `</div></th></tr>    
     `;
   }

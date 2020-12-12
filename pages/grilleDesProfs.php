@@ -4,11 +4,22 @@
 ?>
 
 
-<div id="boite">
-    <div id="out"></div>
-    <img id="photo" src="../images/img/profTemp.jpg" alt="prof">
-    <h1 id="nomBoiteProf">nom du prof</h1>
-    <p id="texteProf">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at tortor ut risus imperdiet condimentum. Phasellus cursus tellus vitae nulla ornare, a efficitur quam dictum. Pellentesque tempus enim ex, quis vulputate tellus fermentum sed. Integer ut massa tristique, posuere tellus vel, eleifend massa. Donec accumsan lacus ut urna sagittis, at maximus purus elementum. Cras pellentesque sit amet nisi eu laoreet. Phasellus tincidunt ac tellus et molestie. Nunc non purus tortor. Cras sit amet eleifend massa. Nullam tempus tristique blandit. Donec ligula nibh, tincidunt quis est eu, condimentum pretium nunc. Maecenas scelerisque, ex a suscipit pharetra, nunc eros hendrerit neque, vel gravida massa est at leo.</p>
+<div id="container-boite">
+    <div id="opacity-boite"></div>
+    <div id="boite">
+        <div id="container-out-boite"><div id="out-boite"></div></div>
+        <div id="contenu-boite">
+            <div id="header-boite">
+                <h1 id="container-nom-boite">
+                    <div id="nom-boite">Camille Semaan</div>
+                    <div id="date-prof-boite"><p>Enseignant à Maisonneuve</p><p>depuis <span id="annee-boite"></span></p></div>
+                </h1>    
+                <img id="photo-boite" src="../images/img/profTemp.jpg" alt="Photo prof">
+            </div>
+            <div id="description-boite"></div>
+        </div>
+    </div>
+    
 </div>
 
 <div id="contenu-principal">  

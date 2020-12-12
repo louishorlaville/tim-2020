@@ -2,72 +2,89 @@
     "profs":[
         { 
             "nom":"Martin St-Pierre",
-            "photo":"",
+            "annee":"2015",
+            "photo":"martin.jpg",
             "description":""
         },
         { 
-            "nom":"Dominique Girard",
-            "photo":"",
+            "nom":"Dominic Girard",
+            "annee":"2015",
+            "photo":"dominique.jpg",
             "description":""
         },
         { 
             "nom":"Manon Bertrand",
-            "photo":"",
-            "description":""
+            "annee":"2015",
+            "photo":"manon.jpg",
+            "description":[
+                "Je me rappelle d’être tombée dans la potion magique lorsque j’étais petite. Ensuite, j’ai visité tous les pays avec Tintin. Et, ça n’a plus cessé. De Giacometti à Es Devlin (scénographe) j’ai parcouru le monde des images, des mots et de la musique. Ce monde est ma passion parce que : ",
+                "« Avec l'amour, l'amitié et la fraternité d'action, l'art est le plus court chemin d'un homme à un autre. »",
+                "-Claude Roy"
+            ]
         },
         { 
             "nom":"Mathieu Dionne",
-            "photo":"",
+            "annee":"2015",
+            "photo":"mathieu.jpg",
             "description":""
         },
         { 
             "nom":"David Ross",
-            "photo":"",
+            "annee":"2015",
+            "photo":"david.jpg",
             "description":""
         },
         { 
             "nom":"Denis Pellerin",
-            "photo":"",
+            "annee":"2015",
+            "photo":"denis.jpg  ",
             "description":""
         },
         { 
             "nom":"Grégory Bony",
-            "photo":"",
+            "annee":"2015",
+            "photo":"gregory.jpg",
             "description":""
         },
         { 
             "nom":"Camille Semaan",
-            "photo":"",
+            "annee":"2015",
+            "photo":"camille.jpg",
             "description":""
         },
         { 
             "nom":"Vahik Toroussian",
-            "photo":"",
+            "annee":"2015",
+            "photo":"vahik.jpg",
             "description":""
         },
         { 
             "nom":"Vincent Leblanc",
-            "photo":"",
+            "annee":"2015",
+            "photo":"vincent.jpg",
             "description":""
         },
         { 
             "nom":"Johanne Massé",
-            "photo":"",
+            "annee":"2015",
+            "photo":"johanne.jpg",
             "description":""
         }, 
         { 
             "nom":"Eddy Martin",
-            "photo":"",
+            "photo":"eddy.jpg",
             "description":""
         },
         { 
             "nom":"Caroline Martin",
-            "photo":"",
+            "annee":"2015",
+            "photo":"caroline.jpg",
             "description":""
         },
         { 
-            "nom":"Ahmed",
-            "photo":"",
+            "nom":"Ahmed Boudjani",
+            "annee":"2015",
+            "photo":"ahmed.jpg",
             "description":""
         }
     ]

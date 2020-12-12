@@ -16,90 +16,37 @@ function getClassesJSON() {
 }
 
 let profs = document.querySelectorAll(".prof");
-let boiteInfos = document.querySelector("#boite");
+let containerBoiteInfos = document.querySelector("#container-boite");
+let boiteInfos = document.querySelector("#contenu-boite");
 
 //Afficher les infos du prof choisi sur la boite d'apercu
 for (let x = 0; x < profs.length; x++) {
   profs[x].addEventListener("click", function () {
     console.log(profsData);
-    boiteInfos.style.display = "block";
-    boiteInfos.children[2].innerHTML = profsData.profs[x].nom;
-    boiteInfos.children[3].innerHTML = profsData.profs[x].description;
+    containerBoiteInfos.style.display = "block";
+    //Insérer nom
+    boiteInfos.children[0].children[0].children[0].innerHTML = profsData.profs[
+      x
+    ].nom.toUpperCase();
+    //Insérer année
+    boiteInfos.children[0].children[0].children[1].children[1].children[0].innerHTML =
+      profsData.profs[x].annee;
+    //Insérer la photo
+    boiteInfos.children[0].children[1].src =
+      "../images/img/profs/" + profsData.profs[x].photo;
+    //S'assurer que aucune description n'est affiché
+    boiteInfos.children[2].innerHTML = "";
+    //Créer une balise P pour chaque élément de la description d'un prof
+    profsData.profs[x].description.forEach((element) => {
+      boiteInfos.children[2].appendChild(
+        document.createElement("p")
+      ).innerHTML = element;
+    });
   });
 }
 
 //Enlever la boite d'apercu
-document.getElementById("out").addEventListener("click", function () {
-  boiteInfos.style.display = "none";
+document.getElementById("out-boite").addEventListener("click", function () {
+  containerBoiteInfos.style.display = "none";
   console.log("ok");
 });
-
-/*d.getElementById("martin").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Martin";
-});
-
-d.getElementById("dominic").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Dominic";
-});
-
-d.getElementById("manon").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Manon";
-});
-
-d.getElementById("mathieu").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Mathieu";
-});
-
-d.getElementById("david").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "David";
-});
-
-d.getElementById("denis").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Denis";
-});
-
-d.getElementById("gregory").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Gregory";
-});
-
-d.getElementById("camille").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Camille";
-});
-
-d.getElementById("vahik").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Vahik";
-});
-
-d.getElementById("eddy").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Eddy";
-});
-
-d.getElementById("caroline").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Caroline";
-});
-
-d.getElementById("ahmed").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Ahmed";
-});
-
-d.getElementById("vincent").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Vincent";
-});
-
-d.getElementById("johanne").addEventListener("click", function () {
-  d.getElementById("boite").style.display = "block";
-  d.getElementById("nomBoiteProf").innerHTML = "Johanne";
-});*/
