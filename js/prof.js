@@ -41,6 +41,8 @@ for (let x = 0; x < profs.length; x++) {
       profsData.profs[x].description.forEach((element) => {
         let p = boiteInfos.children[1].appendChild(document.createElement("p"));
         p.innerHTML = element;
+
+        //Changer un peu le style des éléments pour la description de Ahmed
         if (
           profsData.profs[x].nom == "Ahmed Boudjani" &&
           boiteInfos.children[1].children.length > 1
