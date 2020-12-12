@@ -1,6 +1,10 @@
 <?php 
     $page = "profs";
     require("../inclusions/hautDePage.php");
+    require("../inclusions/fonctions/enleverAccents.php");
+
+    $jsonProfs= file_get_contents('../data/profs.json'); //Aller chercher les datas
+    $dataProfs = array_values(json_decode($jsonProfs, true)); // Decoder le JSON en tableau associatif
 ?>
 
 
@@ -24,12 +28,19 @@
 
 <div id="contenu-principal">  
       <div id="container-profs">
+        <?php  foreach($dataProfs[0] as $datas=>$data){
+            $nomArray = explode(" ", $data["nom"]);
+            $prenom = strtolower($nomArray[0]);
+        ?>
+            <div class="prof-<?=$data["type"]?> prof" id=<?=unaccent($prenom)?> > 
+                <img id="signe-<?=$prenom?>" class="icone-prof" src="../images/svg/<?=($data["type"]=="prog")?"plusProf.svg":"cercleProf.svg"?>">
+                <div class="nom-prof"><?=$prenom?></div> 
+            </div> 
+        <?php }?>
+
         
-        <div class="prof-prog prof" id="martin" > 
-            <img id="martin0" class="icone-prof" src="../images/svg/cercleProf.svg">
-            <div class="nom-prof">Martin</div> 
-        </div>
-        <div class="prof-prog prof" id="dominic">
+        
+        <!-- <div class="prof-prog prof" id="dominic">
             <img id="dominic0" class="icone-prof" src="../images/svg/cercleProf.svg">
             <div class="nom-prof">Dominic</div>
         </div>
@@ -80,7 +91,7 @@
         <div class="prof-design prof" id="ahmed">
             <img id="ahmed+" class="icone-prof" src="../images/svg/plusProf.svg">
             <div class="nom-prof">Ahmed</div>
-        </div>
+        </div> -->
     </div>
         
     

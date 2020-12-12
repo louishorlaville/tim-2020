@@ -2,18 +2,21 @@
     "profs":[
         { 
             "nom":"Martin St-Pierre",
+            "type":"art",
             "annee":"2015",
             "photo":"martin.jpg",
             "description":[]
         },
         { 
             "nom":"Dominic Girard",
+            "type":"art",
             "annee":"2015",
             "photo":"dominique.jpg",
             "description":[]
         },
         { 
             "nom":"Manon Bertrand",
+            "type":"art",
             "annee":"2015",
             "photo":"manon.jpg",
             "description":[
@@ -24,42 +27,49 @@
         },
         { 
             "nom":"Mathieu Dionne",
+            "type":"art",
             "annee":"2015",
             "photo":"mathieu.jpg",
             "description":[]
         },
         { 
             "nom":"David Ross",
+            "type":"art",
             "annee":"2015",
             "photo":"david.jpg",
             "description":[]
         },
         { 
             "nom":"Denis Pellerin",
+            "type":"art",
             "annee":"2015",
             "photo":"denis.jpg  ",
             "description":[]
         },
         { 
             "nom":"Grégory Bony",
+            "type":"art",
             "annee":"2015",
             "photo":"gregory.jpg",
             "description":[]
         },
         { 
             "nom":"Camille Semaan",
+            "type":"prog",
             "annee":"2015",
             "photo":"camille.jpg",
             "description":[]
         },
         { 
             "nom":"Vahik Toroussian",
+            "type":"prog",
             "annee":"2015",
             "photo":"vahik.jpg",
             "description":[]
         },
         { 
             "nom":"Vincent Leblanc",
+            "type":"prog",
             "annee":"2015",
             "photo":"vincent.jpg",
             "description":[
@@ -72,17 +82,21 @@
         },
         { 
             "nom":"Johanne Massé",
+            "type":"prog",
             "annee":"2015",
             "photo":"johanne.jpg",
             "description":[]
         }, 
         { 
             "nom":"Eddy Martin",
+            "type":"prog",
+            "annee":"2015",
             "photo":"eddy.jpg",
             "description":[]
         },
         { 
             "nom":"Caroline Martin",
+            "type":"prog",
             "annee":"2015",
             "photo":"caroline.jpg",
             "description":[
@@ -94,6 +108,7 @@
         },
         { 
             "nom":"Ahmed Boudjani",
+            "type":"prog",
             "annee":"2015",
             "photo":"ahmed.jpg",
             "description":[
