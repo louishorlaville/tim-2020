@@ -18,11 +18,11 @@ function getClassesJSON() {
 let profs = document.querySelectorAll(".prof");
 let containerBoiteInfos = document.querySelector("#container-boite");
 let boiteInfos = document.querySelector("#contenu-boite");
+let descriptionBoite = document.querySelector("#description-boite");
 
 //Afficher les infos du prof choisi sur la boite d'apercu
 for (let x = 0; x < profs.length; x++) {
   profs[x].addEventListener("click", function () {
-    console.log(profsData);
     containerBoiteInfos.style.display = "block";
     //Insérer nom
     boiteInfos.children[0].children[0].children[0].innerHTML = profsData.profs[
@@ -35,18 +35,24 @@ for (let x = 0; x < profs.length; x++) {
     boiteInfos.children[0].children[1].src =
       "../images/img/profs/" + profsData.profs[x].photo;
     //S'assurer que aucune description n'est affiché
-    boiteInfos.children[2].innerHTML = "";
+    boiteInfos.children[1].innerHTML = "";
     //Créer une balise P pour chaque élément de la description d'un prof
-    profsData.profs[x].description.forEach((element) => {
-      boiteInfos.children[2].appendChild(
-        document.createElement("p")
-      ).innerHTML = element;
-    });
+    if (profsData.profs[x].description.length != 0) {
+      profsData.profs[x].description.forEach((element) => {
+        let p = boiteInfos.children[1].appendChild(document.createElement("p"));
+        p.innerHTML = element;
+        if (
+          profsData.profs[x].nom == "Ahmed Boudjani" &&
+          boiteInfos.children[1].children.length > 1
+        ) {
+          p.classList.add("liste-description-boite");
+        }
+      });
+    }
   });
 }
 
 //Enlever la boite d'apercu
 document.getElementById("out-boite").addEventListener("click", function () {
   containerBoiteInfos.style.display = "none";
-  console.log("ok");
 });

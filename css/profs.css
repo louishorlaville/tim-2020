@@ -180,10 +180,23 @@
 #description-boite{
     height: 70%;
     align-self: stretch;
+    overflow: auto;
+    font-weight: 300;
 }
 
 #description-boite >p{
     margin-top: 3%;
+}
+.liste-description-boite::before{
+    content: "- ";
+}
+
+#description-boite::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+#description-boite::-webkit-scrollbar-thumb{
+    background-color: white;
 }
 
 #container-profs{

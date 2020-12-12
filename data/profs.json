@@ -4,13 +4,13 @@
             "nom":"Martin St-Pierre",
             "annee":"2015",
             "photo":"martin.jpg",
-            "description":""
+            "description":[]
         },
         { 
             "nom":"Dominic Girard",
             "annee":"2015",
             "photo":"dominique.jpg",
-            "description":""
+            "description":[]
         },
         { 
             "nom":"Manon Bertrand",
@@ -26,66 +26,93 @@
             "nom":"Mathieu Dionne",
             "annee":"2015",
             "photo":"mathieu.jpg",
-            "description":""
+            "description":[]
         },
         { 
             "nom":"David Ross",
             "annee":"2015",
             "photo":"david.jpg",
-            "description":""
+            "description":[]
         },
         { 
             "nom":"Denis Pellerin",
             "annee":"2015",
             "photo":"denis.jpg  ",
-            "description":""
+            "description":[]
         },
         { 
             "nom":"Grégory Bony",
             "annee":"2015",
             "photo":"gregory.jpg",
-            "description":""
+            "description":[]
         },
         { 
             "nom":"Camille Semaan",
             "annee":"2015",
             "photo":"camille.jpg",
-            "description":""
+            "description":[]
         },
         { 
             "nom":"Vahik Toroussian",
             "annee":"2015",
             "photo":"vahik.jpg",
-            "description":""
+            "description":[]
         },
         { 
             "nom":"Vincent Leblanc",
             "annee":"2015",
             "photo":"vincent.jpg",
-            "description":""
+            "description":[
+                "Mon séjour au Collège de Maisonneuve a débuté à l’automne 2001.  J’ai donné mes premiers cours au Département TIM à l’hiver 2002.",
+                "J’ai été formé à l’École de Technologie Supérieure (génie), à l’Université de Montréal (communication) et à l’Université Bishops (arts visuels).",
+                "Ces dernières années, j’ai surtout donné les cours de création Web de 1ère année du programme de TIM (582-1W1 et 382-2W2), ainsi que le cours Production artistique et arts médiatiques, en 3ème session du programme Science, Lettres et Arts.",
+                "Je suis aussi un des représentants à la coordination départementale depuis la session d’automne 2018.",
+                "Durant mes temps libres, j’aime faire plusieurs choses, mais je préfère par-dessus tout : dormir!"
+            ]
         },
         { 
             "nom":"Johanne Massé",
             "annee":"2015",
             "photo":"johanne.jpg",
-            "description":""
+            "description":[]
         }, 
         { 
             "nom":"Eddy Martin",
             "photo":"eddy.jpg",
-            "description":""
+            "description":[]
         },
         { 
             "nom":"Caroline Martin",
             "annee":"2015",
             "photo":"caroline.jpg",
-            "description":""
+            "description":[
+                "On me traite de Geek car je programme en PHP depuis pratiquement sa création et bien avant sa réelle utilisation dans les sites Web",
+                "Je suis passionnée par la programmation informatique",
+                "Je joue à D&D",
+                "Mais je ne suis pas que cela!"
+            ]
         },
         { 
             "nom":"Ahmed Boudjani",
             "annee":"2015",
             "photo":"ahmed.jpg",
-            "description":""
+            "description":[
+                "Domaines d’intérêt :",
+                "Animation Web depuis la « préhistoire » (Flash des années 2000) à aujourd’hui",
+                "ActionScript 2.0 et 3.0 (orienté objet)",
+                "Animations pour le Web avec JavaScript",
+                "Animations avec jQuery",
+                "Animations avec HTML5",
+                "Animations avec CSS3",
+                "Moteurs de jeux : Unity 2D/3D avec C# (et anciennement JavaScript)",
+                "Physique dans les jeux vidéo : chutes, forces, collisions",
+                "Système de particules de Unity",
+                "Intelligence Artificielle (« AI ») : « Machine Learning » et «Reinforcement Learning » (PPO)",
+                "Intelligence artificielle dans Unity (ML-agents)",
+                "Science et science-fiction (Arthur C. Clark est mon auteur préféré)",
+                "Blog : http://science-et-science-fiction.blogspot.com/ (en français)",
+                "Blog : http://ahmed-boudjani-blog-english.blogspot.com/  (en anglais)"
+            ]
         }
     ]
 }
