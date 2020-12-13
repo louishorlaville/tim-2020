@@ -166,28 +166,33 @@ main {
         display: flex;
         flex-direction: column;
         justify-content:start;
-        align-items: center;
+        align-items: flex-start;
         width: 100vw;
+        overflow-x: hidden;
     }
 
     #infoEvenement {
-        height:55%;
-        width:100%;
+        flex-grow: 3;
+        height:60%;
+        width:80%;
         margin: 0px auto;
+        margin-bottom: 20px;
         padding: 25px 25px 30px 25px;
         overflow: hidden;
     }
 
-    #stadeConteneurPrincipale {
-        border: 1px solid red;
+    #stadeConteneurPrincipale {;
         width: 100vw;
         margin-bottom: 0px;
         margin-left: 0px;
+        flex-shrink: 1;
+        align-self: flex-start;
     }
 
     #casesConteneur {
         position: relative;
        left: -110px;
+       height: 80%;
     }
 
     #baseStade  {
@@ -195,27 +200,27 @@ main {
     }
 
     #casesConteneur img:nth-child(2) {
-        transform: translate(120px, -57px) scale(0.6, 0.6);
+        transform: translate(97px, -57px) scale(0.6, 0.6);
     }
     
     #casesConteneur img:nth-child(3) {
-        transform: translate(90px, -57px) scale(0.6, 0.6);
+        transform: translate(75px, -58px) scale(0.6, 0.6);
     }
     
     #casesConteneur img:nth-child(4) {
-        transform: translate(50px, -57px) scale(0.6, 0.6);
+        transform: translate(45px, -57px) scale(0.6, 0.6);
     }
     
     #casesConteneur img:nth-child(5) {
-        transform: translate(-10px, -58px) scale(0.6, 0.6);
+        transform: translate(-5px, -58px) scale(0.6, 0.6);
     }
     
     #casesConteneur img:nth-child(6) {
-        transform: translate(-60px, -59px) scale(0.6, 0.6);
+        transform: translate(-47px, -59px) scale(0.6, 0.6);
     }
     
     #casesConteneur img:nth-child(7) {
-        transform: translate(-110px, -59px) scale(0.55, 0.55);
+        transform: translate(-87px, -59px) scale(0.55, 0.55);
     }
  }
  
