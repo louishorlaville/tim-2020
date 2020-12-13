@@ -1,113 +1,321 @@
 #container-profs{
-    position: relative;
     height: 70vh;
-}
-.icone-prof{
-    height: 20pt;
-    width: auto;
+    width: 100%;
+    position: relative;
 }
 
-#martin{
+.prof{
     position: absolute;
-    left: 35%;
-    top:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.prof:hover{
+    cursor: pointer;
+}
+
+.icone-prof{
+    height: 30pt;
+    width: auto;
+    margin-bottom: 10px;
+    transition: transform 1s linear;
+}
+
+.nom-prof{
+    font-size: 1.5em;
+    font-weight: 1;
+}
+
+/* Position  absolute des profs*/
+#martin{
+    left: 70%;
+    top:10%;
 }
 
 #dominic{
-    position: absolute;
-    left: 50%;
-    top:25%;
+    left: 15%;
+    top:55%;
 }
 #manon{
-    position: absolute;
-    left: 75%;
-    top:58%;
+    left:35%;
+    top: 40%;
 }
 #mathieu{
-    position: absolute;
-    left: 85%;
-    top:42%;
+    left: 38%;
+    top:70%;
 }
 #david{
-    position: absolute;
-    left: 40%;
-    top:78%;
+    left: 51%;
+    top:10%;
 }
 #denis{
-    position: absolute;
-    left: 65%;
-    top:75%;
+    left: 82%;
+    top:48%;
 }
 #gregory{
-    position: absolute;
-    left: 5%;
-    top:12%;
+    left: 72%;
+    top:72%;
 }
 #camille{
-    position: absolute;
     left: 65%;
     top:38%;
 }
 #vahik{
-    position: absolute;
-    left: 55%;
-    top:82%;
-}
-#eddy{
-    position: absolute;
-    left: 50%;
-    top:60%;
-}
-#caroline{
-    position: absolute;
-    left: 35%;
-    top:20%;
-}
-#ahmed{
-    position: absolute;
-    left: 75%;
-    top:25%;
-}
-#vincent{
-    position: absolute;
-    left: 15%;
+    left: 58%;
     top:75%;
 }
-#johanne{
-    position: absolute;
-    left: 25%;
+#eddy{
+    left: 23%;
+    top:77%;
+}
+#caroline{
+    left: 51%;
     top:50%;
 }
+#ahmed{
+    left:85%;
+    top:20%;
+}
+#vincent{
+    left: 10%;
+    top:30%;
+}
+#johanne{
+    left: 25%;
+    top:16%;
+}
 
-/* BOITE APERCU */
-.container-boite-apercu{
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
+/* styles individuels des signes des profs */
+#signe-vincent{
+    height: 15pt;
+    transform: rotate(25deg);
+}
+#signe-johanne{
+    transform: rotate(48deg);
+}
+#signe-dominic{
+    height: 25pt;
+}
+#signe-eddy{
+    height: 50pt;
+    transform: rotate(18deg);
+}
+#signe-mathieu{
+    height: 18pt;
+}
+#signe-caroline{
+    height: 16pt;
+}
+#signe-david{
+    height: 45pt;
+}
+#signe-martin{
+    height: 17pt;
+}
+#signe-denis{
+    height: 55pt;
+}
+#signe-gregory{
+    height: 13pt;
+}
+#signe-vahik{
+    transform: rotate(18deg);
+}
+#signe-ahmed{
+    transform: rotate(50deg);
+}
+
+/*ANIMATION HOVER PROF PROG*/
+.prof-prog>.profHover{
+    animation: animationHoverProg 0.2s linear infinite;
+}
+.prof-prog>.profLeave{
+    animation: animationLeaveProg 0.5s cubic-bezier(0,.76,.7,2.95);
+}
+
+@keyframes animationHoverProg{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animationLeaveProg{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+}
+
+/*ANIMATION HOVER PROF ART*/
+.prof-art>.profHover{
+    animation: animationHoverArt 0.8s cubic-bezier(.81,.12,.76,1.35) infinite;
+}
+.prof-art>.profLeave{
+    animation: animationLeaveArt 0.2s cubic-bezier(0,.76,.7,2.95);
+}
+
+@keyframes animationHoverArt{
+    from{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(0.8,0.8);
+    }
+    to{
+        transform: scale(1,1);
+    }
+}
+@keyframes animationLeaveArt{
+    from{
+        transform: scale(0.9,0.9);
+    }
+    to{
+        transform: scale(1,1);
+    }
+}
+
+/*STYLES BOITE*/
+#container-boite{
+    transition: all 2s ease-in;
+    position: absolute;
     left: 0;
-    z-index: 6;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
     display: none;
 }
 
-.background-opacite{
-    z-index: 6;
+
+
+
+#opacity-boite{
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
-.boite-apercu{
-    width: 30%;
-    height: 50%;
-    z-index: 7;
-    position:fixed;
-    top: 25%;
-    left: 35%;
+#container-out-boite{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex-basis: 100%;
+}
 
+#out-boite{
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+
+}
+
+#boite{
+    background-color: #333333;
+    position: fixed;
+    top: 20%;
+    transform: translateX(35vw);
+    height: 60vh;
+    width: 23vw;
     color: white;
-    border: 10px solid white;
-    padding: 1em;
+    border: 7px solid white;
+    font-family: "bahnschrift";
+    font-stretch: wider;
+    min-width:340px ;
 }
 
+#header-boite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contenu-boite{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94%;
+    height: 94%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding: 3%;
+    justify-content: space-between;
+}
+
+#container-nom-boite{
+    height: 10%;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#nom-boite{
+    border-bottom: 2px solid white;
+    margin-bottom: 3%;
+    font-weight: 300;
+}
+
+#date-prof-boite{
+    font-size: 0.8vw;
+    font-weight: 100;
+}
+
+#annee-boite{
+    color: #efca56;
+    font-weight: bolder;
+}
+
+#photo-boite{
+    object-fit: cover;
+    height:120px;
+    width: 120px;
+    border: 3px solid white;
+    /* clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%, 0 0); */
+}
+
+#description-boite{
+    height: 70%;
+    align-self: stretch;
+    overflow: auto;
+    font-weight: 300;
+}
+
+#description-boite >p{
+    margin-top: 3%;
+}
+.liste-description-boite::before{
+    content: "- ";
+}
+
+#description-boite::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+#description-boite::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+
+
+
+@media screen and (max-width: 1520px) {
+    #container-nom-boite{
+        font-size: 15pt;
+    }
+    #date-prof-boite{
+        font-size: 9pt;
+    }
+}
