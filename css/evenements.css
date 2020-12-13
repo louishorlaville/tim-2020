@@ -150,3 +150,29 @@ main {
       cursor: pointer;
       animation-play-state: paused;
     }
+
+ /*///////////// Medias Queries ////////////////  */
+
+ @media (max-width:520px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #infoEvenement {
+        height:55%;
+        width:100%;
+        margin: 0px auto;
+        padding: 25px 25px 30px 25px;
+        overflow: hidden;
+    }
+
+    #stadeConteneurPrincipale {
+        
+        width: 50%;
+        margin-bottom: 10px;
+        margin-left: 60px;
+    }
+ }
+ 
