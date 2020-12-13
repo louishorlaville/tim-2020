@@ -152,7 +152,7 @@ main {
 
  /*///////////// Medias Queries ////////////////  */
 
- @media (max-width:520px) {
+ @media (max-width:600px) {
 
     #titrePage {
         margin-left: 0px;
@@ -221,5 +221,26 @@ main {
     #casesConteneur img:nth-child(7) {
         transform: translate(-87px, -59px) scale(0.55, 0.55);
     }
+ }
+
+ @media all and (min-width:601px) and (max-width: 1024px)  {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        /* justify-content:start;
+        align-items: flex-start; */
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+   #infoEvenement {
+    color: white;
+    height:55%;
+    width:30%;
+    margin: 10px 50px 0px 100px ;
+    padding: 25px 25px 30px 25px;
+}
+
  }
  
