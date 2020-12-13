@@ -10,7 +10,7 @@
 		<section id="stadeConteneurPrincipale">
 			<div id="casesConteneur">
 				<img src="../images/svg/stade/stadeBase.svg" alt="" id="baseStade">
-				<img src="../images/svg/stade/stadeCase1.svg" alt="" class="casesStade">
+				<img src="../images/svg/stade/stadeCase1.svg" alt="" class="casesStade idle">
 				<img src="../images/svg/stade/stadeCase2.svg" alt="" class="casesStade">
 				<img src="../images/svg/stade/stadeCase3.svg" alt="" class="casesStade">
 				<img src="../images/svg/stade/stadeCase4.svg" alt="" class="casesStade">

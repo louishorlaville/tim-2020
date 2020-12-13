@@ -74,7 +74,7 @@ main {
     bottom: 192px;
 }
 
-/*//////// Boite Info événement /////// */
+/*//////// Placement Boite Info événement /////// */
 
 #infoEvenement {
     background-color: black;
@@ -98,7 +98,7 @@ main {
     margin-bottom: 50px;
 }
 
-/*///////////// Carousel ////////////// */
+/*///////////// Placement Carousel ////////////// */
 
 #carousel {
     width: 100%;
@@ -127,3 +127,14 @@ main {
     font-size: 2em;
     margin: 0px 5px ;
 }
+
+/* /////// Animations ///////////////// */
+
+@keyframes animIdle {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+  .casesStade:hover {
+      bottom:200px ;
+  }
