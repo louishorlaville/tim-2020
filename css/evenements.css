@@ -41,11 +41,14 @@ main {
     position: absolute;
     height: 120px;
     width: 120px;
+    z-index: 500;
+    transition: width 100ms, height 100ms;
 }
 
 #casesConteneur img:nth-child(2) {
     left: 1px;
     bottom: 195px;
+
 }
 
 #casesConteneur img:nth-child(3) {
@@ -130,11 +133,10 @@ main {
 
 /* /////// Animations ///////////////// */
 
-@keyframes animIdle {
-    from {background-color: red;}
-    to {background-color: yellow;}
-  }
-
-  .casesStade:hover {
-      bottom:200px ;
-  }
+.casesStade:hover {
+      /* bottom:199px ; */
+      height: 125px;
+      width: 125px;
+      cursor: pointer;
+      animation-play-state: paused;
+    }
