@@ -154,9 +154,19 @@ main {
  /*///////////// Medias Queries ////////////////  */
 
  @media (max-width:520px) {
+
+    #titrePage {
+        margin-left: 0px;
+        width: 100%;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
     main {
         display: flex;
         flex-direction: column;
+        justify-content:start;
+        align-items: center;
         width: 100vw;
     }
 
@@ -169,10 +179,43 @@ main {
     }
 
     #stadeConteneurPrincipale {
-        
-        width: 50%;
-        margin-bottom: 10px;
-        margin-left: 60px;
+        border: 1px solid red;
+        width: 100vw;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    #casesConteneur {
+        position: relative;
+       left: -110px;
+    }
+
+    #baseStade  {
+        transform: scale(0.6, 0.6);
+    }
+
+    #casesConteneur img:nth-child(2) {
+        transform: translate(120px, -57px) scale(0.6, 0.6);
+    }
+    
+    #casesConteneur img:nth-child(3) {
+        transform: translate(90px, -57px) scale(0.6, 0.6);
+    }
+    
+    #casesConteneur img:nth-child(4) {
+        transform: translate(50px, -57px) scale(0.6, 0.6);
+    }
+    
+    #casesConteneur img:nth-child(5) {
+        transform: translate(-10px, -58px) scale(0.6, 0.6);
+    }
+    
+    #casesConteneur img:nth-child(6) {
+        transform: translate(-60px, -59px) scale(0.6, 0.6);
+    }
+    
+    #casesConteneur img:nth-child(7) {
+        transform: translate(-110px, -59px) scale(0.55, 0.55);
     }
  }
  
