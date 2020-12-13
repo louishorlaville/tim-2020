@@ -1,83 +1,188 @@
-
-.icone-prof{
-    height: 20pt;
-    width: auto;
+#container-profs{
+    height: 70vh;
+    width: 100%;
+    position: relative;
 }
 
-#martin{
+.prof{
     position: absolute;
-    left: 35%;
-    top:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.prof:hover{
+    cursor: pointer;
+}
+
+.icone-prof{
+    height: 30pt;
+    width: auto;
+    margin-bottom: 10px;
+    transition: transform 1s linear;
+}
+
+.nom-prof{
+    font-size: 1.5em;
+    font-weight: 1;
+}
+
+/* Position  absolute des profs*/
+#martin{
+    left: 70%;
+    top:10%;
 }
 
 #dominic{
-    position: absolute;
-    left: 50%;
-    top:25%;
+    left: 15%;
+    top:55%;
 }
 #manon{
-    position: absolute;
-    left: 75%;
-    top:58%;
+    left:35%;
+    top: 40%;
 }
 #mathieu{
-    position: absolute;
-    left: 85%;
-    top:42%;
+    left: 38%;
+    top:70%;
 }
 #david{
-    position: absolute;
-    left: 40%;
-    top:78%;
+    left: 51%;
+    top:10%;
 }
 #denis{
-    position: absolute;
-    left: 65%;
-    top:75%;
+    left: 82%;
+    top:48%;
 }
 #gregory{
-    position: absolute;
-    left: 22%;
-    top:12%;
+    left: 72%;
+    top:72%;
 }
 #camille{
-    position: absolute;
     left: 65%;
     top:38%;
 }
 #vahik{
-    position: absolute;
-    left: 55%;
-    top:82%;
-}
-#eddy{
-    position: absolute;
-    left: 50%;
-    top:60%;
-}
-#caroline{
-    position: absolute;
-    left: 35%;
-    top:20%;
-}
-#ahmed{
-    position: absolute;
-    left: 75%;
-    top:25%;
-}
-#vincent{
-    position: absolute;
-    left: 15%;
+    left: 58%;
     top:75%;
 }
-#johanne{
-    position: absolute;
-    left: 25%;
+#eddy{
+    left: 23%;
+    top:77%;
+}
+#caroline{
+    left: 51%;
     top:50%;
 }
+#ahmed{
+    left:85%;
+    top:20%;
+}
+#vincent{
+    left: 10%;
+    top:30%;
+}
+#johanne{
+    left: 25%;
+    top:16%;
+}
 
+/* styles individuels des signes des profs */
+#signe-vincent{
+    height: 15pt;
+    transform: rotate(25deg);
+}
+#signe-johanne{
+    transform: rotate(48deg);
+}
+#signe-dominic{
+    height: 25pt;
+}
+#signe-eddy{
+    height: 50pt;
+    transform: rotate(18deg);
+}
+#signe-mathieu{
+    height: 18pt;
+}
+#signe-caroline{
+    height: 16pt;
+}
+#signe-david{
+    height: 45pt;
+}
+#signe-martin{
+    height: 17pt;
+}
+#signe-denis{
+    height: 55pt;
+}
+#signe-gregory{
+    height: 13pt;
+}
+#signe-vahik{
+    transform: rotate(18deg);
+}
+#signe-ahmed{
+    transform: rotate(50deg);
+}
 
+/*ANIMATION HOVER PROF PROG*/
+.prof-prog>.profHover{
+    animation: animationHoverProg 0.2s linear infinite;
+}
+.prof-prog>.profLeave{
+    animation: animationLeaveProg 0.5s cubic-bezier(0,.76,.7,2.95);
+}
+
+@keyframes animationHoverProg{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animationLeaveProg{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+}
+
+/*ANIMATION HOVER PROF ART*/
+.prof-art>.profHover{
+    animation: animationHoverArt 0.8s cubic-bezier(.81,.12,.76,1.35) infinite;
+}
+.prof-art>.profLeave{
+    animation: animationLeaveArt 0.2s cubic-bezier(0,.76,.7,2.95);
+}
+
+@keyframes animationHoverArt{
+    from{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(0.8,0.8);
+    }
+    to{
+        transform: scale(1,1);
+    }
+}
+@keyframes animationLeaveArt{
+    from{
+        transform: scale(0.9,0.9);
+    }
+    to{
+        transform: scale(1,1);
+    }
+}
+
+/*STYLES BOITE*/
 #container-boite{
+    transition: all 2s ease-in;
     position: absolute;
     left: 0;
     top: 0;
@@ -86,6 +191,9 @@
     z-index: 2;
     display: none;
 }
+
+
+
 
 #opacity-boite{
     width: 100%;
@@ -201,15 +309,7 @@
     background-color: white;
 }
 
-#container-profs{
-    height: 70vh;
-    width: 100%;
-    position: relative;
-}
 
-.prof:hover{
-    cursor: pointer;
-}
 
 @media screen and (max-width: 1520px) {
     #container-nom-boite{

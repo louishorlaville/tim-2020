@@ -893,6 +893,9 @@ input[type="checkbox"]
 .titre-page{
     margin-left: 20px;
     padding-top: 10px;
+    font-family: "bahnschrift";
+    /* font-stretch: semi-condensed; */
+    font-weight: 200;
 }
 
 .fleche-page-precedente{

@@ -24,6 +24,8 @@ let descriptionBoite = document.querySelector("#description-boite");
 for (let x = 0; x < profs.length; x++) {
   profs[x].addEventListener("click", function () {
     containerBoiteInfos.style.display = "block";
+    containerBoiteInfos.style.opacity = "0";
+    containerBoiteInfos.style.opacity = "1";
     //Insérer nom
     boiteInfos.children[0].children[0].children[0].innerHTML = profsData.profs[
       x
@@ -56,5 +58,18 @@ for (let x = 0; x < profs.length; x++) {
 
 //Enlever la boite d'apercu
 document.getElementById("out-boite").addEventListener("click", function () {
+  containerBoiteInfos.style.opacity = "0";
   containerBoiteInfos.style.display = "none";
+});
+
+// Animation hover des signes des profs
+profs.forEach((element) => {
+  element.addEventListener("mouseover", function () {
+    element.children[0].classList.remove("profLeave");
+    element.children[0].classList.add("profHover");
+  });
+  element.addEventListener("mouseleave", function () {
+    element.children[0].classList.remove("profHover");
+    element.children[0].classList.add("profLeave");
+  });
 });
