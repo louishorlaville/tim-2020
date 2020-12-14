@@ -32,6 +32,7 @@
 			</div>
 		</section>
 	</main>
+	<script src="../js/evenement.js"></script>
 </body>
 
 <?php 

@@ -84,6 +84,7 @@ main {
 /*//////// Placement Boite Info événement /////// */
 
 #infoEvenement {
+    display: none;
     background-color: black;
     border: solid white 10px;
     color: white;
