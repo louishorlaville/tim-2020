@@ -5,8 +5,14 @@
                 {
                     "classID":"582-1M1",
                     "className":"Création Vidéo",
-                    "classDesc":"",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                         "Environement Professionnel",
                         "Création de Médias",
@@ -16,8 +22,14 @@
                 {
                     "classID":"582-1M2",
                     "className":"Conception graphique et img. matricielle",
-                    "classDesc":"n",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                         "Environement Professionnel",
                         "Création de Médias",
@@ -27,8 +39,14 @@
                 {
                     "classID":"582-1W1",
                     "className":"Mise en page Web",
-                    "classDesc":"",
+                    "classDesc":"Description du cours.",
                     "classType":"web",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                         "Environement Professionnel",
                         "Intégration"
@@ -37,8 +55,14 @@
                 {
                     "classID":"582-1J1",
                     "className":"Animation et interactivité en jeu",
-                    "classDesc":"",
+                    "classDesc":"Description du cours.",
                     "classType":"jeu",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                         "Environement Professionnel",
                         "Création de Médias",
@@ -52,32 +76,56 @@
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"web",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"jeu",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 }
@@ -88,48 +136,84 @@
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"web",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"jeu",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 }
@@ -140,48 +224,84 @@
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"web",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"jeu",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 }
@@ -192,48 +312,84 @@
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"web",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"0000-0000",
                     "className":"Class Name",
-                    "classDesc":"Class Description",
+                    "classDesc":"Description du cours.",
                     "classType":"jeu",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 }
@@ -244,16 +400,28 @@
                 {
                     "classID":"582-6N3",
                     "className":"Stage",
-                    "classDesc":"",
+                    "classDesc":"Description du cours.",
                     "classType":"final",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 },
                 {
                     "classID":"582-6N2",
                     "className":"Projet de fin d'études",
-                    "classDesc":"",
+                    "classDesc":"Description du cours.",
                     "classType":"final",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
                     "classTags":[
                     ]
                 }

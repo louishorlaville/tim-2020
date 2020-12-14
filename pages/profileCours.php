@@ -8,48 +8,53 @@
 	<main class="grid-container">
 	    <section id="titre-cours" class="color-text-1">
           <a href="../index.php" class="retour color-text-1">&lt;</a>
-	        <h3 id="code-cours">TIM-404</h3>
-	        <h1 id="nom-cours">Cours d'introduction à la programmation</h1>
+	        <h3 id="code-cours"></h3>
+	        <h1 id="nom-cours"></h1>
 	    </section>
     <!-- Fin de titre-cours	  -->
-	    <section class ="color-text-1" id="description">
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt voluptatem voluptates, aut voluptatum! Nobis accusamus possimus voluptate veniam ratione natus in, cumque dolor earum! Odit ut eaque quas. Doloribus iste natus ipsam at illo quod consequuntur quas quisquam magni.</p>
+	    <section id="description">
+	        <p id="class-desc"></p>
+
         </section>
     <!--  Find de desc  -->
         <section class ="color-text-1" id="details-cours">
             <ul>
                 <li class="subtitle-1">Nombre d'heures</li>
-                <li>60 heures</li>
-            </ul>
-            <ul>
+                <li id="class-hrs">heures</li>
                 <li class="subtitle-1">Pondération</li>
-                <li>2-3-2</li>
+                <li id="class-pond"></li>
             </ul>
 	    </section>
     <!-- fin de details	    -->
         <section id="categories">
-            <li class="icone-categorie">
+            <li id="cercle-envpro" class="icone-categorie" style="display:none;">
                 <span class="cercle color-1"></span>
                 <p class="nomCat"></p>
             </li>
-            <li class="icone-categorie">
+            <li id="cercle-prog" class="icone-categorie" style="display:none;">
                 <span class="cercle color-2"></span>
                 <p class="nomCat"></p>
             </li>
-            <li class="icone-categorie">
+            <li id="cercle-cratn" class="icone-categorie" style="display:none;">
                 <span class="cercle color-3"></span>
                 <p class="nomCat"></p>
             </li>
-            <li class="icone-categorie">
+            <li id="cercle-integrtn" class="icone-categorie" style="display:none;">
                 <span class="cercle color-4"></span>
                 <p class="nomCat"></p>
             </li>
-            <li class="icone-categorie">
+            <li id="cercle-conceptn" class="icone-categorie" style="display:none;">
                 <span class="cercle color-5"></span>
                 <p class="nomCat"></p>
             </li>
         </section>
 	</main>
+
+    <script src="../js/cours.js" type="text/javascript"></script> 
+
+    <?php
+    echo "<script type='text/javascript'>cocknnuts(".htmlspecialchars($_GET["sessionid"]).", ".htmlspecialchars($_GET["classid"]).")</script>";
+    ?>
 </body>
 <?php 
     require("../inclusions/piedDePage.php");
