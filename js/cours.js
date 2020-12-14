@@ -3,7 +3,7 @@
 })();
 
 
-function cocknnuts(sessionid, classid)
+function getClassJSON(sessionid, classid)
 {
     let xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -12,7 +12,7 @@ function cocknnuts(sessionid, classid)
             console.log(classesData);
             console.log("loaded class data");
 
-            dicknballs(sessionid, classid);
+            loadClassData(sessionid, classid);
         }
     };
     xmlhttp.open("GET", "../data/classes.json", true);
@@ -20,7 +20,7 @@ function cocknnuts(sessionid, classid)
 }
 
 
-function dicknballs(sessionid, classid)
+function loadClassData(sessionid, classid)
 {
     console.log(classesData);
 
