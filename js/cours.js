@@ -3,6 +3,7 @@
 })();
 
 
+// cherche les données de cours en json
 function getClassJSON(sessionid, classid)
 {
     let xmlhttp = new XMLHttpRequest();
@@ -19,7 +20,7 @@ function getClassJSON(sessionid, classid)
     xmlhttp.send();
 }
 
-
+// charge les données du cours dans la page
 function loadClassData(sessionid, classid)
 {
     console.log(classesData);
