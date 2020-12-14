@@ -30,11 +30,10 @@ main {
 /* //////// Placement des cases ////////////// */
 
 #casesConteneur {
-    /* border: red solid 1px; */
     position: relative;
     height: 100%;
     width: 100%;
-    bottom: 0px;
+    bottom: 15px;
 }
 
 .casesStade {
@@ -49,9 +48,9 @@ main {
     left: 1px;
     bottom: 195px;
     animation-name: animIdle;
-    animation-duration: 2500ms;
+    animation-duration: 3500ms;
     animation-delay: 1500ms;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
 
 }
 
@@ -84,8 +83,9 @@ main {
 /*//////// Placement Boite Info événement /////// */
 
 #infoEvenement {
+    display: none;
     background-color: black;
-    border: solid white 10px;
+    border: solid #296FA6 10px;
     color: white;
     height:55%;
     width:30%;
@@ -138,8 +138,8 @@ main {
 
 @keyframes animIdle {
     0% {bottom: 195px;}
-    25% {bottom: 201px;}
-    50%,100% {bottom: 195px;}
+    10% {bottom: 201px;}
+    25%,100% {bottom: 195px;}
   }
 
 .casesStade:hover {
@@ -152,7 +152,7 @@ main {
 
  /*///////////// Medias Queries ////////////////  */
 
- @media (max-width:520px) {
+ @media (max-width:600px) {
 
     #titrePage {
         margin-left: 0px;
@@ -176,8 +176,18 @@ main {
         width:80%;
         margin: 0px auto;
         margin-bottom: 20px;
-        padding: 25px 25px 30px 25px;
+        padding: 30px 25px 35px 25px;
         overflow: hidden;
+    }
+
+    #cadreImage {
+        width: 50%;
+        height: 40%;
+        border: 3px solid white;
+    }
+
+    #carousel span {
+        display: none;
     }
 
     #stadeConteneurPrincipale {
@@ -221,5 +231,45 @@ main {
     #casesConteneur img:nth-child(7) {
         transform: translate(-87px, -59px) scale(0.55, 0.55);
     }
+ }
+
+
+
+ @media all and (min-width:601px) and (max-width: 1024px)  {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        /* justify-content:start;
+        align-items: flex-start; */
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    #casesConteneur {
+        position: relative;
+        left:-50px;
+    }
+
+   #infoEvenement {
+        color: white;
+        height:55%;
+        width:30%;
+        margin: 10px 50px 0px 100px ;
+        padding: 25px 25px 30px 25px;
+        z-index: 501;
+    }
+
+    #infoEvenement p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    #cadreImage {
+        width: 35%;
+        height: 20%;
+        border: 3px solid white;
+    }
+
  }
  
