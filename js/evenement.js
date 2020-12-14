@@ -15,12 +15,15 @@ function getClassesJSON() {
   xmlhttp.send();
 }
 
+//Variables de la boite info
 let BoiteInfos = document.querySelector("#infoEvenement");
 let titre = document.querySelector("#titreEvenement");
 let date = document.querySelector("#dateEvenement");
 let desc = document.querySelector("#descEvenement");
 let image = document.querySelector("#imageEvenement");
 
+//Faire aparaitre la boite
+//Remplir la boite avec l'info du json
 for (let index = 0; index < 6; index++) {
     document.getElementsByClassName("casesStade")[index].addEventListener("click", function () {
         document.getElementById("infoEvenement").style.display = "block";
