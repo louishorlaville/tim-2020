@@ -182,7 +182,6 @@
 
 /*STYLES BOITE*/
 #container-boite{
-    transition: all 2s ease-in;
     position: absolute;
     left: 0;
     top: 0;
@@ -296,9 +295,6 @@
 
 #description-boite >p{
     margin-top: 3%;
-}
-.liste-description-boite::before{
-    content: "- ";
 }
 
 #description-boite::-webkit-scrollbar {
