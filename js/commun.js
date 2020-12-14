@@ -95,8 +95,10 @@
 
   //GO BACK PREVIOUS PAGE
   let flecheRetour = document.querySelector(".lien-page-precedente");
-
-  flecheRetour.addEventListener("click", function () {
-    window.history.back();
-  });
+  if(flecheRetour){
+    flecheRetour.addEventListener("click", function () {
+      window.history.back();
+    });
+  }
+  
 })();

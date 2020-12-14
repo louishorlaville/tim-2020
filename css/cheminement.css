@@ -145,6 +145,16 @@ body{
   }
 }
 
+.class-content > a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.class-content-mobile > a{
+  text-decoration: none;
+  color: white;
+}
 
 @media screen and (min-width: 600px) {
   #cheminement-table{
@@ -162,11 +172,8 @@ body{
   #cheminement-table-mobile{
     display: table;
   }
+  
 }
 
-.class-content > a{
-  text-decoration: none;
-  color: white;
-}
 
 

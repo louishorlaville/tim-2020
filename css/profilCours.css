@@ -18,8 +18,8 @@ main{
 
 
 #titre-cours {
-    border-bottom: solid black 5px;
-
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
     grid-area: titre-cours;
     font-size: 1.3em;
     margin-bottom: 1.5rem;
@@ -134,6 +134,7 @@ main{
           ". details-cours  details-cours . ."
           ". categories  . . .";
           margin-top: 60px;
+          margin-bottom: 10vh;
         }
     #details-cours{
         display: flex;
@@ -143,6 +144,7 @@ main{
     #titre-cours {
         font-size: 1em;
     }
-    .grid-container{
+    .subtitle-1, #categories {
+        margin-top: 20px;
     }
 }

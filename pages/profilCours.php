@@ -6,13 +6,13 @@
     
     <!-- Fin Header -->
 	<main class="grid-container">
-	    <section id="titre-cours" class="color-text-1">
-          <a href="../index.php" class="retour color-text-1">&lt;</a>
+	    <section id="titre-cours" class="color-text-1 border-1">
+          <a href="grilleCheminement.php" class="retour color-text-1">&lt;</a>
 	        <h3 id="code-cours"></h3>
 	        <h1 id="nom-cours"></h1>
 	    </section>
     <!-- Fin de titre-cours	  -->
-	    <section id="description">
+	    <section id="description" class="color-text-1">
 	        <p id="class-desc"></p>
 
         </section>
