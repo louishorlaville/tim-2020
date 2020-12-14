@@ -52,7 +52,7 @@
     <script src="../js/cours.js" type="text/javascript"></script> 
 
     <?php
-    echo "<script type='text/javascript'>cocknnuts(".htmlspecialchars($_GET["sessionid"]).", ".htmlspecialchars($_GET["classid"]).")</script>";
+    echo "<script type='text/javascript'>getClassJSON(".htmlspecialchars($_GET["sessionid"]).", ".htmlspecialchars($_GET["classid"]).")</script>";
     ?>
 </body>
 <?php 
