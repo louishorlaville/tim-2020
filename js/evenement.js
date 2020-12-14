@@ -21,7 +21,7 @@ let date = document.querySelector("#dateEvenement");
 let desc = document.querySelector("#descEvenement");
 let image = document.querySelector("#imageEvenement");
 
-for (let index = 0; index < 5; index++) {
+for (let index = 0; index < 6; index++) {
     document.getElementsByClassName("casesStade")[index].addEventListener("click", function () {
         document.getElementById("infoEvenement").style.display = "block";
 
