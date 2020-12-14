@@ -20,13 +20,13 @@
 		<section id="infoEvenement">
 			<h1 id="titreEvenement">Nom de l'événement</h1>
 			<h5 id="dateEvenement">04/11/2019</h5>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, at officiis.
+			<p id="descEvenement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, at officiis.
 				 Fugiat officia quas aliquid tempora iste eaque quibusdam cupiditate? 
 				 Lorem ipsum dolor sit amet.</p>
 			<div id="carousel">
 				<span>&lt;</span>
 				<div id="cadreImage">
-					<img src="../images/img/profTemp.jpg" alt="Photo pas disponible">
+					<img src="../images/img/profTemp.jpg" alt="Photo pas disponible" id="imageEvenement">
 				</div>
 				<span>&gt;</span>
 			</div>
