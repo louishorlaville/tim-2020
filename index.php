@@ -6,17 +6,17 @@
     <div id="title">
         <div class="containerLogoContent">
             <div class="containerLogo">
-                <img class="logo" src="images/svg/logo.svg" alt="logo">
-                <div id="plus-cap-N" class="plus-cap-logo"><img src="./images/svg/blackPlus.svg" alt=""></div>
-                <div id="plus-cap-T" class="plus-cap-logo"><img src="./images/svg/blackPlus.svg" alt=""></div>
-                <div id="cercle-cap-T" class="cercle-cap-logo"><img src="./images/svg/blackCircle.svg" alt=""></div>
-                <div id="cercle-cap-I" class="cercle-cap-logo"><img src="./images/svg/blackCircle.svg" alt=""></div> 
+                <img class="logo color-svg-01" src="images/svg/logo.svg" alt="logo">
+                <div id="plus-cap-N" class="plus-cap-logo color-svg-01"><img src="./images/svg/blackPlus.svg" alt=""></div>
+                <div id="plus-cap-T" class="plus-cap-logo color-svg-01"><img src="./images/svg/blackPlus.svg" alt=""></div>
+                <div id="cercle-cap-T" class="cercle-cap-logo color-svg-01"><img src="./images/svg/blackCircle.svg" alt=""></div>
+                <div id="cercle-cap-I" class="cercle-cap-logo color-svg-01"><img src="./images/svg/blackCircle.svg" alt=""></div> 
                 <div class="logo-cercle-container">
                     <div class="logo-cercle-container-border">
                         <div class="logo-cercle color-1">
                             <img id="logo-svg-cercle" src="images/svg/logoTim.svg" alt="Logo Départemental">
                         </div>
-                        <div class="logo-cercle-border"></div>
+                        <div class="logo-cercle-border border-1"></div>
                     </div>
                 </div>
                 <div class="cercle-n-border"><div class="cercle-n color-2"></div></div>   
@@ -29,14 +29,14 @@
                 <a href="pages/grilleCheminement.php">
                     <div class="boite-bouton-menu color-2" id="bouton-menu-cours">
                         <p>COURS</p>
-                        <div class="hover-menu-accueil color-bg"></div>
+                        <div class="hover-menu-accueil color-white"></div>
                     </div>
                 </a>
-                <div class="separateur-menu-accueil color-bars"></div>
+                <div class="separateur-menu-accueil color-7"></div>
                 <a href="pages/grilleDesProfs.php">
                     <div class="boite-bouton-menu color-2" id="bouton-menu-cours">
                         <p>PROFESSEURS</p>
-                        <div class="hover-menu-accueil color-bg"></div>
+                        <div class="hover-menu-accueil color-white"></div>
                     </div>
                 </a>
             </div>
@@ -44,14 +44,14 @@
                 <a href="pages/stages.php">
                     <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
                         <p>STAGES</p>
-                        <div class="hover-menu-accueil color-bg"></div>
+                        <div class="hover-menu-accueil color-white"></div>
                     </div>
                 </a>
-                <div class="separateur-menu-accueil color-bars"></div>
+                <div class="separateur-menu-accueil color-7"></div>
                 <a href="pages/evenements.php">
                     <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
                         <p>VIE ÉTUDIANTE</p>
-                        <div class="hover-menu-accueil color-bg"></div>
+                        <div class="hover-menu-accueil color-white"></div>
                     </div>
                 </a>
             </div>            
@@ -67,7 +67,7 @@
                             <div class="hover-menu-accueil color-bg"></div>
                         </div>
                     </a>
-                    <div class="separateur-menu-accueil color-bars"></div>
+                    <div class="separateur-menu-accueil color-7"></div>
                     <a href="pages/grilleCheminement.php">
                         <div class="boite-bouton-menu color-2" id="bouton-menu-cours">
                             <p>PROFESSEURS</p>
@@ -82,7 +82,7 @@
                             <div class="hover-menu-accueil color-bg"></div>
                         </div>
                     </a>
-                    <div class="separateur-menu-accueil color-bars"></div>
+                    <div class="separateur-menu-accueil color-7"></div>
                     <a href="pages/grilleCheminement.php">
                         <div class="boite-bouton-menu color-1" id="bouton-menu-cours">
                             <p>VIE ÉTUDIANTE</p>
@@ -99,13 +99,13 @@
 <!-- SOCIALS ACCUEIL-->
 <div class="container-socials">
     <div class="social-elt" id="social-link-instagram">
-        <a href="#" target="_blank"><img src="./images/svg/socials/logoInstagram.svg" alt="Page Instagram du programme" class="social-icon .color-svg-1"></a>
+        <a class="color-svg-01" href="https://www.instagram.com/maisonneuvetim/" target="_blank"><img src="./images/svg/socials/logoInstagram.svg" alt="Page Instagram du programme" class="social-icon .color-svg-1"></a>
     </div>
     <div class="social-elt" id="social-link-facebook">
-        <a href="#" target="_blank"><img src="./images/svg/socials/logoFacebook.svg" alt="Page Facebook du programme" class="social-icon .color-svg-1"></a>
+        <a class="color-svg-01" href="https://www.facebook.com/maisonneuvetim" target="_blank"><img src="./images/svg/socials/logoFacebook.svg" alt="Page Facebook du programme" class="social-icon .color-svg-1"></a>
     </div>
     <div class="social-elt" id="social-link-discord">
-        <a href="#" target="_blank"><img src="./images/svg/socials/logoDiscord.svg" alt="Serveur discord du programme" class="social-icon .color-svg-1"></a>
+        <a class="color-svg-01" href="https://discord.com/invite/53vFvr9" target="_blank"><img src="./images/svg/socials/logoDiscord.svg" alt="Serveur discord du programme" class="social-icon .color-svg-1"></a>
     </div>
 </div>
 

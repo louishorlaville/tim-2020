@@ -14,9 +14,10 @@
     <!-- Fin de titre-cours	  -->
 	    <section id="description">
 	        <p id="class-desc"></p>
+
         </section>
     <!--  Find de desc  -->
-        <section id="details-cours">
+        <section class ="color-text-1" id="details-cours">
             <ul>
                 <li class="subtitle-1">Nombre d'heures</li>
                 <li id="class-hrs">heures</li>

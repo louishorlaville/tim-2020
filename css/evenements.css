@@ -2,7 +2,7 @@ main {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: auto;
+    height: 75%;
 }
 
 #titrePage {
@@ -11,79 +11,86 @@ main {
     width: 50%;
 }
 
-/* ////////Placement du stade///////////////// */
+/* //////// Placement du stade //////////////// */
 
-#stadeContainer {
-    position: relative;
-    border: 2px dotted magenta;
+#stadeConteneurPrincipale {
+    /* border: 2px dotted magenta; */
     width: 50%;
     margin-bottom: 10px;
+    margin-left: 60px;
 }
 
-/* #baseStade {
-    height: 100%;
-    width: 100%;
-} */
+#baseStade {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    bottom: 100px;
+}
 
 /* //////// Placement des cases ////////////// */
 
-#casesContainer {
-    border: red solid 1px;
-    position: absolute;
+#casesConteneur {
+    position: relative;
     height: 100%;
     width: 100%;
-    bottom: 0px;
+    bottom: 15px;
 }
 
 .casesStade {
     position: absolute;
-    height: 20%;
-    width: 20%;
+    height: 120px;
+    width: 120px;
+    z-index: 500;
+    transition: width 100ms, height 100ms;
 }
 
-#casesContainer img:nth-child(1) {
+#casesConteneur img:nth-child(2) {
     left: 1px;
-    bottom: 2px;
+    bottom: 195px;
+    animation-name: animIdle;
+    animation-duration: 3500ms;
+    animation-delay: 1500ms;
+    animation-iteration-count: infinite;
+
 }
 
-#stadeContainer img:nth-child(2) {
+#casesConteneur img:nth-child(3) {
     left: 75px;
-    bottom: 1px;
+    bottom: 195px;
 }
 
-#stadeContainer img:nth-child(3) {
-    left: 160px;
-    bottom: 5px;
-    /* height: 19%;
-    width: 19%; */
+#casesConteneur img:nth-child(4) {
+    left: 168px;
+    bottom: 199px;
 }
 
-#stadeContainer img:nth-child(4) {
-    left: 260px;
-    bottom: 5px;
+#casesConteneur img:nth-child(5) {
+    left: 285px;
+    bottom: 197px;
 }
 
-#stadeContainer img:nth-child(5) {
-    left: 344px;
-    bottom: 1px;
+#casesConteneur img:nth-child(6) {
+    left: 385px;
+    bottom: 192px;
+    /* height: 120px; */
 }
 
-#stadeContainer img:nth-child(6) {
-    left: 415px;
-    bottom: 1px;
+#casesConteneur img:nth-child(7) {
+    left: 473px;
+    bottom: 192px;
 }
 
-/*//////// Boite Info événement /////// */
+/*//////// Placement Boite Info événement /////// */
 
 #infoEvenement {
+    display: none;
     background-color: black;
-    border: solid white 10px;
+    border: solid #296FA6 10px;
     color: white;
-    height:50%;
-    width:55%;
-    margin-right: 100px;
-    margin-left: 100px;
-    padding: 25px 25px 10px 25px;
+    height:55%;
+    width:30%;
+    margin: 20px 150px 0px 100px ;
+    padding: 25px 25px 30px 25px;
 }
 
 #infoEvenement h1 {
@@ -95,10 +102,10 @@ main {
 }
 
 #infoEvenement p {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
-/*//////// Carousel /////// */
+/*///////////// Placement Carousel ////////////// */
 
 #carousel {
     width: 100%;
@@ -112,8 +119,7 @@ main {
 #cadreImage {
     width: 25%;
     height: 10%;
-    border: 3px solid black;
-    /* margin: 0 auto; */
+    border: 3px solid white;
 }
 
 #cadreImage img {
@@ -127,3 +133,143 @@ main {
     font-size: 2em;
     margin: 0px 5px ;
 }
+
+/* /////// Animations ///////////////// */
+
+@keyframes animIdle {
+    0% {bottom: 195px;}
+    10% {bottom: 201px;}
+    25%,100% {bottom: 195px;}
+  }
+
+.casesStade:hover {
+      /* bottom:199px ; */
+      height: 125px;
+      width: 125px;
+      cursor: pointer;
+      animation-play-state: paused;
+    }
+
+ /*///////////// Medias Queries ////////////////  */
+
+ @media (max-width:600px) {
+
+    #titrePage {
+        margin-left: 0px;
+        width: 100%;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        align-items: flex-start;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    #infoEvenement {
+        flex-grow: 3;
+        height:60%;
+        width:80%;
+        margin: 0px auto;
+        margin-bottom: 20px;
+        padding: 30px 25px 35px 25px;
+        overflow: hidden;
+    }
+
+    #cadreImage {
+        width: 50%;
+        height: 40%;
+        border: 3px solid white;
+    }
+
+    #carousel span {
+        display: none;
+    }
+
+    #stadeConteneurPrincipale {
+        width: 100vw;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        flex-shrink: 1;
+        align-self: flex-start;
+    }
+
+    #casesConteneur {
+        position: relative;
+       left: -110px;
+       height: 80%;
+    }
+
+    #baseStade  {
+        transform: scale(0.6, 0.6);
+    }
+
+    #casesConteneur img:nth-child(2) {
+        transform: translate(97px, -57px) scale(0.6, 0.6);
+    }
+    
+    #casesConteneur img:nth-child(3) {
+        transform: translate(75px, -58px) scale(0.6, 0.6);
+    }
+    
+    #casesConteneur img:nth-child(4) {
+        transform: translate(45px, -57px) scale(0.6, 0.6);
+    }
+    
+    #casesConteneur img:nth-child(5) {
+        transform: translate(-5px, -58px) scale(0.6, 0.6);
+    }
+    
+    #casesConteneur img:nth-child(6) {
+        transform: translate(-47px, -59px) scale(0.6, 0.6);
+    }
+    
+    #casesConteneur img:nth-child(7) {
+        transform: translate(-87px, -59px) scale(0.55, 0.55);
+    }
+ }
+
+
+
+ @media all and (min-width:601px) and (max-width: 1024px)  {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        /* justify-content:start;
+        align-items: flex-start; */
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    #casesConteneur {
+        position: relative;
+        left:-50px;
+    }
+
+   #infoEvenement {
+        color: white;
+        height:55%;
+        width:30%;
+        margin: 10px 50px 0px 100px ;
+        padding: 25px 25px 30px 25px;
+        z-index: 501;
+    }
+
+    #infoEvenement p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    #cadreImage {
+        width: 35%;
+        height: 20%;
+        border: 3px solid white;
+    }
+
+ }
+ 

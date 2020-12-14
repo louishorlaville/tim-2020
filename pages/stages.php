@@ -3,6 +3,26 @@
     require("../inclusions/hautDePage.php");
 ?>
 
+<div id="container-boite">
+    <div id="opacity-boite"></div>
+    <div id="boite">
+        <div id="container-out-boite"><div id="out-boite"></div></div>
+        <div id="contenu-boite">
+            <div id="header-boite">
+                <h1 id="container-nom-boite">
+                    <div id="nom-boite">Camille Semaan</div>
+                    <div id="details-stage-boite">
+                        <p>Finissant(e) <span id="annee-finissant">2015</span> </p>
+                        <p>Stage: <span id="poste-stage"></span> - <span id="entreprise-stage"></span></p>
+                    </div>
+                </h1>    
+                <img id="photo-boite" src="../images/img/profTemp.jpg" alt="Photo finissant">
+            </div>
+            <div id="description-boite"></div>
+        </div>
+    </div>
+</div>
+
     <div class="container-stages">
         <div class="groupe-building" id="groupe-1">
             <div class="building-stages" id="building-1">
@@ -48,6 +68,7 @@
         </div>
     </div>
 </div>
+<script src="../js/stages.js"></script>
 
 <?php 
     require("../inclusions/piedDePage.php");

@@ -12,10 +12,8 @@
 body {
     position: relative;
     font-family: Arial;
-    background-color: #FCFCFC;
     height: 100%;
     overflow: hidden;
-    background-color: #E0DBD5;
 
 }
 
@@ -168,73 +166,6 @@ body {
 }
 
 
-/* couleurs principales de la page - IMG */
-
-.color-bg{
-    background-color: #FCFCFC;
-}
-
-.color-bg-2{
-    background: #E0DBD5;
-}
-
-.color-bars{
-    background-color: #1A1A1A;
-}
-
-.color-1{
-    background-color: #BA222D;
-}
-
-.color-2{
-    background-color: #296FA6;
-}
-
-.color-3{
-    background-color: #DC7E25;
-}
-
-.color-4{
-    background-color: #8abdff;
-}
-
-.color-5{
-    background-color: #EFCA56;
-}
-
-.color-6{
-    background-color: #999895;
-}
-
-.color-text-1{
-    color: #1A1A1A;
-}
-
-.color-text-2{
-    color: #999895;
-}
-
-/* COULEURS SVG*/
-/*noir/gris*/
-.color-svg-0{
-    filter: invert(0%) sepia(2%) saturate(3512%) hue-rotate(360deg) brightness(98%) contrast(80%);
-}
-/*Rouge light*/
-.color-svg-1{
-    filter: invert(14%) sepia(100%) saturate(3975%) hue-rotate(348deg) brightness(82%) contrast(83%);
-}
-/*Blue Light*/
-.color-svg-2{
-    filter: invert(37%) sepia(24%) saturate(1473%) hue-rotate(164deg) brightness(97%) contrast(88%);
-}
-/*Jaune light version*/
-.color-svg-3{
-    filter: invert(64%) sepia(15%) saturate(7049%) hue-rotate(349deg) brightness(93%) contrast(84%);
-}
-
-.color-svg-5{
-    filter: invert(85%) sepia(64%) saturate(553%) hue-rotate(329deg) brightness(99%) contrast(89%);
-}
 
 /* Logo et formes */
 #title{
@@ -376,7 +307,6 @@ body {
     position: absolute;
     top: -3.5%;
     left: -3.5% ;
-    border: black;
     border-style: dashed;
     border-radius:50%;
     width: 103.9%;
@@ -731,11 +661,125 @@ body {
 }
 
 /*////// STYLE HEADER ///////// */
+.header{
+    position: relative;
+}
+
+/*TOGGLE DAY NIGHT*/
+.container-toggle-theme{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
+.toggle-theme-pages{
+    top: 20px;
+    right: 15px;
+}
+
+.toggle-theme-btn
+{
+    position: relative;
+    width: 55px;
+    height: 24px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 40px;
+    border-width: 3px;
+    border-style: solid;
+}
+
+input[type="checkbox"]
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+.toggle-theme-btn span
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+    border-radius: 40px;
+}
+
+.toggle-theme-span{
+    background-color: #fff;
+    transition: 0.2s ease background-color, 0.2s ease opacity;
+}
+
+.toggle-theme-before,.toggle-theme-after
+{
+    content: '';
+    position: absolute;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.5s ease transform, 0.2s ease background-color;
+}
+
+.actif:nth-of-type(3){
+    transition: 0.5s ease transform, 0.2s ease background-color;
+
+}
+
+.toggle-theme-before
+{
+    background-color: #fff;
+    transform: translate(-25px,0px);
+    z-index: 1;
+}
+
+.toggle-theme-after
+{
+    background-color: #000 ;
+    transform: translate(3px,2px);
+    z-index: 0;
+}
+
+.toggle-theme-span.nuit
+{
+    background-color: #000;
+}
+
+.mouse-down-button-toggle-theme
+{
+    opacity: 0.5;
+}
+
+.toggle-theme-before.nuit
+{
+    background-color: #000;
+    transform: translate(25px,-3px);
+}
+
+.toggle-theme-after.nuit
+{
+    background-color: #fff;
+    transform: translate(32px,2px);
+}
+
+
+/*END TOGGLE*/
 .container-header-mobile{
     display: none;
 }
 .header {
-    padding: 1rem;
+    padding: 1.3rem;
     text-align: center;
     color: white;
     font-size: 30px;
@@ -747,17 +791,40 @@ body {
     padding: 1em;
 }
 
+/*logo accueil*/
 #logoMenuAccueilContainer{
     width: 130px;
     margin-right: 2%;
 }
+.logo-cercle-container-header{
+    width: 120px;
+    height: 120px;
+}
+
+.logo-cercle-border-header{
+    position: absolute;
+    top: -5px;
+    left: -5px;    
+    border-style: dashed;
+    border-radius:50%;
+    transform-origin: center;
+    width: 125px;
+    height: 125px;
+    animation-name: spin;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
 #logoMenuAccueilContainer{
-    transition: all 0.3s cubic-bezier( 0.94, 0.38, .48, 1.2 );
     cursor: pointer;
 }
 
-#logoMenuAccueilContainer:hover{
+.logo-cercle{
+    transition: transform 0.3s cubic-bezier( 0.94, 0.38, .48, 1.2 );
+}
+
+#logoMenuAccueilContainer:hover>a>.logo-cercle-container-header>.logo-cercle-container-border>.logo-cercle{
     transform: rotate(45deg);
 }
 
@@ -781,14 +848,13 @@ body {
 
 .elt-menu-header{
     text-decoration: none;
-    color: black;
     margin-right: 6%;
     flex-shrink: 0;
     height: 50px;
 }
 
 .border-elt-menu-header{
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid;
     padding: 0 5px 0 5px;
     transition: clip-path .3s ease-in;
 }
@@ -810,28 +876,37 @@ body {
     font-size:2vw;
     width: 50%;
     min-height: 25px;
-    margin-left: 10%;
-    border-bottom:15px solid #DC7E25;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 92%, 100% 92%, 100% 88%, 0 88%,0 0);
+    margin-left: 8%;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 92%, 100% 92%, 100% 88%, 0 88%,0 0); */
 }
 
 .contenu-titre{
     width: 75%;
     display: flex;
     flex-direction: row;
+    overflow: visible;
+    align-items: center;
 }
 
 .titre-page{
-    margin-left: 5%;
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: "bahnschrift";
+    /* font-stretch: semi-condensed; */
+    font-weight: 200;
 }
 
 .fleche-page-precedente{
-    transition: all .5s ease-in-out;
+    margin-left: 1%;
+    transition: all .2s ease-in-out;
     width: 3%;
+    font-size: 50px;
 }
 
 .fleche-page-precedente:hover{
-    margin-left: -1%;
+    margin-left: 0%;
     margin-right: 1%;
 }
 
@@ -960,16 +1035,10 @@ body {
  
  }
 
-
-
-
-
-
  /* ///////// STYLES COMMUN AUX PAGES /////////////// */
  .contenu-titre>.fleche-page-precedente>a{
      text-decoration: none;
-     color: black;
- }
+}
 
 @keyframes animate{
     from {
@@ -1069,11 +1138,25 @@ body {
     .containerLogoContent{
         margin-top: 200px;
     }
+
+    /*HEADER*/
+    .container-titre{
+        font-size: 3vw;
+        width: 75%;
+    }
 } 
 
 @media all and (max-width: 1024px) and (min-width:601px) {
     .containerLogoContent{
         margin-top: 200px;
+    }
+    /*HEADER*/
+    .container-titre{
+        font-size: 4vw;
+        width: 60%;
+    }
+    .contenu-titre{
+        width: 90%;
     }
 } 
 
@@ -1110,6 +1193,18 @@ body {
         display: none;
     }
 
+    .container-titre{
+        margin: 5% 0 0 5%;
+        font-size: 20px;
+        width: 80%;
+    }
+    .contenu-titre{
+        width: 100%;
+    }
+
+    .fleche-page-precedente{
+        font-size: 30px;
+    }
     .container-header-mobile{
         display: block;
         background-color: #1A1A1A;
@@ -1125,7 +1220,7 @@ body {
     #logo-header-mobile{
         margin-top: 3px;
         margin-left: 8px;
-        width:10%;
+        width:auto;
     }
 
     #logo-header-mobile>a{
@@ -1138,9 +1233,15 @@ body {
         width: 100%;
     }
 
+    /*bouton toggle day night*/
+    .container-mobile-toggle-theme{
+        position: unset;
+        margin-left: 5%;
+    }
+
     /* Burger Menu */
     .container-icon-burger{
-        margin-left: 65vw;
+        margin-left: 35vw;
         color: white;
     }
 
@@ -1171,7 +1272,6 @@ body {
     .box-border-menu-burger{
         width: 100%;
         height:100%;
-        background-color: #EFCA56;
     }
 
     .burger-active{
@@ -1207,7 +1307,8 @@ body {
     }
 
     #burger-cours, #burger-profs, #burger-stages{
-        border-bottom: 2.5px solid black;
+        border-bottom-width: 2.5px;
+        border-bottom-style: solid;
         padding-bottom: 5px;
         margin-bottom: 6px;
     }
@@ -1217,7 +1318,6 @@ body {
         text-decoration: none;
         font-family: "bahnschrift";
         font-weight: 400;
-        color:black;
     }
 
     .arrow-burger{
@@ -1260,7 +1360,7 @@ body {
         position: absolute;
         
         left: 65%; 
-        top: -6%;
+        top: -7%;
 
         z-index: 3;
 
@@ -1274,7 +1374,8 @@ body {
         top: -4%;
         left: -4.25%;
         transform-origin: 50% 50%;
-        border: 2px dashed black;
+        border-style: dashed;
+        border-width: 2px;
         border-radius:50%;
         animation-name: spin;
         animation-duration: 25s;

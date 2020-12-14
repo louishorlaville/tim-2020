@@ -1,79 +1,46 @@
 <?php 
     $page = "profs";
     require("../inclusions/hautDePage.php");
+    require("../inclusions/fonctions/enleverAccents.php");
+
+    $jsonProfs= file_get_contents('../data/profs.json'); //Aller chercher les datas
+    $dataProfs = array_values(json_decode($jsonProfs, true)); // Decoder le JSON en tableau associatif
 ?>
 
-        <div class="container-boite-apercu">
-            <div class="background-opacite"></div>
-            <div class="boite-apercu color-bars">wesh</div>
-        </div>
-      <div id="container-profs">
-        &#10240;
-        <div class="prof-prog prof" id="martin"> 
-            <img id="martin0" class="icone-prof" src="../images/svg/cercleProf.svg">
-            <div class="nom-prof">Martin</div> 
-        </div>
-        <div class="prof-prog prof" id="dominic">
-            <img id="dominic0" class="icone-prof" src="../images/svg/cercleProf.svg">
-            <div class="nom-prof">Dominic</div>
-        </div>
-        <div class="prof-prog prof" id="manon">
-            <img id="manon0" class="icone-prof" src="../images/svg/cercleProf.svg">
-            <div class="nom-prof">Manon</div>
-        </div>
-        <div class="prof-prog prof" id="mathieu">
-           <img id="mathieu0" class="icone-prof" src="../images/svg/cercleProf.svg">
-            <div class="nom-prof">mathieu</div>
-        </div>
-        <div class="prof-prog prof" id="david">
-           <img id="david0" class="icone-prof" src="../images/svg/cercleProf.svg">
-            <div class="nom-prof">david</div>
-        </div>
-        <div class="prof-prog prof" id="denis">
-           <img id="denis0" class="icone-prof" src="../images/svg/cercleProf.svg">
-            <div class="nom-prof">denis</div>
-        </div>
-        <div class="prof-prog prof" id="gregory">
-           <img id="gregiry0" class="icone-prof" src="../images/svg/cercleProf.svg">
-            <div class="nom-prof">gregory</div>
-        </div>
-        <div class="prof-design prof" id="camille">
-            <img id="camille+" class="icone-prof" src="../images/svg/plusProf.svg">
-            <div class="nom-prof">camille</div>
-        </div>
-        <div class="prof-design prof" id="vahik">
-            <img id="vahik+" class="icone-prof" src="../images/svg/plusProf.svg">
-            <div class="nom-prof">vahik</div>
-        </div>
-        <div class="prof-design prof" id="vincent">
-            <img id="vincent+" class="icone-prof" src="../images/svg/plusProf.svg">
-            <div class="nom-prof">vincent</div>
-        </div>
-        <div class="prof-design prof" id="johanne">
-            <img id="johanne+" class="icone-prof" src="../images/svg/plusProf.svg">
-            <div class="nom-prof">Johanne</div>
-        </div>
-        <div class="prof-design prof" id="eddy">
-            <img id="eddy+" class="icone-prof" src="../images/svg/plusProf.svg">
-            <div class="nom-prof">Eddy</div>
-        </div>
-        <div class="prof-design prof" id="caroline">
-            <img id="caroline+" class="icone-prof" src="../images/svg/plusProf.svg">
-            <div class="nom-prof">Caroline</div>
-        </div>
-        <div class="prof-design prof" id="ahmed">
-            <img id="ahmed+" class="icone-prof" src="../images/svg/plusProf.svg">
-            <div class="nom-prof">ahmed</div>
-        </div>
-    </div>
-        
-    
-  
-  
 
-
+<div id="container-boite">
+    <div id="opacity-boite"></div>
+    <div id="boite">
+        <div id="container-out-boite"><div id="out-boite"></div></div>
+        <div id="contenu-boite">
+            <div id="header-boite">
+                <h1 id="container-nom-boite">
+                    <div id="nom-boite">Camille Semaan</div>
+                    <div id="date-prof-boite"><p>Enseignant à Maisonneuve</p><p>depuis <span id="annee-boite"></span></p></div>
+                </h1>    
+                <img id="photo-boite" src="../images/img/profTemp.jpg" alt="Photo prof">
+            </div>
+            <div id="description-boite"></div>
+        </div>
     </div>
 </div>
+
+<div id="contenu-principal">  
+    <div id="container-profs">
+        <?php  foreach($dataProfs[0] as $datas=>$data){
+            $nomArray = explode(" ", $data["nom"]);
+            $prenom = unaccent(strtolower($nomArray[0]));
+        ?>
+            <div class="prof-<?=$data["type"]?> prof" id=<?=$prenom?> > 
+                <img id="signe-<?=$prenom?>" class="icone-prof <?=($data["type"]=="prog")?"color-svg-1":"color-svg-2"?>" src="../images/svg/<?=($data["type"]=="prog")?"blackPlus.svg":"blackCircle.svg"?>">
+                <div class="nom-prof color-text-1"><?=ucfirst($nomArray[0])." ".ucfirst($nomArray[1])?></div> 
+            </div> 
+        <?php }?>
+    </div>
+</div>
+<script src="../js/profs.js"></script>
+</div>
+
 
 <?php 
     require("../inclusions/piedDePage.php");
