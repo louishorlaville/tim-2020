@@ -2,29 +2,35 @@
     $meta = [
         "accueil" =>  [
             "title" =>  "Accueil | TIM",
-            "titrePage" => ""
+            "titrePage" => "",
+            "description"=>"Page d'accueil du site web de la Techniques d'Intégration Multimédia du Collège de Maisonneuve"
         ],
         "cheminement" =>  [
             "title" =>  "Grille de chemninement | TIM",
-            "titrePage" => "GRILLE DE CHEMINEMENT"
+            "titrePage" => "GRILLE DE CHEMINEMENT",
+            "description"=>"Grille de cheminement de la Techniques d'Intégration Multimédia du Collège de Maisonneuve"
         ],
         "profilCours" =>  [
             "title" =>  "Profil de cours | TIM",
-            "titrePage" => ""
+            "titrePage" => "",
+            "description"=>"Profil d'un des cours de la Techniques d'Intégration Multimédia du Collège de Maisonneuve"
         ],
         "profs" =>  [
             "title" =>  "Professeurs | TIM",
-            "titrePage" => "NOS PROFESSEURS"
+            "titrePage" => "NOS PROFESSEURS",
+            "description"=>"La liste de tous nos enseignants de la Techniques d'Intégration Multimédia du Collège de Maisonneuve"
         ],
         "stages" =>  [
             "title" =>  "Stages | TIM",
-            "titrePage" => "LES STAGES DE NOS FINISSANTS"
+            "titrePage" => "LES STAGES DE NOS FINISSANTS",
+            "description"=>"Des témoignages de plusieurs de nos anciens finissants de la Techniques d'Intégration Multimédia du Collège de Maisonneuve"
         ],
         "evenements" =>  [
             "title" =>  "Évènements | TIM",
-            "titrePage" => "VIE ÉTUDIANTE"
+            "titrePage" => "VIE ÉTUDIANTE",
+            "description"=>"Plusieurs images de la vie étudiante de la Techniques d'Intégration Multimédia du Collège de Maisonneuve"
 
-        ],
+        ]
     ];
 
     $theme="couleursJour";
@@ -36,12 +42,16 @@
 <html>
 <head>
     <title><?= $meta[$page]["title"]; ?></title>
+    <link rel="shortcut icon" type="image/x-icon" href="<?=($page=="accueil")?"":"../"?>images/img/favicon/favicon.png" />
     <link rel="stylesheet" href="<?=($page=="accueil")? "" :"../" ?>css/jourCouleurs.css">
     <?=($page!="accueil")? '<link rel="stylesheet" href="../css/'.$page.'.css">' : "" ?>
     <?=($page=="accueil")? '<link rel="stylesheet" href="   hamburger/dist/hamburgers.css">' : '<link rel="stylesheet" href="../hamburger/dist/hamburgers.css">'?>
     <link rel="stylesheet" href="<?=($page=="accueil")? "" :"../" ?>css/style.css">
     <meta charset="UTF-8" user-scalable=no>
+    <meta name="keywords" content="Maisonneuve, Cégèp, Intégration Multimédia, Programme, Web, Jeux Vidéo">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content=<?=$meta[$page]["description"]?>>
+    <meta name="author" content="Techniques d'Intégration Multimédia">
 </head>
 <body class="">
 <div id="background-shapes">

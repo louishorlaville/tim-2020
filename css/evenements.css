@@ -84,7 +84,6 @@ main {
 
 #infoEvenement {
     display: none;
-    background-color: black;
     border: solid #296FA6 10px;
     color: white;
     height:55%;

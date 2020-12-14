@@ -35,12 +35,10 @@ function getClasses(session) {
   for (i = 0; i < tableRows; i++) {
     currentClass = i;
 
-    if(classList[currentClass] != null)
-    {
+    if (classList[currentClass] != null) {
       let headerColor = "color-1";
 
-      switch(classList[i].classType) {
-
+      switch (classList[i].classType) {
         case "final":
           headerColor = "color-5";
           break;
@@ -53,14 +51,13 @@ function getClasses(session) {
         default:
           headerColor = "color-1";
       }
-      
-      document.querySelector("#session-row-"+(currentClass+1)).innerHTML+=`
-      <th class="class-cell fadein-chem" style="animation-delay: `+((i/20)+session/4)+`s"><span class="class-header `+headerColor+`">`+classList[currentClass].classID+`</span><div class="class-content color-bars"><a href="profileCours.php?`+"sessionid="+x+"&"+"classid="+((classList.length-1)-i)+`">`+classList[currentClass].className+`</a></div></th>`;
+
+      document.querySelector("#session-row-" + (currentClass + 1)).innerHTML += `<th class="class-cell fadein-chem" style="animation-delay: ` +(i / 20 + session / 4) +`s"><span class="class-header ` + headerColor + `">` + classList[currentClass].classID + `</span><div class="class-content color-bars"><a href="profilCours.php?` + "sessionid=" +x + "&" + "classid=" + (classList.length - 1 - i) +`">` + classList[currentClass].className +`</a></div></th>`;
       //classList[currentClass].className
-    }
-    else
-    {
-      document.querySelector("#session-row-"+(currentClass+1)).innerHTML+=`
+    } else {
+      document.querySelector(
+        "#session-row-" + (currentClass + 1)
+      ).innerHTML += `
 
 
       <th class="class-cell"><span class="class-header"></span><div class="class-content"></div></th>
@@ -75,11 +72,10 @@ function getClasses(session) {
     `</th></tr>      
   `;
 
-  for(i = 0; i < classList.length; i++)
-  {
+  for (i = 0; i < classList.length; i++) {
     let headerColor = "color-1";
 
-    switch(classList[i].classType) {
+    switch (classList[i].classType) {
       case "final":
         headerColor = "color-5";
         break;
@@ -93,8 +89,6 @@ function getClasses(session) {
         headerColor = "color-1";
     }
 
-    document.querySelector("#cheminement-table-mobile").innerHTML+=`
-    <tr><th class="class-container-mobile fadein-chem" style="animation-delay: `+((i/20)+session/4)+`s"><span class="class-header-mobile `+headerColor+`">`+classList[i].classID+`</span><div class="class-content-mobile color-bars">`+classList[i].className+`</div></th></tr>    
-    `;
+    document.querySelector("#cheminement-table-mobile").innerHTML += `<tr><th class="class-container-mobile fadein-chem" style="animation-delay: ` +(i / 20 + session / 4) + `s"><span class="class-header-mobile ` +headerColor +`">` + classList[i].classID + `</span><div class="class-content-mobile color-bars"><a href="profilCours.php?` + "sessionid=" + x + "&" + "classid=" + (classList.length-1 - i) +`">` + classList[i].className +`</a></div></th></tr>`;
   }
 }

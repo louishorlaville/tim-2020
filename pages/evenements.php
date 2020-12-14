@@ -17,7 +17,7 @@
 				<img src="../images/svg/stade/stadeCase6.svg" alt="" class="casesStade">
 			</div>		    
 		</section>
-		<section id="infoEvenement" class="color-7">
+		<section id="infoEvenement" class="color-bars border-1">
 			<h1 id="titreEvenement">Nom de l'événement</h1>
 			<h5 id="dateEvenement">04/11/2019</h5>
 			<p id="descEvenement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, at officiis.
