@@ -26,8 +26,8 @@ for (let index = 0; index < 5; index++) {
         document.getElementById("infoEvenement").style.display = "block";
 
         titre.innerHTML = evenementData.evenements[index].titre.toUpperCase();
-        date.innerHTML = evenementData.evenements[index].date.toUpperCase();
-        desc.innerHTML = evenementData.evenements[index].description.toUpperCase();
+        date.innerHTML = evenementData.evenements[index].annee.toUpperCase();
+        desc.innerHTML = evenementData.evenements[index].description
         image.src = "../images/img/evenements/" + evenementData.evenements[index].photo; 
     });   
 }

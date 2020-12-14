@@ -33,12 +33,20 @@
             "photo":"CAM00028.jpg"
         },
         {
-            "titre":"Étudiants 2017-2018",
-            "annee":"2017",
+            "titre":"Arcade TIM",
+            "annee":"2018",
             "description": [
-                "D'autre étudiants du TIM durant l'année 2017-2018" 
+                "Soirée arcade au Tim" 
             ],
-            "photo":"DSC_0113.JPG"
+            "photo":"IMG_7557_1.jpg"
+        },
+        {
+            "titre":"Accueil des étudiants TIM",
+            "annee":"2007",
+            "description": [
+                "Accueil pour les nouveaux TIMiens en 2007" 
+            ],
+            "photo":"DSCN7338.JPG"
         }
 
 
