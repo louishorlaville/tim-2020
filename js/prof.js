@@ -23,9 +23,7 @@ let descriptionBoite = document.querySelector("#description-boite");
 //Afficher les infos du prof choisi sur la boite d'apercu
 for (let x = 0; x < profs.length; x++) {
   profs[x].addEventListener("click", function () {
-    containerBoiteInfos.style.display = "block";
-    containerBoiteInfos.style.opacity = "0";
-    containerBoiteInfos.style.opacity = "1";
+    containerBoiteInfos.style.display = "flex";
     //Insérer nom
     boiteInfos.children[0].children[0].children[0].innerHTML = profsData.profs[
       x
@@ -58,7 +56,6 @@ for (let x = 0; x < profs.length; x++) {
 
 //Enlever la boite d'apercu
 document.getElementById("out-boite").addEventListener("click", function () {
-  containerBoiteInfos.style.opacity = "0";
   containerBoiteInfos.style.display = "none";
 });
 

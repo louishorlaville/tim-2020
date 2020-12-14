@@ -2,6 +2,7 @@
     height: 70vh;
     width: 100%;
     position: relative;
+    
 }
 
 .prof{
@@ -36,7 +37,7 @@
 
 #dominic{
     left: 15%;
-    top:55%;
+    top:48%;
 }
 #manon{
     left:35%;
@@ -54,21 +55,21 @@
     left: 82%;
     top:48%;
 }
-#gregory{
-    left: 72%;
-    top:72%;
-}
+    #gregory{
+        left: 72%;
+        top:70%;
+    }
 #camille{
     left: 65%;
     top:38%;
 }
 #vahik{
     left: 58%;
-    top:75%;
+    top:69%;
 }
 #eddy{
-    left: 23%;
-    top:77%;
+    left: 27%;
+    top:58%;
 }
 #caroline{
     left: 51%;
@@ -182,7 +183,6 @@
 
 /*STYLES BOITE*/
 #container-boite{
-    transition: all 2s ease-in;
     position: absolute;
     left: 0;
     top: 0;
@@ -190,12 +190,15 @@
     height: 100vh;
     z-index: 2;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
 #opacity-boite{
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: black;
@@ -223,9 +226,8 @@
 
 #boite{
     background-color: #333333;
-    position: fixed;
-    top: 20%;
-    transform: translateX(35vw);
+    position: relative;
+
     height: 60vh;
     width: 23vw;
     color: white;
@@ -311,11 +313,62 @@
 
 
 
-@media screen and (max-width: 1520px) {
+@media screen and (max-width: 1520px) and (min-width:601px) {
     #container-nom-boite{
         font-size: 15pt;
     }
     #date-prof-boite{
         font-size: 9pt;
     }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    #container-profs{
+        height: 75.3vh;
+        overflow: hidden;
+    }
+
+
+
+    #out-boite{
+        right: 0%;;
+    }
+    
+    #container-nom-boite{
+        font-size: 15pt;
+    }
+    #date-prof-boite{
+        font-size: 9pt;
+    }
+
+    .nom-prof{
+        font-size: 8pt;
+    }
+    #eddy{
+        left: 7%;
+        top:72%;
+    }
+
+    #gregory{
+        left: 80%;
+        top:76%;
+    }
+
+    
+    #denis{
+        left: 75%;
+        top:53%;
+    }
+
+    #caroline{
+        left: 51%;
+        top:56%;
+    }
+    #vahik{
+        left: 58%;
+        top:77%;
+    }
+
 }
