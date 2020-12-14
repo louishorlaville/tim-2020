@@ -99,13 +99,13 @@
 <!-- SOCIALS ACCUEIL-->
 <div class="container-socials">
     <div class="social-elt" id="social-link-instagram">
-        <a class="color-svg-01" href="#" target="_blank"><img src="./images/svg/socials/logoInstagram.svg" alt="Page Instagram du programme" class="social-icon .color-svg-1"></a>
+        <a class="color-svg-01" href="https://www.instagram.com/maisonneuvetim/" target="_blank"><img src="./images/svg/socials/logoInstagram.svg" alt="Page Instagram du programme" class="social-icon .color-svg-1"></a>
     </div>
     <div class="social-elt" id="social-link-facebook">
-        <a class="color-svg-01" href="#" target="_blank"><img src="./images/svg/socials/logoFacebook.svg" alt="Page Facebook du programme" class="social-icon .color-svg-1"></a>
+        <a class="color-svg-01" href="https://www.facebook.com/maisonneuvetim" target="_blank"><img src="./images/svg/socials/logoFacebook.svg" alt="Page Facebook du programme" class="social-icon .color-svg-1"></a>
     </div>
     <div class="social-elt" id="social-link-discord">
-        <a class="color-svg-01" href="#" target="_blank"><img src="./images/svg/socials/logoDiscord.svg" alt="Serveur discord du programme" class="social-icon .color-svg-1"></a>
+        <a class="color-svg-01" href="https://discord.com/invite/53vFvr9" target="_blank"><img src="./images/svg/socials/logoDiscord.svg" alt="Serveur discord du programme" class="social-icon .color-svg-1"></a>
     </div>
 </div>
 

@@ -38,7 +38,7 @@
         <?php }?>
     </div>
 </div>
-<script src="../js/prof.js"></script>
+<script src="../js/profs.js"></script>
 </div>
 
 

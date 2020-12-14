@@ -1272,7 +1272,6 @@ input[type="checkbox"]
     .box-border-menu-burger{
         width: 100%;
         height:100%;
-        background-color: #EFCA56;
     }
 
     .burger-active{
@@ -1308,7 +1307,8 @@ input[type="checkbox"]
     }
 
     #burger-cours, #burger-profs, #burger-stages{
-        border-bottom: 2.5px solid black;
+        border-bottom-width: 2.5px;
+        border-bottom-style: solid;
         padding-bottom: 5px;
         margin-bottom: 6px;
     }

@@ -92,4 +92,11 @@
     }
     localStorage.setItem("theme", themeChoisi);
   }
+
+  //GO BACK PREVIOUS PAGE
+  let flecheRetour = document.querySelector(".lien-page-precedente");
+
+  flecheRetour.addEventListener("click", function () {
+    window.history.back();
+  });
 })();

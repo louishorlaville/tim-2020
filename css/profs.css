@@ -182,7 +182,6 @@
 
 /*STYLES BOITE*/
 #container-boite{
-    transition: all 2s ease-in;
     position: absolute;
     left: 0;
     top: 0;
@@ -190,12 +189,12 @@
     height: 100vh;
     z-index: 2;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
-
 #opacity-boite{
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: black;
@@ -223,9 +222,6 @@
 
 #boite{
     background-color: #333333;
-    position: fixed;
-    top: 20%;
-    transform: translateX(35vw);
     height: 60vh;
     width: 23vw;
     color: white;
@@ -296,9 +292,6 @@
 
 #description-boite >p{
     margin-top: 3%;
-}
-.liste-description-boite::before{
-    content: "- ";
 }
 
 #description-boite::-webkit-scrollbar {
