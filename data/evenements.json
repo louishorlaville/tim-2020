@@ -23,6 +23,22 @@
                 "Encore des étudiants du TIM durant l'année 2017-2018" 
             ],
             "photo":"DSC_0115.JPG"
+        },
+        {
+            "titre":"Noel au Tim",
+            "annee":"2013",
+            "description": [
+                "Père Noel au tim" 
+            ],
+            "photo":"CAM00028.jpg"
+        },
+        {
+            "titre":"Étudiants 2017-2018",
+            "annee":"2017",
+            "description": [
+                "D'autre étudiants du TIM durant l'année 2017-2018" 
+            ],
+            "photo":"DSC_0113.JPG"
         }
 
 
