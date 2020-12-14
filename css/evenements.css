@@ -49,9 +49,9 @@ main {
     left: 1px;
     bottom: 195px;
     animation-name: animIdle;
-    animation-duration: 2500ms;
+    animation-duration: 3500ms;
     animation-delay: 1500ms;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
 
 }
 
@@ -138,8 +138,8 @@ main {
 
 @keyframes animIdle {
     0% {bottom: 195px;}
-    25% {bottom: 201px;}
-    50%,100% {bottom: 195px;}
+    10% {bottom: 201px;}
+    25%,100% {bottom: 195px;}
   }
 
 .casesStade:hover {
@@ -223,6 +223,8 @@ main {
     }
  }
 
+
+
  @media all and (min-width:601px) and (max-width: 1024px)  {
 
     main {
@@ -234,13 +236,30 @@ main {
         overflow-x: hidden;
     }
 
+    #casesConteneur {
+        position: relative;
+        left:-50px;
+    }
+
    #infoEvenement {
-    color: white;
-    height:55%;
-    width:30%;
-    margin: 10px 50px 0px 100px ;
-    padding: 25px 25px 30px 25px;
-}
+        color: white;
+        height:55%;
+        width:30%;
+        margin: 10px 50px 0px 100px ;
+        padding: 25px 25px 30px 25px;
+        z-index: 501;
+    }
+
+    #infoEvenement p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    #cadreImage {
+        width: 35%;
+        height: 20%;
+        border: 3px solid white;
+    }
 
  }
  
