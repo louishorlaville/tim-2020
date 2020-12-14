@@ -34,8 +34,8 @@ function getClasses(session){
 
   let currentClass;
 
-  let clastList = classesData.sessions[session].classes;
-  clastList = clastList.reverse();
+  let classList = classesData.sessions[session].classes;
+  classList = classList.reverse();
 
   let tableRows = 6;
 
@@ -43,12 +43,12 @@ function getClasses(session){
   {
     currentClass = i;
 
-    if(clastList[currentClass] != null)
+    if(classList[currentClass] != null)
     {
       let headerColor = "color-1";
 
-      switch(clastList[currentClass].classType) {
-        case "stage":
+      switch(classList[i].classType) {
+        case "final":
           headerColor = "color-5";
           break;
         case "web":
@@ -62,9 +62,8 @@ function getClasses(session){
       }
       
       document.querySelector("#session-row-"+(currentClass+1)).innerHTML+=`
-      <th class="class-cell fadein-chem" style="animation-delay: `+((i/20)+session/4)+`s"><span class="class-header `+headerColor+`">`+clastList[currentClass].classID+`</span><div class="class-content color-bars">`+clastList[currentClass].className+`</div></th>
-      `;
-      //clastList[currentClass].className
+      <th class="class-cell fadein-chem" style="animation-delay: `+((i/20)+session/4)+`s"><span class="class-header `+headerColor+`">`+classList[currentClass].classID+`</span><div class="class-content color-bars"><a href="profileCours.php?`+"sessionid="+x+"&"+"classid="+((classList.length-1)-i)+`">`+classList[currentClass].className+`</a></div></th>`;
+      //classList[currentClass].className
     }
     else
     {
@@ -80,11 +79,11 @@ function getClasses(session){
   <tr><th class="session-separator-mobile">Session `+(session+1)+`</th></tr>      
   `;
 
-  for(i = 0; i < clastList.length; i++)
+  for(i = 0; i < classList.length; i++)
   {
     let headerColor = "color-1";
 
-    switch(clastList[i].classType) {
+    switch(classList[i].classType) {
       case "final":
         headerColor = "color-5";
         break;
@@ -99,7 +98,7 @@ function getClasses(session){
     }
 
     document.querySelector("#cheminement-table-mobile").innerHTML+=`
-    <tr><th class="class-container-mobile fadein-chem" style="animation-delay: `+((i/20)+session/4)+`s"><span class="class-header-mobile `+headerColor+`">`+clastList[i].classID+`</span><div class="class-content-mobile color-bars">`+clastList[i].className+`</div></th></tr>    
+    <tr><th class="class-container-mobile fadein-chem" style="animation-delay: `+((i/20)+session/4)+`s"><span class="class-header-mobile `+headerColor+`">`+classList[i].classID+`</span><div class="class-content-mobile color-bars">`+classList[i].className+`</div></th></tr>    
     `;
   }
 
