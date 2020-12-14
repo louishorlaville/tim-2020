@@ -145,7 +145,7 @@
             </a>
         </div>
         <div id="menuHeaderContainer">
-            <a href="grilleCheminement.php" id="cheminement" class="color-text-1 elt-menu-header <?= ($page=="cheminement" || $page=="profilCours")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Cours</div></a>
+                <a href="grilleCheminement.php" id="cheminement" class="color-text-1 elt-menu-header <?= ($page=="cheminement" || $page=="profilCours")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Cours</div></a>
             <a href="stages.php" id="stages" class="color-text-1 elt-menu-header <?= ($page=="stages")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Stages</div></a>
             <a href="grilleDesProfs.php" id="profs" class="color-text-1 elt-menu-header <?= ($page=="profs")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Professeurs</div></a>
             <a href="evenements.php" id="evenements" class="color-text-1 elt-menu-header <?= ($page=="evenements")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Vie étudiante</div></a>
