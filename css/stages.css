@@ -204,7 +204,6 @@ body{
     color: white;
     border: 7px solid white;
     font-family: "bahnschrift";
-    font-stretch: wider;
     min-width:340px;
     position: relative;
 }
@@ -339,7 +338,12 @@ body{
 
     .container-stages{
         justify-content: center;
-        margin-top: 9.5vh;
+        height: 78vh;
         margin-bottom: -2%;
     }
+    /*Croix pour boite d'apercu*/
+    #out-boite{
+        right: 0%;
+    }
+
 } 

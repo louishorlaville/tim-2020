@@ -89,3 +89,7 @@ body{
 .border-2{
     border-color: #EFCA56;
 }
+
+.border-3{
+    border-color:black !important ;
+}

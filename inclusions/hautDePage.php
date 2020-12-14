@@ -87,19 +87,19 @@
         <div class="box-container-menu-burger hide-burger">
             <div class="box-border-menu-burger color-3">
                 <div class="container-menu-burger">
-                    <div class="elt-menu-burger" id="burger-cours">
+                    <div class="elt-menu-burger border-3" id="burger-cours">
                         <a class="color-text-2" href="<?=($page=="accueil")?"pages/":""?>grilleCheminement.php">
                             Cours 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
                     </div>
-                    <div class="elt-menu-burger" id="burger-profs">
+                    <div class="elt-menu-burger border-3" id="burger-profs">
                         <a class="color-text-2" href="<?=($page=="accueil")?"pages/":""?>grilleDesProfs.php">
                             Professeurs 
                             <div class="arrow-burger">&#8250;</div>
                         </a>
                     </div>
-                    <div class="elt-menu-burger" id="burger-stages">
+                    <div class="elt-menu-burger border-3" id="burger-stages">
                         <a class="color-text-2" href="<?=($page=="accueil")?"pages/":""?>stages.php">
                             Stages 
                             <div class="arrow-burger">&#8250;</div>
@@ -164,7 +164,7 @@
 <div id="contenu-principal">
     <div class="container-titre border-2">
         <div class="contenu-titre color-text-1">
-            <div class="fleche-page-precedente color-text-1"><a class="color-text-1" href="../index.php">&#8249;</a></div>
+            <div class="fleche-page-precedente color-text-1"><a class="color-text-1 lien-page-precedente" href="#">&#8249;</a></div>
             <div class="titre-page" id="titre-page-stages"><?= $meta[$page]["titrePage"];?></div>
         </div>
     </div>
