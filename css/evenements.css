@@ -30,11 +30,10 @@ main {
 /* //////// Placement des cases ////////////// */
 
 #casesConteneur {
-    /* border: red solid 1px; */
     position: relative;
     height: 100%;
     width: 100%;
-    bottom: 0px;
+    bottom: 15px;
 }
 
 .casesStade {
@@ -86,7 +85,7 @@ main {
 #infoEvenement {
     display: none;
     background-color: black;
-    border: solid white 10px;
+    border: solid #296FA6 10px;
     color: white;
     height:55%;
     width:30%;
@@ -177,8 +176,18 @@ main {
         width:80%;
         margin: 0px auto;
         margin-bottom: 20px;
-        padding: 25px 25px 30px 25px;
+        padding: 30px 25px 35px 25px;
         overflow: hidden;
+    }
+
+    #cadreImage {
+        width: 50%;
+        height: 40%;
+        border: 3px solid white;
+    }
+
+    #carousel span {
+        display: none;
     }
 
     #stadeConteneurPrincipale {
