@@ -5,7 +5,7 @@
                 {
                     "classID":"582-1M1",
                     "className":"Création Vidéo",
-                    "classDesc":"Description du cours.",
+                    "classDesc":"Ce cours initie l’étudiant au traitement des images en mouvement et aux techniques sous-jacentes telles que l’animation graphique et la composition d’images 2D, 3D et vidéo. L’étudiant apprend à exploiter de façon créative les fonctions des logiciels de traitement vidéo. De plus, il est amené à appliquer adéquatement les techniques d’optimisation des images vidéo en fonction de différents modes de diffusion.",
                     "classType":"",
                     "classHrs":"60",
                     "classPond":[
@@ -22,7 +22,7 @@
                 {
                     "classID":"582-1M2",
                     "className":"Conception graphique et img. matricielle",
-                    "classDesc":"Description du cours.",
+                    "classDesc":"Ce cours initie l’étudiant aux rudiments de la conception et de la communication graphique. On y aborde les notions de base sur la stylistique, la couleur, le mode d’organisation picturale en lien avec le design d’une page-écran. L’apprentissage d’un processus de création structuré et de techniques d’idéation permettent à l’étudiant de faire émerger des concepts créatifs respectant les objectifs de communication et le public cible. Enfin, il présente ses œuvres et développe son esprit critique quant à la qualité esthétique et aux aspects novateurs du design d’une page-écran.",
                     "classType":"",
                     "classHrs":"60",
                     "classPond":[
@@ -39,7 +39,7 @@
                 {
                     "classID":"582-1W1",
                     "className":"Mise en page Web",
-                    "classDesc":"Description du cours.",
+                    "classDesc":"Ce cours initie l’étudiant à la création de pages Web à l’aide des langages de balisage (XHTML) et des feuilles de style (CSS). L’étudiant apprend également à analyser et à schématiser l’arborescence d’un site Web ainsi qu’à assembler de façon précise et harmonieuse les médias selon une grille de montage. C’est aussi le premier cours intégrateur où l’étudiant aura l’occasion d’intégrer les notions apprises dans les autres cours de la session en produisant site Web interactif simple.",
                     "classType":"web",
                     "classHrs":"60",
                     "classPond":[
@@ -49,13 +49,14 @@
                     ],
                     "classTags":[
                         "Environement Professionnel",
-                        "Intégration"
+                        "Intégration",
+                        "Programmation"
                     ]
                 },
                 {
                     "classID":"582-1J1",
                     "className":"Animation et interactivité en jeu",
-                    "classDesc":"Description du cours.",
+                    "classDesc":"Dans ce cours, l’étudiant découvre la programmation graphique et s’initie aux concepts de base de la programmation orientée objet (POO) avec ActionScript. L’étudiant apprend à maîtriser graduellement les concepts de la POO, tels que : classe d’objets et instance, propriétés et méthodes des objets, notion d’héritage, d’encapsulation, etc. Ces concepts sont expliqués et représentés à l’aide de formalismes reconnus. Il apprend également à exploiter les principales classes intégrées d’objets graphiques et médiatiques ainsi qu’à créer ses propres classes d’objets à même les fonctionnalités du logiciel auteur utilisé. L’accent est mis sur la maîtrise de la structure d’affichage, sur le contrôle de l’animation et de l’interactivité.",
                     "classType":"jeu",
                     "classHrs":"60",
                     "classPond":[
@@ -74,8 +75,8 @@
         {
             "classes":[
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-2M3",
+                    "className":"Effets spéciaux et animation",
                     "classDesc":"Description du cours.",
                     "classType":"",
                     "classHrs":"60",
@@ -88,8 +89,8 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-2M4",
+                    "className":"Conception graphique et img.vectorielle",
                     "classDesc":"Description du cours.",
                     "classType":"",
                     "classHrs":"60",
@@ -102,8 +103,8 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-2W2",
+                    "className":"Animation et intéractivité Web",
                     "classDesc":"Description du cours.",
                     "classType":"web",
                     "classHrs":"60",
@@ -116,8 +117,71 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-2J2",
+                    "className":"Création de jeu 2D",
+                    "classDesc":"Ce cours initie l’étudiant à l’utilisation d’un environnement d’intégration de la 3D temps-réel, communément appelé « moteur de jeu ». L’accent est d’abord mis sur l’apprentissage des notions de base de la 3D-temps réel et de l’intégration 3D (systèmes de coordonnées, vecteurs, types et propriétés d’objets 3D, caméra, rendu en temps réel, etc.). Ensuite l’étudiant est amené à maîtriser les outils et les fonctionnalités de base d’un logiciel d’intégration 3D pour importer et prendre en charge des éléments 3D, paramétrer les comportements ainsi que programmer l’interactivité. Enfin, par la création d’un prototype simple, l’étudiant est à même d’apprendre les concepts et les techniques de base reliées à l’intégration d’un jeu vidéo.",
+                    "classType":"jeu",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
+                    "classTags":[
+                        "Programmation",
+                        "Intégration",
+                        "Création de Médias"
+                    ]
+                }
+            ]
+        },
+        {
+            "classes":[
+                {
+                    "classID":"582-3M5",
+                    "className":"Imagerie 3D",
+                    "classDesc":"Description du cours.",
+                    "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"582-3C1",
+                    "className":"Design d'interactivité",
+                    "classDesc":"Description du cours.",
+                    "classType":"",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"582-3W3",
+                    "className":"Création de sites Web dynamiques",
+                    "classDesc":"Description du cours.",
+                    "classType":"web",
+                    "classHrs":"60",
+                    "classPond":[
+                        "2",
+                        "3",
+                        "2"
+                    ],
+                    "classTags":[
+                    ]
+                },
+                {
+                    "classID":"582-3J3",
+                    "className":"Création du jeu 3D",
                     "classDesc":"Description du cours.",
                     "classType":"jeu",
                     "classHrs":"60",
@@ -134,8 +198,8 @@
         {
             "classes":[
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-4MB",
+                    "className":"Animation 3D",
                     "classDesc":"Description du cours.",
                     "classType":"",
                     "classHrs":"60",
@@ -148,8 +212,8 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-4PA",
+                    "className":"Interfaces Web réactives et animées",
                     "classDesc":"Description du cours.",
                     "classType":"",
                     "classHrs":"60",
@@ -162,8 +226,8 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-4C2",
+                    "className":"Gestion de projets multimédia",
                     "classDesc":"Description du cours.",
                     "classType":"",
                     "classHrs":"60",
@@ -176,22 +240,8 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
-                    "classDesc":"Description du cours.",
-                    "classType":"",
-                    "classHrs":"60",
-                    "classPond":[
-                        "2",
-                        "3",
-                        "2"
-                    ],
-                    "classTags":[
-                    ]
-                },
-                {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-4W4",
+                    "className":"Conception d'interfaces et développement Web",
                     "classDesc":"Description du cours.",
                     "classType":"web",
                     "classHrs":"60",
@@ -204,8 +254,8 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"360-4J4",
+                    "className":"Création de jeu en équipe",
                     "classDesc":"Description du cours.",
                     "classType":"jeu",
                     "classHrs":"60",
@@ -222,8 +272,8 @@
         {
             "classes":[
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-5MB",
+                    "className":"Technologies émergentes et avancées : volet création",
                     "classDesc":"Description du cours.",
                     "classType":"",
                     "classHrs":"60",
@@ -236,8 +286,8 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"393-5E1",
+                    "className":"Préparation au marché du travail",
                     "classDesc":"Description du cours.",
                     "classType":"",
                     "classHrs":"60",
@@ -250,8 +300,8 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"350-5N1",
+                    "className":"Communication et dynamique d'une équipe de travail",
                     "classDesc":"Description du cours.",
                     "classType":"",
                     "classHrs":"60",
@@ -264,22 +314,8 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
-                    "classDesc":"Description du cours.",
-                    "classType":"",
-                    "classHrs":"60",
-                    "classPond":[
-                        "2",
-                        "3",
-                        "2"
-                    ],
-                    "classTags":[
-                    ]
-                },
-                {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-5W5",
+                    "className":"Projet Web en équipe ",
                     "classDesc":"Description du cours.",
                     "classType":"web",
                     "classHrs":"60",
@@ -292,96 +328,8 @@
                     ]
                 },
                 {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
-                    "classDesc":"Description du cours.",
-                    "classType":"jeu",
-                    "classHrs":"60",
-                    "classPond":[
-                        "2",
-                        "3",
-                        "2"
-                    ],
-                    "classTags":[
-                    ]
-                }
-            ]
-        },
-        {
-            "classes":[
-                {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
-                    "classDesc":"Description du cours.",
-                    "classType":"",
-                    "classHrs":"60",
-                    "classPond":[
-                        "2",
-                        "3",
-                        "2"
-                    ],
-                    "classTags":[
-                    ]
-                },
-                {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
-                    "classDesc":"Description du cours.",
-                    "classType":"",
-                    "classHrs":"60",
-                    "classPond":[
-                        "2",
-                        "3",
-                        "2"
-                    ],
-                    "classTags":[
-                    ]
-                },
-                {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
-                    "classDesc":"Description du cours.",
-                    "classType":"",
-                    "classHrs":"60",
-                    "classPond":[
-                        "2",
-                        "3",
-                        "2"
-                    ],
-                    "classTags":[
-                    ]
-                },
-                {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
-                    "classDesc":"Description du cours.",
-                    "classType":"",
-                    "classHrs":"60",
-                    "classPond":[
-                        "2",
-                        "3",
-                        "2"
-                    ],
-                    "classTags":[
-                    ]
-                },
-                {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
-                    "classDesc":"Description du cours.",
-                    "classType":"web",
-                    "classHrs":"60",
-                    "classPond":[
-                        "2",
-                        "3",
-                        "2"
-                    ],
-                    "classTags":[
-                    ]
-                },
-                {
-                    "classID":"0000-0000",
-                    "className":"Class Name",
+                    "classID":"582-5JA",
+                    "className":"Expérimentation en jeu: volet prog.",
                     "classDesc":"Description du cours.",
                     "classType":"jeu",
                     "classHrs":"60",

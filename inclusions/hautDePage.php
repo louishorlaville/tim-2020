@@ -77,6 +77,7 @@
                 <span class="toggle-theme-after"></span>
             </div>
         </div>
+        <!-- From Jonathan Suh: https://github.com/jonsuh/hamburgers -->
         <div class="container-icon-burger">
             <button id="bouton-burger" class="hamburger hamburger--collapse" type="button">
                 <span class="hamburger-box">
@@ -84,6 +85,7 @@
                 </span>
             </button>
         </div>
+        <!-- Fin Jonathan Suh -->
         <div class="box-container-menu-burger hide-burger">
             <div class="box-border-menu-burger color-3">
                 <div class="container-menu-burger">
@@ -145,7 +147,7 @@
             </a>
         </div>
         <div id="menuHeaderContainer">
-            <a href="grilleCheminement.php" id="cheminement" class="color-text-1 elt-menu-header <?= ($page=="cheminement" || $page=="profilCours")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Cours</div></a>
+                <a href="grilleCheminement.php" id="cheminement" class="color-text-1 elt-menu-header <?= ($page=="cheminement" || $page=="profilCours")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Cours</div></a>
             <a href="stages.php" id="stages" class="color-text-1 elt-menu-header <?= ($page=="stages")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Stages</div></a>
             <a href="grilleDesProfs.php" id="profs" class="color-text-1 elt-menu-header <?= ($page=="profs")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Professeurs</div></a>
             <a href="evenements.php" id="evenements" class="color-text-1 elt-menu-header <?= ($page=="evenements")? "menu-actif":"menu-inactif"?>"><div class="border-elt-menu-header border-1">Vie étudiante</div></a>

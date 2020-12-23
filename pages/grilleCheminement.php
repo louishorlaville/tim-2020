@@ -8,12 +8,12 @@
   <table id="cheminement-table">
     <tr id="session-names-row" class="session-row">
       <th class="class-cell color-text-2"></th>
-      <th class="class-cell color-text-2">SESSION 1</th>
-      <th class="class-cell color-text-2">SESSION 2</th>
-      <th class="class-cell color-text-2">SESSION 3</th>
-      <th class="class-cell color-text-2">SESSION 4</th>
-      <th class="class-cell color-text-2">SESSION 5</th>
-      <th class="class-cell color-text-2">SESSION 6</th>
+      <th class="class-cell color-text-1">SESSION 1</th>
+      <th class="class-cell color-text-1">SESSION 2</th>
+      <th class="class-cell color-text-1">SESSION 3</th>
+      <th class="class-cell color-text-1">SESSION 4</th>
+      <th class="class-cell color-text-1">SESSION 5</th>
+      <th class="class-cell color-text-1">SESSION 6</th>
     </tr>
     <tr id="session-row-1" class="session-row">
       <th class="class-cell"><div class="class-tag color-3"> WEB</div></th>
