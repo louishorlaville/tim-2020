@@ -45,7 +45,7 @@ body{
 }
 
 .color-text-1{
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 
 .color-text-2{

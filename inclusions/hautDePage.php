@@ -77,6 +77,7 @@
                 <span class="toggle-theme-after"></span>
             </div>
         </div>
+        <!-- From Jonathan Suh: https://github.com/jonsuh/hamburgers -->
         <div class="container-icon-burger">
             <button id="bouton-burger" class="hamburger hamburger--collapse" type="button">
                 <span class="hamburger-box">
@@ -84,6 +85,7 @@
                 </span>
             </button>
         </div>
+        <!-- Fin Jonathan Suh -->
         <div class="box-container-menu-burger hide-burger">
             <div class="box-border-menu-burger color-3">
                 <div class="container-menu-burger">
